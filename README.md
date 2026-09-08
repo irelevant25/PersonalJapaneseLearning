@@ -13,44 +13,9 @@ internet connection required once installed.
 
 ## Quick start
 
-**If you downloaded this project as a ZIP (not via `git`) and don't already
-have Node.js set up**, use the launcher script for your OS — it handles
-everything for you:
-
-- **Windows**: right-click **`start.ps1`** → *Run with PowerShell* (or open
-  PowerShell in this folder and run `./start.ps1`). If Windows blocks the
-  script the first time, open PowerShell as yourself in this folder and run
-  `Set-ExecutionPolicy -Scope Process RemoteSigned` first, then try again.
-- **Mac / Linux**: open a terminal in this folder and run `./start.sh`
-  (first time only, make it runnable with `chmod +x start.sh`).
-
-The script checks whether you have [NVM](https://github.com/nvm-sh/nvm)
-(the Node Version Manager) and the exact Node.js version this project needs
-(see `.nvmrc`) — offering to install whichever is missing — then installs
-the project's dependencies, starts the server, and opens it in your default
-browser automatically. Installing NVM on Windows needs an admin
-confirmation prompt (UAC); everything else runs as your normal user. Once
-everything is installed, later runs are fast — just double-click/run the
-script again any time you want to study, and **Ctrl+C** in that window
-stops the server.
-
-**If you already have Node.js 18.11+ installed** (or are comfortable with a
-terminal), you don't need the scripts — just:
-
-```
-npm install
-npm start
-```
-
-Then open the address it prints (**http://127.0.0.1:3001** by default —
-configurable via the `config` block in `package.json`, or override with
-`PORT`/`HOST` env vars) in a browser.
-
-For development (auto-restart on file changes):
-
-```
-npm run dev
-```
+1. Download or clone this project.
+2. **Windows**: double-click `start.ps1`. **Mac/Linux**: run `./start.sh` in a terminal.
+3. The app opens in your browser automatically.
 
 The server only listens on `127.0.0.1` (localhost) — it isn't reachable from
 other devices on your network. Your study data never leaves your machine.
