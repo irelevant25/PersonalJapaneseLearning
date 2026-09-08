@@ -1,5 +1,7 @@
 import { renderDashboard } from './views/dashboard.js';
 import { renderStudy } from './views/study.js';
+import { renderStories } from './views/stories.js';
+import { renderExam } from './views/exam.js';
 import { renderBrowse } from './views/browse.js';
 import { renderStats } from './views/stats.js';
 import { renderSettings } from './views/settings.js';
@@ -8,6 +10,8 @@ import { escapeHtml } from './utils.js';
 const routes = {
   dashboard: renderDashboard,
   study: renderStudy,
+  stories: renderStories,
+  exam: renderExam,
   browse: renderBrowse,
   stats: renderStats,
   settings: renderSettings,

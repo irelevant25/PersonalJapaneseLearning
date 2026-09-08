@@ -34,12 +34,22 @@ of rotation for long stretches.
 - Runs entirely offline/localhost. Server binds to `127.0.0.1` by design
   (see `server/index.js`) — don't change this to `0.0.0.0` without asking,
   since it would expose the study data on the local network.
+- `start.ps1` / `start.sh` / `.nvmrc` (repo root) are a one-click launcher
+  aimed at a non-technical end user who downloaded the repo as a ZIP, not a
+  developer workflow — they detect/install NVM and the pinned Node version,
+  install dependencies, start the server, and open the browser. They read
+  `package.json`'s `config`/`engines.node` fields directly (with their own
+  fallback defaults), so if either of those fields' shape ever changes,
+  check both scripts still parse it correctly. Don't "simplify" these into
+  the npm scripts or remove them — they're intentionally more thorough than
+  `npm start` for someone without a dev environment already set up.
 
 ## Architecture map
 
 ```
 server/
-  index.js            entry point — binds to 127.0.0.1:3000 by default
+  index.js            entry point — host/port from package.json's `config` block
+                      (currently 127.0.0.1:3001), overridable via PORT/HOST env vars
   app.js              express wiring, static file serving, daily adaptive-engine trigger
   lib/
     dates.js          "YYYY-MM-DD" date string helpers (todayStr/addDays/addMonths/diffDays)
@@ -51,10 +61,11 @@ server/
     queue.js            builds a study session: due reviews + weighted new cards
     adaptive.js          once/day: adjusts newCardsPerDay, toggles the kana gate, logs why
     stats.js            aggregates everything the dashboard/stats view needs
+    exam.js              generates mock-exam MCQ questions from already-studied cards
   routes/*.js          thin Express routers, one per resource (content/queue/review/stats/
-                       settings/curriculum/notes/export/cards/adaptiveLog)
+                       settings/curriculum/notes/export/cards/adaptiveLog/exam/stories)
   data/content/        hiragana.json, katakana.json, kanji.json, vocab.json, grammar.json,
-                       sentences.json, curriculum.json — seed content, versioned in git
+                       sentences.json, stories.json, curriculum.json — seed content, in git
   data/user/progress.json   generated on first run, git-tracked (user's choice) — the actual learner state
 public/
   index.html, styles.css
@@ -65,8 +76,9 @@ public/
                               of truth for how a card renders; study.js and browse.js both use it
   js/components/charts.js     tiny dependency-free inline-SVG bar chart
   js/components/tts.js        wraps window.speechSynthesis (best-effort, no bundled audio)
-  js/views/*.js         one render(root, navigate) function per tab, returns an optional
-                        cleanup function (only study.js needs one, for its keydown listener)
+  js/views/*.js         one render(root, navigate) function per tab (dashboard/study/stories/
+                        exam/browse/stats/settings), returns an optional cleanup function
+                        (study.js and exam.js need one, for their keydown listeners)
 .claude/
   skills/japanese-n4/SKILL.md   this file
   agents/japanese-content-writer.md   subagent for bulk content additions (see below)
@@ -103,6 +115,12 @@ queue items, curriculum weights): `hiragana`, `katakana`, `kanji`, `vocab`,
   **Every id in `words` must exist in vocab.json.** This is the dependency
   list the queue uses to auto-unlock a sentence (see below) — get it wrong
   and a sentence either never appears or appears before its words are known.
+- **stories.json** — `{id: "story-0001", type: "story", level, title,
+  titleReading, titleEn, lines: [{jp, reading, en}] (4-8), words: string[]
+  (union of vocab ids across all lines), grammar?: string[]}`. Same
+  word-dependency rule as sentences (**every id in `words` must exist in
+  vocab.json**), but stories are NOT part of the SRS queue — see the
+  Stories section below.
 - **curriculum.json** — not a card list. `{startDate, phases: [{name,
   fraction: number, unlocked: string[], weights: {type: number},
   newCardsOverride?}]}`. `fraction` values across all phases must sum to
@@ -193,6 +211,53 @@ lastReview, isLeech, note, history[]}`.
   "I have more time/motivation than today's pace assumed," not for jumping
   ahead in the curriculum.
 
+## Stories (server/routes/stories.js, public/js/views/stories.js)
+
+Short reading-practice passages (`stories.json`, 4-8 `lines` each) — reading
+comprehension practice, not spaced-repetition flashcards. Deliberately kept
+**outside** the SRS system entirely:
+- Not in `curriculum.json` weights, so `queue.pickNewCards` never touches
+  them and they never appear in the daily Study queue.
+- Not in `SRS_TRACKED_TYPES` (`content.js`), so `stats.computeStats` doesn't
+  try to give them a new/learning/known/mature breakdown — that framework
+  doesn't apply to a multi-sentence passage.
+- `GET /api/stories` returns every story annotated with a `readiness`
+  object (`{known, total, ready}`) computed from whether the words in its
+  `words` array are already `isKnown` — but this is purely informational.
+  Stories are never hidden/locked; the learner can read anything, they just
+  see how much vocabulary they already recognize first.
+- The reader (`stories.js` view) has independent "show reading"/"show
+  translation" toggles and a per-line + whole-story listen button, reusing
+  `components/tts.js`. No grading UI at all — there's nothing to grade.
+
+## Mock exam (server/lib/exam.js, routes/exam.js, public/js/views/exam.js)
+
+Multiple-choice quizzes generated **entirely from cards already in
+`progress.cards`** (i.e. already studied at least once) — never new
+material, and it needs zero authored quiz content:
+- Prompt/answer for a question come straight from the existing card's own
+  fields (`PROMPT_FIELD`/`ANSWER_FIELD` maps in `exam.js`, one pair per
+  type, covering all `SRS_TRACKED_TYPES` — `story` has no entry in either
+  map and is skipped, since it has no studied-card state to draw from).
+- Distractors are sampled from the **full content pool** of the same type
+  (not just studied cards) — this matters so early on, when only a handful
+  of cards are studied, there are still enough plausible wrong answers to
+  build a real question. If `pickDistractors` can't find even one valid
+  distractor (extremely small content pool for a type), that question is
+  dropped rather than shown with fewer than 2 choices.
+- **Exam answers never touch SRS state.** This is deliberate — it keeps
+  "what determines a card's schedule" to a single code path
+  (`routes/review.js` -> `srs.gradeCard`). An exam is purely a self-check;
+  only the aggregate score (`{date, total, correct, byType}`) is appended to
+  `progress.examLog` via `POST /api/exam/submit`, for the user's own
+  visibility over time. Don't wire exam results back into `progress.cards`
+  without discussing it first — it would blur that single-source-of-truth
+  model and there's already a real review path for updating schedules.
+- Frontend reuses `cardView.frontHtml(card)` to render the question prompt
+  (the exam question's `card` field is a full real card object) — don't
+  duplicate per-type prompt rendering in `exam.js`, keep using the shared
+  component.
+
 ## Adaptive engine (server/lib/adaptive.js)
 
 Runs at most once per calendar day (checked via `progress.lastAdaptiveRun`,
@@ -216,7 +281,7 @@ a black box.
 
 ```
 npm install
-npm start        # node server/index.js — http://127.0.0.1:3000
+npm start        # node server/index.js — http://127.0.0.1:3001 (see package.json's `config`)
 npm run dev       # node --watch server/index.js, restarts on file change
 ```
 
@@ -234,13 +299,14 @@ calling any change done:
   with a few manual `/api/review` calls and confirm `due`/`box`/`interval`
   move the way you expect — there's no automated test harness catching
   regressions here.
-- If `npm start` fails with `EADDRINUSE` on port 3000, don't assume it's a
-  leftover process you spawned and kill it — the user runs this app
-  themselves too, and it's very likely their own live session. Verify first
-  (e.g. does progress.json have very recent activity?), and prefer starting
-  a second instance on another port (`PORT=3001 npm start`) for read-only
-  verification (GET requests only — `/api/queue`, `/api/stats`, etc. don't
-  write) over touching whatever's already listening. Only grading a review
+- If `npm start` fails with `EADDRINUSE` on the configured port, don't
+  assume it's a leftover process you spawned and kill it — the user runs
+  this app themselves too, and it's very likely their own live session.
+  Verify first (e.g. does progress.json have very recent activity?), and
+  prefer starting a second instance on a throwaway port (`PORT=3099 npm
+  start` — the `PORT` env var overrides package.json's `config.port`) for
+  read-only verification (GET requests only — `/api/queue`, `/api/stats`,
+  etc. don't write) over touching whatever's already listening. Only grading a review
   writes to progress.json, and two Node processes writing to it around the
   same time can clobber each other's in-memory cache — avoid POSTing
   `/api/review` against a shared data file from a verification instance.

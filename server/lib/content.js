@@ -17,7 +17,14 @@ const FILES = {
   vocab: 'vocab.json',
   grammar: 'grammar.json',
   sentence: 'sentences.json',
+  story: 'stories.json',
 };
+
+// Content types that are reviewed through the SRS queue and therefore have
+// per-card state in progress.cards. `story` is deliberately excluded: it's
+// long-form reading practice, not a spaced-repetition flashcard, so it's
+// never introduced via queue.js and has no "known/mature/leech" state.
+export const SRS_TRACKED_TYPES = Object.keys(FILES).filter((t) => t !== 'story');
 
 export const CONTENT_TYPES = Object.keys(FILES);
 

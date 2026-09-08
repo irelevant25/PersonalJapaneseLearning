@@ -14,6 +14,8 @@ import notesRoutes from './routes/notes.js';
 import exportRoutes from './routes/export.js';
 import cardsRoutes from './routes/cards.js';
 import adaptiveLogRoutes from './routes/adaptiveLog.js';
+import examRoutes from './routes/exam.js';
+import storiesRoutes from './routes/stories.js';
 
 export async function createApp() {
   await loadContent();
@@ -46,6 +48,8 @@ export async function createApp() {
   app.use('/api/export', exportRoutes);
   app.use('/api/cards', cardsRoutes);
   app.use('/api/adaptive-log', adaptiveLogRoutes);
+  app.use('/api/exam', examRoutes);
+  app.use('/api/stories', storiesRoutes);
 
   app.get('/api/health', (req, res) => {
     const content = getContent();

@@ -3,13 +3,16 @@
 
 import { todayStr, addDays, diffDays } from './dates.js';
 import { isKnown, isDue, isMature } from './srs.js';
+import { SRS_TRACKED_TYPES } from './content.js';
 
 export function computeStats(progress, contentByType, curriculumPhase) {
   const today = todayStr();
   const cards = progress.cards;
 
+  // `story` is excluded here — it's not SRS-tracked (see content.js), so a
+  // new/learning/known/mature breakdown wouldn't mean anything for it.
   const byType = {};
-  for (const type of Object.keys(contentByType)) {
+  for (const type of SRS_TRACKED_TYPES) {
     const items = contentByType[type];
     let known = 0;
     let mature = 0;

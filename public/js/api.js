@@ -33,4 +33,8 @@ export const api = {
     request(`/notes/${encodeURIComponent(cardId)}`, { method: 'PUT', body: JSON.stringify({ note }) }),
   getAdaptiveLog: () => request('/adaptive-log'),
   addCard: (card) => request('/cards', { method: 'POST', body: JSON.stringify(card) }),
+  getStories: () => request('/stories'),
+  getExam: (count = 20) => request(`/exam?count=${encodeURIComponent(count)}`),
+  submitExam: (results) => request('/exam/submit', { method: 'POST', body: JSON.stringify({ results }) }),
+  getExamLog: () => request('/exam/log'),
 };

@@ -1882,5 +1882,1845 @@
       {"word": "言う", "reading": "いう", "meaning": "to say"},
       {"word": "言葉", "reading": "ことば", "meaning": "word, language"}
     ]
+  },
+  {
+    "id": "kanji-0146",
+    "type": "kanji",
+    "level": "N5",
+    "char": "何",
+    "onyomi": ["カ"],
+    "kunyomi": ["なに", "なん"],
+    "meaning": "what",
+    "examples": [
+      {"word": "何", "reading": "なに", "meaning": "what"},
+      {"word": "何時", "reading": "なんじ", "meaning": "what time"}
+    ]
+  },
+  {
+    "id": "kanji-0147",
+    "type": "kanji",
+    "level": "N4",
+    "char": "歩",
+    "onyomi": ["ホ"],
+    "kunyomi": ["ある.く", "あゆ.む"],
+    "meaning": "walk",
+    "examples": [
+      {"word": "歩く", "reading": "あるく", "meaning": "to walk"},
+      {"word": "散歩", "reading": "さんぽ", "meaning": "a walk, stroll"}
+    ]
+  },
+  {
+    "id": "kanji-0148",
+    "type": "kanji",
+    "level": "N4",
+    "char": "走",
+    "onyomi": ["ソウ"],
+    "kunyomi": ["はし.る"],
+    "meaning": "run",
+    "examples": [
+      {"word": "走る", "reading": "はしる", "meaning": "to run"},
+      {"word": "競走", "reading": "きょうそう", "meaning": "foot race"}
+    ]
+  },
+  {
+    "id": "kanji-0149",
+    "type": "kanji",
+    "level": "N4",
+    "char": "止",
+    "onyomi": ["シ"],
+    "kunyomi": ["と.まる", "と.める"],
+    "meaning": "stop",
+    "examples": [
+      {"word": "止まる", "reading": "とまる", "meaning": "to stop (intransitive)"},
+      {"word": "中止", "reading": "ちゅうし", "meaning": "cancellation"}
+    ]
+  },
+  {
+    "id": "kanji-0150",
+    "type": "kanji",
+    "level": "N4",
+    "char": "運",
+    "onyomi": ["ウン"],
+    "kunyomi": ["はこ.ぶ"],
+    "meaning": "carry, luck, fortune",
+    "examples": [
+      {"word": "運ぶ", "reading": "はこぶ", "meaning": "to carry"},
+      {"word": "運転", "reading": "うんてん", "meaning": "driving"}
+    ]
+  },
+  {
+    "id": "kanji-0151",
+    "type": "kanji",
+    "level": "N4",
+    "char": "通",
+    "onyomi": ["ツウ", "ツ"],
+    "kunyomi": ["とお.る", "かよ.う"],
+    "meaning": "pass through, commute",
+    "examples": [
+      {"word": "通る", "reading": "とおる", "meaning": "to pass through"},
+      {"word": "通う", "reading": "かよう", "meaning": "to commute, attend regularly"}
+    ]
+  },
+  {
+    "id": "kanji-0152",
+    "type": "kanji",
+    "level": "N4",
+    "char": "渡",
+    "onyomi": ["ト"],
+    "kunyomi": ["わた.る", "わた.す"],
+    "meaning": "cross, hand over",
+    "examples": [
+      {"word": "渡る", "reading": "わたる", "meaning": "to cross"},
+      {"word": "渡す", "reading": "わたす", "meaning": "to hand over"}
+    ]
+  },
+  {
+    "id": "kanji-0153",
+    "type": "kanji",
+    "level": "N4",
+    "char": "帰",
+    "onyomi": ["キ"],
+    "kunyomi": ["かえ.る"],
+    "meaning": "return, go home",
+    "examples": [
+      {"word": "帰る", "reading": "かえる", "meaning": "to go home, return"},
+      {"word": "帰国", "reading": "きこく", "meaning": "returning to one's home country"}
+    ]
+  },
+  {
+    "id": "kanji-0154",
+    "type": "kanji",
+    "level": "N4",
+    "char": "送",
+    "onyomi": ["ソウ"],
+    "kunyomi": ["おく.る"],
+    "meaning": "send",
+    "examples": [
+      {"word": "送る", "reading": "おくる", "meaning": "to send"},
+      {"word": "送料", "reading": "そうりょう", "meaning": "shipping fee"}
+    ]
+  },
+  {
+    "id": "kanji-0155",
+    "type": "kanji",
+    "level": "N4",
+    "char": "動",
+    "onyomi": ["ドウ"],
+    "kunyomi": ["うご.く", "うご.かす"],
+    "meaning": "move",
+    "examples": [
+      {"word": "動く", "reading": "うごく", "meaning": "to move"},
+      {"word": "運動", "reading": "うんどう", "meaning": "exercise"}
+    ]
+  },
+  {
+    "id": "kanji-0156",
+    "type": "kanji",
+    "level": "N4",
+    "char": "登",
+    "onyomi": ["トウ", "ト"],
+    "kunyomi": ["のぼ.る"],
+    "meaning": "climb, ascend",
+    "examples": [
+      {"word": "登る", "reading": "のぼる", "meaning": "to climb"},
+      {"word": "登山", "reading": "とざん", "meaning": "mountain climbing"}
+    ]
+  },
+  {
+    "id": "kanji-0157",
+    "type": "kanji",
+    "level": "N4",
+    "char": "飛",
+    "onyomi": ["ヒ"],
+    "kunyomi": ["と.ぶ", "と.ばす"],
+    "meaning": "fly",
+    "examples": [
+      {"word": "飛ぶ", "reading": "とぶ", "meaning": "to fly"},
+      {"word": "飛行機", "reading": "ひこうき", "meaning": "airplane"}
+    ]
+  },
+  {
+    "id": "kanji-0158",
+    "type": "kanji",
+    "level": "N4",
+    "char": "思",
+    "onyomi": ["シ"],
+    "kunyomi": ["おも.う"],
+    "meaning": "think",
+    "examples": [
+      {"word": "思う", "reading": "おもう", "meaning": "to think"},
+      {"word": "思い出", "reading": "おもいで", "meaning": "memory"}
+    ]
+  },
+  {
+    "id": "kanji-0159",
+    "type": "kanji",
+    "level": "N4",
+    "char": "考",
+    "onyomi": ["コウ"],
+    "kunyomi": ["かんが.える"],
+    "meaning": "think, consider",
+    "examples": [
+      {"word": "考える", "reading": "かんがえる", "meaning": "to think, consider"},
+      {"word": "考え", "reading": "かんがえ", "meaning": "thought, idea"}
+    ]
+  },
+  {
+    "id": "kanji-0160",
+    "type": "kanji",
+    "level": "N4",
+    "char": "楽",
+    "onyomi": ["ラク", "ガク"],
+    "kunyomi": ["たの.しい", "たの.しむ"],
+    "meaning": "fun, comfort, music",
+    "examples": [
+      {"word": "楽しい", "reading": "たのしい", "meaning": "fun, enjoyable"},
+      {"word": "音楽", "reading": "おんがく", "meaning": "music"}
+    ]
+  },
+  {
+    "id": "kanji-0161",
+    "type": "kanji",
+    "level": "N4",
+    "char": "悲",
+    "onyomi": ["ヒ"],
+    "kunyomi": ["かな.しい", "かな.しむ"],
+    "meaning": "sad",
+    "examples": [
+      {"word": "悲しい", "reading": "かなしい", "meaning": "sad"},
+      {"word": "悲しむ", "reading": "かなしむ", "meaning": "to grieve, feel sad"}
+    ]
+  },
+  {
+    "id": "kanji-0162",
+    "type": "kanji",
+    "level": "N4",
+    "char": "忘",
+    "onyomi": ["ボウ"],
+    "kunyomi": ["わす.れる"],
+    "meaning": "forget",
+    "examples": [
+      {"word": "忘れる", "reading": "わすれる", "meaning": "to forget"},
+      {"word": "忘れ物", "reading": "わすれもの", "meaning": "forgotten item"}
+    ]
+  },
+  {
+    "id": "kanji-0163",
+    "type": "kanji",
+    "level": "N4",
+    "char": "覚",
+    "onyomi": ["カク"],
+    "kunyomi": ["おぼ.える", "さ.める"],
+    "meaning": "remember, awaken",
+    "examples": [
+      {"word": "覚える", "reading": "おぼえる", "meaning": "to memorize, remember"},
+      {"word": "覚める", "reading": "さめる", "meaning": "to wake up, become clear-headed"}
+    ]
+  },
+  {
+    "id": "kanji-0164",
+    "type": "kanji",
+    "level": "N4",
+    "char": "感",
+    "onyomi": ["カン"],
+    "kunyomi": [],
+    "meaning": "feeling, emotion, sense",
+    "examples": [
+      {"word": "感じる", "reading": "かんじる", "meaning": "to feel"},
+      {"word": "感動", "reading": "かんどう", "meaning": "being deeply moved"}
+    ]
+  },
+  {
+    "id": "kanji-0165",
+    "type": "kanji",
+    "level": "N4",
+    "char": "信",
+    "onyomi": ["シン"],
+    "kunyomi": [],
+    "meaning": "believe, trust, faith",
+    "examples": [
+      {"word": "信じる", "reading": "しんじる", "meaning": "to believe"},
+      {"word": "自信", "reading": "じしん", "meaning": "self-confidence"}
+    ]
+  },
+  {
+    "id": "kanji-0166",
+    "type": "kanji",
+    "level": "N4",
+    "char": "笑",
+    "onyomi": ["ショウ"],
+    "kunyomi": ["わら.う", "え.む"],
+    "meaning": "laugh, smile",
+    "examples": [
+      {"word": "笑う", "reading": "わらう", "meaning": "to laugh"},
+      {"word": "笑顔", "reading": "えがお", "meaning": "smiling face"}
+    ]
+  },
+  {
+    "id": "kanji-0167",
+    "type": "kanji",
+    "level": "N4",
+    "char": "怒",
+    "onyomi": ["ド"],
+    "kunyomi": ["おこ.る", "いか.る"],
+    "meaning": "anger, get angry",
+    "examples": [
+      {"word": "怒る", "reading": "おこる", "meaning": "to get angry"},
+      {"word": "怒り", "reading": "いかり", "meaning": "anger"}
+    ]
+  },
+  {
+    "id": "kanji-0168",
+    "type": "kanji",
+    "level": "N4",
+    "char": "喜",
+    "onyomi": ["キ"],
+    "kunyomi": ["よろこ.ぶ"],
+    "meaning": "joy, glad",
+    "examples": [
+      {"word": "喜ぶ", "reading": "よろこぶ", "meaning": "to be glad, pleased"},
+      {"word": "喜び", "reading": "よろこび", "meaning": "joy, delight"}
+    ]
+  },
+  {
+    "id": "kanji-0169",
+    "type": "kanji",
+    "level": "N4",
+    "char": "病",
+    "onyomi": ["ビョウ", "ヘイ"],
+    "kunyomi": ["や.む", "やまい"],
+    "meaning": "illness, sickness",
+    "examples": [
+      {"word": "病気", "reading": "びょうき", "meaning": "illness"},
+      {"word": "病人", "reading": "びょうにん", "meaning": "sick person"}
+    ]
+  },
+  {
+    "id": "kanji-0170",
+    "type": "kanji",
+    "level": "N4",
+    "char": "院",
+    "onyomi": ["イン"],
+    "kunyomi": [],
+    "meaning": "institution, hall",
+    "examples": [
+      {"word": "病院", "reading": "びょういん", "meaning": "hospital"},
+      {"word": "入院", "reading": "にゅういん", "meaning": "hospitalization"}
+    ]
+  },
+  {
+    "id": "kanji-0171",
+    "type": "kanji",
+    "level": "N4",
+    "char": "痛",
+    "onyomi": ["ツウ"],
+    "kunyomi": ["いた.い", "いた.む"],
+    "meaning": "pain, hurt",
+    "examples": [
+      {"word": "痛い", "reading": "いたい", "meaning": "painful"},
+      {"word": "頭痛", "reading": "ずつう", "meaning": "headache"}
+    ]
+  },
+  {
+    "id": "kanji-0172",
+    "type": "kanji",
+    "level": "N4",
+    "char": "熱",
+    "onyomi": ["ネツ"],
+    "kunyomi": ["あつ.い"],
+    "meaning": "fever, heat",
+    "examples": [
+      {"word": "熱", "reading": "ねつ", "meaning": "fever"},
+      {"word": "熱い", "reading": "あつい", "meaning": "hot (to the touch)"}
+    ]
+  },
+  {
+    "id": "kanji-0173",
+    "type": "kanji",
+    "level": "N4",
+    "char": "声",
+    "onyomi": ["セイ"],
+    "kunyomi": ["こえ"],
+    "meaning": "voice",
+    "examples": [
+      {"word": "声", "reading": "こえ", "meaning": "voice"},
+      {"word": "大声", "reading": "おおごえ", "meaning": "loud voice"}
+    ]
+  },
+  {
+    "id": "kanji-0174",
+    "type": "kanji",
+    "level": "N4",
+    "char": "死",
+    "onyomi": ["シ"],
+    "kunyomi": ["し.ぬ"],
+    "meaning": "death, die",
+    "examples": [
+      {"word": "死ぬ", "reading": "しぬ", "meaning": "to die"},
+      {"word": "死亡", "reading": "しぼう", "meaning": "death, decease"}
+    ]
+  },
+  {
+    "id": "kanji-0175",
+    "type": "kanji",
+    "level": "N4",
+    "char": "疲",
+    "onyomi": ["ヒ"],
+    "kunyomi": ["つか.れる"],
+    "meaning": "tired, fatigued",
+    "examples": [
+      {"word": "疲れる", "reading": "つかれる", "meaning": "to get tired"},
+      {"word": "疲れ", "reading": "つかれ", "meaning": "fatigue, tiredness"}
+    ]
+  },
+  {
+    "id": "kanji-0176",
+    "type": "kanji",
+    "level": "N4",
+    "char": "眠",
+    "onyomi": ["ミン"],
+    "kunyomi": ["ねむ.る", "ねむ.い"],
+    "meaning": "sleep, sleepy",
+    "examples": [
+      {"word": "眠る", "reading": "ねむる", "meaning": "to sleep"},
+      {"word": "眠い", "reading": "ねむい", "meaning": "sleepy"}
+    ]
+  },
+  {
+    "id": "kanji-0177",
+    "type": "kanji",
+    "level": "N4",
+    "char": "寝",
+    "onyomi": ["シン"],
+    "kunyomi": ["ね.る", "ね.かす"],
+    "meaning": "sleep, lie down",
+    "examples": [
+      {"word": "寝る", "reading": "ねる", "meaning": "to sleep, go to bed"},
+      {"word": "昼寝", "reading": "ひるね", "meaning": "nap"}
+    ]
+  },
+  {
+    "id": "kanji-0178",
+    "type": "kanji",
+    "level": "N4",
+    "char": "晴",
+    "onyomi": ["セイ"],
+    "kunyomi": ["は.れる", "は.らす"],
+    "meaning": "clear up (weather)",
+    "examples": [
+      {"word": "晴れる", "reading": "はれる", "meaning": "to clear up"},
+      {"word": "晴れ", "reading": "はれ", "meaning": "fine weather, clear skies"}
+    ]
+  },
+  {
+    "id": "kanji-0179",
+    "type": "kanji",
+    "level": "N4",
+    "char": "曇",
+    "onyomi": ["ドン"],
+    "kunyomi": ["くも.る"],
+    "meaning": "cloudy, become cloudy",
+    "examples": [
+      {"word": "曇る", "reading": "くもる", "meaning": "to become cloudy"},
+      {"word": "曇り", "reading": "くもり", "meaning": "cloudy weather"}
+    ]
+  },
+  {
+    "id": "kanji-0180",
+    "type": "kanji",
+    "level": "N4",
+    "char": "涼",
+    "onyomi": ["リョウ"],
+    "kunyomi": ["すず.しい", "すず.む"],
+    "meaning": "cool, refreshing",
+    "examples": [
+      {"word": "涼しい", "reading": "すずしい", "meaning": "cool (weather)"},
+      {"word": "涼む", "reading": "すずむ", "meaning": "to cool oneself off"}
+    ]
+  },
+  {
+    "id": "kanji-0181",
+    "type": "kanji",
+    "level": "N4",
+    "char": "暖",
+    "onyomi": ["ダン"],
+    "kunyomi": ["あたた.かい", "あたた.まる"],
+    "meaning": "warm (weather)",
+    "examples": [
+      {"word": "暖かい", "reading": "あたたかい", "meaning": "warm (weather)"},
+      {"word": "暖房", "reading": "だんぼう", "meaning": "(indoor) heating"}
+    ]
+  },
+  {
+    "id": "kanji-0182",
+    "type": "kanji",
+    "level": "N4",
+    "char": "温",
+    "onyomi": ["オン"],
+    "kunyomi": ["あたた.かい", "あたた.める"],
+    "meaning": "warm, temperature",
+    "examples": [
+      {"word": "温かい", "reading": "あたたかい", "meaning": "warm (to the touch)"},
+      {"word": "温度", "reading": "おんど", "meaning": "temperature"}
+    ]
+  },
+  {
+    "id": "kanji-0183",
+    "type": "kanji",
+    "level": "N4",
+    "char": "建",
+    "onyomi": ["ケン"],
+    "kunyomi": ["た.てる", "た.つ"],
+    "meaning": "build, construct",
+    "examples": [
+      {"word": "建てる", "reading": "たてる", "meaning": "to build"},
+      {"word": "建物", "reading": "たてもの", "meaning": "building"}
+    ]
+  },
+  {
+    "id": "kanji-0184",
+    "type": "kanji",
+    "level": "N4",
+    "char": "図",
+    "onyomi": ["ズ", "ト"],
+    "kunyomi": [],
+    "meaning": "diagram, drawing, plan",
+    "examples": [
+      {"word": "図書館", "reading": "としょかん", "meaning": "library"},
+      {"word": "地図", "reading": "ちず", "meaning": "map"}
+    ]
+  },
+  {
+    "id": "kanji-0185",
+    "type": "kanji",
+    "level": "N4",
+    "char": "館",
+    "onyomi": ["カン"],
+    "kunyomi": [],
+    "meaning": "hall, building",
+    "examples": [
+      {"word": "図書館", "reading": "としょかん", "meaning": "library"},
+      {"word": "映画館", "reading": "えいがかん", "meaning": "movie theater"}
+    ]
+  },
+  {
+    "id": "kanji-0186",
+    "type": "kanji",
+    "level": "N4",
+    "char": "工",
+    "onyomi": ["コウ", "ク"],
+    "kunyomi": [],
+    "meaning": "craft, construction, work",
+    "examples": [
+      {"word": "工場", "reading": "こうじょう", "meaning": "factory"},
+      {"word": "大工", "reading": "だいく", "meaning": "carpenter"}
+    ]
+  },
+  {
+    "id": "kanji-0187",
+    "type": "kanji",
+    "level": "N4",
+    "char": "港",
+    "onyomi": ["コウ"],
+    "kunyomi": ["みなと"],
+    "meaning": "harbor, port",
+    "examples": [
+      {"word": "港", "reading": "みなと", "meaning": "harbor, port"},
+      {"word": "空港", "reading": "くうこう", "meaning": "airport"}
+    ]
+  },
+  {
+    "id": "kanji-0188",
+    "type": "kanji",
+    "level": "N4",
+    "char": "世",
+    "onyomi": ["セイ", "セ"],
+    "kunyomi": ["よ"],
+    "meaning": "world, generation, era",
+    "examples": [
+      {"word": "世界", "reading": "せかい", "meaning": "world"},
+      {"word": "世の中", "reading": "よのなか", "meaning": "society, the world"}
+    ]
+  },
+  {
+    "id": "kanji-0189",
+    "type": "kanji",
+    "level": "N4",
+    "char": "屋",
+    "onyomi": ["オク"],
+    "kunyomi": ["や"],
+    "meaning": "shop, roof, house (suffix)",
+    "examples": [
+      {"word": "屋上", "reading": "おくじょう", "meaning": "rooftop"},
+      {"word": "花屋", "reading": "はなや", "meaning": "flower shop"}
+    ]
+  },
+  {
+    "id": "kanji-0190",
+    "type": "kanji",
+    "level": "N4",
+    "char": "地",
+    "onyomi": ["チ", "ジ"],
+    "kunyomi": [],
+    "meaning": "ground, earth, land",
+    "examples": [
+      {"word": "地図", "reading": "ちず", "meaning": "map"},
+      {"word": "地下", "reading": "ちか", "meaning": "underground, basement"}
+    ]
+  },
+  {
+    "id": "kanji-0191",
+    "type": "kanji",
+    "level": "N4",
+    "char": "市",
+    "onyomi": ["シ"],
+    "kunyomi": ["いち"],
+    "meaning": "city, market",
+    "examples": [
+      {"word": "市役所", "reading": "しやくしょ", "meaning": "city hall"},
+      {"word": "市場", "reading": "いちば", "meaning": "market"}
+    ]
+  },
+  {
+    "id": "kanji-0192",
+    "type": "kanji",
+    "level": "N4",
+    "char": "町",
+    "onyomi": ["チョウ"],
+    "kunyomi": ["まち"],
+    "meaning": "town",
+    "examples": [
+      {"word": "町", "reading": "まち", "meaning": "town"},
+      {"word": "町長", "reading": "ちょうちょう", "meaning": "town mayor"}
+    ]
+  },
+  {
+    "id": "kanji-0193",
+    "type": "kanji",
+    "level": "N4",
+    "char": "村",
+    "onyomi": ["ソン"],
+    "kunyomi": ["むら"],
+    "meaning": "village",
+    "examples": [
+      {"word": "村", "reading": "むら", "meaning": "village"},
+      {"word": "農村", "reading": "のうそん", "meaning": "farming village"}
+    ]
+  },
+  {
+    "id": "kanji-0194",
+    "type": "kanji",
+    "level": "N4",
+    "char": "習",
+    "onyomi": ["シュウ"],
+    "kunyomi": ["なら.う"],
+    "meaning": "learn, practice",
+    "examples": [
+      {"word": "習う", "reading": "ならう", "meaning": "to learn (from someone)"},
+      {"word": "練習", "reading": "れんしゅう", "meaning": "practice"}
+    ]
+  },
+  {
+    "id": "kanji-0195",
+    "type": "kanji",
+    "level": "N4",
+    "char": "練",
+    "onyomi": ["レン"],
+    "kunyomi": ["ね.る"],
+    "meaning": "practice, train, knead",
+    "examples": [
+      {"word": "練習", "reading": "れんしゅう", "meaning": "practice"},
+      {"word": "訓練", "reading": "くんれん", "meaning": "training"}
+    ]
+  },
+  {
+    "id": "kanji-0196",
+    "type": "kanji",
+    "level": "N4",
+    "char": "勉",
+    "onyomi": ["ベン"],
+    "kunyomi": [],
+    "meaning": "exertion, study",
+    "examples": [
+      {"word": "勉強", "reading": "べんきょう", "meaning": "study"},
+      {"word": "勉強する", "reading": "べんきょうする", "meaning": "to study"}
+    ]
+  },
+  {
+    "id": "kanji-0197",
+    "type": "kanji",
+    "level": "N4",
+    "char": "強",
+    "onyomi": ["キョウ", "ゴウ"],
+    "kunyomi": ["つよ.い", "し.いる"],
+    "meaning": "strong",
+    "examples": [
+      {"word": "強い", "reading": "つよい", "meaning": "strong"},
+      {"word": "勉強", "reading": "べんきょう", "meaning": "study"}
+    ]
+  },
+  {
+    "id": "kanji-0198",
+    "type": "kanji",
+    "level": "N4",
+    "char": "宿",
+    "onyomi": ["シュク"],
+    "kunyomi": ["やど", "やど.る"],
+    "meaning": "lodging, inn",
+    "examples": [
+      {"word": "宿題", "reading": "しゅくだい", "meaning": "homework"},
+      {"word": "宿", "reading": "やど", "meaning": "inn, lodging"}
+    ]
+  },
+  {
+    "id": "kanji-0199",
+    "type": "kanji",
+    "level": "N4",
+    "char": "題",
+    "onyomi": ["ダイ"],
+    "kunyomi": [],
+    "meaning": "topic, subject, title",
+    "examples": [
+      {"word": "宿題", "reading": "しゅくだい", "meaning": "homework"},
+      {"word": "問題", "reading": "もんだい", "meaning": "problem, question"}
+    ]
+  },
+  {
+    "id": "kanji-0200",
+    "type": "kanji",
+    "level": "N4",
+    "char": "試",
+    "onyomi": ["シ"],
+    "kunyomi": ["こころ.みる", "ため.す"],
+    "meaning": "try, test",
+    "examples": [
+      {"word": "試験", "reading": "しけん", "meaning": "exam, test"},
+      {"word": "試す", "reading": "ためす", "meaning": "to try out"}
+    ]
+  },
+  {
+    "id": "kanji-0201",
+    "type": "kanji",
+    "level": "N4",
+    "char": "験",
+    "onyomi": ["ケン"],
+    "kunyomi": [],
+    "meaning": "test, verify, effect",
+    "examples": [
+      {"word": "試験", "reading": "しけん", "meaning": "exam"},
+      {"word": "経験", "reading": "けいけん", "meaning": "experience"}
+    ]
+  },
+  {
+    "id": "kanji-0202",
+    "type": "kanji",
+    "level": "N4",
+    "char": "卒",
+    "onyomi": ["ソツ"],
+    "kunyomi": [],
+    "meaning": "graduate",
+    "examples": [
+      {"word": "卒業", "reading": "そつぎょう", "meaning": "graduation"},
+      {"word": "卒業式", "reading": "そつぎょうしき", "meaning": "graduation ceremony"}
+    ]
+  },
+  {
+    "id": "kanji-0203",
+    "type": "kanji",
+    "level": "N4",
+    "char": "業",
+    "onyomi": ["ギョウ", "ゴウ"],
+    "kunyomi": [],
+    "meaning": "business, vocation, industry",
+    "examples": [
+      {"word": "卒業", "reading": "そつぎょう", "meaning": "graduation"},
+      {"word": "授業", "reading": "じゅぎょう", "meaning": "class, lesson"}
+    ]
+  },
+  {
+    "id": "kanji-0204",
+    "type": "kanji",
+    "level": "N4",
+    "char": "研",
+    "onyomi": ["ケン"],
+    "kunyomi": ["と.ぐ"],
+    "meaning": "study, polish, sharpen",
+    "examples": [
+      {"word": "研究", "reading": "けんきゅう", "meaning": "research"},
+      {"word": "研究室", "reading": "けんきゅうしつ", "meaning": "research lab, seminar room"}
+    ]
+  },
+  {
+    "id": "kanji-0205",
+    "type": "kanji",
+    "level": "N4",
+    "char": "発",
+    "onyomi": ["ハツ", "ホツ"],
+    "kunyomi": [],
+    "meaning": "departure, emit, start",
+    "examples": [
+      {"word": "出発", "reading": "しゅっぱつ", "meaning": "departure"},
+      {"word": "発表", "reading": "はっぴょう", "meaning": "presentation, announcement"}
+    ]
+  },
+  {
+    "id": "kanji-0206",
+    "type": "kanji",
+    "level": "N4",
+    "char": "表",
+    "onyomi": ["ヒョウ"],
+    "kunyomi": ["おもて", "あらわ.す"],
+    "meaning": "surface, express, table",
+    "examples": [
+      {"word": "発表", "reading": "はっぴょう", "meaning": "presentation"},
+      {"word": "表", "reading": "ひょう", "meaning": "table, chart"}
+    ]
+  },
+  {
+    "id": "kanji-0207",
+    "type": "kanji",
+    "level": "N4",
+    "char": "意",
+    "onyomi": ["イ"],
+    "kunyomi": [],
+    "meaning": "meaning, intention, mind",
+    "examples": [
+      {"word": "意味", "reading": "いみ", "meaning": "meaning"},
+      {"word": "注意", "reading": "ちゅうい", "meaning": "caution, attention"}
+    ]
+  },
+  {
+    "id": "kanji-0208",
+    "type": "kanji",
+    "level": "N4",
+    "char": "味",
+    "onyomi": ["ミ"],
+    "kunyomi": ["あじ", "あじ.わう"],
+    "meaning": "taste, flavor, meaning",
+    "examples": [
+      {"word": "味", "reading": "あじ", "meaning": "taste, flavor"},
+      {"word": "意味", "reading": "いみ", "meaning": "meaning"}
+    ]
+  },
+  {
+    "id": "kanji-0209",
+    "type": "kanji",
+    "level": "N4",
+    "char": "問",
+    "onyomi": ["モン"],
+    "kunyomi": ["と.う", "と.い"],
+    "meaning": "question, ask",
+    "examples": [
+      {"word": "質問", "reading": "しつもん", "meaning": "question"},
+      {"word": "問題", "reading": "もんだい", "meaning": "problem"}
+    ]
+  },
+  {
+    "id": "kanji-0210",
+    "type": "kanji",
+    "level": "N4",
+    "char": "答",
+    "onyomi": ["トウ"],
+    "kunyomi": ["こた.える", "こた.え"],
+    "meaning": "answer, reply",
+    "examples": [
+      {"word": "答える", "reading": "こたえる", "meaning": "to answer"},
+      {"word": "答え", "reading": "こたえ", "meaning": "answer"}
+    ]
+  },
+  {
+    "id": "kanji-0211",
+    "type": "kanji",
+    "level": "N4",
+    "char": "説",
+    "onyomi": ["セツ"],
+    "kunyomi": ["と.く"],
+    "meaning": "explain, theory, opinion",
+    "examples": [
+      {"word": "説明", "reading": "せつめい", "meaning": "explanation"},
+      {"word": "小説", "reading": "しょうせつ", "meaning": "novel"}
+    ]
+  },
+  {
+    "id": "kanji-0212",
+    "type": "kanji",
+    "level": "N4",
+    "char": "集",
+    "onyomi": ["シュウ"],
+    "kunyomi": ["あつ.まる", "あつ.める"],
+    "meaning": "gather, collect",
+    "examples": [
+      {"word": "集める", "reading": "あつめる", "meaning": "to gather, collect"},
+      {"word": "集まる", "reading": "あつまる", "meaning": "to gather, assemble"}
+    ]
+  },
+  {
+    "id": "kanji-0213",
+    "type": "kanji",
+    "level": "N4",
+    "char": "決",
+    "onyomi": ["ケツ"],
+    "kunyomi": ["き.める", "き.まる"],
+    "meaning": "decide",
+    "examples": [
+      {"word": "決める", "reading": "きめる", "meaning": "to decide"},
+      {"word": "決まる", "reading": "きまる", "meaning": "to be decided"}
+    ]
+  },
+  {
+    "id": "kanji-0214",
+    "type": "kanji",
+    "level": "N4",
+    "char": "選",
+    "onyomi": ["セン"],
+    "kunyomi": ["えら.ぶ"],
+    "meaning": "choose, select",
+    "examples": [
+      {"word": "選ぶ", "reading": "えらぶ", "meaning": "to choose"},
+      {"word": "選手", "reading": "せんしゅ", "meaning": "athlete, player"}
+    ]
+  },
+  {
+    "id": "kanji-0215",
+    "type": "kanji",
+    "level": "N4",
+    "char": "続",
+    "onyomi": ["ゾク"],
+    "kunyomi": ["つづ.く", "つづ.ける"],
+    "meaning": "continue",
+    "examples": [
+      {"word": "続く", "reading": "つづく", "meaning": "to continue (intransitive)"},
+      {"word": "続ける", "reading": "つづける", "meaning": "to continue (transitive)"}
+    ]
+  },
+  {
+    "id": "kanji-0216",
+    "type": "kanji",
+    "level": "N4",
+    "char": "教",
+    "onyomi": ["キョウ"],
+    "kunyomi": ["おし.える", "おそ.わる"],
+    "meaning": "teach",
+    "examples": [
+      {"word": "教える", "reading": "おしえる", "meaning": "to teach"},
+      {"word": "教室", "reading": "きょうしつ", "meaning": "classroom"}
+    ]
+  },
+  {
+    "id": "kanji-0217",
+    "type": "kanji",
+    "level": "N4",
+    "char": "個",
+    "onyomi": ["コ"],
+    "kunyomi": [],
+    "meaning": "counter for objects, individual",
+    "examples": [
+      {"word": "一個", "reading": "いっこ", "meaning": "one piece, item"},
+      {"word": "個人", "reading": "こじん", "meaning": "individual, private person"}
+    ]
+  },
+  {
+    "id": "kanji-0218",
+    "type": "kanji",
+    "level": "N4",
+    "char": "回",
+    "onyomi": ["カイ"],
+    "kunyomi": ["まわ.る", "まわ.す"],
+    "meaning": "times, counter for occurrences, turn",
+    "examples": [
+      {"word": "一回", "reading": "いっかい", "meaning": "one time, once"},
+      {"word": "回る", "reading": "まわる", "meaning": "to turn, go around"}
+    ]
+  },
+  {
+    "id": "kanji-0219",
+    "type": "kanji",
+    "level": "N4",
+    "char": "度",
+    "onyomi": ["ド", "ト"],
+    "kunyomi": ["たび"],
+    "meaning": "degree, times, occasion",
+    "examples": [
+      {"word": "今度", "reading": "こんど", "meaning": "this time, next time"},
+      {"word": "一度", "reading": "いちど", "meaning": "once, one time"}
+    ]
+  },
+  {
+    "id": "kanji-0220",
+    "type": "kanji",
+    "level": "N4",
+    "char": "番",
+    "onyomi": ["バン"],
+    "kunyomi": [],
+    "meaning": "number, order, watch",
+    "examples": [
+      {"word": "一番", "reading": "いちばん", "meaning": "number one, most"},
+      {"word": "番号", "reading": "ばんごう", "meaning": "number"}
+    ]
+  },
+  {
+    "id": "kanji-0221",
+    "type": "kanji",
+    "level": "N4",
+    "char": "同",
+    "onyomi": ["ドウ"],
+    "kunyomi": ["おな.じ"],
+    "meaning": "same",
+    "examples": [
+      {"word": "同じ", "reading": "おなじ", "meaning": "same"},
+      {"word": "同時", "reading": "どうじ", "meaning": "same time, simultaneous"}
+    ]
+  },
+  {
+    "id": "kanji-0222",
+    "type": "kanji",
+    "level": "N4",
+    "char": "台",
+    "onyomi": ["ダイ", "タイ"],
+    "kunyomi": [],
+    "meaning": "counter for machines/vehicles, stand",
+    "examples": [
+      {"word": "一台", "reading": "いちだい", "meaning": "one (machine, vehicle)"},
+      {"word": "台風", "reading": "たいふう", "meaning": "typhoon"}
+    ]
+  },
+  {
+    "id": "kanji-0223",
+    "type": "kanji",
+    "level": "N4",
+    "char": "池",
+    "onyomi": ["チ"],
+    "kunyomi": ["いけ"],
+    "meaning": "pond",
+    "examples": [
+      {"word": "池", "reading": "いけ", "meaning": "pond"},
+      {"word": "電池", "reading": "でんち", "meaning": "battery"}
+    ]
+  },
+  {
+    "id": "kanji-0224",
+    "type": "kanji",
+    "level": "N4",
+    "char": "湖",
+    "onyomi": ["コ"],
+    "kunyomi": ["みずうみ"],
+    "meaning": "lake",
+    "examples": [
+      {"word": "湖", "reading": "みずうみ", "meaning": "lake"}
+    ]
+  },
+  {
+    "id": "kanji-0225",
+    "type": "kanji",
+    "level": "N4",
+    "char": "光",
+    "onyomi": ["コウ"],
+    "kunyomi": ["ひかり", "ひか.る"],
+    "meaning": "light, shine",
+    "examples": [
+      {"word": "光", "reading": "ひかり", "meaning": "light"},
+      {"word": "光る", "reading": "ひかる", "meaning": "to shine, glitter"}
+    ]
+  },
+  {
+    "id": "kanji-0226",
+    "type": "kanji",
+    "level": "N4",
+    "char": "星",
+    "onyomi": ["セイ"],
+    "kunyomi": ["ほし"],
+    "meaning": "star",
+    "examples": [
+      {"word": "星", "reading": "ほし", "meaning": "star"},
+      {"word": "星座", "reading": "せいざ", "meaning": "constellation"}
+    ]
+  },
+  {
+    "id": "kanji-0227",
+    "type": "kanji",
+    "level": "N4",
+    "char": "弱",
+    "onyomi": ["ジャク"],
+    "kunyomi": ["よわ.い", "よわ.る"],
+    "meaning": "weak",
+    "examples": [
+      {"word": "弱い", "reading": "よわい", "meaning": "weak"},
+      {"word": "弱点", "reading": "じゃくてん", "meaning": "weak point"}
+    ]
+  },
+  {
+    "id": "kanji-0228",
+    "type": "kanji",
+    "level": "N4",
+    "char": "重",
+    "onyomi": ["ジュウ", "チョウ"],
+    "kunyomi": ["おも.い", "かさ.なる"],
+    "meaning": "heavy, important",
+    "examples": [
+      {"word": "重い", "reading": "おもい", "meaning": "heavy"},
+      {"word": "重要", "reading": "じゅうよう", "meaning": "important"}
+    ]
+  },
+  {
+    "id": "kanji-0229",
+    "type": "kanji",
+    "level": "N4",
+    "char": "軽",
+    "onyomi": ["ケイ"],
+    "kunyomi": ["かる.い"],
+    "meaning": "light (weight), casual",
+    "examples": [
+      {"word": "軽い", "reading": "かるい", "meaning": "light (in weight)"},
+      {"word": "軽食", "reading": "けいしょく", "meaning": "light meal, snack"}
+    ]
+  },
+  {
+    "id": "kanji-0230",
+    "type": "kanji",
+    "level": "N4",
+    "char": "深",
+    "onyomi": ["シン"],
+    "kunyomi": ["ふか.い"],
+    "meaning": "deep",
+    "examples": [
+      {"word": "深い", "reading": "ふかい", "meaning": "deep"},
+      {"word": "深夜", "reading": "しんや", "meaning": "late at night"}
+    ]
+  },
+  {
+    "id": "kanji-0231",
+    "type": "kanji",
+    "level": "N4",
+    "char": "浅",
+    "onyomi": ["セン"],
+    "kunyomi": ["あさ.い"],
+    "meaning": "shallow",
+    "examples": [
+      {"word": "浅い", "reading": "あさい", "meaning": "shallow"}
+    ]
+  },
+  {
+    "id": "kanji-0232",
+    "type": "kanji",
+    "level": "N4",
+    "char": "太",
+    "onyomi": ["タイ", "タ"],
+    "kunyomi": ["ふと.い", "ふと.る"],
+    "meaning": "thick, fat",
+    "examples": [
+      {"word": "太い", "reading": "ふとい", "meaning": "thick"},
+      {"word": "太る", "reading": "ふとる", "meaning": "to gain weight"}
+    ]
+  },
+  {
+    "id": "kanji-0233",
+    "type": "kanji",
+    "level": "N4",
+    "char": "細",
+    "onyomi": ["サイ"],
+    "kunyomi": ["ほそ.い", "こま.かい"],
+    "meaning": "thin, fine, detailed",
+    "examples": [
+      {"word": "細い", "reading": "ほそい", "meaning": "thin, slender"},
+      {"word": "細かい", "reading": "こまかい", "meaning": "fine, detailed, small"}
+    ]
+  },
+  {
+    "id": "kanji-0234",
+    "type": "kanji",
+    "level": "N4",
+    "char": "広",
+    "onyomi": ["コウ"],
+    "kunyomi": ["ひろ.い", "ひろ.げる"],
+    "meaning": "wide, spacious",
+    "examples": [
+      {"word": "広い", "reading": "ひろい", "meaning": "wide, spacious"},
+      {"word": "広場", "reading": "ひろば", "meaning": "plaza, open square"}
+    ]
+  },
+  {
+    "id": "kanji-0235",
+    "type": "kanji",
+    "level": "N4",
+    "char": "暗",
+    "onyomi": ["アン"],
+    "kunyomi": ["くら.い"],
+    "meaning": "dark",
+    "examples": [
+      {"word": "暗い", "reading": "くらい", "meaning": "dark"},
+      {"word": "暗記", "reading": "あんき", "meaning": "memorization"}
+    ]
+  },
+  {
+    "id": "kanji-0236",
+    "type": "kanji",
+    "level": "N4",
+    "char": "明",
+    "onyomi": ["メイ", "ミョウ"],
+    "kunyomi": ["あか.るい", "あき.らか"],
+    "meaning": "bright, clear",
+    "examples": [
+      {"word": "明るい", "reading": "あかるい", "meaning": "bright"},
+      {"word": "説明", "reading": "せつめい", "meaning": "explanation"}
+    ]
+  },
+  {
+    "id": "kanji-0237",
+    "type": "kanji",
+    "level": "N4",
+    "char": "静",
+    "onyomi": ["セイ", "ジョウ"],
+    "kunyomi": ["しず.か"],
+    "meaning": "quiet, still",
+    "examples": [
+      {"word": "静か", "reading": "しずか", "meaning": "quiet"},
+      {"word": "冷静", "reading": "れいせい", "meaning": "calm, composed"}
+    ]
+  },
+  {
+    "id": "kanji-0238",
+    "type": "kanji",
+    "level": "N4",
+    "char": "汚",
+    "onyomi": ["オ"],
+    "kunyomi": ["きたな.い", "よご.れる"],
+    "meaning": "dirty",
+    "examples": [
+      {"word": "汚い", "reading": "きたない", "meaning": "dirty"},
+      {"word": "汚れる", "reading": "よごれる", "meaning": "to get dirty"}
+    ]
+  },
+  {
+    "id": "kanji-0239",
+    "type": "kanji",
+    "level": "N4",
+    "char": "甘",
+    "onyomi": ["カン"],
+    "kunyomi": ["あま.い"],
+    "meaning": "sweet",
+    "examples": [
+      {"word": "甘い", "reading": "あまい", "meaning": "sweet"}
+    ]
+  },
+  {
+    "id": "kanji-0240",
+    "type": "kanji",
+    "level": "N4",
+    "char": "辛",
+    "onyomi": ["シン"],
+    "kunyomi": ["から.い", "つら.い"],
+    "meaning": "spicy, hard, painful",
+    "examples": [
+      {"word": "辛い", "reading": "からい", "meaning": "spicy"},
+      {"word": "辛口", "reading": "からくち", "meaning": "spicy, dry flavor"}
+    ]
+  },
+  {
+    "id": "kanji-0241",
+    "type": "kanji",
+    "level": "N4",
+    "char": "危",
+    "onyomi": ["キ"],
+    "kunyomi": ["あぶ.ない"],
+    "meaning": "dangerous",
+    "examples": [
+      {"word": "危ない", "reading": "あぶない", "meaning": "dangerous"},
+      {"word": "危険", "reading": "きけん", "meaning": "danger"}
+    ]
+  },
+  {
+    "id": "kanji-0242",
+    "type": "kanji",
+    "level": "N4",
+    "char": "忙",
+    "onyomi": ["ボウ"],
+    "kunyomi": ["いそが.しい"],
+    "meaning": "busy",
+    "examples": [
+      {"word": "忙しい", "reading": "いそがしい", "meaning": "busy"}
+    ]
+  },
+  {
+    "id": "kanji-0243",
+    "type": "kanji",
+    "level": "N4",
+    "char": "急",
+    "onyomi": ["キュウ"],
+    "kunyomi": ["いそ.ぐ"],
+    "meaning": "hurry, sudden, urgent",
+    "examples": [
+      {"word": "急ぐ", "reading": "いそぐ", "meaning": "to hurry"},
+      {"word": "急に", "reading": "きゅうに", "meaning": "suddenly"}
+    ]
+  },
+  {
+    "id": "kanji-0244",
+    "type": "kanji",
+    "level": "N4",
+    "char": "好",
+    "onyomi": ["コウ"],
+    "kunyomi": ["す.き", "この.む"],
+    "meaning": "like, fond of",
+    "examples": [
+      {"word": "好き", "reading": "すき", "meaning": "likable, favorite"},
+      {"word": "大好き", "reading": "だいすき", "meaning": "love, very fond of"}
+    ]
+  },
+  {
+    "id": "kanji-0245",
+    "type": "kanji",
+    "level": "N4",
+    "char": "色",
+    "onyomi": ["ショク", "シキ"],
+    "kunyomi": ["いろ"],
+    "meaning": "color",
+    "examples": [
+      {"word": "色", "reading": "いろ", "meaning": "color"},
+      {"word": "景色", "reading": "けしき", "meaning": "scenery"}
+    ]
+  },
+  {
+    "id": "kanji-0246",
+    "type": "kanji",
+    "level": "N4",
+    "char": "赤",
+    "onyomi": ["セキ"],
+    "kunyomi": ["あか", "あか.い"],
+    "meaning": "red",
+    "examples": [
+      {"word": "赤い", "reading": "あかい", "meaning": "red"},
+      {"word": "赤ちゃん", "reading": "あかちゃん", "meaning": "baby"}
+    ]
+  },
+  {
+    "id": "kanji-0247",
+    "type": "kanji",
+    "level": "N4",
+    "char": "青",
+    "onyomi": ["セイ"],
+    "kunyomi": ["あお", "あお.い"],
+    "meaning": "blue, green",
+    "examples": [
+      {"word": "青い", "reading": "あおい", "meaning": "blue"},
+      {"word": "青年", "reading": "せいねん", "meaning": "young man, youth"}
+    ]
+  },
+  {
+    "id": "kanji-0248",
+    "type": "kanji",
+    "level": "N4",
+    "char": "白",
+    "onyomi": ["ハク", "ビャク"],
+    "kunyomi": ["しろ", "しろ.い"],
+    "meaning": "white",
+    "examples": [
+      {"word": "白い", "reading": "しろい", "meaning": "white"},
+      {"word": "白紙", "reading": "はくし", "meaning": "blank paper"}
+    ]
+  },
+  {
+    "id": "kanji-0249",
+    "type": "kanji",
+    "level": "N4",
+    "char": "黒",
+    "onyomi": ["コク"],
+    "kunyomi": ["くろ", "くろ.い"],
+    "meaning": "black",
+    "examples": [
+      {"word": "黒い", "reading": "くろい", "meaning": "black"},
+      {"word": "黒板", "reading": "こくばん", "meaning": "blackboard"}
+    ]
+  },
+  {
+    "id": "kanji-0250",
+    "type": "kanji",
+    "level": "N4",
+    "char": "黄",
+    "onyomi": ["コウ", "オウ"],
+    "kunyomi": ["き", "こ"],
+    "meaning": "yellow",
+    "examples": [
+      {"word": "黄色", "reading": "きいろ", "meaning": "yellow"},
+      {"word": "黄色い", "reading": "きいろい", "meaning": "yellow (adjective)"}
+    ]
+  },
+  {
+    "id": "kanji-0251",
+    "type": "kanji",
+    "level": "N4",
+    "char": "丸",
+    "onyomi": ["ガン"],
+    "kunyomi": ["まる", "まる.い"],
+    "meaning": "circle, round",
+    "examples": [
+      {"word": "丸い", "reading": "まるい", "meaning": "round"},
+      {"word": "丸", "reading": "まる", "meaning": "circle"}
+    ]
+  },
+  {
+    "id": "kanji-0252",
+    "type": "kanji",
+    "level": "N4",
+    "char": "角",
+    "onyomi": ["カク"],
+    "kunyomi": ["かど", "つの"],
+    "meaning": "angle, corner, horn",
+    "examples": [
+      {"word": "三角", "reading": "さんかく", "meaning": "triangle"},
+      {"word": "角", "reading": "かど", "meaning": "corner"}
+    ]
+  },
+  {
+    "id": "kanji-0253",
+    "type": "kanji",
+    "level": "N4",
+    "char": "線",
+    "onyomi": ["セン"],
+    "kunyomi": [],
+    "meaning": "line",
+    "examples": [
+      {"word": "線", "reading": "せん", "meaning": "line"},
+      {"word": "直線", "reading": "ちょくせん", "meaning": "straight line"}
+    ]
+  },
+  {
+    "id": "kanji-0254",
+    "type": "kanji",
+    "level": "N4",
+    "char": "形",
+    "onyomi": ["ケイ", "ギョウ"],
+    "kunyomi": ["かたち", "かた"],
+    "meaning": "shape, form",
+    "examples": [
+      {"word": "形", "reading": "かたち", "meaning": "shape"},
+      {"word": "人形", "reading": "にんぎょう", "meaning": "doll"}
+    ]
+  },
+  {
+    "id": "kanji-0255",
+    "type": "kanji",
+    "level": "N4",
+    "char": "向",
+    "onyomi": ["コウ"],
+    "kunyomi": ["む.く", "む.こう"],
+    "meaning": "direction, face towards",
+    "examples": [
+      {"word": "向こう", "reading": "むこう", "meaning": "over there, beyond"},
+      {"word": "方向", "reading": "ほうこう", "meaning": "direction"}
+    ]
+  },
+  {
+    "id": "kanji-0256",
+    "type": "kanji",
+    "level": "N4",
+    "char": "隣",
+    "onyomi": ["リン"],
+    "kunyomi": ["とな.り"],
+    "meaning": "next to, neighbor",
+    "examples": [
+      {"word": "隣", "reading": "となり", "meaning": "next to, neighbor"},
+      {"word": "隣人", "reading": "りんじん", "meaning": "neighbor (person)"}
+    ]
+  },
+  {
+    "id": "kanji-0257",
+    "type": "kanji",
+    "level": "N4",
+    "char": "横",
+    "onyomi": ["オウ"],
+    "kunyomi": ["よこ"],
+    "meaning": "side, horizontal, width",
+    "examples": [
+      {"word": "横", "reading": "よこ", "meaning": "side"},
+      {"word": "横断", "reading": "おうだん", "meaning": "crossing"}
+    ]
+  },
+  {
+    "id": "kanji-0258",
+    "type": "kanji",
+    "level": "N4",
+    "char": "反",
+    "onyomi": ["ハン"],
+    "kunyomi": [],
+    "meaning": "opposite, anti-, against",
+    "examples": [
+      {"word": "反対", "reading": "はんたい", "meaning": "opposite, objection"},
+      {"word": "反省", "reading": "はんせい", "meaning": "reflection, self-examination"}
+    ]
+  },
+  {
+    "id": "kanji-0259",
+    "type": "kanji",
+    "level": "N4",
+    "char": "借",
+    "onyomi": ["シャク"],
+    "kunyomi": ["か.りる"],
+    "meaning": "borrow",
+    "examples": [
+      {"word": "借りる", "reading": "かりる", "meaning": "to borrow"},
+      {"word": "借金", "reading": "しゃっきん", "meaning": "debt, loan"}
+    ]
+  },
+  {
+    "id": "kanji-0260",
+    "type": "kanji",
+    "level": "N4",
+    "char": "貸",
+    "onyomi": ["タイ"],
+    "kunyomi": ["か.す"],
+    "meaning": "lend",
+    "examples": [
+      {"word": "貸す", "reading": "かす", "meaning": "to lend"},
+      {"word": "貸し出し", "reading": "かしだし", "meaning": "lending, checkout"}
+    ]
+  },
+  {
+    "id": "kanji-0261",
+    "type": "kanji",
+    "level": "N4",
+    "char": "返",
+    "onyomi": ["ヘン"],
+    "kunyomi": ["かえ.す", "かえ.る"],
+    "meaning": "return (something), reply",
+    "examples": [
+      {"word": "返す", "reading": "かえす", "meaning": "to return something"},
+      {"word": "返事", "reading": "へんじ", "meaning": "reply"}
+    ]
+  },
+  {
+    "id": "kanji-0262",
+    "type": "kanji",
+    "level": "N4",
+    "char": "知",
+    "onyomi": ["チ"],
+    "kunyomi": ["し.る"],
+    "meaning": "know",
+    "examples": [
+      {"word": "知る", "reading": "しる", "meaning": "to know"},
+      {"word": "知らせる", "reading": "しらせる", "meaning": "to inform, notify"}
+    ]
+  },
+  {
+    "id": "kanji-0263",
+    "type": "kanji",
+    "level": "N4",
+    "char": "始",
+    "onyomi": ["シ"],
+    "kunyomi": ["はじ.める", "はじ.まる"],
+    "meaning": "begin, start",
+    "examples": [
+      {"word": "始める", "reading": "はじめる", "meaning": "to begin (transitive)"},
+      {"word": "始まる", "reading": "はじまる", "meaning": "to begin (intransitive)"}
+    ]
+  },
+  {
+    "id": "kanji-0264",
+    "type": "kanji",
+    "level": "N4",
+    "char": "終",
+    "onyomi": ["シュウ"],
+    "kunyomi": ["お.わる", "お.える"],
+    "meaning": "end, finish",
+    "examples": [
+      {"word": "終わる", "reading": "おわる", "meaning": "to end, finish"},
+      {"word": "終電", "reading": "しゅうでん", "meaning": "last train"}
+    ]
+  },
+  {
+    "id": "kanji-0265",
+    "type": "kanji",
+    "level": "N4",
+    "char": "座",
+    "onyomi": ["ザ"],
+    "kunyomi": ["すわ.る"],
+    "meaning": "sit, seat",
+    "examples": [
+      {"word": "座る", "reading": "すわる", "meaning": "to sit"},
+      {"word": "座席", "reading": "ざせき", "meaning": "seat"}
+    ]
+  },
+  {
+    "id": "kanji-0266",
+    "type": "kanji",
+    "level": "N4",
+    "char": "洗",
+    "onyomi": ["セン"],
+    "kunyomi": ["あら.う"],
+    "meaning": "wash",
+    "examples": [
+      {"word": "洗う", "reading": "あらう", "meaning": "to wash"},
+      {"word": "洗濯", "reading": "せんたく", "meaning": "laundry"}
+    ]
+  },
+  {
+    "id": "kanji-0267",
+    "type": "kanji",
+    "level": "N4",
+    "char": "育",
+    "onyomi": ["イク"],
+    "kunyomi": ["そだ.てる", "そだ.つ"],
+    "meaning": "raise, grow, rear",
+    "examples": [
+      {"word": "育てる", "reading": "そだてる", "meaning": "to raise, bring up"},
+      {"word": "教育", "reading": "きょういく", "meaning": "education"}
+    ]
+  },
+  {
+    "id": "kanji-0268",
+    "type": "kanji",
+    "level": "N4",
+    "char": "治",
+    "onyomi": ["ジ", "チ"],
+    "kunyomi": ["なお.る", "なお.す", "おさ.める"],
+    "meaning": "heal, govern, cure",
+    "examples": [
+      {"word": "治る", "reading": "なおる", "meaning": "to heal, be cured"},
+      {"word": "政治", "reading": "せいじ", "meaning": "politics"}
+    ]
+  },
+  {
+    "id": "kanji-0269",
+    "type": "kanji",
+    "level": "N4",
+    "char": "直",
+    "onyomi": ["チョク", "ジキ"],
+    "kunyomi": ["なお.す", "なお.る"],
+    "meaning": "fix, straight, direct",
+    "examples": [
+      {"word": "直す", "reading": "なおす", "meaning": "to fix, repair"},
+      {"word": "直接", "reading": "ちょくせつ", "meaning": "direct, firsthand"}
+    ]
+  },
+  {
+    "id": "kanji-0270",
+    "type": "kanji",
+    "level": "N4",
+    "char": "壊",
+    "onyomi": ["カイ"],
+    "kunyomi": ["こわ.す", "こわ.れる"],
+    "meaning": "break, destroy",
+    "examples": [
+      {"word": "壊す", "reading": "こわす", "meaning": "to break, destroy"},
+      {"word": "壊れる", "reading": "こわれる", "meaning": "to break, get broken"}
+    ]
+  },
+  {
+    "id": "kanji-0271",
+    "type": "kanji",
+    "level": "N4",
+    "char": "捨",
+    "onyomi": ["シャ"],
+    "kunyomi": ["す.てる"],
+    "meaning": "discard, throw away",
+    "examples": [
+      {"word": "捨てる", "reading": "すてる", "meaning": "to throw away, discard"}
+    ]
+  },
+  {
+    "id": "kanji-0272",
+    "type": "kanji",
+    "level": "N4",
+    "char": "配",
+    "onyomi": ["ハイ"],
+    "kunyomi": ["くば.る"],
+    "meaning": "distribute, allot",
+    "examples": [
+      {"word": "配る", "reading": "くばる", "meaning": "to distribute, hand out"},
+      {"word": "心配", "reading": "しんぱい", "meaning": "worry, concern"}
+    ]
+  },
+  {
+    "id": "kanji-0273",
+    "type": "kanji",
+    "level": "N4",
+    "char": "払",
+    "onyomi": ["フツ"],
+    "kunyomi": ["はら.う"],
+    "meaning": "pay, sweep away",
+    "examples": [
+      {"word": "払う", "reading": "はらう", "meaning": "to pay"},
+      {"word": "支払う", "reading": "しはらう", "meaning": "to pay (a bill)"}
+    ]
+  },
+  {
+    "id": "kanji-0274",
+    "type": "kanji",
+    "level": "N4",
+    "char": "頼",
+    "onyomi": ["ライ"],
+    "kunyomi": ["たの.む", "たよ.る"],
+    "meaning": "rely on, request",
+    "examples": [
+      {"word": "頼む", "reading": "たのむ", "meaning": "to ask, request"},
+      {"word": "頼る", "reading": "たよる", "meaning": "to rely on"}
+    ]
+  },
+  {
+    "id": "kanji-0275",
+    "type": "kanji",
+    "level": "N4",
+    "char": "許",
+    "onyomi": ["キョ"],
+    "kunyomi": ["ゆる.す"],
+    "meaning": "permit, forgive",
+    "examples": [
+      {"word": "許す", "reading": "ゆるす", "meaning": "to forgive, allow"},
+      {"word": "許可", "reading": "きょか", "meaning": "permission"}
+    ]
+  },
+  {
+    "id": "kanji-0276",
+    "type": "kanji",
+    "level": "N4",
+    "char": "断",
+    "onyomi": ["ダン"],
+    "kunyomi": ["ことわ.る", "た.つ"],
+    "meaning": "refuse, decline, cut off",
+    "examples": [
+      {"word": "断る", "reading": "ことわる", "meaning": "to refuse, decline"},
+      {"word": "判断", "reading": "はんだん", "meaning": "judgment"}
+    ]
+  },
+  {
+    "id": "kanji-0277",
+    "type": "kanji",
+    "level": "N4",
+    "char": "謝",
+    "onyomi": ["シャ"],
+    "kunyomi": ["あやま.る"],
+    "meaning": "apologize, thank",
+    "examples": [
+      {"word": "謝る", "reading": "あやまる", "meaning": "to apologize"},
+      {"word": "感謝", "reading": "かんしゃ", "meaning": "gratitude, thanks"}
+    ]
+  },
+  {
+    "id": "kanji-0278",
+    "type": "kanji",
+    "level": "N4",
+    "char": "違",
+    "onyomi": ["イ"],
+    "kunyomi": ["ちが.う", "ちが.える"],
+    "meaning": "differ, be wrong",
+    "examples": [
+      {"word": "違う", "reading": "ちがう", "meaning": "to differ, be different"},
+      {"word": "間違える", "reading": "まちがえる", "meaning": "to make a mistake"}
+    ]
+  },
+  {
+    "id": "kanji-0279",
+    "type": "kanji",
+    "level": "N4",
+    "char": "合",
+    "onyomi": ["ゴウ", "ガッ"],
+    "kunyomi": ["あ.う", "あ.わせる"],
+    "meaning": "fit, match, combine",
+    "examples": [
+      {"word": "合う", "reading": "あう", "meaning": "to fit, match"},
+      {"word": "都合", "reading": "つごう", "meaning": "circumstances, convenience"}
+    ]
+  },
+  {
+    "id": "kanji-0280",
+    "type": "kanji",
+    "level": "N4",
+    "char": "別",
+    "onyomi": ["ベツ"],
+    "kunyomi": ["わか.れる"],
+    "meaning": "separate, different, another",
+    "examples": [
+      {"word": "別れる", "reading": "わかれる", "meaning": "to part ways, break up"},
+      {"word": "特別", "reading": "とくべつ", "meaning": "special"}
+    ]
+  },
+  {
+    "id": "kanji-0281",
+    "type": "kanji",
+    "level": "N4",
+    "char": "増",
+    "onyomi": ["ゾウ"],
+    "kunyomi": ["ふ.える", "ふ.やす"],
+    "meaning": "increase",
+    "examples": [
+      {"word": "増える", "reading": "ふえる", "meaning": "to increase (intransitive)"},
+      {"word": "増やす", "reading": "ふやす", "meaning": "to increase (transitive)"}
+    ]
+  },
+  {
+    "id": "kanji-0282",
+    "type": "kanji",
+    "level": "N4",
+    "char": "減",
+    "onyomi": ["ゲン"],
+    "kunyomi": ["へ.る", "へ.らす"],
+    "meaning": "decrease",
+    "examples": [
+      {"word": "減る", "reading": "へる", "meaning": "to decrease (intransitive)"},
+      {"word": "減らす", "reading": "へらす", "meaning": "to decrease (transitive)"}
+    ]
+  },
+  {
+    "id": "kanji-0283",
+    "type": "kanji",
+    "level": "N4",
+    "char": "変",
+    "onyomi": ["ヘン"],
+    "kunyomi": ["か.わる", "か.える"],
+    "meaning": "change, strange",
+    "examples": [
+      {"word": "変わる", "reading": "かわる", "meaning": "to change (intransitive)"},
+      {"word": "変える", "reading": "かえる", "meaning": "to change (transitive)"}
+    ]
+  },
+  {
+    "id": "kanji-0284",
+    "type": "kanji",
+    "level": "N4",
+    "char": "探",
+    "onyomi": ["タン"],
+    "kunyomi": ["さが.す"],
+    "meaning": "search for",
+    "examples": [
+      {"word": "探す", "reading": "さがす", "meaning": "to search for, look for"}
+    ]
+  },
+  {
+    "id": "kanji-0285",
+    "type": "kanji",
+    "level": "N4",
+    "char": "調",
+    "onyomi": ["チョウ"],
+    "kunyomi": ["しら.べる", "ととの.う"],
+    "meaning": "investigate, tune, prepare",
+    "examples": [
+      {"word": "調べる", "reading": "しらべる", "meaning": "to investigate, check"},
+      {"word": "調子", "reading": "ちょうし", "meaning": "condition, tone"}
+    ]
+  },
+  {
+    "id": "kanji-0286",
+    "type": "kanji",
+    "level": "N4",
+    "char": "起",
+    "onyomi": ["キ"],
+    "kunyomi": ["お.きる", "お.こる", "お.こす"],
+    "meaning": "wake up, occur, rise",
+    "examples": [
+      {"word": "起きる", "reading": "おきる", "meaning": "to wake up, get up"},
+      {"word": "起こる", "reading": "おこる", "meaning": "to happen, occur"}
+    ]
+  },
+  {
+    "id": "kanji-0287",
+    "type": "kanji",
+    "level": "N4",
+    "char": "付",
+    "onyomi": ["フ"],
+    "kunyomi": ["つ.く", "つ.ける"],
+    "meaning": "attach, stick",
+    "examples": [
+      {"word": "気を付ける", "reading": "きをつける", "meaning": "to be careful"},
+      {"word": "付く", "reading": "つく", "meaning": "to be attached, stuck"}
+    ]
   }
 ]

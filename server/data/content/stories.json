@@ -1,0 +1,347 @@
+[
+  {
+    "id": "story-0001",
+    "type": "story",
+    "level": "N5",
+    "title": "毎日",
+    "titleReading": "まいにち",
+    "titleEn": "Every Day",
+    "lines": [
+      { "jp": "私は毎日、朝ご飯を食べます。", "reading": "わたしはまいにち、あさごはんをたべます。", "en": "Every day, I eat breakfast." },
+      { "jp": "そして、電車で学校へ行きます。", "reading": "そして、でんしゃでがっこうへいきます。", "en": "Then, I go to school by train." },
+      { "jp": "学校で日本語を勉強します。", "reading": "がっこうでにほんごをべんきょうします。", "en": "I study Japanese at school." },
+      { "jp": "午後、友達と昼ご飯を食べます。", "reading": "ごご、ともだちとひるごはんをたべます。", "en": "In the afternoon, I eat lunch with a friend." },
+      { "jp": "家に帰って、晩ご飯を食べて、寝ます。", "reading": "いえにかえって、ばんごはんをたべて、ねます。", "en": "I go home, eat dinner, and go to sleep." }
+    ],
+    "words": ["vocab-0266", "vocab-0028", "vocab-0073", "vocab-0084", "vocab-0196", "vocab-0204", "vocab-0199", "vocab-0112", "vocab-0282", "vocab-0098", "vocab-0036", "vocab-0047", "vocab-0074", "vocab-0201", "vocab-0114", "vocab-0075", "vocab-0083"],
+    "grammar": []
+  },
+  {
+    "id": "story-0002",
+    "type": "story",
+    "level": "N5",
+    "title": "私の家族",
+    "titleReading": "わたしのかぞく",
+    "titleEn": "My Family",
+    "lines": [
+      { "jp": "私の家族は大きいです。", "reading": "わたしのかぞくはおおきいです。", "en": "My family is big." },
+      { "jp": "父は会社で働いています。", "reading": "ちちはかいしゃではたらいています。", "en": "My father is working at a company." },
+      { "jp": "母は料理が上手です。", "reading": "はははりょうりがじょうずです。", "en": "My mother is good at cooking." },
+      { "jp": "兄は大学で勉強しています。", "reading": "あにはだいがくでべんきょうしています。", "en": "My older brother is studying at university." },
+      { "jp": "妹は小さくて、元気です。", "reading": "いもうとはちいさくて、げんきです。", "en": "My younger sister is small and energetic." }
+    ],
+    "words": ["vocab-0266", "vocab-0037", "vocab-0144", "vocab-0038", "vocab-0200", "vocab-0092", "vocab-0039", "vocab-0078", "vocab-0167", "vocab-0042", "vocab-0227", "vocab-0098", "vocab-0045", "vocab-0145", "vocab-0058"],
+    "grammar": ["gram-0004"]
+  },
+  {
+    "id": "story-0003",
+    "type": "story",
+    "level": "N5",
+    "title": "天気",
+    "titleReading": "てんき",
+    "titleEn": "The Weather",
+    "lines": [
+      { "jp": "今日は天気がいいです。", "reading": "きょうはてんきがいいです。", "en": "The weather is nice today." },
+      { "jp": "空はとてもきれいです。", "reading": "そらはとてもきれいです。", "en": "The sky is very pretty." },
+      { "jp": "でも、少し寒いです。", "reading": "でも、すこしさむいです。", "en": "But it's a little cold." },
+      { "jp": "明日も寒いと思います。", "reading": "あしたもさむいとおもいます。", "en": "I think tomorrow will be cold too." },
+      { "jp": "私は暑い天気より寒い天気のほうが好きです。", "reading": "わたしはあついてんきよりさむいてんきのほうがすきです。", "en": "I like cold weather more than hot weather." }
+    ],
+    "words": ["vocab-0024", "vocab-0238", "vocab-0148", "vocab-0241", "vocab-0182", "vocab-0177", "vocab-0197", "vocab-0183", "vocab-0161", "vocab-0025", "vocab-0130", "vocab-0266", "vocab-0160", "vocab-0165"],
+    "grammar": ["gram-0005"]
+  },
+  {
+    "id": "story-0004",
+    "type": "story",
+    "level": "N5",
+    "title": "友達",
+    "titleReading": "ともだち",
+    "titleEn": "My Friend",
+    "lines": [
+      { "jp": "私には親切な友達がいます。", "reading": "わたしにはしんせつなともだちがいます。", "en": "I have a kind friend." },
+      { "jp": "彼女はいつも元気で、面白いです。", "reading": "かのじょはいつもげんきで、おもしろいです。", "en": "She's always energetic and funny." },
+      { "jp": "彼女はスポーツが上手です。", "reading": "かのじょはスポーツがじょうずです。", "en": "She's good at sports." },
+      { "jp": "私たちはよく公園で一緒に散歩します。", "reading": "わたしたちはよくこうえんでいっしょにさんぽします。", "en": "We often take walks together in the park." },
+      { "jp": "友達といつも楽しいです。", "reading": "ともだちといつもたのしいです。", "en": "It's always fun with my friend." }
+    ],
+    "words": ["vocab-0266", "vocab-0172", "vocab-0047", "vocab-0280", "vocab-0269", "vocab-0191", "vocab-0058", "vocab-0158", "vocab-0251", "vocab-0167", "vocab-0185", "vocab-0214", "vocab-0193", "vocab-0121", "vocab-0157"],
+    "grammar": []
+  },
+  {
+    "id": "story-0005",
+    "type": "story",
+    "level": "N5",
+    "title": "学校",
+    "titleReading": "がっこう",
+    "titleEn": "School",
+    "lines": [
+      { "jp": "私の学校は駅から近いです。", "reading": "わたしのがっこうはえきからちかいです。", "en": "My school is close to the station." },
+      { "jp": "先生はいつも親切です。", "reading": "せんせいはいつもしんせつです。", "en": "The teacher is always kind." },
+      { "jp": "授業は少し難しいです。", "reading": "じゅぎょうはすこしむずかしいです。", "en": "Classes are a little difficult." },
+      { "jp": "でも、宿題は簡単です。", "reading": "でも、しゅくだいはかんたんです。", "en": "But the homework is simple." },
+      { "jp": "私は毎日、学校で漢字を習います。", "reading": "わたしはまいにち、がっこうでかんじをならいます。", "en": "I learn kanji at school every day." }
+    ],
+    "words": ["vocab-0266", "vocab-0199", "vocab-0203", "vocab-0164", "vocab-0225", "vocab-0191", "vocab-0172", "vocab-0228", "vocab-0183", "vocab-0159", "vocab-0197", "vocab-0229", "vocab-0173", "vocab-0028", "vocab-0237", "vocab-0129"],
+    "grammar": []
+  },
+  {
+    "id": "story-0006",
+    "type": "story",
+    "level": "N5",
+    "title": "買い物",
+    "titleReading": "かいもの",
+    "titleEn": "Shopping",
+    "lines": [
+      { "jp": "今日は友達とスーパーへ行きます。", "reading": "きょうはともだちとスーパーへいきます。", "en": "Today I'm going to the supermarket with my friend." },
+      { "jp": "果物と野菜を買います。", "reading": "くだものとやさいをかいます。", "en": "We buy fruit and vegetables." },
+      { "jp": "魚は安いですが、肉は高いです。", "reading": "さかなはやすいですが、にくはたかいです。", "en": "Fish is cheap, but meat is expensive." },
+      { "jp": "パンも少し買います。", "reading": "パンもすこしかいます。", "en": "We also buy a little bread." },
+      { "jp": "家に帰って、晩ご飯を作ります。", "reading": "いえにかえって、ばんごはんをつくります。", "en": "We go home and make dinner." }
+    ],
+    "words": ["vocab-0024", "vocab-0047", "vocab-0224", "vocab-0112", "vocab-0070", "vocab-0069", "vocab-0089", "vocab-0068", "vocab-0151", "vocab-0067", "vocab-0150", "vocab-0066", "vocab-0183", "vocab-0201", "vocab-0114", "vocab-0075", "vocab-0090"],
+    "grammar": []
+  },
+  {
+    "id": "story-0007",
+    "type": "story",
+    "level": "N4",
+    "title": "公園",
+    "titleReading": "こうえん",
+    "titleEn": "The Park",
+    "lines": [
+      { "jp": "私の家の近くに公園があります。", "reading": "わたしのいえのちかくにこうえんがあります。", "en": "There is a park near my house." },
+      { "jp": "天気がいいと、よく散歩します。", "reading": "てんきがいいと、よくさんぽします。", "en": "When the weather is nice, I often take a walk." },
+      { "jp": "音楽を聞きながら、歩きます。", "reading": "おんがくをききながら、あるきます。", "en": "I walk while listening to music." },
+      { "jp": "公園には大きい木がたくさんあります。", "reading": "こうえんにはおおきいきがたくさんあります。", "en": "There are a lot of big trees in the park." },
+      { "jp": "花もとてもきれいです。", "reading": "はなもとてもきれいです。", "en": "The flowers are also very pretty." },
+      { "jp": "公園を歩くと、元気になります。", "reading": "こうえんをあるくと、げんきになります。", "en": "When I walk in the park, I feel energetic." }
+    ],
+    "words": ["vocab-0266", "vocab-0201", "vocab-0164", "vocab-0214", "vocab-0279", "vocab-0238", "vocab-0148", "vocab-0185", "vocab-0121", "vocab-0247", "vocab-0127", "vocab-0115", "vocab-0144", "vocab-0245", "vocab-0184", "vocab-0244", "vocab-0182", "vocab-0177", "vocab-0058"],
+    "grammar": ["gram-0019", "gram-0029", "gram-0039"]
+  },
+  {
+    "id": "story-0008",
+    "type": "story",
+    "level": "N4",
+    "title": "趣味",
+    "titleReading": "しゅみ",
+    "titleEn": "Hobbies",
+    "lines": [
+      { "jp": "私の趣味は音楽です。", "reading": "わたしのしゅみはおんがくです。", "en": "My hobby is music." },
+      { "jp": "私は歌を歌ったり、写真を見たりします。", "reading": "わたしはうたをうたったり、しゃしんをみたりします。", "en": "I do things like singing songs and looking at photos." },
+      { "jp": "音楽を聞くことも好きです。", "reading": "おんがくをきくこともすきです。", "en": "I also like listening to music." },
+      { "jp": "友達は映画を見るのが好きです。", "reading": "ともだちはえいがをみるのがすきです。", "en": "My friend likes watching movies." },
+      { "jp": "私は映画より音楽のほうが好きです。", "reading": "わたしはえいがよりおんがくのほうがすきです。", "en": "I like music more than movies." },
+      { "jp": "歌はあまり上手ではありませんが、とても楽しいです。", "reading": "うたはあまりじょうずではありませんが、とてもたのしいです。", "en": "I'm not very good at singing, but it's very fun." }
+    ],
+    "words": ["vocab-0266", "vocab-0253", "vocab-0247", "vocab-0249", "vocab-0136", "vocab-0250", "vocab-0086", "vocab-0127", "vocab-0165", "vocab-0047", "vocab-0248", "vocab-0186", "vocab-0167", "vocab-0182", "vocab-0157"],
+    "grammar": ["gram-0028", "gram-0005"]
+  },
+  {
+    "id": "story-0009",
+    "type": "story",
+    "level": "N4",
+    "title": "図書館",
+    "titleReading": "としょかん",
+    "titleEn": "The Library",
+    "lines": [
+      { "jp": "家の近くに図書館があります。", "reading": "いえのちかくにとしょかんがあります。", "en": "There is a library near my house." },
+      { "jp": "図書館はいつも静かなので、勉強しやすいです。", "reading": "としょかんはいつもしずかなので、べんきょうしやすいです。", "en": "Since the library is always quiet, it's easy to study there." },
+      { "jp": "図書館で本を読んでもいいです。", "reading": "としょかんでほんをよんでもいいです。", "en": "You may read books in the library." },
+      { "jp": "でも、図書館で話してはいけません。", "reading": "でも、としょかんではなしてはいけません。", "en": "But you must not talk in the library." },
+      { "jp": "辞書もたくさんあるので、便利です。", "reading": "じしょもたくさんあるので、べんりです。", "en": "There are also a lot of dictionaries, so it's convenient." },
+      { "jp": "私は時々、図書館で宿題をします。", "reading": "わたしはときどき、としょかんでしゅくだいをします。", "en": "I sometimes do my homework at the library." }
+    ],
+    "words": ["vocab-0201", "vocab-0164", "vocab-0215", "vocab-0279", "vocab-0191", "vocab-0169", "vocab-0098", "vocab-0231", "vocab-0087", "vocab-0148", "vocab-0197", "vocab-0126", "vocab-0232", "vocab-0184", "vocab-0170", "vocab-0266", "vocab-0192", "vocab-0229"],
+    "grammar": ["gram-0031", "gram-0037", "gram-0002", "gram-0003"]
+  },
+  {
+    "id": "story-0010",
+    "type": "story",
+    "level": "N4",
+    "title": "仕事",
+    "titleReading": "しごと",
+    "titleEn": "Work",
+    "lines": [
+      { "jp": "父の仕事はとても忙しいです。", "reading": "ちちのしごとはとてもいそがしいです。", "en": "My father's job is very busy." },
+      { "jp": "毎日、会社で働いています。", "reading": "まいにち、かいしゃではたらいています。", "en": "He works at the company every day." },
+      { "jp": "忙しいから、あまり休めません。", "reading": "いそがしいから、あまりやすめません。", "en": "Because he's busy, he can't rest much." },
+      { "jp": "でも、仕事はとても大切だと言っています。", "reading": "でも、しごとはとてもたいせつだといっています。", "en": "But he says his work is very important." },
+      { "jp": "時間があれば、家族と公園へ行きます。", "reading": "じかんがあれば、かぞくとこうえんへいきます。", "en": "If he has time, he goes to the park with the family." },
+      { "jp": "父はいつも「疲れました。でも、楽しいです。」と言います。", "reading": "ちちはいつも「つかれました。でも、たのしいです。」といいます。", "en": "My father always says, 'I'm tired. But it's fun.'" }
+    ],
+    "words": ["vocab-0038", "vocab-0233", "vocab-0182", "vocab-0156", "vocab-0028", "vocab-0200", "vocab-0092", "vocab-0186", "vocab-0093", "vocab-0197", "vocab-0174", "vocab-0125", "vocab-0034", "vocab-0279", "vocab-0037", "vocab-0214", "vocab-0112", "vocab-0191", "vocab-0157"],
+    "grammar": ["gram-0004", "gram-0032", "gram-0011", "gram-0046", "gram-0020"]
+  },
+  {
+    "id": "story-0011",
+    "type": "story",
+    "level": "N4",
+    "title": "デパート",
+    "titleReading": "デパート",
+    "titleEn": "The Department Store",
+    "lines": [
+      { "jp": "今日は友達とデパートへ行きました。", "reading": "きょうはともだちとデパートへいきました。", "en": "Today I went to the department store with a friend." },
+      { "jp": "デパートは値段が高いですが、店の人が親切です。", "reading": "デパートはねだんがたかいですが、みせのひとがしんせつです。", "en": "The department store's prices are expensive, but the staff are kind." },
+      { "jp": "私は新しい本を買いました。", "reading": "わたしはあたらしいほんをかいました。", "en": "I bought a new book." },
+      { "jp": "財布にお金がたくさんありました。", "reading": "さいふにおかねがたくさんありました。", "en": "There was a lot of money in my wallet." },
+      { "jp": "でも、本は少し安かったので、お釣りをもらいました。", "reading": "でも、ほんはすこしやすかったので、おつりをもらいました。", "en": "But the book was a little cheap, so I got change back." },
+      { "jp": "現金で買い物をして、うれしかったです。", "reading": "げんきんでかいものをして、うれしかったです。", "en": "I did the shopping with cash, and I was happy." }
+    ],
+    "words": ["vocab-0024", "vocab-0047", "vocab-0223", "vocab-0112", "vocab-0219", "vocab-0150", "vocab-0217", "vocab-0048", "vocab-0172", "vocab-0266", "vocab-0146", "vocab-0231", "vocab-0089", "vocab-0220", "vocab-0216", "vocab-0184", "vocab-0279", "vocab-0197", "vocab-0183", "vocab-0151", "vocab-0221", "vocab-0139", "vocab-0222", "vocab-0218", "vocab-0162"],
+    "grammar": ["gram-0031"]
+  },
+  {
+    "id": "story-0012",
+    "type": "story",
+    "level": "N4",
+    "title": "旅行",
+    "titleReading": "りょこう",
+    "titleEn": "The Trip",
+    "lines": [
+      { "jp": "来年、友達と海へ旅行しようと思います。", "reading": "らいねん、ともだちとうみへりょこうしようとおもいます。", "en": "Next year, I'm thinking of traveling to the sea with a friend." },
+      { "jp": "飛行機で行くつもりです。", "reading": "ひこうきでいくつもりです。", "en": "I intend to go by plane." },
+      { "jp": "海の近くに、いいホテルがあります。", "reading": "うみのちかくに、いいホテルがあります。", "en": "There is a good hotel near the sea." },
+      { "jp": "そこで、ゆっくり休む予定です。", "reading": "そこで、ゆっくりやすむよていです。", "en": "There, I'm scheduled to rest leisurely." },
+      { "jp": "きれいな海をゆっくり見るつもりです。", "reading": "きれいなうみをゆっくりみるつもりです。", "en": "I intend to leisurely look at the beautiful sea." },
+      { "jp": "友達も「楽しそうです」と言っています。", "reading": "ともだちも「たのしそうです」といっています。", "en": "My friend also says, 'It looks fun.'" }
+    ],
+    "words": ["vocab-0032", "vocab-0047", "vocab-0243", "vocab-0122", "vocab-0208", "vocab-0112", "vocab-0164", "vocab-0148", "vocab-0259", "vocab-0279", "vocab-0277", "vocab-0194", "vocab-0093", "vocab-0177", "vocab-0086", "vocab-0157", "vocab-0125"],
+    "grammar": ["gram-0012", "gram-0013", "gram-0014", "gram-0041", "gram-0046"]
+  },
+  {
+    "id": "story-0013",
+    "type": "story",
+    "level": "N4",
+    "title": "花",
+    "titleReading": "はな",
+    "titleEn": "Flowers",
+    "lines": [
+      { "jp": "私は母に花をあげました。", "reading": "わたしははははなをあげました。", "en": "I gave my mother flowers." },
+      { "jp": "母はとてもうれしそうでした。", "reading": "はははとてもうれしそうでした。", "en": "My mother looked very happy." },
+      { "jp": "私は母にお菓子をもらいました。", "reading": "わたしははにおかしをもらいました。", "en": "I received sweets from my mother." },
+      { "jp": "妹も母に絵をあげました。", "reading": "いもうともははにえをあげました。", "en": "My younger sister also gave mother a picture." },
+      { "jp": "母は妹に「ありがとう」と言ってくれました。", "reading": "はははいもうとに「ありがとう」といってくれました。", "en": "Mother kindly said 'thank you' to my sister." },
+      { "jp": "私は学校で先生にも花をさしあげました。", "reading": "わたしはがっこうでせんせいにもはなをさしあげました。", "en": "At school, I also gave the teacher flowers." },
+      { "jp": "先生は私に本をくださいました。", "reading": "せんせいはわたしにほんをくださいました。", "en": "The teacher kindly gave me a book." },
+      { "jp": "私はいい本をいただいて、うれしかったです。", "reading": "わたしはいいほんをいただいて、うれしかったです。", "en": "I received a nice book, and I was happy." }
+    ],
+    "words": ["vocab-0266", "vocab-0039", "vocab-0244", "vocab-0138", "vocab-0182", "vocab-0162", "vocab-0076", "vocab-0139", "vocab-0045", "vocab-0254", "vocab-0125", "vocab-0199", "vocab-0225", "vocab-0141", "vocab-0231", "vocab-0143", "vocab-0148", "vocab-0142"],
+    "grammar": ["gram-0015", "gram-0041", "gram-0018"]
+  },
+  {
+    "id": "story-0014",
+    "type": "story",
+    "level": "N4",
+    "title": "海",
+    "titleReading": "うみ",
+    "titleEn": "The Sea",
+    "lines": [
+      { "jp": "去年、家族と海へ行きました。", "reading": "きょねん、かぞくとうみへいきました。", "en": "Last year, I went to the sea with my family." },
+      { "jp": "海はとても大きくて、きれいでした。", "reading": "うみはとてもおおきくて、きれいでした。", "en": "The sea was very big and beautiful." },
+      { "jp": "海の近くを歩いたり、ゆっくり休んだりしました。", "reading": "うみのちかくをあるいたり、ゆっくりやすんだりしました。", "en": "We did things like walking near the sea and resting leisurely." },
+      { "jp": "レストランで魚料理を食べてみました。", "reading": "レストランでさかなりょうりをたべてみました。", "en": "I tried eating fish cuisine at a restaurant." },
+      { "jp": "とてもおいしかったです。来年も行こうと思います。", "reading": "とてもおいしかったです。らいねんもいこうとおもいます。", "en": "It was very delicious. I'm thinking of going again next year." },
+      { "jp": "母は魚料理が作れます。", "reading": "はははさかなりょうりがつくれます。", "en": "My mother can make fish dishes." },
+      { "jp": "海に行ったことがある人は多いですが、私も行けて、よかったです。", "reading": "うみにいったことがあるひとはおおいですが、わたしもいけて、よかったです。", "en": "Many people have been to the sea before, but I'm glad I could go too." }
+    ],
+    "words": ["vocab-0033", "vocab-0037", "vocab-0243", "vocab-0112", "vocab-0182", "vocab-0144", "vocab-0177", "vocab-0164", "vocab-0115", "vocab-0194", "vocab-0093", "vocab-0077", "vocab-0068", "vocab-0078", "vocab-0084", "vocab-0081", "vocab-0032", "vocab-0130", "vocab-0039", "vocab-0090", "vocab-0048", "vocab-0154", "vocab-0266", "vocab-0148", "vocab-0279"],
+    "grammar": ["gram-0028", "gram-0006", "gram-0012", "gram-0011", "gram-0027"]
+  },
+  {
+    "id": "story-0015",
+    "type": "story",
+    "level": "N4",
+    "title": "日本語",
+    "titleReading": "にほんご",
+    "titleEn": "Japanese",
+    "lines": [
+      { "jp": "私は日本語を勉強しています。", "reading": "わたしはにほんごをべんきょうしています。", "en": "I am studying Japanese." },
+      { "jp": "漢字は少し覚えにくいです。", "reading": "かんじはすこしおぼえにくいです。", "en": "Kanji is a little hard to remember." },
+      { "jp": "でも、毎日練習して、覚えやすくなりました。", "reading": "でも、まいにちれんしゅうして、おぼえやすくなりました。", "en": "But by practicing every day, it became easier to remember." },
+      { "jp": "今はニュースが少し分かるようになりました。", "reading": "いまはニュースがすこしわかるようになりました。", "en": "Now I've come to understand the news a little." },
+      { "jp": "話すことはまだ難しいですが、少し話せます。", "reading": "はなすことはまだむずかしいですが、すこしはなせます。", "en": "Speaking is still difficult, but I can speak a little." },
+      { "jp": "昨日、日本語を勉強しすぎて、とても疲れました。", "reading": "きのう、にほんごをべんきょうしすぎて、とてもつかれました。", "en": "Yesterday, I studied Japanese too much, and I got very tired." },
+      { "jp": "でも、日本語の勉強はとても面白いし、楽しいです。", "reading": "でも、にほんごのべんきょうはとてもおもしろいし、たのしいです。", "en": "But studying Japanese is interesting, and also fun." }
+    ],
+    "words": ["vocab-0266", "vocab-0282", "vocab-0098", "vocab-0237", "vocab-0183", "vocab-0110", "vocab-0197", "vocab-0028", "vocab-0099", "vocab-0027", "vocab-0262", "vocab-0131", "vocab-0126", "vocab-0190", "vocab-0159", "vocab-0026", "vocab-0182", "vocab-0111", "vocab-0158", "vocab-0157"],
+    "grammar": ["gram-0004", "gram-0038", "gram-0037", "gram-0039", "gram-0040", "gram-0011", "gram-0036", "gram-0033"]
+  },
+  {
+    "id": "story-0016",
+    "type": "story",
+    "level": "N4",
+    "title": "雨",
+    "titleReading": "あめ",
+    "titleEn": "Rain",
+    "lines": [
+      { "jp": "今日は天気があまりよくないです。", "reading": "きょうはてんきがあまりよくないです。", "en": "Today the weather isn't very good." },
+      { "jp": "友達によると、午後は雨だそうです。", "reading": "ともだちによると、ごごはあめだそうです。", "en": "According to my friend, it will rain in the afternoon." },
+      { "jp": "空を見ると、天気が悪くなりそうです。", "reading": "そらをみると、てんきがわるくなりそうです。", "en": "Looking at the sky, it seems the weather is about to turn bad." },
+      { "jp": "テレビでニュースを見ました。", "reading": "テレビでニュースをみました。", "en": "I watched the news on TV." },
+      { "jp": "雨だと、あまり出かけません。", "reading": "あめだと、あまりでかけません。", "en": "When it's rainy, I don't go out much." },
+      { "jp": "でも、家で静かな音楽を聞くと、楽しくなります。", "reading": "でも、いえでしずかなおんがくをきくと、たのしくなります。", "en": "But when I listen to quiet music at home, I feel happy." },
+      { "jp": "明日は天気がよくなるようです。", "reading": "あしたはてんきがよくなるようです。", "en": "It seems the weather will get better tomorrow." }
+    ],
+    "words": ["vocab-0024", "vocab-0238", "vocab-0186", "vocab-0148", "vocab-0047", "vocab-0036", "vocab-0239", "vocab-0241", "vocab-0086", "vocab-0149", "vocab-0256", "vocab-0262", "vocab-0119", "vocab-0197", "vocab-0201", "vocab-0169", "vocab-0247", "vocab-0127", "vocab-0157", "vocab-0025"],
+    "grammar": ["gram-0042", "gram-0019", "gram-0039", "gram-0041", "gram-0043"]
+  },
+  {
+    "id": "story-0017",
+    "type": "story",
+    "level": "N4",
+    "title": "映画",
+    "titleReading": "えいが",
+    "titleEn": "The Movie",
+    "lines": [
+      { "jp": "友達が私に「今、暇ですか」と聞きました。", "reading": "ともだちがわたしに「いま、ひまですか」とききました。", "en": "My friend asked me, 'Are you free now?'" },
+      { "jp": "私は「はい、暇です。どうしてですか」と答えました。", "reading": "わたしは「はい、ひまです。どうしてですか」とこたえました。", "en": "I answered, 'Yes, I'm free. Why?'" },
+      { "jp": "友達は「一緒に映画を見ませんか」と言いました。", "reading": "ともだちは「いっしょにえいがをみませんか」といいました。", "en": "My friend said, 'Won't you watch a movie together?'" },
+      { "jp": "私は「いいですね。行きましょう」と答えました。", "reading": "わたしは「いいですね。いきましょう」とこたえました。", "en": "I answered, 'Sounds good. Let's go.'" },
+      { "jp": "私たちは駅の近くで映画を見ました。", "reading": "わたしたちはえきのちかくでえいがをみました。", "en": "We watched a movie near the station." },
+      { "jp": "映画はとても面白くて、私たちはとても楽しかったです。", "reading": "えいがはとてもおもしろくて、わたしたちはとてもたのしかったです。", "en": "The movie was very interesting, and we both had a lot of fun." }
+    ],
+    "words": ["vocab-0047", "vocab-0266", "vocab-0027", "vocab-0178", "vocab-0127", "vocab-0014", "vocab-0134", "vocab-0193", "vocab-0248", "vocab-0086", "vocab-0125", "vocab-0148", "vocab-0112", "vocab-0203", "vocab-0164", "vocab-0182", "vocab-0158", "vocab-0157"],
+    "grammar": ["gram-0046"]
+  },
+  {
+    "id": "story-0018",
+    "type": "story",
+    "level": "N4",
+    "title": "妹",
+    "titleReading": "いもうと",
+    "titleEn": "My Little Sister",
+    "lines": [
+      { "jp": "私の妹は小さくて、まだ子供です。", "reading": "わたしのいもうとはちいさくて、まだこどもです。", "en": "My younger sister is small, and still a child." },
+      { "jp": "妹はよくお菓子を食べすぎます。", "reading": "いもうとはよくおかしをたべすぎます。", "en": "My younger sister often eats too many sweets." },
+      { "jp": "だから、母は妹に野菜を食べさせます。", "reading": "だから、はははいもうとにやさいをたべさせます。", "en": "So, mother makes her eat vegetables." },
+      { "jp": "母は時々妹に部屋を掃除させます。", "reading": "はははときどきいもうとにへやをそうじさせます。", "en": "Mother sometimes makes her clean her room." },
+      { "jp": "妹は掃除が好きではありませんが、いつも掃除をします。", "reading": "いもうとはそうじがすきではありませんが、いつもそうじをします。", "en": "My sister doesn't like cleaning, but she always does it." },
+      { "jp": "先週、妹は学校で先生に名前を聞かれました。", "reading": "せんしゅう、いもうとはがっこうでせんせいになまえをきかれました。", "en": "Last week, my sister was asked her name by the teacher at school." },
+      { "jp": "妹はよく答えられませんでした。", "reading": "いもうとはよくこたえられませんでした。", "en": "My sister couldn't answer well." },
+      { "jp": "でも、家に帰ると、母に元気に話しました。", "reading": "でも、いえにかえると、ははにげんきにはなしました。", "en": "But when she got home, she talked to mother cheerfully." }
+    ],
+    "words": ["vocab-0266", "vocab-0045", "vocab-0145", "vocab-0190", "vocab-0046", "vocab-0185", "vocab-0076", "vocab-0084", "vocab-0198", "vocab-0039", "vocab-0069", "vocab-0192", "vocab-0202", "vocab-0096", "vocab-0165", "vocab-0191", "vocab-0029", "vocab-0199", "vocab-0225", "vocab-0236", "vocab-0127", "vocab-0134", "vocab-0197", "vocab-0201", "vocab-0114", "vocab-0058", "vocab-0126"],
+    "grammar": ["gram-0036", "gram-0026", "gram-0025", "gram-0011", "gram-0019"]
+  },
+  {
+    "id": "story-0019",
+    "type": "story",
+    "level": "N4",
+    "title": "去年",
+    "titleReading": "きょねん",
+    "titleEn": "Last Year",
+    "lines": [
+      { "jp": "去年、大学の試験がとても難しかったです。", "reading": "きょねん、だいがくのしけんがとてもむずかしかったです。", "en": "Last year, the university exam was very difficult." },
+      { "jp": "私はたくさん勉強したのに、試験は難しくて、大変でした。", "reading": "わたしはたくさんべんきょうしたのに、しけんはむずかしくて、たいへんでした。", "en": "Even though I studied a lot, the exam was difficult and tough." },
+      { "jp": "友達も試験がとても難しかったと言っていました。", "reading": "ともだちもしけんがとてもむずかしかったといっていました。", "en": "My friend also said the exam was very difficult." },
+      { "jp": "先生は「大丈夫、心配しないでください」と言いました。", "reading": "せんせいは「だいじょうぶ、しんぱいしないでください」といいました。", "en": "The teacher said, 'It's okay, please don't worry.'" },
+      { "jp": "でも、私は少し心配でした。", "reading": "でも、わたしはすこししんぱいでした。", "en": "But I was a little worried." },
+      { "jp": "家に帰ったら、両親に試験のことを話しました。", "reading": "いえにかえったら、りょうしんにしけんのことをはなしました。", "en": "When I got home, I told my parents about the exam." },
+      { "jp": "両親も「大丈夫ですよ」と言ってくれました。", "reading": "りょうしんも「だいじょうぶですよ」といってくれました。", "en": "My parents also kindly told me, 'It's okay.'" },
+      { "jp": "試験は大丈夫だったらしいです。今はもう心配していません。", "reading": "しけんはだいじょうぶだったらしいです。いまはもうしんぱいしていません。", "en": "Apparently the exam was fine. Now I'm no longer worried." }
+    ],
+    "words": ["vocab-0033", "vocab-0227", "vocab-0230", "vocab-0182", "vocab-0159", "vocab-0266", "vocab-0184", "vocab-0098", "vocab-0175", "vocab-0047", "vocab-0125", "vocab-0225", "vocab-0176", "vocab-0179", "vocab-0197", "vocab-0183", "vocab-0201", "vocab-0114", "vocab-0050", "vocab-0126", "vocab-0027", "vocab-0189"],
+    "grammar": ["gram-0048", "gram-0046", "gram-0004", "gram-0001", "gram-0021", "gram-0018", "gram-0044"]
+  }
+]

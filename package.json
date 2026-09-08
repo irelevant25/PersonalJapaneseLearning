@@ -5,7 +5,11 @@
   "description": "Personal JLPT N4 study app: flashcards, spaced repetition, and adaptive pacing based on your own performance stats.",
   "type": "module",
   "engines": {
-    "node": ">=18.11"
+    "node": "22.15.0"
+  },
+  "config": {
+    "host": "127.0.0.1",
+    "port": 3001
   },
   "scripts": {
     "start": "node server/index.js",

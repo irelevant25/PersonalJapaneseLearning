@@ -4,7 +4,7 @@ import { barChart } from '../components/charts.js';
 import { summaryHtml } from '../components/cardView.js';
 
 export async function renderStats(root) {
-  const [stats, log] = await Promise.all([api.getStats(), api.getAdaptiveLog()]);
+  const [stats, log, examLog] = await Promise.all([api.getStats(), api.getAdaptiveLog(), api.getExamLog()]);
   const leechCards = await resolveCardsByIds(stats.leechCards);
 
   const accData = [
@@ -58,6 +58,23 @@ export async function renderStats(root) {
           </section>`
         : ''
     }
+
+    <section class="panel">
+      <h3>Mock exam history</h3>
+      ${
+        examLog.length
+          ? `<ul class="adaptive-list">
+              ${examLog
+                .slice(0, 10)
+                .map((e) => {
+                  const pct = e.total ? Math.round((e.correct / e.total) * 100) : 0;
+                  return `<li><span class="log-date">${escapeHtml(e.date)}</span> <strong>${pct}% (${e.correct}/${e.total})</strong></li>`;
+                })
+                .join('')}
+            </ul>`
+          : '<p class="muted">No exams taken yet — try one from the Exam tab.</p>'
+      }
+    </section>
 
     <section class="panel">
       <h3>Adaptive engine log</h3>

@@ -25,6 +25,7 @@ function defaultProgress() {
     adaptiveLog: [],
     lastAdaptiveRun: null,
     notes: {},
+    examLog: [],
   };
 }
 

@@ -283,5 +283,44 @@
   { "id": "vocab-0282", "type": "vocab", "level": "N5", "front": "日本語", "reading": "にほんご", "meaning": "Japanese (language)", "pos": "noun", "tags": ["school"] },
   { "id": "vocab-0283", "type": "vocab", "level": "N5", "front": "英語", "reading": "えいご", "meaning": "English (language)", "pos": "noun", "tags": ["school"] },
   { "id": "vocab-0284", "type": "vocab", "level": "N5", "front": "中国", "reading": "ちゅうごく", "meaning": "China", "pos": "noun", "tags": ["place"] },
-  { "id": "vocab-0285", "type": "vocab", "level": "N5", "front": "国", "reading": "くに", "meaning": "country", "pos": "noun", "tags": ["place"] }
+  { "id": "vocab-0285", "type": "vocab", "level": "N5", "front": "国", "reading": "くに", "meaning": "country", "pos": "noun", "tags": ["place"] },
+
+  { "id": "vocab-0286", "type": "vocab", "level": "N5", "front": "一", "reading": "いち", "meaning": "one", "pos": "noun", "tags": ["number"] },
+  { "id": "vocab-0287", "type": "vocab", "level": "N5", "front": "二", "reading": "に", "meaning": "two", "pos": "noun", "tags": ["number"] },
+  { "id": "vocab-0288", "type": "vocab", "level": "N5", "front": "三", "reading": "さん", "meaning": "three", "pos": "noun", "tags": ["number"] },
+  { "id": "vocab-0289", "type": "vocab", "level": "N5", "front": "四", "reading": "よん", "meaning": "four", "pos": "noun", "tags": ["number"] },
+  { "id": "vocab-0290", "type": "vocab", "level": "N5", "front": "五", "reading": "ご", "meaning": "five", "pos": "noun", "tags": ["number"] },
+  { "id": "vocab-0291", "type": "vocab", "level": "N5", "front": "六", "reading": "ろく", "meaning": "six", "pos": "noun", "tags": ["number"] },
+  { "id": "vocab-0292", "type": "vocab", "level": "N5", "front": "七", "reading": "なな", "meaning": "seven", "pos": "noun", "tags": ["number"] },
+  { "id": "vocab-0293", "type": "vocab", "level": "N5", "front": "八", "reading": "はち", "meaning": "eight", "pos": "noun", "tags": ["number"] },
+  { "id": "vocab-0294", "type": "vocab", "level": "N5", "front": "九", "reading": "きゅう", "meaning": "nine", "pos": "noun", "tags": ["number"] },
+  { "id": "vocab-0295", "type": "vocab", "level": "N5", "front": "十", "reading": "じゅう", "meaning": "ten", "pos": "noun", "tags": ["number"] },
+  { "id": "vocab-0296", "type": "vocab", "level": "N5", "front": "百", "reading": "ひゃく", "meaning": "hundred", "pos": "noun", "tags": ["number"] },
+  { "id": "vocab-0297", "type": "vocab", "level": "N5", "front": "千", "reading": "せん", "meaning": "thousand", "pos": "noun", "tags": ["number"] },
+  { "id": "vocab-0298", "type": "vocab", "level": "N5", "front": "万", "reading": "まん", "meaning": "ten thousand", "pos": "noun", "tags": ["number"] },
+
+  { "id": "vocab-0299", "type": "vocab", "level": "N5", "front": "日曜日", "reading": "にちようび", "meaning": "Sunday", "pos": "noun", "tags": ["time"] },
+  { "id": "vocab-0300", "type": "vocab", "level": "N5", "front": "月曜日", "reading": "げつようび", "meaning": "Monday", "pos": "noun", "tags": ["time"] },
+  { "id": "vocab-0301", "type": "vocab", "level": "N5", "front": "火曜日", "reading": "かようび", "meaning": "Tuesday", "pos": "noun", "tags": ["time"] },
+  { "id": "vocab-0302", "type": "vocab", "level": "N5", "front": "水曜日", "reading": "すいようび", "meaning": "Wednesday", "pos": "noun", "tags": ["time"] },
+  { "id": "vocab-0303", "type": "vocab", "level": "N5", "front": "木曜日", "reading": "もくようび", "meaning": "Thursday", "pos": "noun", "tags": ["time"] },
+  { "id": "vocab-0304", "type": "vocab", "level": "N5", "front": "金曜日", "reading": "きんようび", "meaning": "Friday", "pos": "noun", "tags": ["time"] },
+  { "id": "vocab-0305", "type": "vocab", "level": "N5", "front": "土曜日", "reading": "どようび", "meaning": "Saturday", "pos": "noun", "tags": ["time"] },
+
+  { "id": "vocab-0306", "type": "vocab", "level": "N5", "front": "春", "reading": "はる", "meaning": "spring", "pos": "noun", "tags": ["weather"] },
+  { "id": "vocab-0307", "type": "vocab", "level": "N5", "front": "夏", "reading": "なつ", "meaning": "summer", "pos": "noun", "tags": ["weather"] },
+  { "id": "vocab-0308", "type": "vocab", "level": "N5", "front": "秋", "reading": "あき", "meaning": "autumn, fall", "pos": "noun", "tags": ["weather"] },
+  { "id": "vocab-0309", "type": "vocab", "level": "N5", "front": "冬", "reading": "ふゆ", "meaning": "winter", "pos": "noun", "tags": ["weather"] },
+
+  { "id": "vocab-0310", "type": "vocab", "level": "N5", "front": "朝", "reading": "あさ", "meaning": "morning", "pos": "noun", "tags": ["time"] },
+  { "id": "vocab-0311", "type": "vocab", "level": "N5", "front": "昼", "reading": "ひる", "meaning": "noon, daytime", "pos": "noun", "tags": ["time"] },
+  { "id": "vocab-0312", "type": "vocab", "level": "N5", "front": "晩", "reading": "ばん", "meaning": "evening", "pos": "noun", "tags": ["time"] },
+  { "id": "vocab-0313", "type": "vocab", "level": "N5", "front": "夜", "reading": "よる", "meaning": "night", "pos": "noun", "tags": ["time"] },
+
+  { "id": "vocab-0314", "type": "vocab", "level": "N5", "front": "会う", "reading": "あう", "meaning": "to meet", "pos": "verb-u", "tags": ["communication-verb"] },
+  { "id": "vocab-0315", "type": "vocab", "level": "N5", "front": "遊ぶ", "reading": "あそぶ", "meaning": "to play, to hang out", "pos": "verb-u", "tags": ["hobby"] },
+  { "id": "vocab-0316", "type": "vocab", "level": "N5", "front": "欲しい", "reading": "ほしい", "meaning": "want, desire", "pos": "i-adjective", "tags": ["feelings"] },
+  { "id": "vocab-0317", "type": "vocab", "level": "N5", "front": "傘", "reading": "かさ", "meaning": "umbrella", "pos": "noun", "tags": ["daily-life"] },
+  { "id": "vocab-0318", "type": "vocab", "level": "N4", "front": "降る", "reading": "ふる", "meaning": "to fall (rain, snow)", "pos": "verb-u", "tags": ["weather"] },
+  { "id": "vocab-0319", "type": "vocab", "level": "N5", "front": "誕生日", "reading": "たんじょうび", "meaning": "birthday", "pos": "noun", "tags": ["daily-life"] }
 ]

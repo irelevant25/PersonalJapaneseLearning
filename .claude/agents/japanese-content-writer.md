@@ -1,6 +1,6 @@
 ---
 name: japanese-content-writer
-description: Adds new hiragana/katakana/kanji/vocab/grammar/sentence entries to the N4 Coach app's seed content JSON files, following the project's exact schema, id numbering, and quality bar. Use for any bulk or one-off addition to server/data/content/*.json — e.g. "add 30 more N4 vocab words about travel" or "add the next batch of kanji".
+description: Adds new hiragana/katakana/kanji/vocab/grammar/sentence/story entries to the N4 Coach app's seed content JSON files, following the project's exact schema, id numbering, and quality bar. Use for any bulk or one-off addition to server/data/content/*.json — e.g. "add 30 more N4 vocab words about travel", "add the next batch of kanji", or "add 10 more stories".
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch
 ---
 
@@ -20,7 +20,7 @@ schema shape, only for the Japanese content itself.
 
 Before writing anything, `Read` the target content file(s) in
 `server/data/content/` (hiragana.json, katakana.json, kanji.json, vocab.json,
-grammar.json, sentences.json). Determine:
+grammar.json, sentences.json, stories.json). Determine:
 - The current highest id number, so new ids continue the sequence with no
   gaps and no collisions (e.g. if the file ends at `vocab-0248`, start at
   `vocab-0249`).
@@ -30,10 +30,14 @@ grammar.json, sentences.json). Determine:
   actually belongs in the teaching sequence (a prerequisite grammar point
   needs an `order` before the things that depend on it, not just appended at
   the end).
-- If asked to add sentences, read `vocab.json` (and `grammar.json` if the
-  sentence should also tag a grammar point) so every id you put in a
-  sentence's `words` array actually exists. A sentence referencing a
-  non-existent vocab id will silently never unlock in the app.
+- If asked to add sentences or stories, read `vocab.json` (and `grammar.json`
+  if it should also tag a grammar point) so every id you put in a `words`
+  array actually exists. For sentences this gates when the app shows the
+  card at all; for stories it only affects the informational
+  ready/not-ready badge (stories are never hidden), but the id list still
+  must be accurate either way. Keep new sentences/stories roughly in
+  increasing difficulty order within the array — position matters, there's
+  no separate `order` field for either type.
 
 ## Step 3 — write the content
 

@@ -13,14 +13,38 @@ internet connection required once installed.
 
 ## Quick start
 
-Requires Node.js 18.11+ (built and tested on Node 22).
+**If you downloaded this project as a ZIP (not via `git`) and don't already
+have Node.js set up**, use the launcher script for your OS — it handles
+everything for you:
+
+- **Windows**: right-click **`start.ps1`** → *Run with PowerShell* (or open
+  PowerShell in this folder and run `./start.ps1`). If Windows blocks the
+  script the first time, open PowerShell as yourself in this folder and run
+  `Set-ExecutionPolicy -Scope Process RemoteSigned` first, then try again.
+- **Mac / Linux**: open a terminal in this folder and run `./start.sh`
+  (first time only, make it runnable with `chmod +x start.sh`).
+
+The script checks whether you have [NVM](https://github.com/nvm-sh/nvm)
+(the Node Version Manager) and the exact Node.js version this project needs
+(see `.nvmrc`) — offering to install whichever is missing — then installs
+the project's dependencies, starts the server, and opens it in your default
+browser automatically. Installing NVM on Windows needs an admin
+confirmation prompt (UAC); everything else runs as your normal user. Once
+everything is installed, later runs are fast — just double-click/run the
+script again any time you want to study, and **Ctrl+C** in that window
+stops the server.
+
+**If you already have Node.js 18.11+ installed** (or are comfortable with a
+terminal), you don't need the scripts — just:
 
 ```
 npm install
 npm start
 ```
 
-Then open **http://127.0.0.1:3000** in a browser. That's the whole setup.
+Then open the address it prints (**http://127.0.0.1:3001** by default —
+configurable via the `config` block in `package.json`, or override with
+`PORT`/`HOST` env vars) in a browser.
 
 For development (auto-restart on file changes):
 
@@ -120,6 +144,26 @@ The Browse tab has a "+ Add card" form for vocabulary/kanji/grammar you run
 into outside the seeded content — it flows through the exact same SRS/queue/
 stats machinery as everything else.
 
+### Stories
+
+Short reading-practice passages, separate from the flashcard system on
+purpose — there's no sensible way to "grade" recall of a whole paragraph
+with Again/Hard/Good/Easy, so Stories live in their own tab instead of the
+daily queue. Each one is annotated with how much of its vocabulary you
+already know, but nothing is ever locked — you can read anything, whenever
+you want. Reading/translation are independent show/hide toggles, and every
+line (plus the whole story at once) has a listen button.
+
+### Mock exam
+
+Multiple-choice quizzes built entirely from cards you've **already
+studied** — never new material — which is a closer match to the real JLPT
+format (it's 100% multiple choice) than a flip card is. Answering an exam
+question never changes any card's schedule; it's purely a self-check, with
+just the aggregate score kept for your own record on the Stats page. Pick
+how many questions you want, answer, and see a breakdown by category plus
+exactly what you missed at the end.
+
 ## Current state
 
 Seed content is curated (JLPT publishes no official kanji/vocab/grammar
@@ -130,10 +174,11 @@ to keep growing over the 4 months, via the `japanese-content-writer` agent:
 |---|---|---|
 | Hiragana | 104 | complete (base + dakuten/handakuten + digraphs) |
 | Katakana | 116 | complete, incl. 12 extended loanword sounds (ファ/ウィ/…) |
-| Kanji | 145 | 114 N5 + 31 N4, each with readings/meaning/example words |
-| Vocabulary | 285 | 229 N5 + 56 N4, across greetings/verbs/adjectives/etc. |
+| Kanji | 287 | 115 N5 + 172 N4, each with readings/meaning/example words |
+| Vocabulary | 319 | 282 N5 + 37 N4, across greetings/verbs/adjectives/numbers/etc. |
 | Grammar | 48 | full N4 grammar sequence, all N5 prerequisites included |
-| Sentences | 98 | built entirely from the seeded vocabulary, exercise all 48 grammar points between them |
+| Sentences | 238 | built entirely from the seeded vocabulary; every grammar point appears at least twice |
+| Stories | 19 | 4-8 lines each, N5→N4 difficulty, built entirely from the seeded vocabulary |
 
 Check the in-app **Stats** tab at any time for live counts and your actual
 progress against them — that's the source of truth, this table is just a
@@ -144,6 +189,8 @@ snapshot as of first build (2026-09-08).
 ```
 server/            Node/Express backend — see .claude/skills/japanese-n4/SKILL.md for the full map
 public/            vanilla JS/CSS frontend, no build step
+start.ps1/.sh       one-click launcher for non-technical users (see Quick start above) —
+                    installs NVM/Node/dependencies as needed, starts the server, opens the browser
 .claude/skills/     the "japanese-n4" skill: full architecture, schemas, SRS/adaptive
                     engine details, and conventions for this project
 .claude/agents/     "japanese-content-writer" subagent for adding new content in bulk
@@ -173,8 +220,8 @@ in `git status` after every study session.
 ## Known limitations
 
 - Content is a curated starting set, not the full N4 syllabus — expect to
-  keep extending `kanji.json`/`vocab.json`/`grammar.json`/`sentences.json`
-  over time (see the `japanese-content-writer` agent).
+  keep extending `kanji.json`/`vocab.json`/`grammar.json`/`sentences.json`/
+  `stories.json` over time (see the `japanese-content-writer` agent).
 - No handwriting/stroke-order practice — the JLPT N4 test is entirely
   multiple-choice, so these cards focus on recognition (reading/listening),
   not production.
