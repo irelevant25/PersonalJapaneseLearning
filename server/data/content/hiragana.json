@@ -1,0 +1,131 @@
+[
+  {"id":"hira-a","type":"hiragana","char":"あ","romaji":"a","kind":"base","row":"a"},
+  {"id":"hira-i","type":"hiragana","char":"い","romaji":"i","kind":"base","row":"a"},
+  {"id":"hira-u","type":"hiragana","char":"う","romaji":"u","kind":"base","row":"a"},
+  {"id":"hira-e","type":"hiragana","char":"え","romaji":"e","kind":"base","row":"a"},
+  {"id":"hira-o","type":"hiragana","char":"お","romaji":"o","kind":"base","row":"a"},
+
+  {"id":"hira-ka","type":"hiragana","char":"か","romaji":"ka","kind":"base","row":"ka"},
+  {"id":"hira-ki","type":"hiragana","char":"き","romaji":"ki","kind":"base","row":"ka"},
+  {"id":"hira-ku","type":"hiragana","char":"く","romaji":"ku","kind":"base","row":"ka"},
+  {"id":"hira-ke","type":"hiragana","char":"け","romaji":"ke","kind":"base","row":"ka"},
+  {"id":"hira-ko","type":"hiragana","char":"こ","romaji":"ko","kind":"base","row":"ka"},
+
+  {"id":"hira-sa","type":"hiragana","char":"さ","romaji":"sa","kind":"base","row":"sa"},
+  {"id":"hira-shi","type":"hiragana","char":"し","romaji":"shi","kind":"base","row":"sa"},
+  {"id":"hira-su","type":"hiragana","char":"す","romaji":"su","kind":"base","row":"sa"},
+  {"id":"hira-se","type":"hiragana","char":"せ","romaji":"se","kind":"base","row":"sa"},
+  {"id":"hira-so","type":"hiragana","char":"そ","romaji":"so","kind":"base","row":"sa"},
+
+  {"id":"hira-ta","type":"hiragana","char":"た","romaji":"ta","kind":"base","row":"ta"},
+  {"id":"hira-chi","type":"hiragana","char":"ち","romaji":"chi","kind":"base","row":"ta"},
+  {"id":"hira-tsu","type":"hiragana","char":"つ","romaji":"tsu","kind":"base","row":"ta"},
+  {"id":"hira-te","type":"hiragana","char":"て","romaji":"te","kind":"base","row":"ta"},
+  {"id":"hira-to","type":"hiragana","char":"と","romaji":"to","kind":"base","row":"ta"},
+
+  {"id":"hira-na","type":"hiragana","char":"な","romaji":"na","kind":"base","row":"na"},
+  {"id":"hira-ni","type":"hiragana","char":"に","romaji":"ni","kind":"base","row":"na"},
+  {"id":"hira-nu","type":"hiragana","char":"ぬ","romaji":"nu","kind":"base","row":"na"},
+  {"id":"hira-ne","type":"hiragana","char":"ね","romaji":"ne","kind":"base","row":"na"},
+  {"id":"hira-no","type":"hiragana","char":"の","romaji":"no","kind":"base","row":"na"},
+
+  {"id":"hira-ha","type":"hiragana","char":"は","romaji":"ha","kind":"base","row":"ha"},
+  {"id":"hira-hi","type":"hiragana","char":"ひ","romaji":"hi","kind":"base","row":"ha"},
+  {"id":"hira-fu","type":"hiragana","char":"ふ","romaji":"fu","kind":"base","row":"ha"},
+  {"id":"hira-he","type":"hiragana","char":"へ","romaji":"he","kind":"base","row":"ha"},
+  {"id":"hira-ho","type":"hiragana","char":"ほ","romaji":"ho","kind":"base","row":"ha"},
+
+  {"id":"hira-ma","type":"hiragana","char":"ま","romaji":"ma","kind":"base","row":"ma"},
+  {"id":"hira-mi","type":"hiragana","char":"み","romaji":"mi","kind":"base","row":"ma"},
+  {"id":"hira-mu","type":"hiragana","char":"む","romaji":"mu","kind":"base","row":"ma"},
+  {"id":"hira-me","type":"hiragana","char":"め","romaji":"me","kind":"base","row":"ma"},
+  {"id":"hira-mo","type":"hiragana","char":"も","romaji":"mo","kind":"base","row":"ma"},
+
+  {"id":"hira-ya","type":"hiragana","char":"や","romaji":"ya","kind":"base","row":"ya"},
+  {"id":"hira-yu","type":"hiragana","char":"ゆ","romaji":"yu","kind":"base","row":"ya"},
+  {"id":"hira-yo","type":"hiragana","char":"よ","romaji":"yo","kind":"base","row":"ya"},
+
+  {"id":"hira-ra","type":"hiragana","char":"ら","romaji":"ra","kind":"base","row":"ra"},
+  {"id":"hira-ri","type":"hiragana","char":"り","romaji":"ri","kind":"base","row":"ra"},
+  {"id":"hira-ru","type":"hiragana","char":"る","romaji":"ru","kind":"base","row":"ra"},
+  {"id":"hira-re","type":"hiragana","char":"れ","romaji":"re","kind":"base","row":"ra"},
+  {"id":"hira-ro","type":"hiragana","char":"ろ","romaji":"ro","kind":"base","row":"ra"},
+
+  {"id":"hira-wa","type":"hiragana","char":"わ","romaji":"wa","kind":"base","row":"wa"},
+  {"id":"hira-wo","type":"hiragana","char":"を","romaji":"o","kind":"base","row":"wa","note":"Particle-only character, pronounced 'o'."},
+  {"id":"hira-n","type":"hiragana","char":"ん","romaji":"n","kind":"base","row":"n","note":"Syllabic n, never starts a word."},
+
+  {"id":"hira-ga","type":"hiragana","char":"が","romaji":"ga","kind":"dakuten","row":"ga"},
+  {"id":"hira-gi","type":"hiragana","char":"ぎ","romaji":"gi","kind":"dakuten","row":"ga"},
+  {"id":"hira-gu","type":"hiragana","char":"ぐ","romaji":"gu","kind":"dakuten","row":"ga"},
+  {"id":"hira-ge","type":"hiragana","char":"げ","romaji":"ge","kind":"dakuten","row":"ga"},
+  {"id":"hira-go","type":"hiragana","char":"ご","romaji":"go","kind":"dakuten","row":"ga"},
+
+  {"id":"hira-za","type":"hiragana","char":"ざ","romaji":"za","kind":"dakuten","row":"za"},
+  {"id":"hira-ji","type":"hiragana","char":"じ","romaji":"ji","kind":"dakuten","row":"za"},
+  {"id":"hira-zu","type":"hiragana","char":"ず","romaji":"zu","kind":"dakuten","row":"za"},
+  {"id":"hira-ze","type":"hiragana","char":"ぜ","romaji":"ze","kind":"dakuten","row":"za"},
+  {"id":"hira-zo","type":"hiragana","char":"ぞ","romaji":"zo","kind":"dakuten","row":"za"},
+
+  {"id":"hira-da","type":"hiragana","char":"だ","romaji":"da","kind":"dakuten","row":"da"},
+  {"id":"hira-di","type":"hiragana","char":"ぢ","romaji":"ji","kind":"dakuten","row":"da","note":"Pronounced the same as じ in modern Japanese."},
+  {"id":"hira-du","type":"hiragana","char":"づ","romaji":"zu","kind":"dakuten","row":"da","note":"Pronounced the same as ず in modern Japanese."},
+  {"id":"hira-de","type":"hiragana","char":"で","romaji":"de","kind":"dakuten","row":"da"},
+  {"id":"hira-do","type":"hiragana","char":"ど","romaji":"do","kind":"dakuten","row":"da"},
+
+  {"id":"hira-ba","type":"hiragana","char":"ば","romaji":"ba","kind":"dakuten","row":"ba"},
+  {"id":"hira-bi","type":"hiragana","char":"び","romaji":"bi","kind":"dakuten","row":"ba"},
+  {"id":"hira-bu","type":"hiragana","char":"ぶ","romaji":"bu","kind":"dakuten","row":"ba"},
+  {"id":"hira-be","type":"hiragana","char":"べ","romaji":"be","kind":"dakuten","row":"ba"},
+  {"id":"hira-bo","type":"hiragana","char":"ぼ","romaji":"bo","kind":"dakuten","row":"ba"},
+
+  {"id":"hira-pa","type":"hiragana","char":"ぱ","romaji":"pa","kind":"handakuten","row":"pa"},
+  {"id":"hira-pi","type":"hiragana","char":"ぴ","romaji":"pi","kind":"handakuten","row":"pa"},
+  {"id":"hira-pu","type":"hiragana","char":"ぷ","romaji":"pu","kind":"handakuten","row":"pa"},
+  {"id":"hira-pe","type":"hiragana","char":"ぺ","romaji":"pe","kind":"handakuten","row":"pa"},
+  {"id":"hira-po","type":"hiragana","char":"ぽ","romaji":"po","kind":"handakuten","row":"pa"},
+
+  {"id":"hira-kya","type":"hiragana","char":"きゃ","romaji":"kya","kind":"digraph","row":"kya"},
+  {"id":"hira-kyu","type":"hiragana","char":"きゅ","romaji":"kyu","kind":"digraph","row":"kya"},
+  {"id":"hira-kyo","type":"hiragana","char":"きょ","romaji":"kyo","kind":"digraph","row":"kya"},
+
+  {"id":"hira-gya","type":"hiragana","char":"ぎゃ","romaji":"gya","kind":"digraph","row":"gya"},
+  {"id":"hira-gyu","type":"hiragana","char":"ぎゅ","romaji":"gyu","kind":"digraph","row":"gya"},
+  {"id":"hira-gyo","type":"hiragana","char":"ぎょ","romaji":"gyo","kind":"digraph","row":"gya"},
+
+  {"id":"hira-sha","type":"hiragana","char":"しゃ","romaji":"sha","kind":"digraph","row":"sha"},
+  {"id":"hira-shu","type":"hiragana","char":"しゅ","romaji":"shu","kind":"digraph","row":"sha"},
+  {"id":"hira-sho","type":"hiragana","char":"しょ","romaji":"sho","kind":"digraph","row":"sha"},
+
+  {"id":"hira-ja","type":"hiragana","char":"じゃ","romaji":"ja","kind":"digraph","row":"ja"},
+  {"id":"hira-ju","type":"hiragana","char":"じゅ","romaji":"ju","kind":"digraph","row":"ja"},
+  {"id":"hira-jo","type":"hiragana","char":"じょ","romaji":"jo","kind":"digraph","row":"ja"},
+
+  {"id":"hira-cha","type":"hiragana","char":"ちゃ","romaji":"cha","kind":"digraph","row":"cha"},
+  {"id":"hira-chu","type":"hiragana","char":"ちゅ","romaji":"chu","kind":"digraph","row":"cha"},
+  {"id":"hira-cho","type":"hiragana","char":"ちょ","romaji":"cho","kind":"digraph","row":"cha"},
+
+  {"id":"hira-nya","type":"hiragana","char":"にゃ","romaji":"nya","kind":"digraph","row":"nya"},
+  {"id":"hira-nyu","type":"hiragana","char":"にゅ","romaji":"nyu","kind":"digraph","row":"nya"},
+  {"id":"hira-nyo","type":"hiragana","char":"にょ","romaji":"nyo","kind":"digraph","row":"nya"},
+
+  {"id":"hira-hya","type":"hiragana","char":"ひゃ","romaji":"hya","kind":"digraph","row":"hya"},
+  {"id":"hira-hyu","type":"hiragana","char":"ひゅ","romaji":"hyu","kind":"digraph","row":"hya"},
+  {"id":"hira-hyo","type":"hiragana","char":"ひょ","romaji":"hyo","kind":"digraph","row":"hya"},
+
+  {"id":"hira-bya","type":"hiragana","char":"びゃ","romaji":"bya","kind":"digraph","row":"bya"},
+  {"id":"hira-byu","type":"hiragana","char":"びゅ","romaji":"byu","kind":"digraph","row":"bya"},
+  {"id":"hira-byo","type":"hiragana","char":"びょ","romaji":"byo","kind":"digraph","row":"bya"},
+
+  {"id":"hira-pya","type":"hiragana","char":"ぴゃ","romaji":"pya","kind":"digraph","row":"pya"},
+  {"id":"hira-pyu","type":"hiragana","char":"ぴゅ","romaji":"pyu","kind":"digraph","row":"pya"},
+  {"id":"hira-pyo","type":"hiragana","char":"ぴょ","romaji":"pyo","kind":"digraph","row":"pya"},
+
+  {"id":"hira-mya","type":"hiragana","char":"みゃ","romaji":"mya","kind":"digraph","row":"mya"},
+  {"id":"hira-myu","type":"hiragana","char":"みゅ","romaji":"myu","kind":"digraph","row":"mya"},
+  {"id":"hira-myo","type":"hiragana","char":"みょ","romaji":"myo","kind":"digraph","row":"mya"},
+
+  {"id":"hira-rya","type":"hiragana","char":"りゃ","romaji":"rya","kind":"digraph","row":"rya"},
+  {"id":"hira-ryu","type":"hiragana","char":"りゅ","romaji":"ryu","kind":"digraph","row":"rya"},
+  {"id":"hira-ryo","type":"hiragana","char":"りょ","romaji":"ryo","kind":"digraph","row":"rya"}
+]

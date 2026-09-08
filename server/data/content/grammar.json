@@ -1,0 +1,626 @@
+[
+  {
+    "id": "gram-0001",
+    "level": "N5",
+    "order": 1,
+    "pattern": "〜てください",
+    "meaning": "please do ~ (polite request)",
+    "explanation": "Attach the te-form of a verb to ください to make a polite request asking someone to do something. It is commonly used by teachers, staff, or in everyday polite requests.",
+    "example": {
+      "jp": "毎日日本語を勉強してください。",
+      "reading": "まいにちにほんごをべんきょうしてください。",
+      "en": "Please study Japanese every day."
+    }
+  },
+  {
+    "id": "gram-0002",
+    "level": "N5",
+    "order": 2,
+    "pattern": "〜てもいいです",
+    "meaning": "it's okay to do ~ / may do ~ (permission)",
+    "explanation": "Attach the te-form of a verb to もいいです to say that an action is allowed or acceptable. It is often used to ask for or give permission.",
+    "example": {
+      "jp": "ここで写真を撮ってもいいですか。",
+      "reading": "ここでしゃしんをとってもいいですか。",
+      "en": "Is it okay to take a photo here?"
+    }
+  },
+  {
+    "id": "gram-0003",
+    "level": "N5",
+    "order": 3,
+    "pattern": "〜てはいけません",
+    "meaning": "must not do ~ (prohibition)",
+    "explanation": "Attach the te-form of a verb to はいけません to say that an action is forbidden or not allowed. It is stronger and more formal than a negative てもいいです.",
+    "example": {
+      "jp": "ここでたばこを吸ってはいけません。",
+      "reading": "ここでたばこをすってはいけません。",
+      "en": "You must not smoke here."
+    }
+  },
+  {
+    "id": "gram-0004",
+    "level": "N5",
+    "order": 4,
+    "pattern": "〜ています",
+    "meaning": "is doing ~ / has done ~ (ongoing action or resulting state)",
+    "explanation": "Attach the te-form of a verb to います to describe an action in progress, a habitual action, or a state that continues after a change has happened. The exact meaning depends on the type of verb used.",
+    "example": {
+      "jp": "兄は今、東京に住んでいます。",
+      "reading": "あにはいま、とうきょうにすんでいます。",
+      "en": "My older brother is living in Tokyo now."
+    }
+  },
+  {
+    "id": "gram-0005",
+    "level": "N5",
+    "order": 5,
+    "pattern": "〜より〜のほうが",
+    "meaning": "~ is more ~ than ~ (comparison)",
+    "explanation": "Use AよりBのほうが to say that B is more so than A in some way. The item being favored comes right before のほうが.",
+    "example": {
+      "jp": "冬より夏のほうが好きです。",
+      "reading": "ふゆよりなつのほうがすきです。",
+      "en": "I like summer more than winter."
+    }
+  },
+  {
+    "id": "gram-0006",
+    "level": "N4",
+    "order": 6,
+    "pattern": "〜てみる",
+    "meaning": "to try doing ~",
+    "explanation": "Attach the te-form of a verb to みる to express trying an action to see what happens, similar to 'try ~ing' in English. Here 見る is a helper verb and no longer means 'to see'.",
+    "example": {
+      "jp": "この料理を食べてみてください。",
+      "reading": "このりょうりをたべてみてください。",
+      "en": "Please try eating this dish."
+    }
+  },
+  {
+    "id": "gram-0007",
+    "level": "N4",
+    "order": 7,
+    "pattern": "〜ておく",
+    "meaning": "to do ~ in advance / to leave ~ as it is",
+    "explanation": "Attach the te-form of a verb to おく to show that someone does something in advance to prepare for the future, or leaves something in a certain state on purpose. In casual speech, ておく often becomes とく.",
+    "example": {
+      "jp": "旅行の前に、部屋を掃除しておきます。",
+      "reading": "りょこうのまえに、へやをそうじしておきます。",
+      "en": "I will clean my room in advance, before the trip."
+    }
+  },
+  {
+    "id": "gram-0008",
+    "level": "N4",
+    "order": 8,
+    "pattern": "〜てしまう",
+    "meaning": "to end up doing ~ / to finish completely (often with regret)",
+    "explanation": "Attach the te-form of a verb to しまう to emphasize that an action is completed entirely, or to show regret, surprise, or that something happened unintentionally. In casual speech, てしまう often becomes ちゃう.",
+    "example": {
+      "jp": "昨日、宿題を全部忘れてしまいました。",
+      "reading": "きのう、しゅくだいをぜんぶわすれてしまいました。",
+      "en": "Yesterday, I ended up forgetting all of my homework."
+    }
+  },
+  {
+    "id": "gram-0009",
+    "level": "N4",
+    "order": 9,
+    "pattern": "〜ていく",
+    "meaning": "to continue ~ing / to go and do ~ (change moving away from now)",
+    "explanation": "Attach the te-form of a verb to いく to describe an action or change that moves away from the speaker's current point, either in space, such as going somewhere to do something, or in time, such as a change continuing from now into the future.",
+    "example": {
+      "jp": "これからも日本語を勉強していきます。",
+      "reading": "これからもにほんごをべんきょうしていきます。",
+      "en": "I will continue studying Japanese from now on."
+    }
+  },
+  {
+    "id": "gram-0010",
+    "level": "N4",
+    "order": 10,
+    "pattern": "〜てくる",
+    "meaning": "to go and do ~, then come back / a change continuing up to now",
+    "explanation": "Attach the te-form of a verb to くる to describe an action done somewhere else before returning, or a change that has continued up until the present moment. It is the opposite direction from 〜ていく.",
+    "example": {
+      "jp": "コンビニで飲み物を買ってきます。",
+      "reading": "こんびにでのみものをかってきます。",
+      "en": "I'll buy a drink at the convenience store and come back."
+    }
+  },
+  {
+    "id": "gram-0011",
+    "level": "N4",
+    "order": 11,
+    "pattern": "〜れる／られる（可能形）",
+    "meaning": "can do ~ (potential form)",
+    "explanation": "The potential form shows that someone is able to do something. For u-verbs, change the final sound to the e-row and add る, as in 話す→話せる; for ru-verbs, replace る with られる, as in 食べる→食べられる; する becomes できる and 来る becomes 来られる. The particle を is often replaced by が with the potential form.",
+    "example": {
+      "jp": "私は少し日本語が話せます。",
+      "reading": "わたしはすこしにほんごがはなせます。",
+      "en": "I can speak a little Japanese."
+    }
+  },
+  {
+    "id": "gram-0012",
+    "level": "N4",
+    "order": 12,
+    "pattern": "〜(よ)うと思います",
+    "meaning": "I think I will do ~ / I intend to do ~",
+    "explanation": "Attach the volitional form of a verb, such as 行こう or 食べよう, to と思います to state your own intention or decision to do something. The volitional form alone, or its polite equivalent ましょう, can also be used by itself to mean 'let's do ~' or 'I will do ~'.",
+    "example": {
+      "jp": "来年、日本へ行こうと思います。",
+      "reading": "らいねん、にほんへいこうとおもいます。",
+      "en": "I'm thinking of going to Japan next year."
+    }
+  },
+  {
+    "id": "gram-0013",
+    "level": "N4",
+    "order": 13,
+    "pattern": "〜つもりです",
+    "meaning": "to intend to do ~ / to plan to do ~",
+    "explanation": "Attach the plain form of a verb to つもりです to state a personal intention or plan. Use the negative plain form plus つもりです to say you intend not to do something.",
+    "example": {
+      "jp": "今年は国へ帰らないつもりです。",
+      "reading": "ことしはくにへかえらないつもりです。",
+      "en": "I intend not to return to my country this year."
+    }
+  },
+  {
+    "id": "gram-0014",
+    "level": "N4",
+    "order": 14,
+    "pattern": "〜予定です",
+    "meaning": "to be scheduled to do ~",
+    "explanation": "Attach a verb's plain form, or a noun plus の, to 予定です to state a plan or schedule that has already been arranged. It sounds more fixed and objective than つもりです.",
+    "example": {
+      "jp": "来週、友達と旅行に行く予定です。",
+      "reading": "らいしゅう、ともだちとりょこうにいくよていです。",
+      "en": "I'm scheduled to go on a trip with a friend next week."
+    }
+  },
+  {
+    "id": "gram-0015",
+    "level": "N5",
+    "order": 15,
+    "pattern": "あげる／もらう／くれる",
+    "meaning": "to give / to receive / to give (to me) — basic giving and receiving verbs",
+    "explanation": "あげる is used when the subject gives something to someone else. もらう is used when the subject receives something from someone. くれる is used when someone gives something to the speaker or the speaker's in-group. Choosing the right verb depends on who is giving and who is receiving.",
+    "example": {
+      "jp": "私は友達に誕生日のプレゼントをあげました。",
+      "reading": "わたしはともだちにたんじょうびのぷれぜんとをあげました。",
+      "en": "I gave my friend a birthday present."
+    }
+  },
+  {
+    "id": "gram-0016",
+    "level": "N4",
+    "order": 16,
+    "pattern": "〜てあげる",
+    "meaning": "to do ~ for someone, as a favor",
+    "explanation": "Attach the te-form of a verb to あげる to show that the subject does something for someone else's benefit. Because it can sound like the speaker is pointing out their own favor, it should be used carefully, especially toward people of higher status.",
+    "example": {
+      "jp": "妹に日本語を教えてあげました。",
+      "reading": "いもうとににほんごをおしえてあげました。",
+      "en": "I taught my younger sister Japanese, as a favor to her."
+    }
+  },
+  {
+    "id": "gram-0017",
+    "level": "N4",
+    "order": 17,
+    "pattern": "〜てもらう",
+    "meaning": "to receive the favor of having someone do ~",
+    "explanation": "Attach the te-form of a verb to もらう to show that the subject receives the benefit of another person's action. The person who does the action is marked with に or から, and the sentence focuses on the receiver's point of view.",
+    "example": {
+      "jp": "友達に日本語を教えてもらいました。",
+      "reading": "ともだちににほんごをおしえてもらいました。",
+      "en": "My friend taught me Japanese, as a favor to me."
+    }
+  },
+  {
+    "id": "gram-0018",
+    "level": "N4",
+    "order": 18,
+    "pattern": "〜てくれる",
+    "meaning": "someone does ~ for me, as a favor",
+    "explanation": "Attach the te-form of a verb to くれる to show that someone does something for the speaker or the speaker's in-group. Unlike てもらう, the person who does the action is the grammatical subject of the sentence.",
+    "example": {
+      "jp": "友達が日本語を教えてくれました。",
+      "reading": "ともだちがにほんごをおしえてくれました。",
+      "en": "My friend taught me Japanese."
+    }
+  },
+  {
+    "id": "gram-0019",
+    "level": "N4",
+    "order": 19,
+    "pattern": "〜と",
+    "meaning": "when ~ / if ~ (natural or automatic result)",
+    "explanation": "Attach と to the plain present form of a verb or adjective to show that the second event happens naturally, automatically, or always as a result of the first, like a habit or a natural law. The second clause cannot be a request, invitation, or command about a controllable future action.",
+    "example": {
+      "jp": "春になると、花が咲きます。",
+      "reading": "はるになると、はながさきます。",
+      "en": "When spring comes, flowers bloom."
+    }
+  },
+  {
+    "id": "gram-0020",
+    "level": "N4",
+    "order": 20,
+    "pattern": "〜ば",
+    "meaning": "if ~ (conditional, focus on the condition)",
+    "explanation": "Attach the ば-form of a verb or adjective, such as 話す→話せば or 高い→高ければ, to express a hypothetical or general condition under which something happens or is true. It is often used for advice, wishes, and general truths.",
+    "example": {
+      "jp": "時間があれば、映画を見に行きたいです。",
+      "reading": "じかんがあれば、えいがをみにいきたいです。",
+      "en": "If I have time, I want to go see a movie."
+    }
+  },
+  {
+    "id": "gram-0021",
+    "level": "N4",
+    "order": 21,
+    "pattern": "〜たら",
+    "meaning": "if ~ / when ~ (conditional, focus on what follows)",
+    "explanation": "Attach ら to the plain past, or た-form, of a verb or adjective to describe what happens or should happen after a condition is met. It is the most flexible conditional and can be used for one-time events, requests, and suggestions.",
+    "example": {
+      "jp": "家に着いたら、電話してください。",
+      "reading": "いえについたら、でんわしてください。",
+      "en": "When you arrive home, please call me."
+    }
+  },
+  {
+    "id": "gram-0022",
+    "level": "N4",
+    "order": 22,
+    "pattern": "〜なら",
+    "meaning": "if that's the case, ~ (conditional based on a topic)",
+    "explanation": "Attach なら directly after a noun, な-adjective stem, or the plain form of a verb or い-adjective to give advice or a comment based on something the listener just said or a certain situation. It often responds to a topic that was just mentioned.",
+    "example": {
+      "jp": "日本へ行くなら、京都がおすすめです。",
+      "reading": "にほんへいくなら、きょうとがおすすめです。",
+      "en": "If you're going to Japan, I recommend Kyoto."
+    }
+  },
+  {
+    "id": "gram-0023",
+    "level": "N4",
+    "order": 23,
+    "pattern": "〜なければなりません",
+    "meaning": "must do ~ / have to do ~",
+    "explanation": "Attach なければなりません to the negative stem of a verb, dropping the final い from the ない-form and adding ければなりません, to say that an action is required or necessary. In casual speech, it is often shortened to なきゃ.",
+    "example": {
+      "jp": "明日までに宿題をしなければなりません。",
+      "reading": "あしたまでにしゅくだいをしなければなりません。",
+      "en": "I have to do my homework by tomorrow."
+    }
+  },
+  {
+    "id": "gram-0024",
+    "level": "N4",
+    "order": 24,
+    "pattern": "〜なくてもいいです",
+    "meaning": "don't have to do ~",
+    "explanation": "Attach なくてもいいです to the negative stem of a verb, dropping the final い from the ない-form and adding くてもいいです, to say that an action is not necessary or required.",
+    "example": {
+      "jp": "今日は学校に行かなくてもいいです。",
+      "reading": "きょうはがっこうにいかなくてもいいです。",
+      "en": "You don't have to go to school today."
+    }
+  },
+  {
+    "id": "gram-0025",
+    "level": "N4",
+    "order": 25,
+    "pattern": "〜れる／られる（受身形）",
+    "meaning": "to be done to (passive voice)",
+    "explanation": "The passive form shows that the subject receives the action of a verb rather than performing it. For u-verbs, change the final sound to the a-row and add れる, as in 話す→話される; for ru-verbs, add られる to the stem, as in 見る→見られる; する becomes される and 来る becomes 来られる. It is also used to describe something happening to the speaker that is troublesome.",
+    "example": {
+      "jp": "私は先生にほめられました。",
+      "reading": "わたしはせんせいにほめられました。",
+      "en": "I was praised by my teacher."
+    }
+  },
+  {
+    "id": "gram-0026",
+    "level": "N4",
+    "order": 26,
+    "pattern": "〜させる（使役形）",
+    "meaning": "to make or let someone do ~ (causative voice)",
+    "explanation": "The causative form shows that someone makes or allows another person to do something. For u-verbs, change the final sound to the a-row and add せる, as in 行く→行かせる; for ru-verbs, add させる to the stem, as in 食べる→食べさせる; する becomes させる and 来る becomes 来させる. Depending on context, it can mean forcing someone or permitting someone to do something.",
+    "example": {
+      "jp": "母は妹に部屋を掃除させました。",
+      "reading": "はははいもうとにへやをそうじさせました。",
+      "en": "My mother made my younger sister clean the room."
+    }
+  },
+  {
+    "id": "gram-0027",
+    "level": "N4",
+    "order": 27,
+    "pattern": "〜たことがあります",
+    "meaning": "have done ~ before (experience)",
+    "explanation": "Attach the plain past, or た-form, of a verb to ことがあります to talk about an experience someone has had at some point in the past, similar to 'have done ~ before' in English. Use たことがありません for the negative, meaning 'have never done ~'.",
+    "example": {
+      "jp": "私は富士山に登ったことがあります。",
+      "reading": "わたしはふじさんにのぼったことがあります。",
+      "en": "I have climbed Mt. Fuji before."
+    }
+  },
+  {
+    "id": "gram-0028",
+    "level": "N4",
+    "order": 28,
+    "pattern": "〜たり〜たりします",
+    "meaning": "do things like ~ and ~ (non-exhaustive listing)",
+    "explanation": "Attach り to the plain past, or た-form, of two or more verbs and end with します to list a few representative actions out of several possible ones, without meaning it is a complete list. It is often used to describe a typical day or free-time activities.",
+    "example": {
+      "jp": "週末は本を読んだり、音楽を聞いたりします。",
+      "reading": "しゅうまつはほんをよんだり、おんがくをきいたりします。",
+      "en": "On weekends, I do things like reading books and listening to music."
+    }
+  },
+  {
+    "id": "gram-0029",
+    "level": "N4",
+    "order": 29,
+    "pattern": "〜ながら",
+    "meaning": "while doing ~ (simultaneous actions)",
+    "explanation": "Attach ながら to the stem of a verb, the ます-form without ます, to show that one person does two actions at the same time. The main action, expressing the primary purpose, comes after ながら.",
+    "example": {
+      "jp": "音楽を聞きながら、宿題をします。",
+      "reading": "おんがくをききながら、しゅくだいをします。",
+      "en": "I do my homework while listening to music."
+    }
+  },
+  {
+    "id": "gram-0030",
+    "level": "N4",
+    "order": 30,
+    "pattern": "〜間に",
+    "meaning": "while ~ / during ~ (at some point within a period)",
+    "explanation": "Attach 間に to a verb's plain form, an い-adjective, or a noun plus の, to show that something happens at some point during a period of time. Use 間 without に instead when the main action continues for the entire period, rather than happening at just one point within it.",
+    "example": {
+      "jp": "子供が寝ている間に、掃除をしました。",
+      "reading": "こどもがねているあいだに、そうじをしました。",
+      "en": "I did the cleaning while my child was sleeping."
+    }
+  },
+  {
+    "id": "gram-0031",
+    "level": "N4",
+    "order": 31,
+    "pattern": "〜ので",
+    "meaning": "because ~ / since ~ (objective reason)",
+    "explanation": "Attach ので to the plain form of a verb or adjective, using なので after nouns and な-adjectives, to give a reason in a way that sounds soft, objective, and polite. It is often preferred over から in formal requests or explanations.",
+    "example": {
+      "jp": "雨が降っているので、傘を持っていきます。",
+      "reading": "あめがふっているので、かさをもっていきます。",
+      "en": "Since it's raining, I will bring an umbrella."
+    }
+  },
+  {
+    "id": "gram-0032",
+    "level": "N5",
+    "order": 32,
+    "pattern": "〜から",
+    "meaning": "because ~ / since ~ (subjective reason)",
+    "explanation": "Attach から to the plain form of a verb or adjective, or directly after です, to give a reason that reflects the speaker's own judgment or feeling. It sounds more direct and subjective than ので and is common in casual speech.",
+    "example": {
+      "jp": "今日は忙しいから、後で電話します。",
+      "reading": "きょうはいそがしいから、あとででんわします。",
+      "en": "Since I'm busy today, I'll call you later."
+    }
+  },
+  {
+    "id": "gram-0033",
+    "level": "N4",
+    "order": 33,
+    "pattern": "〜し",
+    "meaning": "and, also ~ (listing reasons)",
+    "explanation": "Attach し to the plain form of a verb or adjective to list one or more reasons or facts, often implying that there are other reasons too. It is commonly used to casually explain a conclusion or a general impression with more than one supporting point.",
+    "example": {
+      "jp": "この店は安いし、おいしいし、いつも人が多いです。",
+      "reading": "このみせはやすいし、おいしいし、いつもひとがおおいです。",
+      "en": "This restaurant is cheap, and delicious, and always crowded."
+    }
+  },
+  {
+    "id": "gram-0034",
+    "level": "N4",
+    "order": 34,
+    "pattern": "〜ため（に）",
+    "meaning": "in order to ~ (purpose)",
+    "explanation": "Attach ために after a verb's dictionary form, or a noun plus の, to show the purpose or goal behind an action, similar to 'in order to' in English. The clause before ために describes the goal, and the clause after it describes the action taken to reach it.",
+    "example": {
+      "jp": "日本語が上手になるために、毎日勉強しています。",
+      "reading": "にほんごがじょうずになるために、まいにちべんきょうしています。",
+      "en": "In order to become good at Japanese, I study every day."
+    }
+  },
+  {
+    "id": "gram-0035",
+    "level": "N4",
+    "order": 35,
+    "pattern": "〜ように",
+    "meaning": "so that ~ (purpose, with potential or involuntary verbs)",
+    "explanation": "Attach ように after a verb in the dictionary or ない form, especially potential verbs or verbs describing an involuntary change, to express a goal or hope for a certain result. Unlike ため, it is used when the subject cannot directly control reaching the goal through will alone.",
+    "example": {
+      "jp": "忘れないように、メモを書きます。",
+      "reading": "わすれないように、めもをかきます。",
+      "en": "I write a memo so that I won't forget."
+    }
+  },
+  {
+    "id": "gram-0036",
+    "level": "N4",
+    "order": 36,
+    "pattern": "〜すぎる",
+    "meaning": "too much ~ / excessively ~",
+    "explanation": "Attach すぎる to the stem of a verb, the ます-form without ます, or the stem of an adjective, dropping い from い-adjectives, to say that something is done or is present to an excessive degree.",
+    "example": {
+      "jp": "昨日はお酒を飲みすぎました。",
+      "reading": "きのうはおさけをのみすぎました。",
+      "en": "Yesterday I drank too much alcohol."
+    }
+  },
+  {
+    "id": "gram-0037",
+    "level": "N4",
+    "order": 37,
+    "pattern": "〜やすい",
+    "meaning": "easy to ~ / likely to ~",
+    "explanation": "Attach やすい to the stem of a verb, the ます-form without ます, to say that an action is easy to do or that something tends to happen easily. It conjugates like an い-adjective.",
+    "example": {
+      "jp": "このペンはとても書きやすいです。",
+      "reading": "このぺんはとてもかきやすいです。",
+      "en": "This pen is very easy to write with."
+    }
+  },
+  {
+    "id": "gram-0038",
+    "level": "N4",
+    "order": 38,
+    "pattern": "〜にくい",
+    "meaning": "hard to ~ / difficult to ~",
+    "explanation": "Attach にくい to the stem of a verb, the ます-form without ます, to say that an action is difficult to do. It is the opposite of やすい and also conjugates like an い-adjective.",
+    "example": {
+      "jp": "この漢字は難しくて、覚えにくいです。",
+      "reading": "このかんじはむずかしくて、おぼえにくいです。",
+      "en": "This kanji is difficult and hard to remember."
+    }
+  },
+  {
+    "id": "gram-0039",
+    "level": "N4",
+    "order": 39,
+    "pattern": "〜くなる／になる",
+    "meaning": "to become ~ (change of state)",
+    "explanation": "Attach くなる to the stem of an い-adjective, dropping the final い, or になる to a な-adjective or noun, to describe a change of state, such as something becoming a certain way over time. This is a common way to talk about changes in weather, feelings, or conditions.",
+    "example": {
+      "jp": "秋になると、涼しくなります。",
+      "reading": "あきになると、すずしくなります。",
+      "en": "When autumn comes, it becomes cool."
+    }
+  },
+  {
+    "id": "gram-0040",
+    "level": "N4",
+    "order": 40,
+    "pattern": "〜ようになる",
+    "meaning": "to come to be able to ~ / to reach the point of ~",
+    "explanation": "Attach ようになる to the dictionary form of a verb, often a potential-form verb, to describe a gradual change resulting in a new ability, habit, or situation that did not exist before. It focuses on the process of change rather than a single moment.",
+    "example": {
+      "jp": "練習して、自転車に乗れるようになりました。",
+      "reading": "れんしゅうして、じてんしゃにのれるようになりました。",
+      "en": "After practicing, I became able to ride a bicycle."
+    }
+  },
+  {
+    "id": "gram-0041",
+    "level": "N4",
+    "order": 41,
+    "pattern": "〜そうです（様態）",
+    "meaning": "looks like ~ (appearance)",
+    "explanation": "Attach そうです to the stem of a verb, the ます-form without ます, or the stem of an adjective, dropping い from い-adjectives but keeping な-adjectives as they are, to say that something looks or appears to be a certain way based on what you can see. This そうです describes a visual impression, not something you heard.",
+    "example": {
+      "jp": "この料理はおいしそうです。",
+      "reading": "このりょうりはおいしそうです。",
+      "en": "This dish looks delicious."
+    }
+  },
+  {
+    "id": "gram-0042",
+    "level": "N4",
+    "order": 42,
+    "pattern": "〜そうです（伝聞）",
+    "meaning": "I heard that ~ (hearsay)",
+    "explanation": "Attach そうです to the plain form of a verb, adjective, or noun, keeping だ before そうです for nouns and な-adjectives, to report information you heard or read from another source. Unlike the appearance meaning, this form never changes and always attaches to the complete plain form.",
+    "example": {
+      "jp": "天気予報によると、明日は雨だそうです。",
+      "reading": "てんきよほうによると、あしたはあめだそうです。",
+      "en": "According to the weather forecast, it will rain tomorrow."
+    }
+  },
+  {
+    "id": "gram-0043",
+    "level": "N4",
+    "order": 43,
+    "pattern": "〜ようです",
+    "meaning": "it seems that ~ (inference)",
+    "explanation": "Attach ようです after the plain form of a verb or い-adjective, after な for な-adjectives, or after の for nouns, to express a judgment or guess based on what the speaker has seen, heard, or felt. It sounds a little softer and more indirect than 〜と思います.",
+    "example": {
+      "jp": "道が濡れています。夜、雨が降ったようです。",
+      "reading": "みちがぬれています。よる、あめがふったようです。",
+      "en": "The road is wet. It seems it rained during the night."
+    }
+  },
+  {
+    "id": "gram-0044",
+    "level": "N4",
+    "order": 44,
+    "pattern": "〜らしいです",
+    "meaning": "apparently ~ (based on indirect information)",
+    "explanation": "Attach らしいです after the plain form of a verb, adjective, or noun to show that the information comes from something the speaker heard, read, or noticed indirectly, rather than their own direct judgment. It often sounds more detached than ようです.",
+    "example": {
+      "jp": "田中さんはもうすぐ結婚するらしいです。",
+      "reading": "たなかさんはもうすぐけっこんするらしいです。",
+      "en": "I heard that Tanaka-san is getting married soon."
+    }
+  },
+  {
+    "id": "gram-0045",
+    "level": "N4",
+    "order": 45,
+    "pattern": "〜はずです",
+    "meaning": "should be ~ (confident expectation)",
+    "explanation": "Attach はずです after the plain form of a verb or い-adjective, after な for な-adjectives, or after の for nouns, to show that the speaker strongly expects something to be true based on objective reasoning or known facts, not just a plain guess.",
+    "example": {
+      "jp": "彼はもう会社を出たから、そろそろ着くはずです。",
+      "reading": "かれはもうかいしゃをでたから、そろそろつくはずです。",
+      "en": "He already left the office, so he should be arriving soon."
+    }
+  },
+  {
+    "id": "gram-0046",
+    "level": "N4",
+    "order": 46,
+    "pattern": "〜と言う",
+    "meaning": "to say that ~ (quoting speech)",
+    "explanation": "Attach と言う after a direct quotation or a plain-form clause to report what someone said. と also marks a quoted thought before verbs like 思う, meaning 'to think'.",
+    "example": {
+      "jp": "先生は「明日テストをします」と言いました。",
+      "reading": "せんせいは「あしたてすとをします」といいました。",
+      "en": "The teacher said, 'I will give a test tomorrow.'"
+    }
+  },
+  {
+    "id": "gram-0047",
+    "level": "N4",
+    "order": 47,
+    "pattern": "〜というN",
+    "meaning": "a ~ called ~ (introducing a noun)",
+    "explanation": "Insert という between a name or word and the noun it describes to introduce something the listener may not know, similar to 'called' or 'named' in English. It is often used when mentioning an unfamiliar place, person, or thing for the first time.",
+    "example": {
+      "jp": "「さくら」という喫茶店を知っていますか。",
+      "reading": "「さくら」というきっさてんをしっていますか。",
+      "en": "Do you know a coffee shop called 'Sakura'?"
+    }
+  },
+  {
+    "id": "gram-0048",
+    "level": "N4",
+    "order": 48,
+    "pattern": "〜のに",
+    "meaning": "although ~ / even though ~ (contrary to expectation)",
+    "explanation": "Attach のに after the plain form of a verb or い-adjective, after な for な-adjectives, or after な in place of だ for nouns, to connect two clauses where the second result is surprising, disappointing, or contrary to what would normally be expected from the first. It often carries a nuance of complaint or frustration.",
+    "example": {
+      "jp": "たくさん勉強したのに、テストの点が悪かったです。",
+      "reading": "たくさんべんきょうしたのに、てすとのてんがわるかったです。",
+      "en": "Even though I studied a lot, my test score was bad."
+    }
+  }
+]
