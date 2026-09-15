@@ -11,7 +11,7 @@ export async function renderSettings(root) {
         <label>Target exam date
           <input type="date" name="examDate" value="${escapeHtml(settings.examDate || '')}" />
         </label>
-        <label>New cards per day <span class="muted">(the adaptive engine adjusts this daily — override any time)</span>
+        <label>New cards per day <span class="muted">(a soft daily pace for the learning path — the adaptive engine adjusts it daily, override any time)</span>
           <input type="number" name="newCardsPerDay" min="0" max="60" value="${settings.newCardsPerDay}" />
         </label>
         <label>Max reviews per day

@@ -83,10 +83,15 @@ function accuracyPct(sessions, today, days) {
   return total === 0 ? null : Math.round((correct / total) * 100);
 }
 
+// A day counts toward the streak if it had any reviews or any learning-path lesson.
+function studiedOn(session) {
+  return !!session && (session.studied > 0 || session.lessons > 0);
+}
+
 function computeStreak(sessions, today) {
   let streak = 0;
-  let d = sessions[today] && sessions[today].studied > 0 ? today : addDays(today, -1);
-  while (sessions[d] && sessions[d].studied > 0) {
+  let d = studiedOn(sessions[today]) ? today : addDays(today, -1);
+  while (studiedOn(sessions[d])) {
     streak++;
     d = addDays(d, -1);
   }

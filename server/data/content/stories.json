@@ -343,5 +343,203 @@
     ],
     "words": ["vocab-0033", "vocab-0227", "vocab-0230", "vocab-0182", "vocab-0159", "vocab-0266", "vocab-0184", "vocab-0098", "vocab-0175", "vocab-0047", "vocab-0125", "vocab-0225", "vocab-0176", "vocab-0179", "vocab-0197", "vocab-0183", "vocab-0201", "vocab-0114", "vocab-0050", "vocab-0126", "vocab-0027", "vocab-0189"],
     "grammar": ["gram-0048", "gram-0046", "gram-0004", "gram-0001", "gram-0021", "gram-0018", "gram-0044"]
+  },
+  {
+    "id": "story-0020",
+    "type": "story",
+    "level": "N5",
+    "title": "あした",
+    "titleReading": "あした",
+    "titleEn": "Tomorrow",
+    "lines": [
+      { "jp": "「あした、いく？」", "reading": "「あした、いく？」", "en": "\"Are you going tomorrow?\"" },
+      { "jp": "「いく。ちちと。」", "reading": "「いく。ちちと。」", "en": "\"Yes, I'm going. With my dad.\"" },
+      { "jp": "「いつ いく？」", "reading": "「いつ いく？」", "en": "\"When are you going?\"" },
+      { "jp": "「ごご。」", "reading": "「ごご。」", "en": "\"In the afternoon.\"" }
+    ],
+    "words": ["vocab-0025", "vocab-0112", "vocab-0038", "vocab-0013", "vocab-0036"],
+    "grammar": [],
+    "questions": [
+      { "q": "Who is the second person going with?", "choices": ["Their mother", "Their father", "Their whole family", "A friend"], "answer": 1 },
+      { "q": "What time of day are they going?", "choices": ["In the morning", "At night", "In the afternoon"], "answer": 2 },
+      { "q": "After hearing \"with my dad\", what does the first person ask?", "choices": ["Where they are going", "Why they are going", "When they are going"], "answer": 2 }
+    ]
+  },
+  {
+    "id": "story-0021",
+    "type": "story",
+    "level": "N5",
+    "title": "あにの て",
+    "titleReading": "あにの て",
+    "titleEn": "My Big Brother's Hands",
+    "lines": [
+      { "jp": "あには てが おおきい。", "reading": "あには てが おおきい。", "en": "My older brother has big hands." },
+      { "jp": "きのう、おとうとが あにに きいた。", "reading": "きのう、おとうとが あにに きいた。", "en": "Yesterday, my younger brother asked my older brother:" },
+      { "jp": "「どうして てが おおきいの？」", "reading": "「どうして てが おおきいの？」", "en": "\"Why are your hands so big?\"" },
+      { "jp": "あには 「ちちに きいて。」と いった。", "reading": "あには 「ちちに きいて。」と いった。", "en": "My older brother said, \"Ask Dad.\"" }
+    ],
+    "words": ["vocab-0042", "vocab-0054", "vocab-0144", "vocab-0026", "vocab-0044", "vocab-0127", "vocab-0014", "vocab-0038", "vocab-0125"],
+    "grammar": [],
+    "questions": [
+      { "q": "Who has big hands?", "choices": ["The younger brother", "The older brother", "The older sister", "The mother"], "answer": 1 },
+      { "q": "When did the younger brother ask his question?", "choices": ["Yesterday", "Today", "Tomorrow afternoon"], "answer": 0 },
+      { "q": "What did the older brother answer?", "choices": ["\"I don't know.\"", "\"Ask Mom.\"", "\"Ask Dad.\"", "\"They are not big.\""], "answer": 2 }
+    ]
+  },
+  {
+    "id": "story-0022",
+    "type": "story",
+    "level": "N5",
+    "title": "いただきます",
+    "titleReading": "いただきます",
+    "titleEn": "Let's Eat",
+    "lines": [
+      { "jp": "ははが 「いただきます。」と いいました。", "reading": "ははが 「いただきます。」と いいました。", "en": "My mother said, \"Itadakimasu.\"" },
+      { "jp": "あにも あねも 「いただきます。」と いいました。", "reading": "あにも あねも 「いただきます。」と いいました。", "en": "My older brother and older sister also said, \"Itadakimasu.\"" },
+      { "jp": "あには ははに 「ごちそうさまでした。」と いいました。", "reading": "あには ははに 「ごちそうさまでした。」と いいました。", "en": "My older brother said \"Thank you for the meal\" to my mother." },
+      { "jp": "あねは ははに 「ありがとうございます。」と いいました。", "reading": "あねは ははに 「ありがとうございます。」と いいました。", "en": "My older sister said \"Thank you\" to my mother." }
+    ],
+    "words": ["vocab-0039", "vocab-0008", "vocab-0125", "vocab-0042", "vocab-0043", "vocab-0009", "vocab-0006"],
+    "grammar": [],
+    "questions": [
+      { "q": "Who said \"Itadakimasu\" first?", "choices": ["The older brother", "The older sister", "The father", "The mother"], "answer": 3 },
+      { "q": "What did the older brother say to his mother?", "choices": ["\"Good morning.\"", "\"Thank you for the meal.\"", "\"Good night.\""], "answer": 1 },
+      { "q": "What did the older sister say to her mother?", "choices": ["\"Thank you.\"", "\"Goodbye.\"", "\"Good night.\"", "\"Good morning.\""], "answer": 0 }
+    ]
+  },
+  {
+    "id": "story-0023",
+    "type": "story",
+    "level": "N5",
+    "title": "ただいま",
+    "titleReading": "ただいま",
+    "titleEn": "I'm Home",
+    "lines": [
+      { "jp": "おとうとが 「いってきます。」と いいました。", "reading": "おとうとが 「いってきます。」と いいました。", "en": "My younger brother said, \"I'm heading out.\"" },
+      { "jp": "ははは 「どこに いくの？」と ききました。", "reading": "ははは 「どこに いくの？」と ききました。", "en": "My mother asked, \"Where are you going?\"" },
+      { "jp": "おとうとは なにも いいませんでした。", "reading": "おとうとは なにも いいませんでした。", "en": "My younger brother didn't say anything." },
+      { "jp": "ごごに、おとうとが 「ただいま。」と いいました。", "reading": "ごごに、おとうとが 「ただいま。」と いいました。", "en": "In the afternoon, my younger brother said, \"I'm home.\"" },
+      { "jp": "おとうとは ははに 「ごめんなさい。」と いいました。", "reading": "おとうとは ははに 「ごめんなさい。」と いいました。", "en": "My younger brother said \"I'm sorry\" to my mother." }
+    ],
+    "words": ["vocab-0044", "vocab-0021", "vocab-0125", "vocab-0039", "vocab-0012", "vocab-0112", "vocab-0127", "vocab-0010", "vocab-0036", "vocab-0022", "vocab-0020"],
+    "grammar": [],
+    "questions": [
+      { "q": "What did the mother ask the younger brother?", "choices": ["When he would come home", "Where he was going", "Who he was going with"], "answer": 1 },
+      { "q": "How did the younger brother answer her?", "choices": ["He said nothing", "He said \"I'm sorry\"", "He said \"In the afternoon\""], "answer": 0 },
+      { "q": "When did the younger brother come home?", "choices": ["In the morning", "At night", "In the afternoon", "The next day"], "answer": 2 },
+      { "q": "What did he say to his mother at the end?", "choices": ["\"Thank you.\"", "\"I'm sorry.\"", "\"Good night.\"", "\"I'm heading out.\""], "answer": 1 }
+    ]
+  },
+  {
+    "id": "story-0024",
+    "type": "story",
+    "level": "N5",
+    "title": "らいしゅう",
+    "titleReading": "らいしゅう",
+    "titleEn": "Next Week",
+    "lines": [
+      { "jp": "きょう、ちちが 「ただいま。」と いいました。", "reading": "きょう、ちちが 「ただいま。」と いいました。", "en": "Today, my father said, \"I'm home.\"" },
+      { "jp": "ははが 「おつかれさまでした。」と いいました。", "reading": "ははが 「おつかれさまでした。」と いいました。", "en": "My mother said, \"Thank you for your hard work.\"" },
+      { "jp": "ちちは 「らいしゅう、かぞくで どこかに いこう。」と いいました。", "reading": "ちちは 「らいしゅう、かぞくで どこかに いこう。」と いいました。", "en": "My father said, \"Next week, let's go somewhere as a family.\"" },
+      { "jp": "おとうとは 「どこに いくの？」と ききました。", "reading": "おとうとは 「どこに いくの？」と ききました。", "en": "My younger brother asked, \"Where are we going?\"" },
+      { "jp": "ちちは 「あした いうね。」と いいました。", "reading": "ちちは 「あした いうね。」と いいました。", "en": "My father said, \"I'll tell you tomorrow.\"" }
+    ],
+    "words": ["vocab-0024", "vocab-0038", "vocab-0022", "vocab-0125", "vocab-0039", "vocab-0023", "vocab-0030", "vocab-0037", "vocab-0012", "vocab-0112", "vocab-0044", "vocab-0127", "vocab-0025"],
+    "grammar": [],
+    "questions": [
+      { "q": "What did the mother say when the father came home?", "choices": ["\"Good night.\"", "\"Thank you for your hard work.\"", "\"Excuse me.\"", "\"Goodbye.\""], "answer": 1 },
+      { "q": "When does the father want to go somewhere with the family?", "choices": ["Tomorrow", "Next year", "Next week", "This month"], "answer": 2 },
+      { "q": "What did the younger brother ask?", "choices": ["Where they are going", "When they are going", "Why they are going"], "answer": 0 },
+      { "q": "What did the father answer?", "choices": ["\"Ask your mother.\"", "\"I'll tell you tomorrow.\"", "\"Next month.\""], "answer": 1 }
+    ]
+  },
+  {
+    "id": "story-0025",
+    "type": "story",
+    "level": "N5",
+    "title": "かぞく",
+    "titleReading": "かぞく",
+    "titleEn": "Family",
+    "lines": [
+      { "jp": "「おとうさんは おおきいですか。」", "reading": "「おとうさんは おおきいですか。」", "en": "\"Is your father big?\"" },
+      { "jp": "「はい、ちちは おおきいです。」", "reading": "「はい、ちちは おおきいです。」", "en": "\"Yes, my father is big.\"" },
+      { "jp": "「おかあさんは？」", "reading": "「おかあさんは？」", "en": "\"And your mother?\"" },
+      { "jp": "「ははも おおきいです。」", "reading": "「ははも おおきいです。」", "en": "\"My mother is big too.\"" },
+      { "jp": "「いもうとさんは？」", "reading": "「いもうとさんは？」", "en": "\"And your younger sister?\"" },
+      { "jp": "「いもうとは おおきくないです。」", "reading": "「いもうとは おおきくないです。」", "en": "\"My younger sister is not big.\"" }
+    ],
+    "words": ["vocab-0040", "vocab-0144", "vocab-0038", "vocab-0041", "vocab-0039", "vocab-0045"],
+    "grammar": [],
+    "questions": [
+      { "q": "Is the father big?", "choices": ["Yes", "No", "The story does not say"], "answer": 0 },
+      { "q": "Who else in the family is big?", "choices": ["The older brother", "The mother", "The younger sister"], "answer": 1 },
+      { "q": "Who is not big?", "choices": ["The father", "The mother", "The younger sister", "The younger brother"], "answer": 2 }
+    ]
+  },
+  {
+    "id": "story-0026",
+    "type": "story",
+    "level": "N5",
+    "title": "ともだち",
+    "titleReading": "ともだち",
+    "titleEn": "My Friend",
+    "lines": [
+      { "jp": "きのう、ともだちは びょうきでした。", "reading": "きのう、ともだちは びょうきでした。", "en": "Yesterday, my friend was sick." },
+      { "jp": "きょう、ともだちに 「げんきですか。」と ききました。", "reading": "きょう、ともだちに 「げんきですか。」と ききました。", "en": "Today, I asked my friend, \"Are you feeling well?\"" },
+      { "jp": "ともだちは 「はい、げんきです。」と いいました。", "reading": "ともだちは 「はい、げんきです。」と いいました。", "en": "My friend said, \"Yes, I'm fine.\"" },
+      { "jp": "ともだちの あかちゃんも げんきです。", "reading": "ともだちの あかちゃんも げんきです。", "en": "My friend's baby is well too." }
+    ],
+    "words": ["vocab-0026", "vocab-0047", "vocab-0057", "vocab-0024", "vocab-0058", "vocab-0127", "vocab-0125", "vocab-0049"],
+    "grammar": [],
+    "questions": [
+      { "q": "When was the friend sick?", "choices": ["Today", "Yesterday", "Last week", "Tomorrow"], "answer": 1 },
+      { "q": "How is the friend today?", "choices": ["Still sick", "At the hospital", "Fine"], "answer": 2 },
+      { "q": "Who else is well?", "choices": ["The friend's parents", "The friend's baby", "The friend's younger sister"], "answer": 1 }
+    ]
+  },
+  {
+    "id": "story-0027",
+    "type": "story",
+    "level": "N5",
+    "title": "びょういん",
+    "titleReading": "びょういん",
+    "titleEn": "The Hospital",
+    "lines": [
+      { "jp": "きのう、ははは びょうきでした。", "reading": "きのう、ははは びょうきでした。", "en": "Yesterday, my mother was sick." },
+      { "jp": "ちちと ははは タクシーで びょういんに いきました。", "reading": "ちちと ははは タクシーで びょういんに いきました。", "en": "My father and mother went to the hospital by taxi." },
+      { "jp": "ははは くすりを かいました。", "reading": "ははは くすりを かいました。", "en": "My mother bought medicine." },
+      { "jp": "きょう、ははは げんきです。", "reading": "きょう、ははは げんきです。", "en": "Today, my mother is well." }
+    ],
+    "words": ["vocab-0026", "vocab-0057", "vocab-0260", "vocab-0059", "vocab-0112", "vocab-0060", "vocab-0089", "vocab-0024", "vocab-0058", "vocab-0039", "vocab-0038"],
+    "grammar": [],
+    "questions": [
+      { "q": "Who was sick yesterday?", "choices": ["The father", "The mother", "The younger sister", "A friend"], "answer": 1 },
+      { "q": "How did they go to the hospital?", "choices": ["By bus", "On foot", "By taxi", "By train"], "answer": 2 },
+      { "q": "What did the mother buy?", "choices": ["Medicine", "Food", "Drinks"], "answer": 0 },
+      { "q": "How is the mother today?", "choices": ["Still sick", "Well", "In the hospital"], "answer": 1 }
+    ]
+  },
+  {
+    "id": "story-0028",
+    "type": "story",
+    "level": "N5",
+    "title": "あさごはん",
+    "titleReading": "あさごはん",
+    "titleEn": "Breakfast",
+    "lines": [
+      { "jp": "きょうの あさごはんは ごはんと たまごと やさいです。", "reading": "きょうの あさごはんは ごはんと たまごと やさいです。", "en": "Today's breakfast is rice, eggs, and vegetables." },
+      { "jp": "のみものは おちゃです。", "reading": "のみものは おちゃです。", "en": "The drink is green tea." },
+      { "jp": "いもうとは 「ぎゅうにゅうは？」と ききました。", "reading": "いもうとは 「ぎゅうにゅうは？」と ききました。", "en": "My younger sister asked, \"What about milk?\"" },
+      { "jp": "ははは 「ぎゅうにゅうは あした かうね。」と いいました。", "reading": "ははは 「ぎゅうにゅうは あした かうね。」と いいました。", "en": "My mother said, \"I'll buy milk tomorrow.\"" },
+      { "jp": "かぞくで 「いただきます。」と いいました。", "reading": "かぞくで 「いただきます。」と いいました。", "en": "Together, the family said, \"Itadakimasu.\"" }
+    ],
+    "words": ["vocab-0024", "vocab-0073", "vocab-0065", "vocab-0071", "vocab-0069", "vocab-0062", "vocab-0064", "vocab-0045", "vocab-0072", "vocab-0127", "vocab-0025", "vocab-0089", "vocab-0037", "vocab-0125", "vocab-0008", "vocab-0039"],
+    "grammar": [],
+    "questions": [
+      { "q": "Which of these is part of today's breakfast?", "choices": ["Fish", "Eggs", "Meat", "Fruit"], "answer": 1 },
+      { "q": "What is the drink?", "choices": ["Milk", "Water", "Green tea"], "answer": 2 },
+      { "q": "What did the younger sister ask about?", "choices": ["Milk", "Rice", "Vegetables", "Tea"], "answer": 0 },
+      { "q": "When will the mother buy milk?", "choices": ["Today", "Tomorrow", "Next week"], "answer": 1 }
+    ]
   }
 ]

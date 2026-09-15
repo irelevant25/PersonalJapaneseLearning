@@ -1,6 +1,6 @@
 // The adaptive engine: once per day, looks at recent performance and decides
-// whether to change the daily new-card pace or gate non-kana content behind
-// kana mastery. Every change is logged with a plain-English reason so the
+// whether to change the daily new-card pace (the learning path's soft daily
+// budget of cards to introduce) or ask for kana review before new units. Every change is logged with a plain-English reason so the
 // dashboard can show *why* something changed, not just that it did.
 //
 // This is intentionally a small, explainable rule set rather than a black
@@ -70,13 +70,13 @@ export function runAdaptiveEngine(progress, contentByType) {
       logEntry(
         today,
         'Prioritizing kana practice',
-        `Recent hiragana/katakana accuracy is ${Math.round(kanaAcc * 100)}%, below ${Math.round(KANA_ACCURACY_THRESHOLD * 100)}%. New kanji/vocab/grammar/sentences will slow down until kana recognition is solid — everything else depends on reading kana instantly.`
+        `Recent hiragana/katakana accuracy is ${Math.round(kanaAcc * 100)}%, below ${Math.round(KANA_ACCURACY_THRESHOLD * 100)}%. The learning path will ask you to review kana before starting new units until kana recognition is solid — everything else depends on reading kana instantly.`
       )
     );
   } else if ((kanaAcc === null || kanaAcc >= KANA_ACCURACY_THRESHOLD) && progress.settings.kanaGateActive) {
     progress.settings.kanaGateActive = false;
     changes.push(
-      logEntry(today, 'Kana gate lifted', 'Hiragana/katakana accuracy is back at or above the 80% threshold. Resuming normal pace across all categories.')
+      logEntry(today, 'Kana gate lifted', 'Hiragana/katakana accuracy is back at or above the 80% threshold. The learning path no longer asks for kana review first.')
     );
   }
 

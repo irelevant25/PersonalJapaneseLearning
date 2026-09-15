@@ -2,545 +2,2584 @@
   "createdAt": "2026-09-08",
   "cards": {
     "hira-a": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
           "grade": "easy"
         }
       ]
     },
     "hira-i": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
           "grade": "easy"
         }
       ]
     },
     "hira-u": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
           "grade": "easy"
         }
       ]
     },
     "hira-e": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
           "grade": "easy"
         }
       ]
     },
     "hira-o": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
           "grade": "easy"
         }
       ]
     },
     "kata-a": {
-      "box": 1,
-      "efactor": 2.5,
-      "interval": 1,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.65,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-09",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-17",
+      "lastReview": "2026-09-09",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
           "grade": "good"
+        },
+        {
+          "date": "2026-09-09",
+          "grade": "easy"
         }
       ]
     },
     "kata-i": {
-      "box": 1,
-      "efactor": 2.5,
-      "interval": 1,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.65,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-09",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-17",
+      "lastReview": "2026-09-09",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
           "grade": "good"
+        },
+        {
+          "date": "2026-09-09",
+          "grade": "easy"
         }
       ]
     },
     "kata-u": {
-      "box": 1,
-      "efactor": 2.35,
-      "interval": 1,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.5,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-09",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-17",
+      "lastReview": "2026-09-09",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
           "grade": "hard"
+        },
+        {
+          "date": "2026-09-09",
+          "grade": "easy"
         }
       ]
     },
     "kata-e": {
-      "box": 1,
-      "efactor": 2.5,
-      "interval": 1,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.65,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-09",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-17",
+      "lastReview": "2026-09-09",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
           "grade": "good"
+        },
+        {
+          "date": "2026-09-09",
+          "grade": "easy"
         }
       ]
     },
     "kata-o": {
-      "box": 1,
-      "efactor": 2.5,
-      "interval": 1,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.65,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-09",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-17",
+      "lastReview": "2026-09-09",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
           "grade": "good"
+        },
+        {
+          "date": "2026-09-09",
+          "grade": "easy"
         }
       ]
     },
     "vocab-0001": {
-      "box": 1,
-      "efactor": 2.5,
-      "interval": 1,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.65,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-09",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-17",
+      "lastReview": "2026-09-09",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
           "grade": "good"
+        },
+        {
+          "date": "2026-09-09",
+          "grade": "easy"
         }
       ]
     },
     "vocab-0002": {
-      "box": 1,
-      "efactor": 2.5,
-      "interval": 1,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.65,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-09",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-17",
+      "lastReview": "2026-09-09",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
           "grade": "good"
+        },
+        {
+          "date": "2026-09-09",
+          "grade": "easy"
         }
       ]
     },
     "hira-ka": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
           "grade": "easy"
         }
       ]
     },
     "hira-ki": {
-      "box": 1,
-      "efactor": 2.5,
-      "interval": 1,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.65,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-09",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-17",
+      "lastReview": "2026-09-09",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
           "grade": "good"
+        },
+        {
+          "date": "2026-09-09",
+          "grade": "easy"
         }
       ]
     },
     "hira-ku": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
           "grade": "easy"
         }
       ]
     },
     "hira-ke": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
           "grade": "easy"
         }
       ]
     },
     "hira-ko": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
           "grade": "easy"
         }
       ]
     },
     "hira-sa": {
-      "box": 1,
-      "efactor": 2.5,
-      "interval": 1,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.65,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-09",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-17",
+      "lastReview": "2026-09-09",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
           "grade": "good"
+        },
+        {
+          "date": "2026-09-09",
+          "grade": "easy"
         }
       ]
     },
     "hira-shi": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
           "grade": "easy"
         }
       ]
     },
     "hira-su": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
           "grade": "easy"
         }
       ]
     },
     "hira-se": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
           "grade": "easy"
         }
       ]
     },
     "kata-ka": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
           "grade": "easy"
         }
       ]
     },
     "kata-ki": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
           "grade": "easy"
         }
       ]
     },
     "kata-ku": {
-      "box": 1,
+      "box": 3,
       "efactor": 2.5,
-      "interval": 1,
-      "reps": 1,
+      "interval": 7,
+      "reps": 4,
       "lapses": 0,
-      "due": "2026-09-09",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-22",
+      "lastReview": "2026-09-15",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
           "grade": "good"
+        },
+        {
+          "date": "2026-09-09",
+          "grade": "hard"
+        },
+        {
+          "date": "2026-09-10",
+          "grade": "good"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
         }
       ]
     },
     "kata-ke": {
-      "box": 1,
-      "efactor": 2.35,
-      "interval": 1,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.2,
+      "interval": 3,
+      "reps": 4,
       "lapses": 0,
-      "due": "2026-09-09",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-15",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
           "grade": "hard"
+        },
+        {
+          "date": "2026-09-09",
+          "grade": "hard"
+        },
+        {
+          "date": "2026-09-10",
+          "grade": "hard"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
         }
       ]
     },
     "kata-ko": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
           "grade": "easy"
         }
       ]
     },
     "kata-sa": {
-      "box": 1,
-      "efactor": 2.35,
-      "interval": 1,
-      "reps": 1,
+      "box": 3,
+      "efactor": 2.5,
+      "interval": 20,
+      "reps": 3,
       "lapses": 0,
-      "due": "2026-09-09",
-      "lastReview": "2026-09-08",
+      "due": "2026-10-05",
+      "lastReview": "2026-09-15",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
           "grade": "hard"
+        },
+        {
+          "date": "2026-09-09",
+          "grade": "good"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
         }
       ]
     },
     "kata-shi": {
-      "box": 1,
-      "efactor": 2.35,
-      "interval": 1,
-      "reps": 1,
+      "box": 3,
+      "efactor": 2.5,
+      "interval": 20,
+      "reps": 3,
       "lapses": 0,
-      "due": "2026-09-09",
-      "lastReview": "2026-09-08",
+      "due": "2026-10-05",
+      "lastReview": "2026-09-15",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
           "grade": "hard"
+        },
+        {
+          "date": "2026-09-09",
+          "grade": "good"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
         }
       ]
     },
     "kata-su": {
-      "box": 1,
-      "efactor": 2.5,
-      "interval": 1,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.65,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-09",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-17",
+      "lastReview": "2026-09-09",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
           "grade": "good"
+        },
+        {
+          "date": "2026-09-09",
+          "grade": "easy"
         }
       ]
     },
     "vocab-0003": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
           "grade": "easy"
         }
       ]
     },
     "vocab-0004": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
           "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
+          "grade": "easy"
         }
       ]
     },
     "vocab-0005": {
-      "box": 1,
-      "efactor": 2.65,
-      "interval": 2,
-      "reps": 1,
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
       "lapses": 0,
-      "due": "2026-09-10",
-      "lastReview": "2026-09-08",
+      "due": "2026-09-18",
+      "lastReview": "2026-09-10",
       "isLeech": false,
       "note": "",
       "history": [
         {
           "date": "2026-09-08",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-10",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-so": {
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
+      "lapses": 0,
+      "due": "2026-09-23",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-09",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-ta": {
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
+      "lapses": 0,
+      "due": "2026-09-23",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-09",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-chi": {
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
+      "lapses": 0,
+      "due": "2026-09-23",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-09",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-tsu": {
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
+      "lapses": 0,
+      "due": "2026-09-23",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-09",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-te": {
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
+      "lapses": 0,
+      "due": "2026-09-23",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-09",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-to": {
+      "box": 2,
+      "efactor": 2.8,
+      "interval": 8,
+      "reps": 2,
+      "lapses": 0,
+      "due": "2026-09-23",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-09",
+          "grade": "easy"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-na": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-ni": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-nu": {
+      "box": 1,
+      "efactor": 2.4499999999999997,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 1,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "again"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-ne": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-no": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-ha": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-hi": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-fu": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-he": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-se": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-ho": {
+      "box": 1,
+      "efactor": 2.2499999999999996,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 2,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "again"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "again"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-ma": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-mi": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-mu": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-me": {
+      "box": 1,
+      "efactor": 2.4499999999999997,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 1,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "again"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-so": {
+      "box": 1,
+      "efactor": 2.2499999999999996,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 2,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "again"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "again"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-ta": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-chi": {
+      "box": 1,
+      "efactor": 2.4499999999999997,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 1,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "again"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-tsu": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-te": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "vocab-0006": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-mo": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-ya": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-yu": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-yo": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-ra": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-ri": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-ru": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-re": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-ro": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-to": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-na": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-ni": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-nu": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-ne": {
+      "box": 0,
+      "efactor": 1.8999999999999997,
+      "interval": 1,
+      "reps": 0,
+      "lapses": 3,
+      "due": "2026-09-16",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "again"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "again"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "again"
+        }
+      ]
+    },
+    "kata-no": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-ha": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-hi": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "vocab-0007": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "vocab-0008": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "vocab-0009": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-wa": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-wo": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-n": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-ga": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-gi": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-gu": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-ge": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-go": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-za": {
+      "box": 1,
+      "efactor": 2.4499999999999997,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 1,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "again"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-fu": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-he": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-ho": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-ma": {
+      "box": 1,
+      "efactor": 2.4499999999999997,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 1,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "again"
+        },
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-mi": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-mu": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-me": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-mo": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "vocab-0010": {
+      "box": 0,
+      "efactor": 2.3,
+      "interval": 1,
+      "reps": 0,
+      "lapses": 1,
+      "due": "2026-09-16",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "again"
+        }
+      ]
+    },
+    "vocab-0011": {
+      "box": 0,
+      "efactor": 2.3,
+      "interval": 1,
+      "reps": 0,
+      "lapses": 1,
+      "due": "2026-09-16",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "again"
+        }
+      ]
+    },
+    "vocab-0012": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-ji": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-zu": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-ze": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-zo": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-da": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-di": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-du": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-de": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-do": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-ya": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-yu": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-yo": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-ra": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-ri": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-ru": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-re": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-ro": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "vocab-0013": {
+      "box": 0,
+      "efactor": 2.3,
+      "interval": 1,
+      "reps": 0,
+      "lapses": 1,
+      "due": "2026-09-16",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "again"
+        }
+      ]
+    },
+    "vocab-0014": {
+      "box": 1,
+      "efactor": 2.5,
+      "interval": 1,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-16",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "good"
+        }
+      ]
+    },
+    "vocab-0015": {
+      "box": 1,
+      "efactor": 2.35,
+      "interval": 1,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-16",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "hard"
+        }
+      ]
+    },
+    "hira-ba": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-bi": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-bu": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-be": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-bo": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-pa": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-pi": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-pu": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "hira-pe": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-wa": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-wo": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-n": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-ga": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-gi": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-gu": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-ge": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "kata-go": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "vocab-0016": {
+      "box": 1,
+      "efactor": 2.5,
+      "interval": 1,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-16",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "good"
+        }
+      ]
+    },
+    "vocab-0017": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
+          "grade": "easy"
+        }
+      ]
+    },
+    "vocab-0018": {
+      "box": 1,
+      "efactor": 2.65,
+      "interval": 2,
+      "reps": 1,
+      "lapses": 0,
+      "due": "2026-09-17",
+      "lastReview": "2026-09-15",
+      "isLeech": false,
+      "note": "",
+      "history": [
+        {
+          "date": "2026-09-15",
           "grade": "easy"
         }
       ]
@@ -555,18 +2594,61 @@
       "good": 10,
       "easy": 18,
       "newCards": 32
+    },
+    "2026-09-09": {
+      "studied": 20,
+      "correct": 20,
+      "again": 0,
+      "hard": 2,
+      "good": 2,
+      "easy": 16,
+      "newCards": 6
+    },
+    "2026-09-10": {
+      "studied": 20,
+      "correct": 20,
+      "again": 0,
+      "hard": 1,
+      "good": 1,
+      "easy": 18,
+      "newCards": 0
+    },
+    "2026-09-15": {
+      "studied": 122,
+      "correct": 107,
+      "again": 15,
+      "hard": 1,
+      "good": 2,
+      "easy": 104,
+      "newCards": 101
     }
   },
   "settings": {
     "examDate": "2026-12-06",
-    "newCardsPerDay": 12,
+    "newCardsPerDay": 21,
     "maxReviewsPerDay": 150,
     "ttsEnabled": true,
     "leechThreshold": 4,
     "kanaGateActive": false
   },
-  "adaptiveLog": [],
-  "lastAdaptiveRun": "2026-09-08",
+  "adaptiveLog": [
+    {
+      "date": "2026-09-09",
+      "change": "Increased new cards/day: 12 -> 15",
+      "reason": "Your 7-day accuracy is 100% with no review backlog. You can handle a faster pace."
+    },
+    {
+      "date": "2026-09-10",
+      "change": "Increased new cards/day: 15 -> 18",
+      "reason": "Your 7-day accuracy is 100% with no review backlog. You can handle a faster pace."
+    },
+    {
+      "date": "2026-09-15",
+      "change": "Increased new cards/day: 18 -> 21",
+      "reason": "Your 7-day accuracy is 100% with no review backlog. You can handle a faster pace."
+    }
+  ],
+  "lastAdaptiveRun": "2026-09-15",
   "notes": {},
   "examLog": []
 }

@@ -16,10 +16,13 @@ import cardsRoutes from './routes/cards.js';
 import adaptiveLogRoutes from './routes/adaptiveLog.js';
 import examRoutes from './routes/exam.js';
 import storiesRoutes from './routes/stories.js';
+import pathRoutes from './routes/path.js';
+import { loadPath } from './lib/path.js';
 
 export async function createApp() {
   await loadContent();
   await loadProgress();
+  await loadPath();
 
   const app = express();
   app.use(express.json());
@@ -50,6 +53,7 @@ export async function createApp() {
   app.use('/api/adaptive-log', adaptiveLogRoutes);
   app.use('/api/exam', examRoutes);
   app.use('/api/stories', storiesRoutes);
+  app.use('/api/path', pathRoutes);
 
   app.get('/api/health', (req, res) => {
     const content = getContent();

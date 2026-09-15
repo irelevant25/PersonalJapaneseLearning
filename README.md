@@ -22,6 +22,42 @@ other devices on your network. Your study data never leaves your machine.
 
 ## How it works
 
+### The learning path (Learn tab)
+
+This is where you study. Like Duolingo, it is one flow instead of separate
+practice modes: learn a few new things, use them in sentences, then read a
+short story. The path has 4 sections and 59 units:
+
+1. **Hiragana + first words**: a few hiragana rows at a time, plus real words
+   you can already read with them.
+2. **Katakana + everyday words**: katakana rows, mixed with units of words.
+3. **Kanji + grammar in sentences**: words with their kanji, one grammar
+   point per unit, and sentences that use them.
+4. **More kanji + N4 grammar**: the rest of the N4 kanji and grammar.
+
+Every unit has the same steps:
+
+- **Learn**: see each new card, with reading, meaning and a listen button.
+- **Drill**: multiple-choice questions on the new cards, plus some older ones.
+- **Sentences**: what do sentences with these words mean?
+- **Story**: read a short story, then answer questions about it.
+
+**Pass rules:** you pass a step with **80% or more**. Steps open one after
+another, so you can't skip ahead, but you can retry as often as you like, and
+a step you passed stays passed. A wrong answer comes back once at the end of
+the round for practice, but only your first try counts.
+
+- **Already know a unit?** Press **Test out**. With 80% you skip ahead to
+  that unit, and its cards go into your reviews (spread over a week).
+- **Stories are still being written.** Units without one show "Story · soon"
+  and don't block you. If a story is added to a unit you already finished, it
+  shows as an optional ↺ step.
+- **When cards go into your reviews:** when you pass a unit's drill, its new
+  cards are added to your reviews, starting tomorrow.
+- **Pace:** the Learn tab tells you if reviews are due, how many new cards
+  you added today, and whether you're on track to finish the path before
+  Exam Prep. These are hints, not locks.
+
 ### Cards
 
 Six kinds of flashcards, all reviewed with the same spaced-repetition engine:
@@ -34,14 +70,17 @@ Six kinds of flashcards, all reviewed with the same spaced-repetition engine:
 - **Vocabulary** — word, reading, meaning, part of speech, topic tags.
 - **Grammar** — a pattern (e.g. 〜たことがあります), its meaning, a plain-
   language explanation, and an example sentence.
-- **Sentences** — full example sentences. These unlock automatically, one at
-  a time, only once *every* vocabulary word they use is already something
-  you know — so you'll never see a sentence full of unfamiliar words. N3-
-  level vocabulary is avoided in sentences as much as possible.
+- **Sentences** — full example sentences. The path only shows a sentence
+  after it has taught every word in it, so you'll never see a sentence full
+  of unfamiliar words. N3-level vocabulary is avoided as much as possible.
 
-### Spaced repetition
+While a word or sentence still has kanji you haven't learned, its reading is
+shown under it.
 
-Every card has its own schedule (a modified SM-2 algorithm): grade a card
+### Spaced repetition (Reviews tab)
+
+New cards only come from the learning path. The **Reviews** tab shows the
+cards that are due today. Every card has its own schedule (a modified SM-2 algorithm): grade a card
 **Again / Hard / Good / Easy** and its next-due date adjusts accordingly.
 Two deliberate choices, given that memory retention was the whole reason for
 building this:
@@ -57,15 +96,16 @@ personal mnemonic note to them from the Browse tab.
 
 ### The adaptive engine
 
-Once a day, the app looks at your recent stats and can automatically:
+Once a day, the app looks at your recent stats and adjusts your daily
+new-card pace (the pace the learning path suggests):
 
-- **Slow down** new material if your 3-day accuracy drops below 70%, or if
-  your review backlog gets more than 2.5x your daily new-card rate.
-- **Speed up** new material (+3 cards/day, up to a ceiling of 30) if your
-  7-day accuracy is above 90% and you have no backlog.
-- **Gate everything behind kana** — if recent hiragana/katakana accuracy
-  drops below 80%, new kanji/vocab/grammar/sentences slow to a trickle until
-  kana recognition is solid again, since everything else depends on it.
+- **Slow down** if your 3-day accuracy drops below 70%, or if your review
+  backlog gets more than 2.5x your daily new-card rate.
+- **Speed up** (+3 cards/day, up to a ceiling of 30) if your 7-day accuracy
+  is above 90% and you have no backlog.
+- **Kana first** — if recent hiragana/katakana accuracy drops below 80%, the
+  Learn tab asks you to review kana before starting a new unit, since
+  everything else depends on it.
 
 Every adjustment is logged in plain language (Dashboard shows the last few,
 Stats shows the full history) — it's meant to be a study plan you can see
@@ -74,27 +114,16 @@ number yourself in Settings.
 
 ### Curriculum
 
-A 4-phase plan (`server/data/content/curriculum.json`) controls which
-categories are introducing new material at all. Phases are **proportions of
-the time between when you started and your target exam date**, not fixed
-calendar weeks — so if you push your exam date earlier or later in
-Settings, every phase boundary automatically compresses or stretches to
-match, and "Exam Prep" always lands in the final stretch before test day:
+A simple time plan (`server/data/content/curriculum.json`) splits the time
+between when you started and your exam date:
 
-1. **Kana Foundations** (first ~12% of your timeline): hiragana and
-   katakana only (plus a little vocab so it feels useful right away).
-2. **Core Building** (next ~42%): kanji, vocabulary, and grammar introduced
-   together; sentences start unlocking as vocabulary accumulates.
-3. **Integration** (next ~31%): new-card pace slows on purpose; more
-   emphasis on full sentences and listening.
-4. **Exam Prep** (final ~15%): no new material at all — pure review and
-   leech cleanup until test day.
+1. **Learning path** (first ~85%): work through the path and do your reviews.
+2. **Exam Prep** (final ~15%): the path should be done — daily reviews,
+   leeches, stories and mock exams until test day.
 
-Your target exam date is set in Settings (defaults to 4 months from first
-run) and the Dashboard always shows which phase you're currently in.
-**New-card pacing is also soft, not a hard wall**: if you finish today's
-planned new cards and nothing is due for review yet, Study offers a "study
-extra cards anyway" option rather than making you wait until tomorrow.
+These are **proportions of your timeline**, not fixed weeks, so if you move
+your exam date in Settings, the plan stretches or shrinks to match. The
+Learn tab and Dashboard show whether you're on track.
 
 ### Listening
 
@@ -111,12 +140,10 @@ stats machinery as everything else.
 
 ### Stories
 
-Short reading-practice passages, separate from the flashcard system on
-purpose — there's no sensible way to "grade" recall of a whole paragraph
-with Again/Hard/Good/Easy, so Stories live in their own tab instead of the
-daily queue. Each one is annotated with how much of its vocabulary you
-already know, but nothing is ever locked — you can read anything, whenever
-you want. Reading/translation are independent show/hide toggles, and every
+Short reading passages. In the learning path, each unit's story comes with
+comprehension questions. The Stories tab lets you read any story freely,
+with no questions and nothing locked. Each one is annotated with how much of
+its vocabulary you already know. Reading/translation are independent show/hide toggles, and every
 line (plus the whole story at once) has a listen button.
 
 ### Mock exam
@@ -142,12 +169,13 @@ to keep growing over the 4 months, via the `japanese-content-writer` agent:
 | Kanji | 287 | 115 N5 + 172 N4, each with readings/meaning/example words |
 | Vocabulary | 319 | 282 N5 + 37 N4, across greetings/verbs/adjectives/numbers/etc. |
 | Grammar | 48 | full N4 grammar sequence, all N5 prerequisites included |
-| Sentences | 238 | built entirely from the seeded vocabulary; every grammar point appears at least twice |
-| Stories | 19 | 4-8 lines each, N5→N4 difficulty, built entirely from the seeded vocabulary |
+| Sentences | 259 | built entirely from the seeded vocabulary; 21 simple kana-only sentences for the first units |
+| Stories | 28 | 19 longer N5→N4 stories + 9 short kana stories for units 2–10 |
+| Learning path | 59 units | stories with questions in units 2–10 so far; the rest are written in batches |
 
 Check the in-app **Stats** tab at any time for live counts and your actual
 progress against them — that's the source of truth, this table is just a
-snapshot as of first build (2026-09-08).
+snapshot (last updated 2026-09-15).
 
 ## Project structure
 

@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { findCard } from '../lib/content.js';
-import { getProgress, saveProgress } from '../lib/progress.js';
+import { getProgress, saveProgress, ensureSession } from '../lib/progress.js';
 import { newCardState, gradeCard } from '../lib/srs.js';
 import { todayStr } from '../lib/dates.js';
 
@@ -24,13 +24,11 @@ router.post('/', async (req, res) => {
   const nextState = gradeCard(prevState, grade, today);
   progress.cards[cardId] = nextState;
 
-  const session =
-    progress.sessions[today] || { studied: 0, correct: 0, again: 0, hard: 0, good: 0, easy: 0, newCards: 0 };
+  const session = ensureSession(progress, today);
   session.studied += 1;
   session[grade] += 1;
   if (grade !== 'again') session.correct += 1;
   if (wasNew) session.newCards += 1;
-  progress.sessions[today] = session;
 
   await saveProgress();
   res.json({ card: { ...card, srs: nextState } });

@@ -3,6 +3,8 @@ import { labelForType } from '../utils.js';
 import { frontHtml, backHtml, speakTextFor } from '../components/cardView.js';
 import { speak } from '../components/tts.js';
 
+// Reviews: every due card, graded Again/Hard/Good/Easy. New cards never
+// appear here — they enter review from the learning path (Learn tab).
 export async function renderStudy(root, navigate) {
   const state = {
     queue: [],
@@ -12,11 +14,10 @@ export async function renderStudy(root, navigate) {
     done: 0,
     correct: 0,
     finished: false,
-    lastFetchWasExtra: false,
   };
 
-  async function loadQueue(extra) {
-    const data = await api.getQueue(20, { extra });
+  async function loadQueue() {
+    const data = await api.getQueue(20);
     state.queue = data.items;
     state.total = data.items.length;
     state.index = 0;
@@ -24,7 +25,6 @@ export async function renderStudy(root, navigate) {
     state.correct = 0;
     state.flipped = false;
     state.finished = false;
-    state.lastFetchWasExtra = extra;
   }
 
   function currentItem() {
@@ -42,26 +42,18 @@ export async function renderStudy(root, navigate) {
   }
 
   function renderEmpty() {
-    const heading = state.lastFetchWasExtra ? 'Nothing left to study' : "You're caught up for now";
-    const body = state.lastFetchWasExtra
-      ? "There's genuinely nothing left available — everything unlocked so far has either been introduced already or isn't due for review yet."
-      : "You've reached today's planned new-card limit, and nothing you've studied yet is due for review again today (reviews resurface starting tomorrow). That's normal pacing, not a wall.";
-
     root.innerHTML = `
       <section class="panel empty-state">
-        <h2>${heading}</h2>
-        <p>${body}</p>
+        <h2>No reviews due right now</h2>
+        <p>Everything you've learned is scheduled for a later day. New cards come from the learning path.</p>
         <div class="empty-actions">
-          ${!state.lastFetchWasExtra ? '<button class="btn-primary" id="study-extra">Study extra cards anyway</button>' : ''}
+          <button class="btn-primary" id="go-learn">Continue the learning path</button>
           <button class="btn-secondary" id="go-stats">View stats</button>
         </div>
       </section>`;
 
+    root.querySelector('#go-learn').addEventListener('click', () => navigate('learn'));
     root.querySelector('#go-stats').addEventListener('click', () => navigate('stats'));
-    root.querySelector('#study-extra')?.addEventListener('click', async () => {
-      await loadQueue(true);
-      render();
-    });
   }
 
   function renderFinished() {
@@ -70,12 +62,16 @@ export async function renderStudy(root, navigate) {
       <section class="panel empty-state">
         <h2>Session complete</h2>
         <p>You reviewed ${state.done} card${state.done === 1 ? '' : 's'} at ${pct}% correct.</p>
-        <button class="btn-primary" id="study-again">Study more</button>
+        <div class="empty-actions">
+          <button class="btn-primary" id="study-again">Review more</button>
+          <button class="btn-secondary" id="go-learn">Continue the learning path</button>
+        </div>
       </section>`;
     root.querySelector('#study-again').addEventListener('click', async () => {
-      await loadQueue(false);
+      await loadQueue();
       render();
     });
+    root.querySelector('#go-learn').addEventListener('click', () => navigate('learn'));
   }
 
   function renderCard() {
@@ -85,9 +81,9 @@ export async function renderStudy(root, navigate) {
 
     root.innerHTML = `
       <div class="study-progress"><div class="study-progress-fill" style="width:${progressPct}%"></div></div>
-      <div class="study-meta">${state.done + 1} / ${state.total} &middot; ${labelForType(card.type)}${item.reason === 'new' ? ' &middot; new' : ''}</div>
+      <div class="study-meta">${state.done + 1} / ${state.total} &middot; ${labelForType(card.type)}</div>
       <section class="flashcard">
-        ${state.flipped ? backHtml(card) : frontHtml(card)}
+        ${state.flipped ? backHtml(card) : frontHtml(card, item.hint)}
       </section>
       <div class="study-actions">
         ${state.flipped ? gradeButtonsHtml() : '<button class="btn-primary btn-large" id="flip-btn">Show answer (Space)</button>'}
@@ -146,7 +142,7 @@ export async function renderStudy(root, navigate) {
   }
 
   document.addEventListener('keydown', keyHandler);
-  await loadQueue(false);
+  await loadQueue();
   render();
 
   return () => document.removeEventListener('keydown', keyHandler);

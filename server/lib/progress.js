@@ -1,12 +1,17 @@
 // Manages progress.json — the single file that IS this app's "database" of
 // learner state: per-card SRS state, daily session logs, settings, the
-// adaptive engine's decision log, and personal notes/mnemonics.
+// adaptive engine's decision log, personal notes/mnemonics, and learning-path
+// step results.
 
 import path from 'path';
 import { readJson, writeJson } from './jsonStore.js';
 import { todayStr, addMonths } from './dates.js';
 
-const PROGRESS_PATH = path.join(process.cwd(), 'server', 'data', 'user', 'progress.json');
+// N4_PROGRESS_FILE points a verification instance at a throwaway copy, so
+// testing never writes the real learner state.
+const PROGRESS_PATH = process.env.N4_PROGRESS_FILE
+  ? path.resolve(process.env.N4_PROGRESS_FILE)
+  : path.join(process.cwd(), 'server', 'data', 'user', 'progress.json');
 
 function defaultProgress() {
   const today = todayStr();
@@ -26,6 +31,7 @@ function defaultProgress() {
     lastAdaptiveRun: null,
     notes: {},
     examLog: [],
+    path: { steps: {} },
   };
 }
 
@@ -51,6 +57,7 @@ function withDefaults(loaded) {
     ...defaults,
     ...loaded,
     settings: { ...defaults.settings, ...(loaded.settings || {}) },
+    path: { ...defaults.path, ...(loaded.path || {}) },
   };
 }
 
@@ -61,4 +68,22 @@ export function getProgress() {
 
 export async function saveProgress() {
   await writeJson(PROGRESS_PATH, cache);
+}
+
+// The per-day log entry: SRS review counts (studied/correct/grades), cards
+// introduced that day (newCards), and learning-path attempts (lessons).
+export function ensureSession(progress, date) {
+  const existing = progress.sessions[date] || {};
+  progress.sessions[date] = {
+    studied: 0,
+    correct: 0,
+    again: 0,
+    hard: 0,
+    good: 0,
+    easy: 0,
+    newCards: 0,
+    lessons: 0,
+    ...existing,
+  };
+  return progress.sessions[date];
 }

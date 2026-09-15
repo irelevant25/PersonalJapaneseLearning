@@ -3,18 +3,22 @@
 
 import { escapeHtml } from '../utils.js';
 
-export function frontHtml(card) {
+// `hint`: the reading to show under a vocab word or sentence while it still
+// has kanji the learner hasn't learned (the server decides — see
+// readingHints in server/lib/path.js). Null/omitted shows no reading.
+export function frontHtml(card, hint = null) {
+  const hintHtml = hint ? `<div class="card-hint-reading">${escapeHtml(hint)}</div>` : '';
   switch (card.type) {
     case 'hiragana':
     case 'katakana':
     case 'kanji':
       return `<div class="card-face-char">${escapeHtml(card.char)}</div>`;
     case 'vocab':
-      return `<div class="card-face-word">${escapeHtml(card.front)}</div>`;
+      return `<div class="card-face-word">${escapeHtml(card.front)}</div>${hintHtml}`;
     case 'grammar':
       return `<div class="card-face-pattern">${escapeHtml(card.pattern)}</div>`;
     case 'sentence':
-      return `<div class="card-face-sentence">${escapeHtml(card.jp)}</div>`;
+      return `<div class="card-face-sentence">${escapeHtml(card.jp)}</div>${hintHtml}`;
     default:
       return '<div>Unknown card type</div>';
   }

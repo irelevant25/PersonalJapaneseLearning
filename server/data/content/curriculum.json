@@ -2,33 +2,15 @@
   "startDate": "2026-09-08",
   "phases": [
     {
-      "name": "Kana Foundations",
-      "fraction": 0.12,
-      "unlocked": ["hiragana", "katakana", "vocab"],
-      "weights": { "hiragana": 3, "katakana": 3, "vocab": 1 },
-      "notes": "Get every hiragana and katakana character into rotation first. A little vocab is mixed in so kana feels useful right away, but kanji and grammar wait until kana is underway."
-    },
-    {
-      "name": "Core Building",
-      "fraction": 0.42,
-      "unlocked": ["hiragana", "katakana", "kanji", "vocab", "grammar", "sentence"],
-      "weights": { "hiragana": 0.3, "katakana": 0.3, "kanji": 1, "vocab": 2, "grammar": 0.6, "sentence": 0.6 },
-      "notes": "Steady daily introduction of kanji, vocabulary and grammar together. A small ongoing kana allowance mops up anything not finished during Kana Foundations. Sentences unlock automatically as soon as every word they use is already known."
-    },
-    {
-      "name": "Integration",
-      "fraction": 0.31,
-      "unlocked": ["hiragana", "katakana", "kanji", "vocab", "grammar", "sentence"],
-      "weights": { "hiragana": 0.1, "katakana": 0.1, "kanji": 0.5, "vocab": 1, "grammar": 0.5, "sentence": 1.5 },
-      "notes": "New-card pace slows down on purpose. More emphasis shifts to full sentences and listening practice, tying together everything learned so far."
+      "name": "Learning path",
+      "fraction": 0.85,
+      "notes": "Work through the learning path on the Learn tab (it is the only place new cards come from) and do your reviews every day. The path is paced to be finished before Exam Prep starts."
     },
     {
       "name": "Exam Prep",
       "fraction": 0.15,
-      "unlocked": [],
-      "weights": {},
-      "newCardsOverride": 0,
-      "notes": "No new cards at all. Pure review, leech cleanup, and mixed mock-review sessions until test day."
+      "examPrep": true,
+      "notes": "The path should be finished now. Focus on daily reviews, leeches, stories and mock exams until test day."
     }
   ]
 }

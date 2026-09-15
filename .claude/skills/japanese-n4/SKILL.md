@@ -1,6 +1,6 @@
 ---
 name: japanese-n4
-description: Playbook for this personal JLPT N4 study app — content schemas, SRS/adaptive engine mechanics, curriculum rules, and how to run/test/extend the project. Load this for ANY work in this repo — adding vocab/kanji/grammar/sentence content, touching scheduling or the adaptive engine, or changing the frontend.
+description: Playbook for this personal JLPT N4 study app — the Duolingo-style learning path (units, steps, pass rules), content schemas, SRS/adaptive engine mechanics, curriculum pacing, and how to run/test/extend the project. Load this for ANY work in this repo — adding vocab/kanji/grammar/sentence/story content, changing path units, touching scheduling or the adaptive engine, or changing the frontend.
 ---
 
 # N4 Coach — project playbook
@@ -11,14 +11,28 @@ consistent with what's already here.
 
 ## What this is, in one paragraph
 
-A flashcard app with real spaced repetition (SM-2 style) covering hiragana,
-katakana, kanji, vocabulary, grammar, and example sentences, plus an adaptive
-engine that watches accuracy/backlog and adjusts daily pace automatically.
-Target: comfortable N4 readiness in ~4 months. The user has tried multiple
-study methods before without success and explicitly wants stats-driven
-adjustments and heavy repetition of already-known material (memory retention
-is the stated weak point) — don't build features that let material drift out
-of rotation for long stretches.
+A study app built around a **learning path** (Duolingo-style: sections →
+units → steps, words → sentences → story, strict order with an 80% pass
+rule) on top of real spaced repetition (SM-2 style) covering hiragana,
+katakana, kanji, vocabulary, grammar, and example sentences, plus an
+adaptive engine that watches accuracy/backlog and adjusts daily pace
+automatically. The path is the only place new cards come from; the Reviews
+tab is pure SRS review of everything already learned. Target: comfortable N4
+readiness before the exam date in Settings. The user has tried multiple
+study methods before without success, said explicitly that separate
+practice modes without a flow didn't work for them, and wants stats-driven
+adjustments and heavy repetition of already-known material (memory
+retention is the stated weak point) — don't build features that let
+material drift out of rotation for long stretches. The user writes in
+non-native English: keep UI text short and plain.
+
+## Keeping this knowledge base current — part of every task
+
+After any change, update what went stale before calling the task done:
+- this file (architecture, schemas, design decisions, gotchas, story-batch status),
+- `.claude/agents/japanese-content-writer.md` if content rules changed,
+- `CLAUDE.md` only if its essentials changed,
+- `README.md` "How it works" / "Current state" for the user.
 
 ## Hard constraints — do not violate
 
@@ -28,9 +42,11 @@ of rotation for long stretches.
 - Storage: local JSON files only (this is deliberate — no SQLite, no
   Postgres, nothing that needs installing). `server/data/content/*.json` are
   static seed content; `server/data/user/progress.json` is the single
-  "database" of learner state. By the user's choice it is tracked in git
+  "database" of learner state (SRS cards, sessions, settings, logs, and
+  learning-path step results). By the user's choice it is tracked in git
   (not gitignored) so progress is versioned/backed up — it will show a diff
   after nearly every study session, that's expected, not a sign of a bug.
+  Never commit test data over it.
 - Runs entirely offline/localhost. Server binds to `127.0.0.1` by design
   (see `server/index.js`) — don't change this to `0.0.0.0` without asking,
   since it would expose the study data on the local network.
@@ -50,48 +66,144 @@ of rotation for long stretches.
 server/
   index.js            entry point — host/port from package.json's `config` block
                       (currently 127.0.0.1:3001), overridable via PORT/HOST env vars
-  app.js              express wiring, static file serving, daily adaptive-engine trigger
+  app.js              express wiring, static file serving, daily adaptive-engine trigger,
+                      loads content + progress + path on boot
   lib/
     dates.js          "YYYY-MM-DD" date string helpers (todayStr/addDays/addMonths/diffDays)
     jsonStore.js       generic atomic JSON read/write (temp file + rename, write queue per path)
     srs.js             the SM-2-ish scheduler — the only place scheduling math happens
-    content.js         loads/caches the 6 content JSON files, normalizes `type`, appendCard()
-    progress.js        loads/saves progress.json (cards, sessions, settings, adaptiveLog, notes)
-    curriculum.js       resolves which phase "today" falls into, relative to the exam date
-    queue.js            builds a study session: due reviews + weighted new cards
-    adaptive.js          once/day: adjusts newCardsPerDay, toggles the kana gate, logs why
+                      (gradeCard, plus introduceCard for path-introduced cards)
+    content.js         loads/caches the content JSON arrays, normalizes `type`, appendCard()
+    progress.js        loads/saves progress.json (cards, sessions, settings, adaptiveLog, notes,
+                      examLog, path); ensureSession(); N4_PROGRESS_FILE env override
+    path.js            THE LEARNING PATH: loads path.json, step ladder, unlock/pass rules,
+                      step payloads (learn cards / quiz questions / story), introducing cards
+                      into SRS, test-out, readingHints(). See "Learning path" below.
+    curriculum.js       getPhase() + getPathPace(): time plan relative to the exam date
+    queue.js            builds the Reviews queue: due cards only, most overdue first
+    adaptive.js          once/day: adjusts newCardsPerDay (path pace), toggles the kana gate, logs why
     stats.js            aggregates everything the dashboard/stats view needs
-    exam.js              generates mock-exam MCQ questions from already-studied cards
+    exam.js              buildQuestion() (MCQ from a card, also used by path drills) + mock exam
   routes/*.js          thin Express routers, one per resource (content/queue/review/stats/
-                       settings/curriculum/notes/export/cards/adaptiveLog/exam/stories)
+                       settings/curriculum/notes/export/cards/adaptiveLog/exam/stories/path)
   data/content/        hiragana.json, katakana.json, kanji.json, vocab.json, grammar.json,
-                       sentences.json, stories.json, curriculum.json — seed content, in git
+                       sentences.json, stories.json (arrays), path.json, curriculum.json
   data/user/progress.json   generated on first run, git-tracked (user's choice) — the actual learner state
+scripts/check-path.js  `npm run check` — validates path.json against the content files
 public/
   index.html, styles.css
   js/api.js            fetch wrapper, one function per endpoint
-  js/main.js           hash router + view lifecycle (calls each view's returned cleanup fn)
-  js/utils.js          escapeHtml, SRS-state -> status label/class, type -> display label
+  js/main.js           hash router (#view or #view/param/param, e.g. #lesson/hira-1/drill)
+                       + view lifecycle (calls each view's returned cleanup fn)
+  js/utils.js          escapeHtml, SRS-state -> status label/class, type -> label, paceSummary
   js/components/cardView.js   front/back/summary HTML per content type — the single source
-                              of truth for how a card renders; study.js and browse.js both use it
+                              of truth for how a card renders (frontHtml takes an optional
+                              reading hint); study/browse/exam/lesson all use it
   js/components/charts.js     tiny dependency-free inline-SVG bar chart
   js/components/tts.js        wraps window.speechSynthesis (best-effort, no bundled audio)
-  js/views/*.js         one render(root, navigate) function per tab (dashboard/study/stories/
-                        exam/browse/stats/settings), returns an optional cleanup function
-                        (study.js and exam.js need one, for their keydown listeners)
+  js/views/*.js         one render(root, navigate, params) function per route (dashboard/path
+                        ["Learn"]/lesson [+ test-out]/study ["Reviews"]/stories/exam/browse/
+                        stats/settings), returns an optional cleanup function (study, exam and
+                        lesson need one, for their keydown listeners)
 .claude/
   skills/japanese-n4/SKILL.md   this file
-  agents/japanese-content-writer.md   subagent for bulk content additions (see below)
+  agents/japanese-content-writer.md   subagent for content additions (see below)
 ```
+
+## Learning path (the main flow)
+
+Built because the user found separate practice modes (flashcards, stories,
+exam) had no flow. Duolingo-style: learn words, use them in sentences, read
+a story. Server: `server/lib/path.js` + `server/routes/path.js`. Frontend:
+`public/js/views/path.js` (Learn tab) and `public/js/views/lesson.js` (runs
+a step or a test-out).
+
+- **Structure** (`server/data/content/path.json`):
+  `{passAccuracy: 80, sections: [{id, title, description, units: [{id, title,
+  new: [card ids], sentences: [sentence ids], story: story id | null,
+  noStory?: true}]}]}`. Array order = teaching order; unit numbers are
+  computed (global 1..N). Current plan: 4 sections, 59 units —
+  `hira-1..6` (hiragana rows + the words they make readable), `kata-1..7`
+  alternating with `words-1..6` (katakana + everyday words), `core-1..22`
+  (words + their kanji + one grammar point + sentences), `n4-1..18` (rest of
+  the kanji and grammar). Kana is mixed with real words from unit 1 (the
+  user's choice). Kanji start only after katakana, because on'yomi readings
+  are written in katakana.
+- **Step ladder** (built by `unitSteps()`): `learn` + `drill` (if `new` is
+  non-empty) → `sentences` (if `sentences` is non-empty) → `story` (unless
+  `noStory`).
+  - learn: flip through each new card with full details. Not graded (100%).
+  - drill: MCQ over every new card once + earlier path cards already in review,
+    overdue first (30% of the new count, at least 10 questions total); ~30% of
+    questions are reverse (meaning → pick the Japanese). Distractors come from
+    cards the path has taught so far (fallback: whole pool when fewer than 4).
+  - sentences: same generator over the unit's sentences + earlier path
+    sentences in review, at least 5 questions.
+  - story: read the story (reading toggle, TTS), then its comprehension
+    questions with the story still visible. No translation until the result.
+  - In every quiz a wrong answer comes back once at the end for practice;
+    only first tries count toward the score.
+- **Pass rule:** a step passes when its best accuracy >= `passAccuracy` (80),
+  stays passed if a replay scores lower, unlimited retries. The client posts
+  `{correct, total}`; the server computes accuracy and pass state.
+- **Unlocking** (`computePathState`), strict order with two non-blocking cases:
+  - `soon`: a story step whose story doesn't exist yet or has fewer than 3
+    questions. Never blocks. (Stories are written in batches.)
+  - `catch-up`: any unpassed step *behind the furthest passed step* — e.g. a
+    story or sentences added after the learner moved past that unit. Playable,
+    shown with ↺, never blocks. So adding content to earlier units later is safe.
+  - Statuses: `passed | open | catch-up | soon | locked`; exactly one `open`
+    step (the Continue target). Unit status: `current | done | locked`.
+- **SRS hand-off:** first pass of a unit's `drill` puts its `new` cards into
+  `progress.cards` via `srs.introduceCard` (due tomorrow); first pass of
+  `sentences` does the same for its sentences. Cards already in SRS are left
+  alone. Lesson answers never grade SRS cards — `routes/review.js` stays the
+  only grading path (same principle as the mock exam). Introduced cards count
+  in `sessions[date].newCards`; each step attempt counts in `sessions[date].lessons`
+  (which also keeps the streak alive).
+- **Test-out:** any unit that isn't done has "Test out". It quizzes (max 30,
+  round-robin across units) everything from the first unfinished unit up to
+  the chosen one; >= 80% marks all their available steps passed with
+  `testedOut: true` and introduces their cards spread over 7 days
+  (`introduceCard(today, 1..7)`). Below 80% changes nothing.
+- **Persistence:** `progress.path.steps["unitId/stepId"] = {attempts,
+  lastAccuracy, bestAccuracy, passedAt, testedOut, updatedAt}`. Renaming a
+  unit id or step id orphans saved progress — never do that. Reordering or
+  inserting units is safe (statuses are recomputed; catch-up handles gaps).
+- **Reading hints** (`readingHints`): a vocab word or sentence shows its kana
+  reading under the Japanese while it contains any kanji whose kanji card
+  isn't in review yet. Used by path quizzes and the Reviews queue (`hint`
+  field → `frontHtml(card, hint)`), so words learned in kana units stay readable.
+- **Pacing is soft:** the path shows "N reviews due, do them first",
+  "kana accuracy dropped" (kana gate), today's new cards vs
+  `settings.newCardsPerDay`, and on-track/behind (`getPathPace`: the path
+  should be finished when the `examPrep` phase starts). None of these lock
+  anything — only the pass rule locks.
+- **API:** `GET /api/path` (state + pace), `GET/POST /api/path/step/:unitId/:stepId`,
+  `GET/POST /api/path/test-out/:unitId`. Locked steps → 409.
+
+### Story batches (content status)
+
+Stories are written per unit by the content writer, in batches, in path order.
+- Batch 1 (done, 2026-09-15): hira-1 `noStory` (not enough kana), hira-2..words-2
+  → story-0020..0028 (kana only, English questions), plus kana sentences
+  sent-0239..0259 for hira-3..words-2.
+- Next: kata-3 onward. The 19 original stories (story-0001..0019) are already
+  placed in core/n4 units but have no `questions` yet, so they show as `soon`
+  until a batch adds questions. `npm run check` lists every unit still waiting.
+- Question language: English for early units; switch to simple Japanese
+  questions (`q` in Japanese + `qReading`) once the learner knows enough words
+  (around the core section).
 
 ## Content schemas (server/data/content/*.json)
 
-Every content file is a flat JSON array. `type` is added at load time by
-`content.js` from the filename — grammar.json entries do NOT need a `type`
-field on disk, everything else conventionally includes one for clarity
-anyway. Canonical type keys used everywhere in code (progress.cards keys,
-queue items, curriculum weights): `hiragana`, `katakana`, `kanji`, `vocab`,
-`grammar`, `sentence` (singular — not "sentences", that's only the filename).
+Every content file except path.json/curriculum.json is a flat JSON array.
+`type` is added at load time by `content.js` from the filename — grammar.json
+entries do NOT need a `type` field on disk, everything else conventionally
+includes one for clarity anyway. Canonical type keys used everywhere in code
+(progress.cards keys, queue items, path pools): `hiragana`, `katakana`,
+`kanji`, `vocab`, `grammar`, `sentence` (singular — not "sentences", that's
+only the filename).
 
 - **hiragana.json / katakana.json** — `{id, type, char, romaji, kind, row, note?}`.
   `kind`: base | dakuten | handakuten | digraph | extended (katakana loanword
@@ -106,52 +218,53 @@ queue items, curriculum weights): `hiragana`, `katakana`, `kanji`, `vocab`,
   verb-irregular, i-adjective, na-adjective, adverb, conjunction, expression,
   counter. Reuse existing tags (see the file) instead of inventing new ones.
 - **grammar.json** — `{id: "gram-0001", level, order: <int>, pattern,
-  meaning, explanation, example: {jp, reading, en}}`. `order` drives teaching
-  sequence (content.js sorts by it on load) — always give a new entry an
-  `order` that reflects where it belongs, not just `max(order)+1`, if it's a
-  prerequisite for existing later entries.
+  meaning, explanation, example: {jp, reading, en}}`. `order` sorts the file
+  on load (content.js); the path's unit placement decides when it's taught.
 - **sentences.json** — `{id: "sent-0001", type: "sentence", jp, reading, en,
   words: string[] (vocab ids used), grammar?: string[] (gram ids used)}`.
-  **Every id in `words` must exist in vocab.json.** This is the dependency
-  list the queue uses to auto-unlock a sentence (see below) — get it wrong
-  and a sentence either never appears or appears before its words are known.
+  **Every id in `words` must exist in vocab.json**, and the sentence's unit
+  must come at or after the units teaching all its words/grammar (checked by
+  `npm run check`). Sentences for early (kana) units are written in kana only.
 - **stories.json** — `{id: "story-0001", type: "story", level, title,
-  titleReading, titleEn, lines: [{jp, reading, en}] (4-8), words: string[]
-  (union of vocab ids across all lines), grammar?: string[]}`. Same
-  word-dependency rule as sentences (**every id in `words` must exist in
-  vocab.json**), but stories are NOT part of the SRS queue — see the
-  Stories section below.
-- **curriculum.json** — not a card list. `{startDate, phases: [{name,
-  fraction: number, unlocked: string[], weights: {type: number},
-  newCardsOverride?}]}`. `fraction` values across all phases must sum to
-  `1.0` — see the Curriculum section below for why. `weights` are
-  proportional (largest-remainder allocation in `queue.js`), not absolute
-  counts. There is deliberately no `examDate` field here — the live exam
-  date is `progress.settings.examDate` (Settings-editable), and every
-  `getPhase()` call site must pass it in.
+  titleReading, titleEn, lines: [{jp, reading, en}], words: string[]
+  (union of vocab ids across all lines), grammar?: string[], questions?:
+  [{q, qReading?, choices: string[], answer: <index>}]}`. Same word rule as
+  sentences. A story needs >= 3 `questions` to be usable as a path story
+  step. Formatting: the file uses a compact hand layout (one inline object
+  per line inside `lines`/`questions`, inline id arrays) — keep it; a
+  `JSON.stringify(_, null, 2)` rewrite turns a small edit into a 2000-line diff.
+- **path.json** — see "Learning path" above.
+- **curriculum.json** — `{startDate, phases: [{name, fraction, notes,
+  examPrep?}]}`. `fraction` values must sum to `1.0`. Currently two phases:
+  "Learning path" (0.85) and "Exam Prep" (0.15, `examPrep: true`). There is
+  deliberately no `examDate` field here — the live exam date is
+  `progress.settings.examDate` (Settings-editable).
 
 ### Adding content
 
-- Prefer the **japanese-content-writer** subagent (`.claude/agents/`) for any
-  *batch* addition (a new set of vocab/kanji/grammar/sentences) — it knows
-  this schema and will read existing files first to continue id numbering
-  and avoid duplicates. Use it directly for one-off single-card additions.
+- Use the **japanese-content-writer** subagent (`.claude/agents/`) for
+  content additions — it knows these schemas, the path rules, and id numbering.
+- **Every new card must be placed in a path unit**, or it never reaches the
+  learner (the path is the only source of new cards). New words usually go
+  into a new unit appended to the right section, or into an existing unit that
+  the learner hasn't reached yet. Adding to an already-passed unit is safe but
+  those cards only arrive through a catch-up step (for sentences) — for `new`
+  cards prefer a new unit. Run `npm run check` after every content change.
 - Accuracy bar: JLPT publishes no official kanji/vocab/grammar list, so
   there's no ground truth to check against — but every reading, meaning, and
   example sentence must still be correct standard Japanese. When unsure,
   omit rather than guess.
-- Keep example sentences (kanji `examples`, grammar `example`, and
-  `sentences.json` itself) built from words already in `vocab.json` wherever
-  possible. The user asked explicitly to keep N3+ vocabulary in sentences to
-  an absolute minimum, and only once there's enough known N4/N5 vocabulary to
-  make sentences worthwhile at all.
+- Sentences and stories only use words/kanji/kana already taught by their
+  unit. The user asked explicitly to keep N3+ vocabulary in sentences to an
+  absolute minimum.
 - No duplicate ids, no duplicate `char`/`front`/`pattern` within a file.
 - The running app can also add single cards at runtime via `POST /api/cards`
   (see `server/routes/cards.js` and the "+ Add card" form in Browse) — these
   get an id like `vocab-custom-<timestamp>` and are appended straight into
-  the relevant JSON file through `content.appendCard()`. Fine for the user's
-  own one-off additions; don't use this path for bulk seeding, edit the JSON
-  files directly (or use the subagent) instead.
+  the relevant JSON file through `content.appendCard()`. They are NOT in any
+  path unit (check-path ignores `-custom-` ids), so they only enter review if
+  graded from Browse/Reviews flows that exist for them. Don't use this path for
+  bulk seeding.
 
 ## SRS mechanics (server/lib/srs.js)
 
@@ -160,8 +273,10 @@ day-granularity. Per-card state: `{box, efactor, interval, reps, lapses, due,
 lastReview, isLeech, note, history[]}`.
 
 - `box` increments on `good`/`easy`, resets to 0 on `again`. **"Known" means
-  `box >= 2`** (`srs.isKnown`) — this is what gates sentence unlocking and
-  counts toward the "known" stat.
+  `box >= 2`** (`srs.isKnown`) — this counts toward the "known" stat and
+  story readiness in the Stories tab.
+- `introduceCard(today, dueInDays)` = a fresh state due in N days — how the
+  path puts cards into review. Scheduling math still only lives in this file.
 - `interval` is capped at `MAX_INTERVAL_DAYS = 45` even for very mature
   cards — deliberate, so nothing goes quiet for months given the user's
   stated memory/retention concerns. Don't remove this cap without asking.
@@ -172,110 +287,70 @@ lastReview, isLeech, note, history[]}`.
 - If you ever need to change the scheduling formula, do it only in
   `gradeCard()` — nowhere else computes intervals.
 
-## Curriculum + queue (server/lib/curriculum.js, queue.js)
+## Curriculum + Reviews queue (server/lib/curriculum.js, queue.js)
 
 - **Phases are relative to the exam date, not fixed calendar weeks.** Each
   phase has a `fraction` of the total time between `curriculum.startDate`
-  and `progress.settings.examDate` (all `fraction`s sum to 1.0).
-  `getPhase(curriculum, examDate, today)` computes `daysElapsed / totalDays`
-  and walks the cumulative fractions to find the current phase. This is
-  deliberate and load-bearing: the user changed their exam date mid-project
-  (moved it *earlier*) on day one, and the original fixed-week design
-  (`weeks: [start, end]`, ignoring exam date entirely) would have scheduled
-  "Exam Prep" to start *after* the new exam date — i.e. never actually
-  entering pure-review mode before the test. Every call site
-  (`routes/queue.js`, `routes/stats.js`, `routes/curriculum.js`) MUST pass
-  `progress.settings.examDate` into `getPhase()` — if you ever see a call to
-  `getPhase(curriculum)` with only one argument, that's the bug again.
-- `curriculum.json` phases gate which categories can introduce **new**
-  cards, and in what proportion (`weights`). They never gate review of cards
-  already introduced — SRS alone decides when a due card resurfaces.
-- `sentence` is special: instead of a fixed weight-based pool position, a
-  sentence becomes eligible the moment every id in its `words` array is
-  "known" (see above). `queue.pickEligibleSentences` does this check.
+  and `progress.settings.examDate`. `getPhase(curriculum, examDate, today)`
+  finds the current phase; `getPathPace(curriculum, examDate, unitsTotal,
+  today)` says how many units should be done by today so the path finishes
+  when the `examPrep` phase starts. This is load-bearing: the user moved
+  their exam date earlier on day one, and a fixed-week plan would have put
+  Exam Prep after the exam. Every call site MUST pass
+  `progress.settings.examDate` — a one-argument `getPhase(curriculum)` call
+  is that bug again.
+- **The Reviews queue (`buildQueue`) is due cards only**, most overdue first.
+  It never introduces new cards — there is no weights/`extra`/daily-cap logic
+  any more; that all moved to the path (new cards) and soft pace notices.
+  The old curriculum `weights`/`unlocked`/`newCardsOverride` fields and the
+  auto-unlocking of sentences in the queue were removed on 2026-09-15 when
+  the path replaced them.
 - The **kana gate**: if recent hiragana/katakana accuracy drops below 80%
-  (`adaptive.js`), `progress.settings.kanaGateActive` is set and `queue.js`
-  scales all non-kana new-card weights down to 15% until it clears. This is
-  a safety net independent of the phase — it can kick in during any phase if
-  kana slips.
-- Daily new-card budget = `curriculumPhase.newCardsOverride ?? settings.newCardsPerDay`,
-  minus new cards already introduced today (tracked per-date in
-  `progress.sessions[date].newCards`).
-- **The daily cap is a soft pacing aid, not a hard wall.** `buildQueue(...,
-  extra: true)` (wired to `GET /api/queue?extra=1`) ignores the numeric
-  daily cap for one fetch — this is what powers the "study extra cards
-  anyway" button in Study's empty state. It does NOT bypass curriculum
-  gating: Exam Prep's `weights: {}` still yields zero new cards regardless
-  of `extra`, since there's nothing to pick from. Don't let `extra` grow
-  into a way to skip phase gating — it's specifically an escape hatch for
-  "I have more time/motivation than today's pace assumed," not for jumping
-  ahead in the curriculum.
+  (`adaptive.js`), `progress.settings.kanaGateActive` is set; the Learn tab
+  then shows a "review kana before a new unit" notice (soft, not a lock).
 
-## Stories (server/routes/stories.js, public/js/views/stories.js)
+## Stories tab (server/routes/stories.js, public/js/views/stories.js)
 
-Short reading-practice passages (`stories.json`, 4-8 `lines` each) — reading
-comprehension practice, not spaced-repetition flashcards. Deliberately kept
-**outside** the SRS system entirely:
-- Not in `curriculum.json` weights, so `queue.pickNewCards` never touches
-  them and they never appear in the daily Study queue.
-- Not in `SRS_TRACKED_TYPES` (`content.js`), so `stats.computeStats` doesn't
-  try to give them a new/learning/known/mature breakdown — that framework
-  doesn't apply to a multi-sentence passage.
-- `GET /api/stories` returns every story annotated with a `readiness`
-  object (`{known, total, ready}`) computed from whether the words in its
-  `words` array are already `isKnown` — but this is purely informational.
-  Stories are never hidden/locked; the learner can read anything, they just
-  see how much vocabulary they already recognize first.
-- The reader (`stories.js` view) has independent "show reading"/"show
-  translation" toggles and a per-line + whole-story listen button, reusing
-  `components/tts.js`. No grading UI at all — there's nothing to grade.
+The Stories tab is free reading of every story in `stories.json` (the same
+stories the path uses for its story steps): never locked, annotated with how
+much of each story's vocabulary is already `isKnown`, reading/translation
+toggles and TTS, no grading. Stories are not SRS-tracked (`SRS_TRACKED_TYPES`
+excludes `story`); grading happens only inside path story steps and only
+affects path progress.
 
 ## Mock exam (server/lib/exam.js, routes/exam.js, public/js/views/exam.js)
 
 Multiple-choice quizzes generated **entirely from cards already in
-`progress.cards`** (i.e. already studied at least once) — never new
-material, and it needs zero authored quiz content:
-- Prompt/answer for a question come straight from the existing card's own
-  fields (`PROMPT_FIELD`/`ANSWER_FIELD` maps in `exam.js`, one pair per
-  type, covering all `SRS_TRACKED_TYPES` — `story` has no entry in either
-  map and is skipped, since it has no studied-card state to draw from).
-- Distractors are sampled from the **full content pool** of the same type
-  (not just studied cards) — this matters so early on, when only a handful
-  of cards are studied, there are still enough plausible wrong answers to
-  build a real question. If `pickDistractors` can't find even one valid
-  distractor (extremely small content pool for a type), that question is
-  dropped rather than shown with fewer than 2 choices.
-- **Exam answers never touch SRS state.** This is deliberate — it keeps
-  "what determines a card's schedule" to a single code path
-  (`routes/review.js` -> `srs.gradeCard`). An exam is purely a self-check;
-  only the aggregate score (`{date, total, correct, byType}`) is appended to
-  `progress.examLog` via `POST /api/exam/submit`, for the user's own
-  visibility over time. Don't wire exam results back into `progress.cards`
-  without discussing it first — it would blur that single-source-of-truth
-  model and there's already a real review path for updating schedules.
-- Frontend reuses `cardView.frontHtml(card)` to render the question prompt
-  (the exam question's `card` field is a full real card object) — don't
-  duplicate per-type prompt rendering in `exam.js`, keep using the shared
-  component.
+`progress.cards`** — never new material, zero authored quiz content:
+- `buildQuestion(card, sameTypePool, {reverse})` builds one MCQ from the
+  card's own fields (`PROMPT_FIELD`/`ANSWER_FIELD`; reverse uses
+  `JAPANESE_CHOICE`, which adds the reading to vocab choices). Distractors
+  skip anything that would also be correct (same answer text or same prompt
+  text). If no distractor can be found the question is dropped. The path's
+  drills and test-outs use the same function.
+- **Exam answers never touch SRS state** — keeps "what determines a card's
+  schedule" to a single code path (`routes/review.js` -> `srs.gradeCard`).
+  Only the aggregate score is appended to `progress.examLog`. Don't wire exam
+  or path quiz results back into `progress.cards` without discussing it first.
+- Frontend reuses `cardView.frontHtml(card)` for the prompt.
 
 ## Adaptive engine (server/lib/adaptive.js)
 
 Runs at most once per calendar day (checked via `progress.lastAdaptiveRun`,
 triggered lazily on the first `/api/*` request of a new day — see the
-middleware in `app.js`). Small, explainable rule set, in priority order:
+middleware in `app.js`). `settings.newCardsPerDay` is now the learning path's
+soft daily pace (shown on the Learn tab and in the learn step's warning).
+Small, explainable rule set, in priority order:
 
-1. **Backlog**: due count > 2.5x current `newCardsPerDay` → cut new cards to
-   60% of current (floor 5).
-2. **Low accuracy**: 3-day accuracy < 70% → cut new cards to 80% of current.
-3. **High accuracy**: 7-day accuracy > 90% and no backlog → new cards +3
-   (ceiling 30).
+1. **Backlog**: due count > 2.5x current `newCardsPerDay` → cut it to 60% (floor 5).
+2. **Low accuracy**: 3-day review accuracy < 70% → cut it to 80%.
+3. **High accuracy**: 7-day accuracy > 90% and no backlog → +3 (ceiling 30).
 4. **Kana gate**: toggled independently, see above.
 
-Every change appends `{date, change, reason}` to `progress.adaptiveLog`,
-shown on the Dashboard (last 3) and in full on the Stats page. If you add a
-new rule, follow the same pattern — plain-English `reason` string, not just
-a number change. The point is a study plan the user can trust and audit, not
-a black box.
+Accuracy here is SRS review accuracy only (`sessions.studied/correct`), not
+path quizzes. Every change appends `{date, change, reason}` to
+`progress.adaptiveLog`, shown on the Dashboard (last 3) and in full on the
+Stats page. New rules follow the same pattern — plain-English `reason`.
 
 ## Running and testing
 
@@ -283,53 +358,51 @@ a black box.
 npm install
 npm start        # node server/index.js — http://127.0.0.1:3001 (see package.json's `config`)
 npm run dev       # node --watch server/index.js, restarts on file change
+npm run check     # validate path.json against the content files
 ```
 
 No test suite exists (intentionally — this is a small personal app). Before
 calling any change done:
 
-- `node --check <file>` on any edited backend `lib`/`routes` file or frontend
-  `public/js` file to catch syntax errors.
-- Actually hit the relevant `/api/*` endpoint(s) (curl / `Invoke-RestMethod`)
-  after a backend change.
-- For any frontend change, start the server and check it in a real browser —
-  don't assume a UI change works from reading the code. Use the `run` skill
-  if available.
+- `node --check <file>` on every edited backend or frontend JS file.
+- `npm run check` after any content or path.json change (must end with `OK`).
+- Hit the relevant `/api/*` endpoint(s) after a backend change.
+- For any frontend change, check it in a real browser. `playwright-core`
+  installed in the scratchpad with `chromium.launch({ channel: 'chrome' })`
+  works on this machine (Chrome is installed; no browser download needed).
+  Also check at 400px width (no horizontal page scroll).
+- **Never test against the user's real data.** The user usually has their own
+  instance running on port 3001 — don't kill it. Start a verification
+  instance with a copy of the progress file:
+  `PORT=3099 N4_PROGRESS_FILE=<scratchpad>/progress.test.json node server/index.js`
+  (copy `server/data/user/progress.json` there first). With that override,
+  POSTing reviews/path results is safe. On Windows, start it as a background
+  task — a server started with `Start-Process` from a tool shell can die when
+  that shell resets.
+- To test path quizzes in a browser, capture the `GET /api/path/step/...`
+  response (it includes `correctIndex`) and match the question by the
+  "n / total" counter; a wrong first try adds a retry at the end.
+- The server caches content and path.json at boot: restart it after editing
+  content files.
 - If you change scheduling (`srs.js`) or the adaptive engine, sanity-check
-  with a few manual `/api/review` calls and confirm `due`/`box`/`interval`
-  move the way you expect — there's no automated test harness catching
-  regressions here.
-- If `npm start` fails with `EADDRINUSE` on the configured port, don't
-  assume it's a leftover process you spawned and kill it — the user runs
-  this app themselves too, and it's very likely their own live session.
-  Verify first (e.g. does progress.json have very recent activity?), and
-  prefer starting a second instance on a throwaway port (`PORT=3099 npm
-  start` — the `PORT` env var overrides package.json's `config.port`) for
-  read-only verification (GET requests only — `/api/queue`, `/api/stats`,
-  etc. don't write) over touching whatever's already listening. Only grading a review
-  writes to progress.json, and two Node processes writing to it around the
-  same time can clobber each other's in-memory cache — avoid POSTing
-  `/api/review` against a shared data file from a verification instance.
+  with a few `/api/review` calls on the test instance and confirm
+  `due`/`box`/`interval` move the way you expect.
 
 To fully reset learner progress (start over from zero): stop the server and
 delete `server/data/user/progress.json`. It's recreated fresh — with a new
-`examDate` of today+4 months — on next boot. It's git-tracked, so that
-shows up as a pending deletion until committed. There's deliberately no
-in-app "reset everything" button (too easy to hit by accident); this is a
-manual, explicit action only.
+`examDate` of today+4 months — on next boot. There's deliberately no in-app
+"reset everything" button; this is a manual, explicit action only.
 
-## Known gaps / deliberate non-goals for v1
+## Known gaps / deliberate non-goals
 
 - No official JLPT kanji/vocab/grammar list exists to validate seed content
-  against (confirmed via web search when this project was built) — the
-  seeded content is a curated high-confidence starter set, not exhaustive.
-  Expect to keep growing it over the 4 months via the content-writer agent.
+  against — the seeded content is a curated high-confidence starter set.
+- Stories exist for units 2–10 so far; later units show "Story · soon" until
+  later batches are written.
+- Kana units are large (18–28 cards) because kana are grouped by several rows;
+  the user already knew most hiragana/katakana and has test-out for that.
 - No handwriting/stroke-order kanji practice — N4 is entirely multiple
-  choice (vocabulary/grammar/reading/listening), so recognition-mode cards
-  are the priority. Could be added later as a genuine nice-to-have, not v1.
-- Listening relies on the browser/OS's built-in `speechSynthesis` voices —
-  quality and availability of a Japanese voice varies by machine. No audio
-  files are bundled or downloaded.
+  choice, so recognition-mode cards are the priority.
+- Listening relies on the browser/OS's built-in `speechSynthesis` voices.
 - Single user, no auth, no HTTPS — appropriate only because it's bound to
-  127.0.0.1. Don't add multi-user features; there's no use case for them
-  here.
+  127.0.0.1. Don't add multi-user features.

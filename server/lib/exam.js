@@ -6,6 +6,8 @@
 // is entirely multiple-choice, so this format is closer to the real test
 // than a flip-card review, and it's a self-check — it never writes back to
 // SRS state, so it can't be confused with a "real" review.
+//
+// `buildQuestion` is also used by the learning path's drills (lib/path.js).
 
 const PROMPT_FIELD = {
   hiragana: (c) => c.char,
@@ -25,6 +27,13 @@ const ANSWER_FIELD = {
   sentence: (c) => c.en,
 };
 
+// Reverse questions (meaning -> pick the Japanese). Vocab choices carry
+// their reading, so a word whose kanji isn't learned yet is still answerable.
+const JAPANESE_CHOICE = {
+  ...PROMPT_FIELD,
+  vocab: (c) => (c.front === c.reading ? c.front : `${c.front}（${c.reading}）`),
+};
+
 export function buildExam({ contentByType, progress, count = 20 }) {
   const pool = [];
   for (const [type, list] of Object.entries(contentByType)) {
@@ -40,9 +49,13 @@ export function buildExam({ contentByType, progress, count = 20 }) {
     .filter(Boolean);
 }
 
-function buildQuestion(card, sameTypePool) {
-  const answer = ANSWER_FIELD[card.type](card);
-  const distractors = pickDistractors(sameTypePool, card.id, card.type, answer, 3);
+export function buildQuestion(card, sameTypePool, { reverse = false } = {}) {
+  if (!ANSWER_FIELD[card.type]) return null;
+  const promptOf = reverse ? ANSWER_FIELD[card.type] : PROMPT_FIELD[card.type];
+  const answerOf = reverse ? JAPANESE_CHOICE[card.type] : ANSWER_FIELD[card.type];
+  const prompt = promptOf(card);
+  const answer = answerOf(card);
+  const distractors = pickDistractors(sameTypePool, card, { promptOf, answerOf, prompt, answer }, 3);
   // Need at least one real distractor for a meaningful multiple-choice question.
   if (distractors.length === 0) return null;
 
@@ -50,20 +63,23 @@ function buildQuestion(card, sameTypePool) {
   return {
     cardId: card.id,
     type: card.type,
-    prompt: PROMPT_FIELD[card.type](card),
+    reverse,
+    prompt,
     card,
     choices,
     correctIndex: choices.indexOf(answer),
   };
 }
 
-function pickDistractors(pool, excludeId, type, correctAnswer, n) {
-  const seen = new Set([correctAnswer]);
-  const candidates = shuffle(pool.filter((c) => c.id !== excludeId));
+// Skips candidates that would also be a correct answer (same answer text, or
+// the same prompt text — e.g. two words that both mean "hello").
+function pickDistractors(pool, card, { promptOf, answerOf, prompt, answer }, n) {
+  const seen = new Set([answer]);
+  const candidates = shuffle(pool.filter((c) => c.id !== card.id));
   const result = [];
   for (const c of candidates) {
-    const ans = ANSWER_FIELD[type](c);
-    if (seen.has(ans)) continue;
+    const ans = answerOf(c);
+    if (seen.has(ans) || promptOf(c) === prompt) continue;
     seen.add(ans);
     result.push(ans);
     if (result.length === n) break;
@@ -71,7 +87,7 @@ function pickDistractors(pool, excludeId, type, correctAnswer, n) {
   return result;
 }
 
-function shuffle(arr) {
+export function shuffle(arr) {
   const a = arr.slice();
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));

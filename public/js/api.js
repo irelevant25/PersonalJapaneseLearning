@@ -19,10 +19,11 @@ async function request(path, options = {}) {
   return res.json();
 }
 
+const enc = encodeURIComponent;
+
 export const api = {
-  getContent: (type) => request(`/content/${encodeURIComponent(type)}`),
-  getQueue: (limit = 20, { extra = false } = {}) =>
-    request(`/queue?limit=${encodeURIComponent(limit)}${extra ? '&extra=1' : ''}`),
+  getContent: (type) => request(`/content/${enc(type)}`),
+  getQueue: (limit = 20) => request(`/queue?limit=${enc(limit)}`),
   submitReview: (cardId, grade) =>
     request('/review', { method: 'POST', body: JSON.stringify({ cardId, grade }) }),
   getStats: () => request('/stats'),
@@ -30,11 +31,18 @@ export const api = {
   updateSettings: (patch) => request('/settings', { method: 'PUT', body: JSON.stringify(patch) }),
   getCurriculum: () => request('/curriculum'),
   saveNote: (cardId, note) =>
-    request(`/notes/${encodeURIComponent(cardId)}`, { method: 'PUT', body: JSON.stringify({ note }) }),
+    request(`/notes/${enc(cardId)}`, { method: 'PUT', body: JSON.stringify({ note }) }),
   getAdaptiveLog: () => request('/adaptive-log'),
   addCard: (card) => request('/cards', { method: 'POST', body: JSON.stringify(card) }),
   getStories: () => request('/stories'),
-  getExam: (count = 20) => request(`/exam?count=${encodeURIComponent(count)}`),
+  getExam: (count = 20) => request(`/exam?count=${enc(count)}`),
   submitExam: (results) => request('/exam/submit', { method: 'POST', body: JSON.stringify({ results }) }),
   getExamLog: () => request('/exam/log'),
+  getPath: () => request('/path'),
+  getPathStep: (unitId, stepId) => request(`/path/step/${enc(unitId)}/${enc(stepId)}`),
+  submitPathStep: (unitId, stepId, score = {}) =>
+    request(`/path/step/${enc(unitId)}/${enc(stepId)}`, { method: 'POST', body: JSON.stringify(score) }),
+  getTestOut: (unitId) => request(`/path/test-out/${enc(unitId)}`),
+  submitTestOut: (unitId, score) =>
+    request(`/path/test-out/${enc(unitId)}`, { method: 'POST', body: JSON.stringify(score) }),
 };

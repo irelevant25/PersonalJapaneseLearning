@@ -28,6 +28,14 @@ export function newCardState(today = todayStr()) {
   };
 }
 
+// A card entering review through the learning path has just been met and
+// drilled in a lesson, so its first spaced review is `dueInDays` from today
+// (tomorrow by default) instead of immediately. Test-out spreads a large
+// batch over several days this way so the review pile doesn't spike.
+export function introduceCard(today = todayStr(), dueInDays = 1) {
+  return { ...newCardState(today), due: addDays(today, dueInDays) };
+}
+
 // grade: 'again' | 'hard' | 'good' | 'easy'
 export function gradeCard(state, grade, today = todayStr()) {
   const s = { ...state, history: state.history.slice() };

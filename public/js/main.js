@@ -1,4 +1,6 @@
 import { renderDashboard } from './views/dashboard.js';
+import { renderPath } from './views/path.js';
+import { renderLesson, renderTestOut } from './views/lesson.js';
 import { renderStudy } from './views/study.js';
 import { renderStories } from './views/stories.js';
 import { renderExam } from './views/exam.js';
@@ -9,6 +11,9 @@ import { escapeHtml } from './utils.js';
 
 const routes = {
   dashboard: renderDashboard,
+  learn: renderPath,
+  lesson: renderLesson,
+  'test-out': renderTestOut,
   study: renderStudy,
   stories: renderStories,
   exam: renderExam,
@@ -17,13 +22,21 @@ const routes = {
   settings: renderSettings,
 };
 
+// Views without their own nav button highlight this one instead.
+const NAV_FOR = { lesson: 'learn', 'test-out': 'learn' };
+
 const root = document.getElementById('view-root');
 const navButtons = document.querySelectorAll('nav [data-view]');
 
 let currentCleanup = null;
 
-async function navigate(view) {
-  if (!routes[view]) view = 'dashboard';
+// Hash format: #view or #view/param/param, e.g. #lesson/hira-1/drill.
+// Views get the params as their third argument.
+async function navigate(view, ...params) {
+  if (!routes[view]) {
+    view = 'dashboard';
+    params = [];
+  }
 
   if (currentCleanup) {
     try {
@@ -34,12 +47,14 @@ async function navigate(view) {
     currentCleanup = null;
   }
 
-  navButtons.forEach((b) => b.classList.toggle('active', b.dataset.view === view));
-  history.replaceState(null, '', `#${view}`);
+  const navView = NAV_FOR[view] || view;
+  navButtons.forEach((b) => b.classList.toggle('active', b.dataset.view === navView));
+  history.replaceState(null, '', `#${[view, ...params].map(encodeURIComponent).join('/')}`);
   root.innerHTML = '<div class="loading">Loading…</div>';
+  window.scrollTo(0, 0);
 
   try {
-    const cleanup = await routes[view](root, navigate);
+    const cleanup = await routes[view](root, navigate, params);
     if (typeof cleanup === 'function') currentCleanup = cleanup;
   } catch (err) {
     console.error(err);
@@ -47,7 +62,12 @@ async function navigate(view) {
   }
 }
 
-navButtons.forEach((b) => b.addEventListener('click', () => navigate(b.dataset.view)));
-window.addEventListener('hashchange', () => navigate(location.hash.slice(1)));
+function navigateFromHash() {
+  const [view, ...params] = location.hash.slice(1).split('/').map(decodeURIComponent);
+  navigate(view || 'dashboard', ...params);
+}
 
-navigate(location.hash.slice(1) || 'dashboard');
+navButtons.forEach((b) => b.addEventListener('click', () => navigate(b.dataset.view)));
+window.addEventListener('hashchange', navigateFromHash);
+
+navigateFromHash();

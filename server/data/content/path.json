@@ -1,0 +1,1691 @@
+{
+  "passAccuracy": 80,
+  "sections": [
+    {
+      "id": "hiragana",
+      "title": "Hiragana + first words",
+      "description": "Learn hiragana a few rows at a time. Every unit adds real words you can already read.",
+      "units": [
+        {
+          "id": "hira-1",
+          "title": "あ か が rows",
+          "new": [
+            "hira-a",
+            "hira-i",
+            "hira-u",
+            "hira-e",
+            "hira-o",
+            "hira-ka",
+            "hira-ki",
+            "hira-ku",
+            "hira-ke",
+            "hira-ko",
+            "hira-ga",
+            "hira-gi",
+            "hira-gu",
+            "hira-ge",
+            "hira-go",
+            "vocab-0036",
+            "vocab-0052",
+            "vocab-0088",
+            "vocab-0089",
+            "vocab-0112",
+            "vocab-0125",
+            "vocab-0127",
+            "vocab-0144"
+          ],
+          "sentences": [],
+          "story": null,
+          "noStory": true
+        },
+        {
+          "id": "hira-2",
+          "title": "さ ざ た だ rows",
+          "new": [
+            "hira-sa",
+            "hira-shi",
+            "hira-su",
+            "hira-se",
+            "hira-so",
+            "hira-za",
+            "hira-ji",
+            "hira-zu",
+            "hira-ze",
+            "hira-zo",
+            "hira-ta",
+            "hira-chi",
+            "hira-tsu",
+            "hira-te",
+            "hira-to",
+            "hira-da",
+            "hira-di",
+            "hira-du",
+            "hira-de",
+            "hira-do",
+            "vocab-0012",
+            "vocab-0013",
+            "vocab-0014",
+            "vocab-0015",
+            "vocab-0017",
+            "vocab-0025",
+            "vocab-0037",
+            "vocab-0038"
+          ],
+          "sentences": [],
+          "story": "story-0020"
+        },
+        {
+          "id": "hira-3",
+          "title": "な は ば ぱ rows",
+          "new": [
+            "hira-na",
+            "hira-ni",
+            "hira-nu",
+            "hira-ne",
+            "hira-no",
+            "hira-ha",
+            "hira-hi",
+            "hira-fu",
+            "hira-he",
+            "hira-ho",
+            "hira-ba",
+            "hira-bi",
+            "hira-bu",
+            "hira-be",
+            "hira-bo",
+            "hira-pa",
+            "hira-pi",
+            "hira-pu",
+            "hira-pe",
+            "hira-po",
+            "vocab-0010",
+            "vocab-0026",
+            "vocab-0039",
+            "vocab-0042",
+            "vocab-0043",
+            "vocab-0044",
+            "vocab-0048",
+            "vocab-0054"
+          ],
+          "sentences": [
+            "sent-0239",
+            "sent-0240",
+            "sent-0241"
+          ],
+          "story": "story-0021"
+        },
+        {
+          "id": "hira-4",
+          "title": "ま や ら rows",
+          "new": [
+            "hira-ma",
+            "hira-mi",
+            "hira-mu",
+            "hira-me",
+            "hira-mo",
+            "hira-ya",
+            "hira-yu",
+            "hira-yo",
+            "hira-ra",
+            "hira-ri",
+            "hira-ru",
+            "hira-re",
+            "hira-ro",
+            "vocab-0002",
+            "vocab-0004",
+            "vocab-0005",
+            "vocab-0006",
+            "vocab-0008",
+            "vocab-0009",
+            "vocab-0011",
+            "vocab-0016"
+          ],
+          "sentences": [
+            "sent-0242",
+            "sent-0243",
+            "sent-0244"
+          ],
+          "story": "story-0022"
+        },
+        {
+          "id": "hira-5",
+          "title": "わ きゃ ぎゃ しゃ じゃ ちゃ rows",
+          "new": [
+            "hira-wa",
+            "hira-wo",
+            "hira-n",
+            "hira-kya",
+            "hira-kyu",
+            "hira-kyo",
+            "hira-gya",
+            "hira-gyu",
+            "hira-gyo",
+            "hira-sha",
+            "hira-shu",
+            "hira-sho",
+            "hira-ja",
+            "hira-ju",
+            "hira-jo",
+            "hira-cha",
+            "hira-chu",
+            "hira-cho",
+            "vocab-0001",
+            "vocab-0003",
+            "vocab-0007",
+            "vocab-0018",
+            "vocab-0019",
+            "vocab-0020",
+            "vocab-0021",
+            "vocab-0022"
+          ],
+          "sentences": [
+            "sent-0245",
+            "sent-0246",
+            "sent-0247"
+          ],
+          "story": "story-0023"
+        },
+        {
+          "id": "hira-6",
+          "title": "にゃ ひゃ びゃ ぴゃ みゃ りゃ rows",
+          "new": [
+            "hira-nya",
+            "hira-nyu",
+            "hira-nyo",
+            "hira-hya",
+            "hira-hyu",
+            "hira-hyo",
+            "hira-bya",
+            "hira-byu",
+            "hira-byo",
+            "hira-pya",
+            "hira-pyu",
+            "hira-pyo",
+            "hira-mya",
+            "hira-myu",
+            "hira-myo",
+            "hira-rya",
+            "hira-ryu",
+            "hira-ryo",
+            "vocab-0023",
+            "vocab-0024",
+            "vocab-0027",
+            "vocab-0028",
+            "vocab-0029",
+            "vocab-0030",
+            "vocab-0031",
+            "vocab-0032"
+          ],
+          "sentences": [
+            "sent-0248",
+            "sent-0249",
+            "sent-0250"
+          ],
+          "story": "story-0024"
+        }
+      ]
+    },
+    {
+      "id": "katakana",
+      "title": "Katakana + everyday words",
+      "description": "Katakana rows, mixed with units of everyday words and your first sentences.",
+      "units": [
+        {
+          "id": "kata-1",
+          "title": "ア カ ガ rows",
+          "new": [
+            "kata-a",
+            "kata-i",
+            "kata-u",
+            "kata-e",
+            "kata-o",
+            "kata-ka",
+            "kata-ki",
+            "kata-ku",
+            "kata-ke",
+            "kata-ko",
+            "kata-ga",
+            "kata-gi",
+            "kata-gu",
+            "kata-ge",
+            "kata-go",
+            "vocab-0033",
+            "vocab-0034",
+            "vocab-0035",
+            "vocab-0040",
+            "vocab-0041",
+            "vocab-0045"
+          ],
+          "sentences": [
+            "sent-0251",
+            "sent-0252",
+            "sent-0253"
+          ],
+          "story": "story-0025"
+        },
+        {
+          "id": "words-1",
+          "title": "Words: family & body",
+          "new": [
+            "vocab-0046",
+            "vocab-0047",
+            "vocab-0049",
+            "vocab-0050",
+            "vocab-0051",
+            "vocab-0053",
+            "vocab-0055",
+            "vocab-0056",
+            "vocab-0057",
+            "vocab-0058"
+          ],
+          "sentences": [
+            "sent-0005"
+          ],
+          "story": "story-0026"
+        },
+        {
+          "id": "kata-2",
+          "title": "サ ザ タ ダ rows",
+          "new": [
+            "kata-sa",
+            "kata-shi",
+            "kata-su",
+            "kata-se",
+            "kata-so",
+            "kata-za",
+            "kata-ji",
+            "kata-zu",
+            "kata-ze",
+            "kata-zo",
+            "kata-ta",
+            "kata-chi",
+            "kata-tsu",
+            "kata-te",
+            "kata-to",
+            "kata-da",
+            "kata-di",
+            "kata-du",
+            "kata-de",
+            "kata-do",
+            "vocab-0260",
+            "vocab-0264",
+            "vocab-0059",
+            "vocab-0060",
+            "vocab-0061",
+            "vocab-0062"
+          ],
+          "sentences": [
+            "sent-0254",
+            "sent-0255",
+            "sent-0256"
+          ],
+          "story": "story-0027"
+        },
+        {
+          "id": "words-2",
+          "title": "Words: food & drink",
+          "new": [
+            "vocab-0063",
+            "vocab-0064",
+            "vocab-0065",
+            "vocab-0067",
+            "vocab-0068",
+            "vocab-0069",
+            "vocab-0070",
+            "vocab-0071",
+            "vocab-0072",
+            "vocab-0073"
+          ],
+          "sentences": [
+            "sent-0257",
+            "sent-0258",
+            "sent-0259"
+          ],
+          "story": "story-0028"
+        },
+        {
+          "id": "kata-3",
+          "title": "ナ ハ バ パ rows",
+          "new": [
+            "kata-na",
+            "kata-ni",
+            "kata-nu",
+            "kata-ne",
+            "kata-no",
+            "kata-ha",
+            "kata-hi",
+            "kata-fu",
+            "kata-he",
+            "kata-ho",
+            "kata-ba",
+            "kata-bi",
+            "kata-bu",
+            "kata-be",
+            "kata-bo",
+            "kata-pa",
+            "kata-pi",
+            "kata-pu",
+            "kata-pe",
+            "kata-po",
+            "vocab-0205",
+            "vocab-0223",
+            "vocab-0224",
+            "vocab-0251",
+            "vocab-0257",
+            "vocab-0261"
+          ],
+          "sentences": [
+            "sent-0025"
+          ],
+          "story": null
+        },
+        {
+          "id": "words-3",
+          "title": "Words: food & daily life",
+          "new": [
+            "vocab-0074",
+            "vocab-0075",
+            "vocab-0076",
+            "vocab-0078",
+            "vocab-0079",
+            "vocab-0080",
+            "vocab-0081",
+            "vocab-0082",
+            "vocab-0083",
+            "vocab-0084"
+          ],
+          "sentences": [
+            "sent-0009",
+            "sent-0017"
+          ],
+          "story": null
+        },
+        {
+          "id": "kata-4",
+          "title": "マ ヤ ラ rows",
+          "new": [
+            "kata-ma",
+            "kata-mi",
+            "kata-mu",
+            "kata-me",
+            "kata-mo",
+            "kata-ya",
+            "kata-yu",
+            "kata-yo",
+            "kata-ra",
+            "kata-ri",
+            "kata-ru",
+            "kata-re",
+            "kata-ro",
+            "vocab-0252",
+            "vocab-0256",
+            "vocab-0259",
+            "vocab-0263",
+            "vocab-0265",
+            "vocab-0085"
+          ],
+          "sentences": [
+            "sent-0018",
+            "sent-0064",
+            "sent-0236"
+          ],
+          "story": null
+        },
+        {
+          "id": "words-4",
+          "title": "Words: daily life & work",
+          "new": [
+            "vocab-0086",
+            "vocab-0087",
+            "vocab-0090",
+            "vocab-0091",
+            "vocab-0092",
+            "vocab-0093",
+            "vocab-0094",
+            "vocab-0095",
+            "vocab-0096",
+            "vocab-0097"
+          ],
+          "sentences": [
+            "sent-0019",
+            "sent-0032",
+            "sent-0203"
+          ],
+          "story": null
+        },
+        {
+          "id": "kata-5",
+          "title": "ワ キャ ギャ シャ ジャ チャ rows",
+          "new": [
+            "kata-wa",
+            "kata-wo",
+            "kata-n",
+            "kata-kya",
+            "kata-kyu",
+            "kata-kyo",
+            "kata-gya",
+            "kata-gyu",
+            "kata-gyo",
+            "kata-sha",
+            "kata-shu",
+            "kata-sho",
+            "kata-ja",
+            "kata-ju",
+            "kata-jo",
+            "kata-cha",
+            "kata-chu",
+            "kata-cho",
+            "vocab-0066",
+            "vocab-0077",
+            "vocab-0258",
+            "vocab-0098",
+            "vocab-0099",
+            "vocab-0100"
+          ],
+          "sentences": [
+            "sent-0016"
+          ],
+          "story": null
+        },
+        {
+          "id": "words-5",
+          "title": "Words: daily life & thinking verb",
+          "new": [
+            "vocab-0101",
+            "vocab-0102",
+            "vocab-0103",
+            "vocab-0104",
+            "vocab-0105",
+            "vocab-0106",
+            "vocab-0107",
+            "vocab-0108",
+            "vocab-0109",
+            "vocab-0110"
+          ],
+          "sentences": [],
+          "story": null
+        },
+        {
+          "id": "kata-6",
+          "title": "ニャ ヒャ ビャ ピャ ミャ リャ rows",
+          "new": [
+            "kata-nya",
+            "kata-nyu",
+            "kata-nyo",
+            "kata-hya",
+            "kata-hyu",
+            "kata-hyo",
+            "kata-bya",
+            "kata-byu",
+            "kata-byo",
+            "kata-pya",
+            "kata-pyu",
+            "kata-pyo",
+            "kata-mya",
+            "kata-myu",
+            "kata-myo",
+            "kata-rya",
+            "kata-ryu",
+            "kata-ryo",
+            "vocab-0262",
+            "vocab-0111",
+            "vocab-0113",
+            "vocab-0114",
+            "vocab-0115",
+            "vocab-0116"
+          ],
+          "sentences": [
+            "sent-0204"
+          ],
+          "story": null
+        },
+        {
+          "id": "words-6",
+          "title": "Words: motion verb & transportation",
+          "new": [
+            "vocab-0117",
+            "vocab-0118",
+            "vocab-0119",
+            "vocab-0120",
+            "vocab-0121",
+            "vocab-0122",
+            "vocab-0123",
+            "vocab-0124",
+            "vocab-0126",
+            "vocab-0128"
+          ],
+          "sentences": [
+            "sent-0021"
+          ],
+          "story": null
+        },
+        {
+          "id": "kata-7",
+          "title": "ファ ティ ウィ: extra sounds",
+          "new": [
+            "kata-ext-fa",
+            "kata-ext-fi",
+            "kata-ext-fe",
+            "kata-ext-fo",
+            "kata-ext-wi",
+            "kata-ext-we",
+            "kata-ext-vu",
+            "kata-ext-ti",
+            "kata-ext-di",
+            "kata-ext-she",
+            "kata-ext-je",
+            "kata-ext-che",
+            "vocab-0129",
+            "vocab-0130",
+            "vocab-0131",
+            "vocab-0132",
+            "vocab-0133",
+            "vocab-0134"
+          ],
+          "sentences": [],
+          "story": null
+        }
+      ]
+    },
+    {
+      "id": "core",
+      "title": "Kanji + grammar in sentences",
+      "description": "New words with their kanji, one grammar point per unit, and sentences that use them.",
+      "units": [
+        {
+          "id": "core-1",
+          "title": "Giving receiving & communication verb · 〜てください",
+          "new": [
+            "vocab-0135",
+            "vocab-0136",
+            "vocab-0137",
+            "vocab-0138",
+            "vocab-0139",
+            "vocab-0140",
+            "vocab-0141",
+            "vocab-0142",
+            "kanji-0016",
+            "kanji-0017",
+            "kanji-0018",
+            "kanji-0019",
+            "kanji-0020",
+            "gram-0001"
+          ],
+          "sentences": [
+            "sent-0099",
+            "sent-0205"
+          ],
+          "story": null
+        },
+        {
+          "id": "core-2",
+          "title": "Daily life & money · 〜てもいいです",
+          "new": [
+            "vocab-0143",
+            "vocab-0145",
+            "vocab-0146",
+            "vocab-0147",
+            "vocab-0148",
+            "vocab-0149",
+            "vocab-0150",
+            "vocab-0151",
+            "kanji-0021",
+            "kanji-0022",
+            "kanji-0024",
+            "kanji-0025",
+            "kanji-0027",
+            "gram-0002"
+          ],
+          "sentences": [
+            "sent-0010",
+            "sent-0101"
+          ],
+          "story": null
+        },
+        {
+          "id": "core-3",
+          "title": "Daily life & feelings · 〜てはいけません",
+          "new": [
+            "vocab-0152",
+            "vocab-0153",
+            "vocab-0154",
+            "vocab-0155",
+            "vocab-0156",
+            "vocab-0157",
+            "vocab-0158",
+            "vocab-0159",
+            "kanji-0028",
+            "kanji-0029",
+            "kanji-0030",
+            "kanji-0031",
+            "kanji-0036",
+            "gram-0003"
+          ],
+          "sentences": [
+            "sent-0029",
+            "sent-0103"
+          ],
+          "story": null
+        },
+        {
+          "id": "core-4",
+          "title": "Feelings & weather · 〜ています",
+          "new": [
+            "vocab-0160",
+            "vocab-0161",
+            "vocab-0162",
+            "vocab-0163",
+            "vocab-0164",
+            "vocab-0165",
+            "vocab-0166",
+            "vocab-0167",
+            "kanji-0041",
+            "kanji-0042",
+            "kanji-0043",
+            "kanji-0044",
+            "kanji-0045",
+            "gram-0004"
+          ],
+          "sentences": [
+            "sent-0007",
+            "sent-0026",
+            "sent-0049"
+          ],
+          "story": null
+        },
+        {
+          "id": "core-5",
+          "title": "Daily life & feelings · 〜より〜のほうが",
+          "new": [
+            "vocab-0168",
+            "vocab-0169",
+            "vocab-0170",
+            "vocab-0171",
+            "vocab-0172",
+            "vocab-0173",
+            "vocab-0174",
+            "vocab-0175",
+            "kanji-0046",
+            "kanji-0047",
+            "kanji-0048",
+            "kanji-0049",
+            "kanji-0050",
+            "gram-0005"
+          ],
+          "sentences": [
+            "sent-0040",
+            "sent-0050",
+            "sent-0105"
+          ],
+          "story": null
+        },
+        {
+          "id": "core-6",
+          "title": "Feelings & daily life · 〜てみる",
+          "new": [
+            "vocab-0176",
+            "vocab-0177",
+            "vocab-0178",
+            "vocab-0179",
+            "vocab-0180",
+            "vocab-0181",
+            "vocab-0182",
+            "vocab-0183",
+            "kanji-0038",
+            "kanji-0051",
+            "kanji-0052",
+            "kanji-0055",
+            "kanji-0056",
+            "gram-0006"
+          ],
+          "sentences": [
+            "sent-0004",
+            "sent-0028",
+            "sent-0051",
+            "sent-0056",
+            "sent-0106",
+            "sent-0202"
+          ],
+          "story": null
+        },
+        {
+          "id": "core-7",
+          "title": "Adverb & time · 〜ておく",
+          "new": [
+            "vocab-0184",
+            "vocab-0185",
+            "vocab-0186",
+            "vocab-0187",
+            "vocab-0188",
+            "vocab-0189",
+            "vocab-0190",
+            "vocab-0191",
+            "kanji-0057",
+            "kanji-0058",
+            "kanji-0060",
+            "kanji-0065",
+            "kanji-0082",
+            "gram-0007"
+          ],
+          "sentences": [
+            "sent-0034",
+            "sent-0108",
+            "sent-0109",
+            "sent-0237"
+          ],
+          "story": null
+        },
+        {
+          "id": "core-8",
+          "title": "Adverb & conjunction · 〜てしまう",
+          "new": [
+            "vocab-0192",
+            "vocab-0193",
+            "vocab-0194",
+            "vocab-0195",
+            "vocab-0196",
+            "vocab-0197",
+            "vocab-0198",
+            "vocab-0199",
+            "kanji-0083",
+            "kanji-0091",
+            "kanji-0092",
+            "kanji-0093",
+            "kanji-0094",
+            "gram-0008"
+          ],
+          "sentences": [
+            "sent-0036",
+            "sent-0048",
+            "sent-0111"
+          ],
+          "story": null
+        },
+        {
+          "id": "core-9",
+          "title": "Transportation & place · 〜ていく",
+          "new": [
+            "vocab-0200",
+            "vocab-0201",
+            "vocab-0202",
+            "vocab-0203",
+            "vocab-0204",
+            "vocab-0206",
+            "vocab-0207",
+            "vocab-0208",
+            "kanji-0001",
+            "kanji-0095",
+            "kanji-0096",
+            "kanji-0097",
+            "kanji-0098",
+            "gram-0009"
+          ],
+          "sentences": [
+            "sent-0008",
+            "sent-0023",
+            "sent-0027",
+            "sent-0033",
+            "sent-0035",
+            "sent-0039"
+          ],
+          "story": "story-0006"
+        },
+        {
+          "id": "core-10",
+          "title": "Place & money · 〜てくる",
+          "new": [
+            "vocab-0209",
+            "vocab-0210",
+            "vocab-0211",
+            "vocab-0212",
+            "vocab-0213",
+            "vocab-0214",
+            "vocab-0215",
+            "vocab-0216",
+            "kanji-0099",
+            "kanji-0100",
+            "kanji-0101",
+            "kanji-0102",
+            "kanji-0103",
+            "gram-0010"
+          ],
+          "sentences": [
+            "sent-0022",
+            "sent-0038",
+            "sent-0059",
+            "sent-0114",
+            "sent-0115",
+            "sent-0217"
+          ],
+          "story": null
+        },
+        {
+          "id": "core-11",
+          "title": "Shopping & money · 〜れる／られる（可能形）",
+          "new": [
+            "vocab-0217",
+            "vocab-0218",
+            "vocab-0219",
+            "vocab-0220",
+            "vocab-0221",
+            "vocab-0222",
+            "vocab-0225",
+            "vocab-0226",
+            "kanji-0080",
+            "kanji-0084",
+            "kanji-0085",
+            "kanji-0104",
+            "kanji-0105",
+            "gram-0011"
+          ],
+          "sentences": [
+            "sent-0001",
+            "sent-0003",
+            "sent-0060",
+            "sent-0068",
+            "sent-0215",
+            "sent-0216"
+          ],
+          "story": null
+        },
+        {
+          "id": "core-12",
+          "title": "School & work · 〜(よ)うと思います",
+          "new": [
+            "vocab-0227",
+            "vocab-0228",
+            "vocab-0229",
+            "vocab-0230",
+            "vocab-0231",
+            "vocab-0232",
+            "vocab-0233",
+            "vocab-0234",
+            "kanji-0106",
+            "kanji-0107",
+            "kanji-0108",
+            "kanji-0109",
+            "kanji-0110",
+            "gram-0012"
+          ],
+          "sentences": [
+            "sent-0011",
+            "sent-0012",
+            "sent-0020",
+            "sent-0031",
+            "sent-0047",
+            "sent-0053"
+          ],
+          "story": null
+        },
+        {
+          "id": "core-13",
+          "title": "Weather & school · 〜つもりです",
+          "new": [
+            "vocab-0235",
+            "vocab-0236",
+            "vocab-0237",
+            "vocab-0238",
+            "vocab-0239",
+            "vocab-0240",
+            "vocab-0241",
+            "vocab-0242",
+            "kanji-0111",
+            "kanji-0112",
+            "kanji-0113",
+            "kanji-0114",
+            "kanji-0115",
+            "gram-0013"
+          ],
+          "sentences": [
+            "sent-0002",
+            "sent-0006",
+            "sent-0045",
+            "sent-0046",
+            "sent-0052",
+            "sent-0054"
+          ],
+          "story": null
+        },
+        {
+          "id": "core-14",
+          "title": "Nature & hobby · 〜予定です",
+          "new": [
+            "vocab-0243",
+            "vocab-0244",
+            "vocab-0245",
+            "vocab-0246",
+            "vocab-0247",
+            "vocab-0248",
+            "vocab-0249",
+            "vocab-0250",
+            "kanji-0061",
+            "kanji-0064",
+            "kanji-0066",
+            "kanji-0067",
+            "kanji-0069",
+            "gram-0014"
+          ],
+          "sentences": [
+            "sent-0013",
+            "sent-0014",
+            "sent-0015",
+            "sent-0024",
+            "sent-0030",
+            "sent-0037"
+          ],
+          "story": null
+        },
+        {
+          "id": "core-15",
+          "title": "Pronoun & hobby · あげる／もらう／くれる",
+          "new": [
+            "vocab-0253",
+            "vocab-0254",
+            "vocab-0255",
+            "vocab-0266",
+            "vocab-0267",
+            "vocab-0268",
+            "vocab-0269",
+            "vocab-0270",
+            "kanji-0062",
+            "kanji-0070",
+            "kanji-0071",
+            "kanji-0075",
+            "kanji-0116",
+            "gram-0015"
+          ],
+          "sentences": [
+            "sent-0041",
+            "sent-0042",
+            "sent-0043",
+            "sent-0055",
+            "sent-0057",
+            "sent-0058"
+          ],
+          "story": "story-0002"
+        },
+        {
+          "id": "core-16",
+          "title": "Demonstrative & place · 〜てあげる",
+          "new": [
+            "vocab-0271",
+            "vocab-0272",
+            "vocab-0273",
+            "vocab-0274",
+            "vocab-0275",
+            "vocab-0276",
+            "vocab-0277",
+            "vocab-0278",
+            "kanji-0037",
+            "kanji-0040",
+            "kanji-0117",
+            "kanji-0118",
+            "kanji-0119",
+            "gram-0016"
+          ],
+          "sentences": [
+            "sent-0061",
+            "sent-0065",
+            "sent-0067",
+            "sent-0069",
+            "sent-0100",
+            "sent-0102"
+          ],
+          "story": "story-0003"
+        },
+        {
+          "id": "core-17",
+          "title": "Place & daily life · 〜てもらう",
+          "new": [
+            "vocab-0279",
+            "vocab-0280",
+            "vocab-0281",
+            "vocab-0282",
+            "vocab-0283",
+            "vocab-0284",
+            "vocab-0285",
+            "vocab-0286",
+            "kanji-0120",
+            "kanji-0121",
+            "kanji-0124",
+            "kanji-0125",
+            "kanji-0127",
+            "gram-0017"
+          ],
+          "sentences": [
+            "sent-0062",
+            "sent-0104",
+            "sent-0107",
+            "sent-0110",
+            "sent-0112",
+            "sent-0113"
+          ],
+          "story": "story-0001"
+        },
+        {
+          "id": "core-18",
+          "title": "Number · 〜てくれる",
+          "new": [
+            "vocab-0287",
+            "vocab-0288",
+            "vocab-0289",
+            "vocab-0290",
+            "vocab-0291",
+            "vocab-0292",
+            "vocab-0293",
+            "vocab-0294",
+            "kanji-0089",
+            "kanji-0128",
+            "kanji-0129",
+            "kanji-0130",
+            "kanji-0131",
+            "gram-0018"
+          ],
+          "sentences": [
+            "sent-0063",
+            "sent-0116",
+            "sent-0117",
+            "sent-0118",
+            "sent-0119",
+            "sent-0120"
+          ],
+          "story": "story-0004"
+        },
+        {
+          "id": "core-19",
+          "title": "Number & time · 〜と",
+          "new": [
+            "vocab-0295",
+            "vocab-0296",
+            "vocab-0297",
+            "vocab-0298",
+            "vocab-0299",
+            "vocab-0300",
+            "vocab-0301",
+            "vocab-0302",
+            "kanji-0002",
+            "kanji-0003",
+            "kanji-0004",
+            "kanji-0005",
+            "kanji-0006",
+            "gram-0019"
+          ],
+          "sentences": [
+            "sent-0070",
+            "sent-0121",
+            "sent-0122",
+            "sent-0123",
+            "sent-0124",
+            "sent-0125"
+          ],
+          "story": "story-0005"
+        },
+        {
+          "id": "core-20",
+          "title": "Time & weather · 〜ば",
+          "new": [
+            "vocab-0303",
+            "vocab-0304",
+            "vocab-0305",
+            "vocab-0306",
+            "vocab-0307",
+            "vocab-0308",
+            "vocab-0309",
+            "vocab-0310",
+            "kanji-0007",
+            "kanji-0008",
+            "kanji-0009",
+            "kanji-0010",
+            "kanji-0011",
+            "gram-0020"
+          ],
+          "sentences": [
+            "sent-0071",
+            "sent-0126",
+            "sent-0127",
+            "sent-0128",
+            "sent-0129",
+            "sent-0130"
+          ],
+          "story": null
+        },
+        {
+          "id": "core-21",
+          "title": "Time & communication verb · 〜たら",
+          "new": [
+            "vocab-0311",
+            "vocab-0312",
+            "vocab-0313",
+            "vocab-0314",
+            "vocab-0315",
+            "vocab-0316",
+            "vocab-0317",
+            "vocab-0318",
+            "kanji-0012",
+            "kanji-0013",
+            "kanji-0023",
+            "kanji-0032",
+            "kanji-0033",
+            "gram-0021"
+          ],
+          "sentences": [
+            "sent-0072",
+            "sent-0131",
+            "sent-0132",
+            "sent-0133",
+            "sent-0134",
+            "sent-0135"
+          ],
+          "story": null
+        },
+        {
+          "id": "core-22",
+          "title": "Daily life · 〜なら",
+          "new": [
+            "vocab-0319",
+            "kanji-0026",
+            "kanji-0034",
+            "kanji-0035",
+            "kanji-0133",
+            "kanji-0135",
+            "gram-0022"
+          ],
+          "sentences": [
+            "sent-0073",
+            "sent-0136",
+            "sent-0137",
+            "sent-0188",
+            "sent-0189",
+            "sent-0190"
+          ],
+          "story": null
+        }
+      ]
+    },
+    {
+      "id": "n4",
+      "title": "More kanji + N4 grammar",
+      "description": "The rest of the N4 kanji and grammar, practiced in sentences and stories.",
+      "units": [
+        {
+          "id": "n4-1",
+          "title": "Kanji 車 道 駅 店… · 〜なければなりません, 〜なくてもいいです",
+          "new": [
+            "kanji-0136",
+            "kanji-0137",
+            "kanji-0138",
+            "kanji-0139",
+            "kanji-0140",
+            "kanji-0141",
+            "kanji-0142",
+            "kanji-0143",
+            "kanji-0144",
+            "kanji-0145",
+            "gram-0023",
+            "gram-0024"
+          ],
+          "sentences": [
+            "sent-0074",
+            "sent-0075",
+            "sent-0138",
+            "sent-0139",
+            "sent-0140",
+            "sent-0141",
+            "sent-0191",
+            "sent-0192"
+          ],
+          "story": null
+        },
+        {
+          "id": "n4-2",
+          "title": "Kanji 何 歩 走 通… · 〜れる／られる（受身形）, 〜させる（使役形）",
+          "new": [
+            "kanji-0146",
+            "kanji-0147",
+            "kanji-0148",
+            "kanji-0151",
+            "kanji-0153",
+            "kanji-0157",
+            "kanji-0158",
+            "kanji-0159",
+            "kanji-0160",
+            "kanji-0162",
+            "gram-0025",
+            "gram-0026"
+          ],
+          "sentences": [
+            "sent-0076",
+            "sent-0077",
+            "sent-0078",
+            "sent-0142",
+            "sent-0143",
+            "sent-0144",
+            "sent-0193",
+            "sent-0194"
+          ],
+          "story": null
+        },
+        {
+          "id": "n4-3",
+          "title": "Kanji 覚 病 院 痛… · 〜たことがあります, 〜たり〜たりします",
+          "new": [
+            "kanji-0163",
+            "kanji-0169",
+            "kanji-0170",
+            "kanji-0171",
+            "kanji-0175",
+            "kanji-0177",
+            "kanji-0184",
+            "kanji-0185",
+            "kanji-0189",
+            "kanji-0194",
+            "gram-0027",
+            "gram-0028"
+          ],
+          "sentences": [
+            "sent-0079",
+            "sent-0080",
+            "sent-0145",
+            "sent-0146",
+            "sent-0147",
+            "sent-0148",
+            "sent-0195",
+            "sent-0196"
+          ],
+          "story": "story-0008"
+        },
+        {
+          "id": "n4-4",
+          "title": "Kanji 練 勉 強 宿… · 〜ながら, 〜間に",
+          "new": [
+            "kanji-0195",
+            "kanji-0196",
+            "kanji-0197",
+            "kanji-0198",
+            "kanji-0199",
+            "kanji-0200",
+            "kanji-0201",
+            "kanji-0203",
+            "kanji-0208",
+            "kanji-0210",
+            "gram-0029",
+            "gram-0030"
+          ],
+          "sentences": [
+            "sent-0066",
+            "sent-0081",
+            "sent-0149",
+            "sent-0150",
+            "sent-0151",
+            "sent-0152",
+            "sent-0197",
+            "sent-0198"
+          ],
+          "story": "story-0014"
+        },
+        {
+          "id": "n4-5",
+          "title": "Kanji 説 教 明 静… · 〜ので, 〜から",
+          "new": [
+            "kanji-0211",
+            "kanji-0216",
+            "kanji-0236",
+            "kanji-0237",
+            "kanji-0239",
+            "kanji-0240",
+            "kanji-0242",
+            "kanji-0244",
+            "kanji-0245",
+            "kanji-0246",
+            "gram-0031",
+            "gram-0032"
+          ],
+          "sentences": [
+            "sent-0044",
+            "sent-0082",
+            "sent-0153",
+            "sent-0154",
+            "sent-0155",
+            "sent-0156",
+            "sent-0199",
+            "sent-0200"
+          ],
+          "story": "story-0011"
+        },
+        {
+          "id": "n4-6",
+          "title": "Kanji 白 知 始 終… · 〜し, 〜ため（に）",
+          "new": [
+            "kanji-0248",
+            "kanji-0262",
+            "kanji-0263",
+            "kanji-0264",
+            "kanji-0265",
+            "kanji-0266",
+            "kanji-0272",
+            "kanji-0283",
+            "kanji-0286",
+            "kanji-0014",
+            "gram-0033",
+            "gram-0034"
+          ],
+          "sentences": [
+            "sent-0083",
+            "sent-0084",
+            "sent-0157",
+            "sent-0159",
+            "sent-0160",
+            "sent-0201",
+            "sent-0206",
+            "sent-0207"
+          ],
+          "story": null
+        },
+        {
+          "id": "n4-7",
+          "title": "Kanji 半 男 耳 口… · 〜ように, 〜すぎる",
+          "new": [
+            "kanji-0015",
+            "kanji-0039",
+            "kanji-0053",
+            "kanji-0054",
+            "kanji-0059",
+            "kanji-0063",
+            "kanji-0068",
+            "kanji-0072",
+            "kanji-0073",
+            "kanji-0074",
+            "gram-0035",
+            "gram-0036"
+          ],
+          "sentences": [
+            "sent-0085",
+            "sent-0086",
+            "sent-0161",
+            "sent-0162",
+            "sent-0163",
+            "sent-0164",
+            "sent-0208",
+            "sent-0209"
+          ],
+          "story": "story-0018"
+        },
+        {
+          "id": "n4-8",
+          "title": "Kanji 東 西 南 北… · 〜やすい, 〜にくい",
+          "new": [
+            "kanji-0076",
+            "kanji-0077",
+            "kanji-0078",
+            "kanji-0079",
+            "kanji-0081",
+            "kanji-0086",
+            "kanji-0087",
+            "kanji-0088",
+            "kanji-0090",
+            "kanji-0122",
+            "gram-0037",
+            "gram-0038"
+          ],
+          "sentences": [
+            "sent-0087",
+            "sent-0088",
+            "sent-0158",
+            "sent-0165",
+            "sent-0166",
+            "sent-0167",
+            "sent-0210",
+            "sent-0211"
+          ],
+          "story": "story-0009"
+        },
+        {
+          "id": "n4-9",
+          "title": "Kanji 若 遠 徒 紙… · 〜くなる／になる, 〜ようになる",
+          "new": [
+            "kanji-0123",
+            "kanji-0126",
+            "kanji-0132",
+            "kanji-0134",
+            "kanji-0149",
+            "kanji-0150",
+            "kanji-0152",
+            "kanji-0154",
+            "kanji-0155",
+            "kanji-0156",
+            "gram-0039",
+            "gram-0040"
+          ],
+          "sentences": [
+            "sent-0089",
+            "sent-0090",
+            "sent-0168",
+            "sent-0169",
+            "sent-0170",
+            "sent-0171",
+            "sent-0212",
+            "sent-0213"
+          ],
+          "story": "story-0007"
+        },
+        {
+          "id": "n4-10",
+          "title": "Kanji 悲 感 信 笑… · 〜そうです（様態）, 〜そうです（伝聞）",
+          "new": [
+            "kanji-0161",
+            "kanji-0164",
+            "kanji-0165",
+            "kanji-0166",
+            "kanji-0167",
+            "kanji-0168",
+            "kanji-0172",
+            "kanji-0173",
+            "kanji-0174",
+            "kanji-0176",
+            "gram-0041",
+            "gram-0042"
+          ],
+          "sentences": [
+            "sent-0091",
+            "sent-0092",
+            "sent-0172",
+            "sent-0173",
+            "sent-0174",
+            "sent-0175",
+            "sent-0214",
+            "sent-0218"
+          ],
+          "story": "story-0013"
+        },
+        {
+          "id": "n4-11",
+          "title": "Kanji 晴 曇 涼 暖… · 〜ようです, 〜らしいです",
+          "new": [
+            "kanji-0178",
+            "kanji-0179",
+            "kanji-0180",
+            "kanji-0181",
+            "kanji-0182",
+            "kanji-0183",
+            "kanji-0186",
+            "kanji-0187",
+            "kanji-0188",
+            "kanji-0190",
+            "gram-0043",
+            "gram-0044"
+          ],
+          "sentences": [
+            "sent-0093",
+            "sent-0094",
+            "sent-0176",
+            "sent-0177",
+            "sent-0178",
+            "sent-0179",
+            "sent-0219",
+            "sent-0220"
+          ],
+          "story": "story-0015"
+        },
+        {
+          "id": "n4-12",
+          "title": "Kanji 市 町 村 卒… · 〜はずです, 〜と言う",
+          "new": [
+            "kanji-0191",
+            "kanji-0192",
+            "kanji-0193",
+            "kanji-0202",
+            "kanji-0204",
+            "kanji-0205",
+            "kanji-0206",
+            "kanji-0207",
+            "kanji-0209",
+            "kanji-0212",
+            "gram-0045",
+            "gram-0046"
+          ],
+          "sentences": [
+            "sent-0095",
+            "sent-0096",
+            "sent-0180",
+            "sent-0181",
+            "sent-0182",
+            "sent-0183",
+            "sent-0221",
+            "sent-0222"
+          ],
+          "story": "story-0010"
+        },
+        {
+          "id": "n4-13",
+          "title": "Kanji 決 選 続 個… · 〜というN, 〜のに",
+          "new": [
+            "kanji-0213",
+            "kanji-0214",
+            "kanji-0215",
+            "kanji-0217",
+            "kanji-0218",
+            "kanji-0219",
+            "kanji-0220",
+            "kanji-0221",
+            "kanji-0222",
+            "kanji-0223",
+            "gram-0047",
+            "gram-0048"
+          ],
+          "sentences": [
+            "sent-0097",
+            "sent-0098",
+            "sent-0184",
+            "sent-0185",
+            "sent-0186",
+            "sent-0187",
+            "sent-0223",
+            "sent-0224"
+          ],
+          "story": "story-0012"
+        },
+        {
+          "id": "n4-14",
+          "title": "Kanji 湖 光 星 弱…",
+          "new": [
+            "kanji-0224",
+            "kanji-0225",
+            "kanji-0226",
+            "kanji-0227",
+            "kanji-0228",
+            "kanji-0229",
+            "kanji-0230",
+            "kanji-0231",
+            "kanji-0232",
+            "kanji-0233"
+          ],
+          "sentences": [
+            "sent-0225",
+            "sent-0226",
+            "sent-0227",
+            "sent-0228",
+            "sent-0229",
+            "sent-0230",
+            "sent-0231",
+            "sent-0232"
+          ],
+          "story": "story-0016"
+        },
+        {
+          "id": "n4-15",
+          "title": "Kanji 広 暗 汚 危…",
+          "new": [
+            "kanji-0234",
+            "kanji-0235",
+            "kanji-0238",
+            "kanji-0241",
+            "kanji-0243",
+            "kanji-0247",
+            "kanji-0249",
+            "kanji-0250",
+            "kanji-0251",
+            "kanji-0252"
+          ],
+          "sentences": [
+            "sent-0233",
+            "sent-0234",
+            "sent-0235",
+            "sent-0238"
+          ],
+          "story": "story-0017"
+        },
+        {
+          "id": "n4-16",
+          "title": "Kanji 線 形 向 隣…",
+          "new": [
+            "kanji-0253",
+            "kanji-0254",
+            "kanji-0255",
+            "kanji-0256",
+            "kanji-0257",
+            "kanji-0258",
+            "kanji-0259",
+            "kanji-0260",
+            "kanji-0261",
+            "kanji-0267"
+          ],
+          "sentences": [],
+          "story": "story-0019"
+        },
+        {
+          "id": "n4-17",
+          "title": "Kanji 治 直 壊 捨…",
+          "new": [
+            "kanji-0268",
+            "kanji-0269",
+            "kanji-0270",
+            "kanji-0271",
+            "kanji-0273",
+            "kanji-0274",
+            "kanji-0275",
+            "kanji-0276",
+            "kanji-0277",
+            "kanji-0278"
+          ],
+          "sentences": [],
+          "story": null
+        },
+        {
+          "id": "n4-18",
+          "title": "Kanji 合 別 増 減…",
+          "new": [
+            "kanji-0279",
+            "kanji-0280",
+            "kanji-0281",
+            "kanji-0282",
+            "kanji-0284",
+            "kanji-0285",
+            "kanji-0287"
+          ],
+          "sentences": [],
+          "story": null
+        }
+      ]
+    }
+  ]
+}

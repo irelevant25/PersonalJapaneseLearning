@@ -1,6 +1,6 @@
 ---
 name: japanese-content-writer
-description: Adds new hiragana/katakana/kanji/vocab/grammar/sentence/story entries to the N4 Coach app's seed content JSON files, following the project's exact schema, id numbering, and quality bar. Use for any bulk or one-off addition to server/data/content/*.json — e.g. "add 30 more N4 vocab words about travel", "add the next batch of kanji", or "add 10 more stories".
+description: Adds new hiragana/katakana/kanji/vocab/grammar/sentence/story entries to the N4 Coach app's seed content JSON files and places them in learning-path units (path.json), following the project's exact schema, id numbering, path rules, and quality bar. Use for any bulk or one-off addition to server/data/content/*.json — e.g. "add 30 more N4 vocab words about travel", "write the next batch of unit stories with questions", or "add questions to the existing stories".
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch
 ---
 
@@ -39,6 +39,38 @@ grammar.json, sentences.json, stories.json). Determine:
   increasing difficulty order within the array — position matters, there's
   no separate `order` field for either type.
 
+## Step 2b — the learning path (read before placing anything)
+
+The app's learning path (`server/data/content/path.json`, rules in the
+skill's "Learning path" section) is the ONLY way new cards reach the
+learner. So:
+- **Every new card needs a unit.** Put new vocab/kanji/grammar ids in a
+  unit's `new` array, sentences in `sentences`, a story id in `story`.
+  Prefer a new unit appended to the right section for new words/kanji;
+  sentences and stories can go into existing units. Never rename or
+  reorder existing unit ids (they are progress keys). New unit ids follow
+  the section's pattern (`core-23`, `n4-19`, …).
+- **Only use what's taught.** The learner knows exactly the cards in `new`
+  of that unit and all earlier units. A sentence's/story's `words` and
+  `grammar` ids must all be taught by its unit. Kanji may appear in `jp`
+  only if its kanji card is taught by then; otherwise write the word in
+  kana. In kana units (sections `hiragana`/`katakana`) write kana only,
+  using only the kana rows taught so far (small っ after つ, ー once
+  katakana has started). Function words (particles, です/ます, simple
+  conjugations of taught verbs/adjectives, はい/いいえ) are fine unlisted if
+  their kana are taught.
+- **Stories for path units** need `questions: [{q, qReading?, choices,
+  answer}]` — 3–4 questions, 3–4 choices, exactly one clearly correct,
+  testing the story's content (not answerable from the title). English `q`
+  and `choices` for early units; from the `core` section on, simple Japanese
+  `q` (+ `qReading`) with Japanese choices. Existing stories story-0001..0019
+  are already placed in core/n4 units but still need `questions`. Stories
+  are 2–8 short lines. If a natural story isn't possible with what's taught,
+  set `"noStory": true` on the unit instead of forcing one.
+- **stories.json layout:** keep the compact hand layout (inline objects one
+  per line inside `lines`/`questions`, inline id arrays). Don't rewrite the
+  file with `JSON.stringify(_, null, 2)` — that reformats every story.
+
 ## Step 3 — write the content
 
 Compose the new entries in memory, then `Read` the full current file one
@@ -73,7 +105,12 @@ Run a syntax + duplicate check, e.g.:
 node -e "const fs=require('fs'); const f='server/data/content/<file>.json'; const d=JSON.parse(fs.readFileSync(f,'utf8')); const ids=new Set(); let dup=null; for (const x of d){ if (ids.has(x.id)) dup=x.id; ids.add(x.id); } console.log('count='+d.length, 'dupId='+dup);"
 ```
 
-Fix any issue this reveals before reporting done.
+Then run `npm run check` (validates path.json: unknown ids, cards in two
+units, sentences/stories using words before they're taught, malformed story
+questions). It must end with `OK`; warnings about later units still waiting
+for a story are expected.
+
+Fix any issue these reveal before reporting done.
 
 ## Step 5 — report back
 
