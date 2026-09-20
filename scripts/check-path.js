@@ -1,7 +1,9 @@
 // Validates server/data/content/path.json against the content files:
 //   node scripts/check-path.js   (or: npm run check)
-// Errors (exit 1): unknown ids, a card in two units, a sentence/story used
-// before its words or grammar are taught, broken story questions.
+// Errors (exit 1): duplicate ids or duplicate words in a content file, missing
+// required fields, unknown word/grammar ids in a sentence or story, unknown
+// ids in the path, a card in two units, a sentence/story used before its
+// words or grammar are taught, broken story questions.
 // Warnings: content not placed in any unit, units still waiting for a story.
 
 import { readFileSync } from 'fs';
@@ -27,6 +29,43 @@ const pathData = load('path.json');
 
 const errors = [];
 const warnings = [];
+
+// --- content files on their own ---
+// type -> required text fields; the first one must be unique within the file.
+const REQUIRED = {
+  hiragana: ['char', 'romaji'],
+  katakana: ['char', 'romaji'],
+  kanji: ['char', 'meaning'],
+  vocab: ['front', 'reading', 'meaning', 'pos'],
+  grammar: ['pattern', 'meaning', 'explanation'],
+  sentence: ['jp', 'reading', 'en'],
+  story: ['title', 'titleEn'],
+};
+const seenIds = new Set();
+for (const [type, list] of Object.entries(content)) {
+  const seenKeys = new Map();
+  for (const c of list) {
+    if (!c.id) errors.push(`${FILES[type]}: an entry has no id`);
+    else if (seenIds.has(c.id)) errors.push(`${FILES[type]}: duplicate id ${c.id}`);
+    seenIds.add(c.id);
+    // Cards added in the app ("-custom-" ids) only have the fields its form asks for.
+    for (const f of c.id?.includes('-custom-') ? [] : REQUIRED[type]) {
+      if (typeof c[f] !== 'string' || !c[f].trim()) errors.push(`${c.id}: missing "${f}"`);
+    }
+    const key = c[REQUIRED[type][0]];
+    if (type !== 'story' && seenKeys.has(key)) errors.push(`${c.id}: "${key}" is already in ${seenKeys.get(key)}`);
+    seenKeys.set(key, c.id);
+  }
+}
+for (const s of [...content.sentence, ...content.story]) {
+  for (const id of s.words || []) if (typeOf.get(id) !== 'vocab') errors.push(`${s.id}: "words" has ${id}, which is not a vocab id`);
+  for (const id of s.grammar || []) if (typeOf.get(id) !== 'grammar') errors.push(`${s.id}: "grammar" has ${id}, which is not a grammar id`);
+}
+for (const s of content.story) {
+  if (!Array.isArray(s.lines) || !s.lines.length || s.lines.some((l) => !l.jp || !l.reading || !l.en)) errors.push(`${s.id}: every line needs jp, reading and en`);
+}
+
+// --- the path ---
 const placed = new Map(); // id -> unit id
 const taught = new Set();
 const unitIds = new Set();

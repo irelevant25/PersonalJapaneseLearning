@@ -103,6 +103,8 @@ new-card pace (the pace the learning path suggests):
   backlog gets more than 2.5x your daily new-card rate.
 - **Speed up** (+3 cards/day, up to a ceiling of 30) if your 7-day accuracy
   is above 90% and you have no backlog.
+- Accuracy only counts once you did at least 20 reviews in that period, so
+  a few lucky answers don't change your pace.
 - **Kana first** — if recent hiragana/katakana accuracy drops below 80%, the
   Learn tab asks you to review kana before starting a new unit, since
   everything else depends on it.
@@ -135,8 +137,18 @@ system — there's no bundled or downloaded audio.
 ### Your own words
 
 The Browse tab has a "+ Add card" form for vocabulary/kanji/grammar you run
-into outside the seeded content — it flows through the exact same SRS/queue/
-stats machinery as everything else.
+into outside the seeded content. A card you add goes straight into your
+reviews (first review tomorrow) and then works like every other card.
+
+### Settings
+
+- **Exam date** — the whole plan stretches or shrinks to match it.
+- **New cards per day** — the soft daily pace for the learning path.
+- **Max reviews per day** — the Reviews tab stops after this many reviews in
+  one day; the rest waits for tomorrow.
+- **Leech threshold** — how many times you can fail a card before it is
+  flagged as a leech.
+- **Listening** — turn the 🔊 buttons on or off.
 
 ### Stories
 

@@ -33,8 +33,12 @@ export async function createApp() {
   // daily or left running for weeks.
   app.use('/api', async (req, res, next) => {
     try {
-      const changes = runAdaptiveEngine(getProgress(), getContent());
-      if (changes.length) await saveProgress();
+      // Save whenever it ran (not only on a change), so lastAdaptiveRun
+      // survives a restart and the engine really runs once per day.
+      const progress = getProgress();
+      const lastRun = progress.lastAdaptiveRun;
+      runAdaptiveEngine(progress, getContent());
+      if (progress.lastAdaptiveRun !== lastRun) await saveProgress();
       next();
     } catch (err) {
       next(err);

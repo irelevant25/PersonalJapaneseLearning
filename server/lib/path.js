@@ -277,7 +277,7 @@ export function buildStepPayload(pathData, content, progress, unitId, stepId) {
       const fresh = resolve(content, unit[field]);
       const earlier = resolve(content, units.slice(0, index).flatMap((u) => u[field]))
         .filter((c) => progress.cards[c.id])
-        .sort((a, b) => (progress.cards[a.id].due < progress.cards[b.id].due ? -1 : 1));
+        .sort((a, b) => progress.cards[a.id].due.localeCompare(progress.cards[b.id].due));
       const reviewCount = Math.max(Math.round(fresh.length * DRILL_REVIEW_SHARE), minQuestions - fresh.length);
       const cards = shuffle([...fresh, ...earlier.slice(0, reviewCount)]);
       return { ...base, questions: cards.map((c) => questionFor(c, poolFor, hintFor, true)).filter(Boolean) };

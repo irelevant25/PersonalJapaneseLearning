@@ -40,7 +40,7 @@ export async function renderExam(root, navigate) {
       const count = Number(root.querySelector('#exam-count').value) || 20;
       const data = await api.getExam(count);
       if (data.questions.length === 0) {
-        renderStart("You haven't studied enough cards yet for a mock exam — do a few Study sessions first, then come back.");
+        renderStart("You haven't studied enough cards yet for a mock exam — pass a drill on the Learn tab first, then come back.");
         return;
       }
       state.questions = data.questions;

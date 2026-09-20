@@ -1,7 +1,8 @@
 // The adaptive engine: once per day, looks at recent performance and decides
 // whether to change the daily new-card pace (the learning path's soft daily
-// budget of cards to introduce) or ask for kana review before new units. Every change is logged with a plain-English reason so the
-// dashboard can show *why* something changed, not just that it did.
+// budget of cards to introduce) or ask for kana review before new units.
+// Every change is logged with a plain-English reason so the dashboard can
+// show *why* something changed, not just that it did.
 //
 // This is intentionally a small, explainable rule set rather than a black
 // box — the goal is a study plan the user can trust and override, not a
@@ -15,6 +16,8 @@ const KANA_ACCURACY_THRESHOLD = 0.8;
 const LOW_ACCURACY_THRESHOLD = 0.7;
 const HIGH_ACCURACY_THRESHOLD = 0.9;
 const BACKLOG_MULTIPLIER = 2.5;
+// Accuracy from only a handful of reviews says nothing (3 of 3 is "100%").
+const MIN_REVIEWS_FOR_ACCURACY = 20;
 
 export function runAdaptiveEngine(progress, contentByType) {
   const today = todayStr();
@@ -102,7 +105,7 @@ function rollingAccuracy(sessions, today, days) {
       total += s.studied || 0;
     }
   }
-  return total === 0 ? null : correct / total;
+  return total < MIN_REVIEWS_FOR_ACCURACY ? null : correct / total;
 }
 
 function countDue(cards, today) {

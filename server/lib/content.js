@@ -4,7 +4,8 @@
 // adds a custom card through the "Add card" feature.
 
 import path from 'path';
-import { readJson, writeJson } from './jsonStore.js';
+import { promises as fs } from 'fs';
+import { readJson, writeText } from './jsonStore.js';
 
 const CONTENT_DIR = path.join(process.cwd(), 'server', 'data', 'content');
 
@@ -61,7 +62,23 @@ export function findCard(id) {
 export async function appendCard(type, card) {
   if (!FILES[type]) throw new Error(`Unknown content type: ${type}`);
   const content = getContent();
+  const filePath = path.join(CONTENT_DIR, FILES[type]);
+  await writeText(filePath, appendToArrayText(await fs.readFile(filePath, 'utf8'), card));
   content[type] = [...content[type], card];
-  await writeJson(path.join(CONTENT_DIR, FILES[type]), content[type]);
   return card;
+}
+
+// Adds one entry before the closing `]` of the file's text instead of
+// re-serializing the whole array: the content files are hand-formatted (some
+// one object per line, some pretty-printed), and a JSON.stringify rewrite
+// would reformat every entry and drop the layout.
+function appendToArrayText(raw, card) {
+  const end = raw.lastIndexOf(']');
+  if (end === -1) throw new Error('Content file is not a JSON array');
+  const head = raw.slice(0, end).trimEnd();
+  const pretty = /\n  \{\r?\n/.test(head);
+  const entry = pretty ? JSON.stringify(card, null, 2).replace(/\n/g, '\n  ') : JSON.stringify(card);
+  const text = `${head}${head.endsWith('[') ? '' : ','}\n  ${entry}\n]\n`;
+  JSON.parse(text); // never write a file the next boot can't read
+  return raw.includes('\r\n') ? text.replace(/\r?\n/g, '\r\n') : text;
 }

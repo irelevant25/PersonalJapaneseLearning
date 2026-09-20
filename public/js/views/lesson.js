@@ -112,7 +112,12 @@ export async function renderLesson(root, navigate, [unitId, stepId] = []) {
   }
 
   async function retry() {
-    data = await api.getPathStep(unit.id, step.id); // fresh random questions
+    try {
+      data = await api.getPathStep(unit.id, step.id); // fresh random questions
+    } catch (err) {
+      body.innerHTML = `<div class="error-box">${escapeHtml(err.message)}</div>`;
+      return;
+    }
     start();
   }
 
@@ -175,7 +180,12 @@ export async function renderTestOut(root, navigate, [unitId] = []) {
       keys,
       navigate,
       retry: async () => {
-        data = await api.getTestOut(unitId);
+        try {
+          data = await api.getTestOut(unitId);
+        } catch (err) {
+          body.innerHTML = `<div class="error-box">${escapeHtml(err.message)}</div>`;
+          return;
+        }
         intro();
       },
     });

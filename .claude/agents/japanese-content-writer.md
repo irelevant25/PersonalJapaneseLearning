@@ -32,10 +32,10 @@ grammar.json, sentences.json, stories.json). Determine:
   the end).
 - If asked to add sentences or stories, read `vocab.json` (and `grammar.json`
   if it should also tag a grammar point) so every id you put in a `words`
-  array actually exists. For sentences this gates when the app shows the
-  card at all; for stories it only affects the informational
-  ready/not-ready badge (stories are never hidden), but the id list still
-  must be accurate either way. Keep new sentences/stories roughly in
+  array actually exists. `npm run check` uses these ids to verify that a
+  sentence/story only appears after its words are taught, and the Stories
+  tab uses them for its "words known" badge — so the list must be accurate
+  and complete. Keep new sentences/stories roughly in
   increasing difficulty order within the array — position matters, there's
   no separate `order` field for either type.
 
@@ -73,11 +73,15 @@ learner. So:
 
 ## Step 3 — write the content
 
-Compose the new entries in memory, then `Read` the full current file one
-more time (in case anything changed) and `Write` the complete updated array
-back — i.e. old entries + new entries, still one valid JSON array, still
-sorted by id. Do not use `Edit` for surgical JSON insertion; it's too easy to
-break bracket/comma balance in a large array. Only write to the one or two
+Compose the new entries in memory, then add them at the end of the array
+(new ids continue the sequence, so the file stays sorted by id). For the big
+files (kanji.json, vocab.json, stories.json, path.json) prefer a small Node
+script that parses the file to check your ids, then inserts the new text
+before the final `]` — this keeps the existing hand layout and line endings
+(the working copy is CRLF) untouched. Rewriting a whole file with `Write` is
+fine for small files if you reproduce the layout exactly. Entries with a
+`-custom-` id were added by the user in the app: never renumber, move or
+delete them. Only write to the one or two
 files you were asked to extend — never touch `server/data/user/progress.json`
 (that's runtime learner state, not content) or any server/frontend code.
 
@@ -99,16 +103,18 @@ enough known N4/N5 vocabulary yet to make a natural sentence.
 
 ## Step 4 — validate before finishing
 
-Run a syntax + duplicate check, e.g.:
+Run `npm run check`. It validates the content files (JSON syntax, duplicate
+ids, duplicate `char`/`front`/`pattern`/`jp`, missing required fields,
+unknown ids in `words`/`grammar`, story lines without jp/reading/en) and
+path.json (unknown ids, cards in two units, sentences/stories using words
+before they're taught, malformed story questions). It must end with `OK`;
+warnings about later units still waiting for a story are expected. A warning
+"N vocab not in any unit" means you forgot to place new cards — fix it.
 
-```
-node -e "const fs=require('fs'); const f='server/data/content/<file>.json'; const d=JSON.parse(fs.readFileSync(f,'utf8')); const ids=new Set(); let dup=null; for (const x of d){ if (ids.has(x.id)) dup=x.id; ids.add(x.id); } console.log('count='+d.length, 'dupId='+dup);"
-```
-
-Then run `npm run check` (validates path.json: unknown ids, cards in two
-units, sentences/stories using words before they're taught, malformed story
-questions). It must end with `OK`; warnings about later units still waiting
-for a story are expected.
+Also check the layout and line endings survived: `git diff --stat` should
+show only about as many changed lines as you added. A whole-file diff means
+the file was reformatted (or CRLF/LF flipped) — redo the write keeping the
+original layout.
 
 Fix any issue these reveal before reporting done.
 

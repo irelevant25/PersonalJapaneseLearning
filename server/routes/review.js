@@ -21,7 +21,7 @@ router.post('/', async (req, res) => {
   const today = todayStr();
   const wasNew = !progress.cards[cardId];
   const prevState = progress.cards[cardId] || newCardState(today);
-  const nextState = gradeCard(prevState, grade, today);
+  const nextState = gradeCard(prevState, grade, today, { leechThreshold: progress.settings.leechThreshold });
   progress.cards[cardId] = nextState;
 
   const session = ensureSession(progress, today);

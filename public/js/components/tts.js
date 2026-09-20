@@ -3,8 +3,17 @@
 // actually produces natural Japanese audio depends entirely on voices
 // installed in the user's OS/browser — there is no bundled audio.
 
+let enabled = true;
+
+// Settings -> "Enable listening": when off, speak() does nothing and the
+// listen buttons (.btn-icon) are hidden through the body class.
+export function setTtsEnabled(on) {
+  enabled = !!on;
+  document.body.classList.toggle('tts-off', !enabled);
+}
+
 export function canSpeak() {
-  return 'speechSynthesis' in window;
+  return enabled && 'speechSynthesis' in window;
 }
 
 export function speak(text, { lang = 'ja-JP', rate = 0.9 } = {}) {

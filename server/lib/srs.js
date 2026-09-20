@@ -11,6 +11,8 @@ const DEFAULT_EFACTOR = 2.5;
 // allowed to drift out of rotation for months at a time.
 export const MAX_INTERVAL_DAYS = 45;
 
+// Default only — the live value is progress.settings.leechThreshold (Settings),
+// passed in by routes/review.js.
 export const LEECH_LAPSE_THRESHOLD = 4;
 
 export function newCardState(today = todayStr()) {
@@ -37,7 +39,7 @@ export function introduceCard(today = todayStr(), dueInDays = 1) {
 }
 
 // grade: 'again' | 'hard' | 'good' | 'easy'
-export function gradeCard(state, grade, today = todayStr()) {
+export function gradeCard(state, grade, today = todayStr(), { leechThreshold = LEECH_LAPSE_THRESHOLD } = {}) {
   const s = { ...state, history: state.history.slice() };
 
   switch (grade) {
@@ -47,7 +49,7 @@ export function gradeCard(state, grade, today = todayStr()) {
       s.box = 0;
       s.efactor = Math.max(MIN_EFACTOR, s.efactor - 0.2);
       s.interval = 1;
-      if (s.lapses >= LEECH_LAPSE_THRESHOLD) s.isLeech = true;
+      if (s.lapses >= leechThreshold) s.isLeech = true;
       break;
     case 'hard':
       s.reps += 1;

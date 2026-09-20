@@ -103,7 +103,9 @@ body {
   color: var(--accent-contrast);
 }
 
-.app-main {
+/* main.js renders every view into its own .app-view container inside .app-main. */
+.app-main,
+.app-view {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -1229,4 +1231,9 @@ code {
 
 .result-message {
   font-size: 1.05rem;
+}
+
+/* Settings -> listening off: hide every listen button (see components/tts.js). */
+.tts-off .btn-icon {
+  display: none;
 }

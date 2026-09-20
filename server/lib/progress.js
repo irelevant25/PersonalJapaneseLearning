@@ -9,7 +9,7 @@ import { todayStr, addMonths } from './dates.js';
 
 // N4_PROGRESS_FILE points a verification instance at a throwaway copy, so
 // testing never writes the real learner state.
-const PROGRESS_PATH = process.env.N4_PROGRESS_FILE
+export const PROGRESS_PATH = process.env.N4_PROGRESS_FILE
   ? path.resolve(process.env.N4_PROGRESS_FILE)
   : path.join(process.cwd(), 'server', 'data', 'user', 'progress.json');
 

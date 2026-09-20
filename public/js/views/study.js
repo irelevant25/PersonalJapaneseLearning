@@ -1,5 +1,5 @@
 import { api } from '../api.js';
-import { labelForType } from '../utils.js';
+import { escapeHtml, labelForType } from '../utils.js';
 import { frontHtml, backHtml, speakTextFor } from '../components/cardView.js';
 import { speak } from '../components/tts.js';
 
@@ -14,11 +14,17 @@ export async function renderStudy(root, navigate) {
     done: 0,
     correct: 0,
     finished: false,
+    saving: false,
+    saveError: '',
+    capped: false,
+    maxReviewsPerDay: 0,
   };
 
   async function loadQueue() {
     const data = await api.getQueue(20);
     state.queue = data.items;
+    state.capped = data.capped;
+    state.maxReviewsPerDay = data.maxReviewsPerDay;
     state.total = data.items.length;
     state.index = 0;
     state.done = 0;
@@ -42,10 +48,14 @@ export async function renderStudy(root, navigate) {
   }
 
   function renderEmpty() {
+    const title = state.capped ? 'Daily review limit reached' : 'No reviews due right now';
+    const text = state.capped
+      ? `You did ${state.maxReviewsPerDay} reviews today. That is your daily maximum, so the rest waits for tomorrow. You can change the limit in Settings.`
+      : "Everything you've learned is scheduled for a later day. New cards come from the learning path.";
     root.innerHTML = `
       <section class="panel empty-state">
-        <h2>No reviews due right now</h2>
-        <p>Everything you've learned is scheduled for a later day. New cards come from the learning path.</p>
+        <h2>${title}</h2>
+        <p>${text}</p>
         <div class="empty-actions">
           <button class="btn-primary" id="go-learn">Continue the learning path</button>
           <button class="btn-secondary" id="go-stats">View stats</button>
@@ -81,6 +91,7 @@ export async function renderStudy(root, navigate) {
 
     root.innerHTML = `
       <div class="study-progress"><div class="study-progress-fill" style="width:${progressPct}%"></div></div>
+      ${state.saveError ? `<div class="notice notice-warn"><span>${escapeHtml(state.saveError)}</span></div>` : ''}
       <div class="study-meta">${state.done + 1} / ${state.total} &middot; ${labelForType(card.type)}</div>
       <section class="flashcard">
         ${state.flipped ? backHtml(card) : frontHtml(card, item.hint)}
@@ -106,20 +117,30 @@ export async function renderStudy(root, navigate) {
   }
 
   async function grade(g) {
+    // A second key press while the first grade is still saving would grade
+    // the same card twice.
+    if (state.saving) return;
+    state.saving = true;
     const item = currentItem();
-    state.done += 1;
-    if (g !== 'again') state.correct += 1;
-
     try {
       await api.submitReview(item.id, g);
+      state.saveError = '';
     } catch (err) {
-      console.error('Failed to save review:', err);
+      // Keep the card on screen so the review is not silently lost.
+      state.saveError = `Could not save this review (${err.message}). Is the app still running? Please try again.`;
+      render();
+      return;
+    } finally {
+      state.saving = false;
     }
+    state.done += 1;
+    if (g !== 'again') state.correct += 1;
 
     if (g === 'again' && state.index + 3 < state.queue.length) {
       // Resurface it later in this same session instead of losing it for a day.
       const [reinserted] = state.queue.splice(state.index, 1);
       state.queue.splice(state.index + 3, 0, reinserted);
+      state.total += 1;
     } else {
       state.index += 1;
     }

@@ -1,5 +1,6 @@
 import { api } from '../api.js';
 import { escapeHtml } from '../utils.js';
+import { setTtsEnabled } from '../components/tts.js';
 
 export async function renderSettings(root) {
   const settings = await api.getSettings();
@@ -9,12 +10,12 @@ export async function renderSettings(root) {
       <h3>Study settings</h3>
       <form id="settings-form" class="settings-form">
         <label>Target exam date
-          <input type="date" name="examDate" value="${escapeHtml(settings.examDate || '')}" />
+          <input type="date" name="examDate" value="${escapeHtml(settings.examDate || '')}" required />
         </label>
         <label>New cards per day <span class="muted">(a soft daily pace for the learning path — the adaptive engine adjusts it daily, override any time)</span>
           <input type="number" name="newCardsPerDay" min="0" max="60" value="${settings.newCardsPerDay}" />
         </label>
-        <label>Max reviews per day
+        <label>Max reviews per day <span class="muted">(the Reviews tab stops after this many in one day)</span>
           <input type="number" name="maxReviewsPerDay" min="10" max="500" value="${settings.maxReviewsPerDay}" />
         </label>
         <label>Leech threshold <span class="muted">(failures before a card is flagged)</span>
@@ -49,7 +50,8 @@ export async function renderSettings(root) {
     const status = root.querySelector('#save-status');
     status.textContent = 'Saving…';
     try {
-      await api.updateSettings(patch);
+      const saved = await api.updateSettings(patch);
+      setTtsEnabled(saved.ttsEnabled);
       status.textContent = 'Saved.';
     } catch (err) {
       status.textContent = `Failed: ${err.message}`;

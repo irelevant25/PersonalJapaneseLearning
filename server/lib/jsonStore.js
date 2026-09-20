@@ -9,6 +9,12 @@ import path from 'path';
 
 const writeQueues = new Map();
 
+// On Windows a rename can fail for a moment while another program (antivirus,
+// git, an editor) has the target open — retry a few times before giving up.
+const RENAME_RETRY_CODES = new Set(['EPERM', 'EBUSY', 'EACCES']);
+const RENAME_RETRIES = 5;
+const RENAME_RETRY_DELAY_MS = 60;
+
 export async function readJson(filePath, fallback) {
   try {
     const raw = await fs.readFile(filePath, 'utf8');
@@ -20,9 +26,18 @@ export async function readJson(filePath, fallback) {
 }
 
 export function writeJson(filePath, data) {
+  return writeText(filePath, () => JSON.stringify(data, null, 2));
+}
+
+// `text` is a string, or a function returning one — called when the write
+// actually runs, so a queued write always saves the newest state.
+export function writeText(filePath, text) {
   const prev = writeQueues.get(filePath) || Promise.resolve();
+  // A failed write must not block the ones after it, so the chain continues
+  // from a settled promise; the caller of the failed write still gets the error.
   const next = prev
-    .then(() => atomicWrite(filePath, data))
+    .catch(() => {})
+    .then(() => atomicWrite(filePath, typeof text === 'function' ? text() : text))
     .catch((err) => {
       console.error(`Failed writing ${filePath}:`, err);
       throw err;
@@ -31,10 +46,27 @@ export function writeJson(filePath, data) {
   return next;
 }
 
-async function atomicWrite(filePath, data) {
+async function atomicWrite(filePath, text) {
   const dir = path.dirname(filePath);
   await fs.mkdir(dir, { recursive: true });
   const tmpPath = path.join(dir, `.${path.basename(filePath)}.${process.pid}.${Date.now()}.tmp`);
-  await fs.writeFile(tmpPath, JSON.stringify(data, null, 2), 'utf8');
-  await fs.rename(tmpPath, filePath);
+  await fs.writeFile(tmpPath, text, 'utf8');
+  try {
+    await renameWithRetry(tmpPath, filePath);
+  } catch (err) {
+    await fs.rm(tmpPath, { force: true }).catch(() => {});
+    throw err;
+  }
+}
+
+async function renameWithRetry(from, to) {
+  for (let attempt = 0; ; attempt++) {
+    try {
+      await fs.rename(from, to);
+      return;
+    } catch (err) {
+      if (attempt >= RENAME_RETRIES || !RENAME_RETRY_CODES.has(err.code)) throw err;
+      await new Promise((resolve) => setTimeout(resolve, RENAME_RETRY_DELAY_MS * (attempt + 1)));
+    }
+  }
 }

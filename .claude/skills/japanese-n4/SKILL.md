@@ -70,10 +70,12 @@ server/
                       loads content + progress + path on boot
   lib/
     dates.js          "YYYY-MM-DD" date string helpers (todayStr/addDays/addMonths/diffDays)
-    jsonStore.js       generic atomic JSON read/write (temp file + rename, write queue per path)
+    jsonStore.js       generic atomic JSON/text write (temp file + rename with retry, write queue
+                      per path that keeps going after a failed write)
     srs.js             the SM-2-ish scheduler — the only place scheduling math happens
                       (gradeCard, plus introduceCard for path-introduced cards)
     content.js         loads/caches the content JSON arrays, normalizes `type`, appendCard()
+                      (text-level append that keeps the file's hand layout)
     progress.js        loads/saves progress.json (cards, sessions, settings, adaptiveLog, notes,
                       examLog, path); ensureSession(); N4_PROGRESS_FILE env override
     path.js            THE LEARNING PATH: loads path.json, step ladder, unlock/pass rules,
@@ -89,18 +91,25 @@ server/
   data/content/        hiragana.json, katakana.json, kanji.json, vocab.json, grammar.json,
                        sentences.json, stories.json (arrays), path.json, curriculum.json
   data/user/progress.json   generated on first run, git-tracked (user's choice) — the actual learner state
-scripts/check-path.js  `npm run check` — validates path.json against the content files
+scripts/check-path.js  `npm run check` — validates the content files (duplicates, required
+                       fields, word/grammar ids) and path.json against them
 public/
   index.html, styles.css
   js/api.js            fetch wrapper, one function per endpoint
   js/main.js           hash router (#view or #view/param/param, e.g. #lesson/hira-1/drill)
-                       + view lifecycle (calls each view's returned cleanup fn)
+                       + view lifecycle: every navigation gets its own `.app-view` container
+                       inside #view-root and a navigation id, so a slow view that finishes
+                       after the user already left draws into a detached element and its
+                       cleanup runs at once (no stale keydown listeners). Views must only
+                       touch the `root` they are given, never look up #view-root themselves.
   js/utils.js          escapeHtml, SRS-state -> status label/class, type -> label, paceSummary
   js/components/cardView.js   front/back/summary HTML per content type — the single source
                               of truth for how a card renders (frontHtml takes an optional
                               reading hint); study/browse/exam/lesson all use it
   js/components/charts.js     tiny dependency-free inline-SVG bar chart
-  js/components/tts.js        wraps window.speechSynthesis (best-effort, no bundled audio)
+  js/components/tts.js        wraps window.speechSynthesis (best-effort, no bundled audio);
+                              setTtsEnabled() applies settings.ttsEnabled (body.tts-off hides
+                              every listen button — all `.btn-icon` buttons are listen buttons)
   js/views/*.js         one render(root, navigate, params) function per route (dashboard/path
                         ["Learn"]/lesson [+ test-out]/study ["Reviews"]/stories/exam/browse/
                         stats/settings), returns an optional cleanup function (study, exam and
@@ -260,11 +269,14 @@ only the filename).
 - No duplicate ids, no duplicate `char`/`front`/`pattern` within a file.
 - The running app can also add single cards at runtime via `POST /api/cards`
   (see `server/routes/cards.js` and the "+ Add card" form in Browse) — these
-  get an id like `vocab-custom-<timestamp>` and are appended straight into
-  the relevant JSON file through `content.appendCard()`. They are NOT in any
-  path unit (check-path ignores `-custom-` ids), so they only enter review if
-  graded from Browse/Reviews flows that exist for them. Don't use this path for
-  bulk seeding.
+  get an id like `vocab-custom-<timestamp>` and are appended into the
+  relevant JSON file through `content.appendCard()` (inserted as text before
+  the final `]`, so the file's layout and line endings stay as they are).
+  They are NOT in any path unit (check-path skips `-custom-` ids), so the
+  route puts them straight into SRS (`introduceCard`, due tomorrow, counted
+  in `newCards`) — the one deliberate exception to "new cards come only from
+  the path". The route rejects missing required fields and duplicates (409)
+  and ignores a client-sent `id`. Don't use this path for bulk seeding.
 
 ## SRS mechanics (server/lib/srs.js)
 
@@ -280,8 +292,11 @@ lastReview, isLeech, note, history[]}`.
 - `interval` is capped at `MAX_INTERVAL_DAYS = 45` even for very mature
   cards — deliberate, so nothing goes quiet for months given the user's
   stated memory/retention concerns. Don't remove this cap without asking.
-- `lapses >= LEECH_LAPSE_THRESHOLD` (default 4, user-configurable in
-  Settings) sets `isLeech = true`. Leeches stay in normal rotation (not
+- `lapses >= leechThreshold` sets `isLeech = true`. The live value is
+  `progress.settings.leechThreshold`, passed by `routes/review.js` as
+  `gradeCard(state, grade, today, { leechThreshold })`; `LEECH_LAPSE_THRESHOLD`
+  (4) is only the default. Lowering it flags cards on their next lapse, it
+  does not re-scan old cards. Leeches stay in normal rotation (not
   suspended) but are surfaced separately in Stats so the user can add a
   personal mnemonic via the `notes` map (`PUT /api/notes/:cardId`).
 - If you ever need to change the scheduling formula, do it only in
@@ -299,6 +314,10 @@ lastReview, isLeech, note, history[]}`.
   Exam Prep after the exam. Every call site MUST pass
   `progress.settings.examDate` — a one-argument `getPhase(curriculum)` call
   is that bug again.
+- **Daily review cap:** `routes/queue.js` serves at most
+  `settings.maxReviewsPerDay - sessions[today].studied` cards and returns
+  `{dueTotal, capped, maxReviewsPerDay}`; when `capped` the Reviews tab says
+  "Daily review limit reached" instead of "No reviews due".
 - **The Reviews queue (`buildQueue`) is due cards only**, most overdue first.
   It never introduces new cards — there is no weights/`extra`/daily-cap logic
   any more; that all moved to the path (new cards) and soft pace notices.
@@ -348,7 +367,10 @@ Small, explainable rule set, in priority order:
 4. **Kana gate**: toggled independently, see above.
 
 Accuracy here is SRS review accuracy only (`sessions.studied/correct`), not
-path quizzes. Every change appends `{date, change, reason}` to
+path quizzes, and rules 2–3 need at least 20 reviews in their window
+(`MIN_REVIEWS_FOR_ACCURACY`) — before that, "3 of 3 correct" kept raising the
+pace. The `/api` middleware saves progress whenever the engine ran (even with
+no change) so `lastAdaptiveRun` survives a restart. Every change appends `{date, change, reason}` to
 `progress.adaptiveLog`, shown on the Dashboard (last 3) and in full on the
 Stats page. New rules follow the same pattern — plain-English `reason`.
 
@@ -366,6 +388,7 @@ calling any change done:
 
 - `node --check <file>` on every edited backend or frontend JS file.
 - `npm run check` after any content or path.json change (must end with `OK`).
+  It also catches duplicate ids/words, missing fields and unknown word ids.
 - Hit the relevant `/api/*` endpoint(s) after a backend change.
 - For any frontend change, check it in a real browser. `playwright-core`
   installed in the scratchpad with `chromium.launch({ channel: 'chrome' })`
@@ -376,7 +399,16 @@ calling any change done:
   instance with a copy of the progress file:
   `PORT=3099 N4_PROGRESS_FILE=<scratchpad>/progress.test.json node server/index.js`
   (copy `server/data/user/progress.json` there first). With that override,
-  POSTing reviews/path results is safe. On Windows, start it as a background
+  POSTing reviews/path results is safe. Check the server log says "running
+  at" — if the port is taken (EADDRINUSE; 3099 was used by another app on
+  this machine once) pick another port, otherwise you are testing someone
+  else's server. To stop your instance, kill only the PID listening on your
+  port (`netstat -ano | grep 127.0.0.1:<port>`), never all node processes.
+  **`N4_PROGRESS_FILE` does not redirect content files:** `POST /api/cards`
+  on a test instance still appends to the real `server/data/content/*.json`
+  — restore them with `git checkout -- <file>` afterwards (check first that
+  `git status` was clean for that file). The backup download
+  (`/api/export`) does follow `N4_PROGRESS_FILE`. On Windows, start it as a background
   task — a server started with `Start-Process` from a tool shell can die when
   that shell resets.
 - To test path quizzes in a browser, capture the `GET /api/path/step/...`
@@ -393,6 +425,31 @@ delete `server/data/user/progress.json`. It's recreated fresh — with a new
 `examDate` of today+4 months — on next boot. There's deliberately no in-app
 "reset everything" button; this is a manual, explicit action only.
 
+## Gotchas (learned the hard way)
+
+- **Line endings:** `core.autocrlf=true` on the user's machine, so working
+  copies are mostly CRLF (styles.css, content JSON, several views) while some
+  files are LF. A scripted search/replace with `\n` silently fails to match
+  in CRLF files, and writing LF into a CRLF file makes mixed endings. Use the
+  Edit tool, or normalize (`\r\n` → `\n`, edit, convert back). After editing,
+  `git diff --stat` must show only the lines you meant to change.
+- **Settings must be validated on the server** (`routes/settings.js`
+  `VALIDATORS`). An empty `examDate` turns the pace/phase math into NaN
+  ("NaN-NaN-NaN" deadline). Add a validator for every new setting, and make
+  sure a new setting is actually read somewhere — `leechThreshold`,
+  `maxReviewsPerDay` and `ttsEnabled` were all saved but ignored until
+  2026-09-20.
+- **Async handlers + keyboard:** any handler that awaits the API before
+  moving on (grading a review, finishing a quiz) needs a re-entry guard —
+  a fast second key press graded the same card twice. `study.js` uses
+  `state.saving`; lesson.js clears its key handler before posting.
+- **Never swallow a failed save.** A failed review POST keeps the card on
+  screen with a notice; path results show an error box.
+- **jsonStore's write queue** must keep going after a failed write
+  (`prev.catch(() => {})`), or one EPERM on Windows (antivirus/git holding
+  progress.json during rename) blocks every later save until restart.
+- The 404 in the browser console on every page is `/favicon.ico` — harmless.
+
 ## Known gaps / deliberate non-goals
 
 - No official JLPT kanji/vocab/grammar list exists to validate seed content
@@ -404,5 +461,10 @@ delete `server/data/user/progress.json`. It's recreated fresh — with a new
 - No handwriting/stroke-order kanji practice — N4 is entirely multiple
   choice, so recognition-mode cards are the priority.
 - Listening relies on the browser/OS's built-in `speechSynthesis` voices.
+- Navigation uses `history.replaceState`, so the browser Back button does not
+  move between tabs. Fine for now; switch to real hash navigation if asked.
+- Re-grading a card that was failed and resurfaced in the same Reviews
+  session posts a second review for that day (Anki-style); both count in
+  `sessions.studied` and toward the daily cap.
 - Single user, no auth, no HTTPS — appropriate only because it's bound to
   127.0.0.1. Don't add multi-user features.
