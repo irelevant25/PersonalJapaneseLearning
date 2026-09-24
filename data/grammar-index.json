@@ -1,0 +1,707 @@
+[
+ {
+  "lesson": 1,
+  "point": "X は Y です",
+  "ref": "L1-1"
+ },
+ {
+  "lesson": 1,
+  "point": "Question sentences (か)",
+  "ref": "L1-2"
+ },
+ {
+  "lesson": 1,
+  "point": "noun の noun",
+  "ref": "L1-3"
+ },
+ {
+  "lesson": 1,
+  "point": "Numbers / Time",
+  "ref": "L1-U"
+ },
+ {
+  "lesson": 2,
+  "point": "これ/それ/あれ/どれ",
+  "ref": "L2-1"
+ },
+ {
+  "lesson": 2,
+  "point": "この/その/あの/どの",
+  "ref": "L2-2"
+ },
+ {
+  "lesson": 2,
+  "point": "ここ/そこ/あそこ/どこ",
+  "ref": "L2-3"
+ },
+ {
+  "lesson": 2,
+  "point": "だれの",
+  "ref": "L2-4"
+ },
+ {
+  "lesson": 2,
+  "point": "も",
+  "ref": "L2-5"
+ },
+ {
+  "lesson": 2,
+  "point": "じゃないです (negative of です)",
+  "ref": "L2-6"
+ },
+ {
+  "lesson": 2,
+  "point": "ね / よ",
+  "ref": "L2-7"
+ },
+ {
+  "lesson": 2,
+  "point": "Please (をください/おねがいします/どうぞ)",
+  "ref": "L2-E"
+ },
+ {
+  "lesson": 3,
+  "point": "Verb conjugation (ru/u/irregular)",
+  "ref": "L3-1"
+ },
+ {
+  "lesson": 3,
+  "point": "Verb present tense (long forms)",
+  "ref": "L3-2"
+ },
+ {
+  "lesson": 3,
+  "point": "Particles は/で/に/へ/を",
+  "ref": "L3-3"
+ },
+ {
+  "lesson": 3,
+  "point": "Time references",
+  "ref": "L3-4"
+ },
+ {
+  "lesson": 3,
+  "point": "ませんか (invitation)",
+  "ref": "L3-5"
+ },
+ {
+  "lesson": 3,
+  "point": "Frequency adverbs",
+  "ref": "L3-6"
+ },
+ {
+  "lesson": 3,
+  "point": "Word order",
+  "ref": "L3-7"
+ },
+ {
+  "lesson": 3,
+  "point": "Topic particle は",
+  "ref": "L3-8"
+ },
+ {
+  "lesson": 4,
+  "point": "Xがあります/います",
+  "ref": "L4-1"
+ },
+ {
+  "lesson": 4,
+  "point": "Location words (うえ/した/まえ/うしろ/なか/となり/あいだ/ちかく)",
+  "ref": "L4-2"
+ },
+ {
+  "lesson": 4,
+  "point": "Past tense of です (でした/じゃなかったです)",
+  "ref": "L4-3"
+ },
+ {
+  "lesson": 4,
+  "point": "Past tense of verbs (ました/ませんでした)",
+  "ref": "L4-4"
+ },
+ {
+  "lesson": 4,
+  "point": "も",
+  "ref": "L4-5"
+ },
+ {
+  "lesson": 4,
+  "point": "〜時間 (hours)",
+  "ref": "L4-6"
+ },
+ {
+  "lesson": 4,
+  "point": "たくさん",
+  "ref": "L4-7"
+ },
+ {
+  "lesson": 4,
+  "point": "と (and / together with)",
+  "ref": "L4-8"
+ },
+ {
+  "lesson": 4,
+  "point": "Days/weeks/months/years",
+  "ref": "L4-U"
+ },
+ {
+  "lesson": 5,
+  "point": "Adjectives (い-adj and な-adj)",
+  "ref": "L5-1"
+ },
+ {
+  "lesson": 5,
+  "point": "Adjective past tense",
+  "ref": "L5-2"
+ },
+ {
+  "lesson": 5,
+  "point": "Adjectives modifying nouns",
+  "ref": "L5-3"
+ },
+ {
+  "lesson": 5,
+  "point": "好き(な)/嫌い(な)",
+  "ref": "L5-4"
+ },
+ {
+  "lesson": 5,
+  "point": "〜ましょう/〜ましょうか (let's)",
+  "ref": "L5-5"
+ },
+ {
+  "lesson": 5,
+  "point": "Counting (ひとつ, ふたつ …)",
+  "ref": "L5-6"
+ },
+ {
+  "lesson": 6,
+  "point": "Te-form",
+  "ref": "L6-1"
+ },
+ {
+  "lesson": 6,
+  "point": "〜てください (please)",
+  "ref": "L6-1"
+ },
+ {
+  "lesson": 6,
+  "point": "Describing two activities with te-form",
+  "ref": "L6-3"
+ },
+ {
+  "lesson": 6,
+  "point": "〜てもいいです (may)",
+  "ref": "L6-4"
+ },
+ {
+  "lesson": 6,
+  "point": "〜てはいけません (must not)",
+  "ref": "L6-5"
+ },
+ {
+  "lesson": 6,
+  "point": "から (because)",
+  "ref": "L6-6"
+ },
+ {
+  "lesson": 6,
+  "point": "〜ましょうか (offering assistance)",
+  "ref": "L6-7"
+ },
+ {
+  "lesson": 7,
+  "point": "〜ている (action in progress)",
+  "ref": "L7-1"
+ },
+ {
+  "lesson": 7,
+  "point": "〜ている (result of a change)",
+  "ref": "L7-2"
+ },
+ {
+  "lesson": 7,
+  "point": "Describing body parts with が",
+  "ref": "L7-3"
+ },
+ {
+  "lesson": 7,
+  "point": "Te-form of adjectives / connecting adjectives",
+  "ref": "L7-4"
+ },
+ {
+  "lesson": 7,
+  "point": "(verb stem) に行く",
+  "ref": "L7-5"
+ },
+ {
+  "lesson": 7,
+  "point": "Counting people (〜人)",
+  "ref": "L7-6"
+ },
+ {
+  "lesson": 7,
+  "point": "Kinship terms",
+  "ref": "L7-C"
+ },
+ {
+  "lesson": 8,
+  "point": "Short forms (casual present)",
+  "ref": "L8-1"
+ },
+ {
+  "lesson": 8,
+  "point": "Informal speech",
+  "ref": "L8-2"
+ },
+ {
+  "lesson": 8,
+  "point": "〜と思います",
+  "ref": "L8-3"
+ },
+ {
+  "lesson": 8,
+  "point": "〜と言っていました",
+  "ref": "L8-4"
+ },
+ {
+  "lesson": 8,
+  "point": "〜ないでください (please don't)",
+  "ref": "L8-5"
+ },
+ {
+  "lesson": 8,
+  "point": "(verb) のが好き, etc.",
+  "ref": "L8-6"
+ },
+ {
+  "lesson": 8,
+  "point": "が (subject particle)",
+  "ref": "L8-7"
+ },
+ {
+  "lesson": 8,
+  "point": "なにか/なにも",
+  "ref": "L8-8"
+ },
+ {
+  "lesson": 9,
+  "point": "Past tense short forms",
+  "ref": "L9-1"
+ },
+ {
+  "lesson": 9,
+  "point": "Informal speech (past)",
+  "ref": "L9-2"
+ },
+ {
+  "lesson": 9,
+  "point": "〜と思います (past short form)",
+  "ref": "L9-3"
+ },
+ {
+  "lesson": 9,
+  "point": "〜と言っていました",
+  "ref": "L9-4"
+ },
+ {
+  "lesson": 9,
+  "point": "Qualifying nouns with verbs (noun modification)",
+  "ref": "L9-5"
+ },
+ {
+  "lesson": 9,
+  "point": "もう/まだ",
+  "ref": "L9-6"
+ },
+ {
+  "lesson": 9,
+  "point": "から (because)",
+  "ref": "L9-7"
+ },
+ {
+  "lesson": 10,
+  "point": "Comparison (〜のほうが〜より)",
+  "ref": "L10-1"
+ },
+ {
+  "lesson": 10,
+  "point": "いちばん (superlative)",
+  "ref": "L10-2"
+ },
+ {
+  "lesson": 10,
+  "point": "の (one)",
+  "ref": "L10-3"
+ },
+ {
+  "lesson": 10,
+  "point": "つもりだ (intend to)",
+  "ref": "L10-4"
+ },
+ {
+  "lesson": 10,
+  "point": "形容詞 + なる (become)",
+  "ref": "L10-5"
+ },
+ {
+  "lesson": 10,
+  "point": "どこかに/どこにも",
+  "ref": "L10-6"
+ },
+ {
+  "lesson": 10,
+  "point": "で (by means of)",
+  "ref": "L10-7"
+ },
+ {
+  "lesson": 11,
+  "point": "〜たい (want to)",
+  "ref": "L11-1"
+ },
+ {
+  "lesson": 11,
+  "point": "〜たり〜たりする",
+  "ref": "L11-2"
+ },
+ {
+  "lesson": 11,
+  "point": "〜ことがある (past experience)",
+  "ref": "L11-3"
+ },
+ {
+  "lesson": 11,
+  "point": "や (and, non-exhaustive listing)",
+  "ref": "L11-4"
+ },
+ {
+  "lesson": 12,
+  "point": "〜んです",
+  "ref": "L12-1"
+ },
+ {
+  "lesson": 12,
+  "point": "〜すぎる (too much)",
+  "ref": "L12-2"
+ },
+ {
+  "lesson": 12,
+  "point": "〜ほうがいいです (had better)",
+  "ref": "L12-3"
+ },
+ {
+  "lesson": 12,
+  "point": "ので (because)",
+  "ref": "L12-4"
+ },
+ {
+  "lesson": 12,
+  "point": "〜なければいけません/〜なきゃいけません (must)",
+  "ref": "L12-5"
+ },
+ {
+  "lesson": 12,
+  "point": "〜でしょうか",
+  "ref": "L12-6"
+ },
+ {
+  "lesson": 13,
+  "point": "Potential Verbs",
+  "ref": "L13-1"
+ },
+ {
+  "lesson": 13,
+  "point": "〜し",
+  "ref": "L13-2"
+ },
+ {
+  "lesson": 13,
+  "point": "〜そうです (It looks like ...)",
+  "ref": "L13-3"
+ },
+ {
+  "lesson": 13,
+  "point": "〜てみる",
+  "ref": "L13-4"
+ },
+ {
+  "lesson": 13,
+  "point": "なら",
+  "ref": "L13-5"
+ },
+ {
+  "lesson": 13,
+  "point": "一週間に三回 (frequency per period)",
+  "ref": "L13-6"
+ },
+ {
+  "lesson": 14,
+  "point": "ほしい",
+  "ref": "L14-1"
+ },
+ {
+  "lesson": 14,
+  "point": "〜かもしれません",
+  "ref": "L14-2"
+ },
+ {
+  "lesson": 14,
+  "point": "あげる/くれる/もらう",
+  "ref": "L14-3"
+ },
+ {
+  "lesson": 14,
+  "point": "〜たらどうですか",
+  "ref": "L14-4"
+ },
+ {
+  "lesson": 14,
+  "point": "Number + も / Number + しか + Negative",
+  "ref": "L14-5"
+ },
+ {
+  "lesson": 15,
+  "point": "Volitional Form",
+  "ref": "L15-1"
+ },
+ {
+  "lesson": 15,
+  "point": "Volitional Form + と思っています",
+  "ref": "L15-2"
+ },
+ {
+  "lesson": 15,
+  "point": "〜ておく",
+  "ref": "L15-3"
+ },
+ {
+  "lesson": 15,
+  "point": "Using Sentences to Qualify Nouns",
+  "ref": "L15-4"
+ },
+ {
+  "lesson": 16,
+  "point": "〜てあげる/てくれる/てもらう",
+  "ref": "L16-1"
+ },
+ {
+  "lesson": 16,
+  "point": "〜ていただけませんか",
+  "ref": "L16-2"
+ },
+ {
+  "lesson": 16,
+  "point": "〜といい",
+  "ref": "L16-3"
+ },
+ {
+  "lesson": 16,
+  "point": "〜時",
+  "ref": "L16-4"
+ },
+ {
+  "lesson": 16,
+  "point": "〜てすみませんでした",
+  "ref": "L16-5"
+ },
+ {
+  "lesson": 17,
+  "point": "〜そうです (I hear)",
+  "ref": "L17-1"
+ },
+ {
+  "lesson": 17,
+  "point": "〜って",
+  "ref": "L17-2"
+ },
+ {
+  "lesson": 17,
+  "point": "〜たら",
+  "ref": "L17-3"
+ },
+ {
+  "lesson": 17,
+  "point": "〜なくてもいいです",
+  "ref": "L17-4"
+ },
+ {
+  "lesson": 17,
+  "point": "〜みたいです",
+  "ref": "L17-5"
+ },
+ {
+  "lesson": 17,
+  "point": "〜前に / 〜てから",
+  "ref": "L17-6"
+ },
+ {
+  "lesson": 18,
+  "point": "Transitivity Pairs",
+  "ref": "L18-1"
+ },
+ {
+  "lesson": 18,
+  "point": "Paired Intransitive Verbs + ている",
+  "ref": "L18-2"
+ },
+ {
+  "lesson": 18,
+  "point": "〜てしまう",
+  "ref": "L18-3"
+ },
+ {
+  "lesson": 18,
+  "point": "〜と (conditional)",
+  "ref": "L18-4"
+ },
+ {
+  "lesson": 18,
+  "point": "〜ながら",
+  "ref": "L18-5"
+ },
+ {
+  "lesson": 18,
+  "point": "〜ばよかったです",
+  "ref": "L18-6"
+ },
+ {
+  "lesson": 19,
+  "point": "Honorific Verbs",
+  "ref": "L19-1"
+ },
+ {
+  "lesson": 19,
+  "point": "Giving Respectful Advice",
+  "ref": "L19-2"
+ },
+ {
+  "lesson": 19,
+  "point": "〜てくれてありがとう",
+  "ref": "L19-3"
+ },
+ {
+  "lesson": 19,
+  "point": "〜てよかったです",
+  "ref": "L19-4"
+ },
+ {
+  "lesson": 19,
+  "point": "〜はずです",
+  "ref": "L19-5"
+ },
+ {
+  "lesson": 20,
+  "point": "Extra-modest Expressions",
+  "ref": "L20-1"
+ },
+ {
+  "lesson": 20,
+  "point": "Humble Expressions",
+  "ref": "L20-2"
+ },
+ {
+  "lesson": 20,
+  "point": "〜ないで",
+  "ref": "L20-3"
+ },
+ {
+  "lesson": 20,
+  "point": "Questions within Larger Sentences",
+  "ref": "L20-4"
+ },
+ {
+  "lesson": 20,
+  "point": "Name という Item",
+  "ref": "L20-5"
+ },
+ {
+  "lesson": 20,
+  "point": "〜やすい / 〜にくい",
+  "ref": "L20-6"
+ },
+ {
+  "lesson": 21,
+  "point": "Passive Sentences",
+  "ref": "L21-1"
+ },
+ {
+  "lesson": 21,
+  "point": "〜てある",
+  "ref": "L21-2"
+ },
+ {
+  "lesson": 21,
+  "point": "〜間に",
+  "ref": "L21-3"
+ },
+ {
+  "lesson": 21,
+  "point": "Adjective + する",
+  "ref": "L21-4"
+ },
+ {
+  "lesson": 21,
+  "point": "〜てほしい",
+  "ref": "L21-5"
+ },
+ {
+  "lesson": 22,
+  "point": "Causative Sentences",
+  "ref": "L22-1"
+ },
+ {
+  "lesson": 22,
+  "point": "Causative + てあげる/てくれる/てもらう",
+  "ref": "L22-2"
+ },
+ {
+  "lesson": 22,
+  "point": "Verb Stem + なさい",
+  "ref": "L22-3"
+ },
+ {
+  "lesson": 22,
+  "point": "〜ば",
+  "ref": "L22-4"
+ },
+ {
+  "lesson": 22,
+  "point": "〜のに",
+  "ref": "L22-5"
+ },
+ {
+  "lesson": 22,
+  "point": "〜のように / 〜のような",
+  "ref": "L22-6"
+ },
+ {
+  "lesson": 23,
+  "point": "Causative-passive Sentences",
+  "ref": "L23-1"
+ },
+ {
+  "lesson": 23,
+  "point": "〜ても",
+  "ref": "L23-2"
+ },
+ {
+  "lesson": 23,
+  "point": "〜ことにする",
+  "ref": "L23-3"
+ },
+ {
+  "lesson": 23,
+  "point": "〜ことにしている",
+  "ref": "L23-4"
+ },
+ {
+  "lesson": 23,
+  "point": "〜まで",
+  "ref": "L23-5"
+ },
+ {
+  "lesson": 23,
+  "point": "〜方 (way of doing)",
+  "ref": "L23-6"
+ }
+]

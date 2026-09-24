@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#c0412a"/>
+  <text x="32" y="46" font-size="40" text-anchor="middle" fill="#fff"
+        font-family="Yu Mincho, Hiragino Mincho ProN, Noto Serif JP, serif" font-weight="700">日</text>
+</svg>

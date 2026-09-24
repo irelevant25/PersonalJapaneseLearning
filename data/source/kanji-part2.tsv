@@ -1,0 +1,172 @@
+146	物	13	ぶつ/ぶっ	もの	thing	食べ物(たべもの)=food;飲み物(のみもの)=drink;物(もの)=things;買い物(かいもの)=shopping;動物(どうぶつ)=animal;物価(ぶっか)=commodity prices
+147	鳥	13	ちょう	とり	bird	鳥(とり)=bird, poultry;焼き鳥(やきとり)=grilled chicken;白鳥(はくちょう)=swan
+148	料	13	りょう		ingredients; fare	料理(りょうり)=cooking;料金(りょうきん)=charge;授業料(じゅぎょうりょう)=tuition;給料(きゅうりょう)=salary
+149	理	13	り		reason	料理(りょうり)=cooking;理由(りゆう)=reason;地理(ちり)=geography;無理な(むりな)=impossible
+150	特	13	とく/とっ		special	特に(とくに)=especially;特別な(とくべつな)=special;特徴(とくちょう)=characteristic;特急(とっきゅう)=super express
+151	安	13	あん	やす	cheap; ease	安い(やすい)=cheap;安全な(あんぜんな)=safe;安心(あんしん)=relief;不安な(ふあんな)=anxious, worried
+152	飯	13	はん		food; cooked rice	ご飯(ごはん)=rice, meal;朝ご飯(あさごはん)=breakfast;昼ご飯(ひるごはん)=lunch;晩ご飯(ばんごはん)=dinner
+153	肉	13	にく		meat	肉(にく)=meat;牛肉(ぎゅうにく)=beef;豚肉(ぶたにく)=pork;肉屋(にくや)=meat shop;筋肉(きんにく)=muscle
+154	悪	13	あく	わる	bad; wrong	悪い(わるい)=bad;気分が悪い(きぶんがわるい)=to feel sick;最悪(さいあく)=the worst;悪魔(あくま)=devil
+155	体	13	たい	からだ	body	体(からだ)=body;体重(たいじゅう)=body weight;体操(たいそう)=gymnastics, physical exercises
+156	同	13	どう	おな	same	同じ(おなじ)=same;同僚(どうりょう)=coworker;同級生(どうきゅうせい)=classmate;同時(どうじ)=same time
+157	着	13	ちゃく	つ/き/ぎ	to reach; to wear	着く(つく)=to arrive;着る(きる)=to wear;着物(きもの)=kimono;水着(みずぎ)=swimwear;大阪着(おおさかちゃく)=arriving at Osaka
+158	空	13	くう	そら/あ/から	sky; empty	空港(くうこう)=airport;空気(くうき)=air;空(そら)=sky;空く(あく)=to be vacant;空手(からて)=karate
+159	港	13	こう	みなと	port; harbor	空港(くうこう)=airport;神戸港(こうべこう)=Kobe Port;港(みなと)=port;香港(ホンコン)=Hong Kong
+160	昼	13	ちゅう	ひる	noon; daytime	昼(ひる)=noon, daytime;昼ご飯(ひるごはん)=lunch;昼寝(ひるね)=nap;昼休み(ひるやすみ)=lunch break;昼食(ちゅうしょく)=lunch
+161	海	13	かい	うみ	sea	海(うみ)=sea;日本海(にほんかい)=the Japan Sea;海外(かいがい)=overseas;海岸(かいがん)=coast;北海道(ほっかいどう)=Hokkaido
+162	彼	14		かれ/かの	he	彼(かれ)=he, boyfriend;彼女(かのじょ)=she, girlfriend;彼ら(かれら)=they;彼氏(かれし)=boyfriend
+163	代	14	だい	か	age; replace	時代(じだい)=age, era;電気代(でんきだい)=electricity fee;九十年代(きゅうじゅうねんだい)=90's;十代(じゅうだい)=in one's teens;代わりに(かわりに)=instead
+164	留	14	りゅう/る		to stay; to keep	留学生(りゅうがくせい)=international students;留学する(りゅうがくする)=to study abroad;留守(るす)=absence, not at home
+165	族	14	ぞく		family; tribe	家族(かぞく)=family;民族(みんぞく)=ethnic group;水族館(すいぞくかん)=aquarium;王族(おうぞく)=member of royalty
+166	親	14	しん	おや/した	parent; intimacy	父親(ちちおや)=father;親切な(しんせつな)=kind;親友(しんゆう)=best friend;両親(りょうしん)=parents;親しい(したしい)=intimate;母親(ははおや)=mother
+167	切	14	せつ	き/きっ	to cut	親切な(しんせつな)=kind;切る(きる)=to cut;切符(きっぷ)=ticket;切手(きって)=postage stamp;大切な(たいせつな)=precious
+168	英	14	えい		English; excellent	英語(えいご)=English language;英国(えいこく)=United Kingdom;英会話(えいかいわ)=English conversation;英雄(えいゆう)=hero
+169	店	14	てん	みせ	shop	店(みせ)=shop;店員(てんいん)=store clerk;売店(ばいてん)=stall, kiosk;書店(しょてん)=bookstore;店長(てんちょう)=store manager
+170	去	14	きょ/こ	さ	past; to leave	去年(きょねん)=last year;過去(かこ)=the past;去る(さる)=to leave;消去する(しょうきょする)=to erase
+171	急	14	きゅう	いそ	to hurry; emergency	急に(きゅうに)=suddenly;急ぐ(いそぐ)=to hurry;急行(きゅうこう)=express train;特急(とっきゅう)=super express
+172	乗	14	じょう	の	to ride	乗る(のる)=to ride;乗り物(のりもの)=vehicle;乗車(じょうしゃ)=riding a car;乗馬(じょうば)=horseback riding
+173	当	14	とう	あ	to hit	本当に(ほんとうに)=really;お弁当(おべんとう)=boxed lunch;当時(とうじ)=at that time;当たる(あたる)=to hit
+174	音	14	おん	おと/ね	sound	音楽(おんがく)=music;発音(はつおん)=pronunciation;音(おと)=sound;本音(ほんね)=real intention
+175	楽	14	がく/がっ/らく	たの	pleasure	音楽(おんがく)=music;楽しい(たのしい)=fun;楽器(がっき)=musical instrument;楽な(らくな)=easy, comfortable
+176	医	14	い		doctor; medicine	医者(いしゃ)=doctor;歯医者(はいしゃ)=dentist;医学(いがく)=medical science;医院(いいん)=clinic
+177	者	14	しゃ/じゃ	もの	person	医者(いしゃ)=doctor;学者(がくしゃ)=scholar;読者(どくしゃ)=reader;若者(わかもの)=young people;忍者(にんじゃ)=ninja
+178	死	15	し	し	death; to die	死ぬ(しぬ)=to die;死(し)=death;必死(ひっし)=desperate;死者(ししゃ)=the dead
+179	意	15	い		mind; meaning	意味(いみ)=meaning;注意する(ちゅういする)=to watch out;意見(いけん)=opinion;用意する(よういする)=to prepare
+180	味	15	み	あじ	flavor; taste	意味(いみ)=meaning;趣味(しゅみ)=hobby;興味(きょうみ)=interest;味噌(みそ)=soybean paste;味(あじ)=taste
+181	注	15	ちゅう	そそ	to pour; to shed	注意する(ちゅういする)=to watch out;注文する(ちゅうもんする)=to order;注ぐ(そそぐ)=to pour
+182	夏	15	か	なつ	summer	夏(なつ)=summer;夏休み(なつやすみ)=summer vacation;初夏(しょか)=early summer
+183	魚	15	ぎょ	さかな/うお	fish	魚(さかな)=fish;魚屋(さかなや)=fish shop;金魚(きんぎょ)=goldfish;人魚(にんぎょ)=mermaid;魚市場(うおいちば)=fish market
+184	寺	15	じ	てら/でら	temple	お寺(おてら)=temple;東寺(とうじ)=Toji (the name of a temple);寺院(じいん)=sacred building;禅寺(ぜんでら)=Zen temple
+185	広	15	こう	ひろ	spacious; wide	広い(ひろい)=wide, spacious;広場(ひろば)=square, open space;広島(ひろしま)=Hiroshima;広告(こうこく)=advertisement
+186	足	15	そく	あし/た	foot; leg	足(あし)=foot, leg;足りる(たりる)=to be sufficient;一足(いっそく)=one pair of shoes;水不足(みずぶそく)=lack of water
+187	転	15	てん	ころ	to roll over	自転車(じてんしゃ)=bicycle;運転する(うんてんする)=to drive;回転ずし(かいてんずし)=conveyor belt sushi;転ぶ(ころぶ)=to tumble, to fall down
+188	借	15	しゃく/しゃっ	か	to borrow	借りる(かりる)=to borrow;借地(しゃくち)=rented land;借金(しゃっきん)=debt;借家(しゃくや)=rented house
+189	走	15	そう	はし	to run	走る(はしる)=to run;走り書き(はしりがき)=hasty writing;脱走(だっそう)=escape from a prison
+190	場	15	じょう	ば	place	場所(ばしょ)=place;工場(こうじょう)=factory;市場(いちば)=market;場合(ばあい)=case;駐車場(ちゅうしゃじょう)=parking lot
+191	建	15	けん	たて/た	to build	建物(たてもの)=building;建てる(たてる)=to build;建つ(たつ)=to be built;建国(けんこく)=founding a nation
+192	地	15	ち/じ		ground	地下(ちか)=underground;地下鉄(ちかてつ)=subway;地図(ちず)=map;地球(ちきゅう)=the earth;地震(じしん)=earthquake
+193	通	15	つう	とお/かよ	to pass; to commute	通る(とおる)=to go through, to pass;通う(かよう)=to commute;通学(つうがく)=going to school;通勤(つうきん)=going to work
+194	供	16	きょう	ども/そな	companion; offer	子供(こども)=child;供える(そなえる)=to offer something to a spirit;提供(ていきょう)=offer
+195	世	16	せ/せい	よ	world; generation	世界(せかい)=the world;世話(せわ)=care;世代(せだい)=generation;三世(さんせい)=the third generation;世の中(よのなか)=society
+196	界	16	かい		world	世界(せかい)=the world;視界(しかい)=visibility;政界(せいかい)=political world;限界(げんかい)=limit
+197	全	16	ぜん	まった/すべ	all	全部(ぜんぶ)=all;安全(あんぜん)=safety;全国(ぜんこく)=whole country;全く(まったく)=entirely;全て(すべて)=all
+198	部	16	ぶ/へ		part; section	全部(ぜんぶ)=all;部屋(へや)=room;テニス部(テニスぶ)=tennis club;部長(ぶちょう)=department manager
+199	始	16	し	はじ	to begin	始まる(はじまる)=(something) begins;始める(はじめる)=to begin (something);始発(しはつ)=first train (of the day);開始(かいし)=start
+200	週	16	しゅう		week	毎週(まいしゅう)=every week;先週(せんしゅう)=last week;一週間(いっしゅうかん)=one week;二週目(にしゅうめ)=second week;週末(しゅうまつ)=weekend
+201	考	16	こう	かんが	to think; idea	考える(かんがえる)=to think;考え(かんがえ)=idea;考古学(こうこがく)=archaeology;参考(さんこう)=reference
+202	開	16	かい	あ/ひら	to open	開ける(あける)=to open (something);開く(あく)=(something) opens;開く(ひらく)=to open;開店(かいてん)=opening of a store
+203	屋	16	おく	や	shop; house	部屋(へや)=room;本屋(ほんや)=bookstore;魚屋(さかなや)=fish shop;屋上(おくじょう)=rooftop;屋内(おくない)=indoor
+204	方	16	ほう	かた/がた	direction; person	味方(みかた)=ally, person on one's side;読み方(よみかた)=way of reading;夕方(ゆうがた)=evening;両方(りょうほう)=both;方法(ほうほう)=method
+205	運	16	うん	はこ	transport; luck	運動(うんどう)=exercise;運転(うんてん)=driving;運がいい(うんがいい)=lucky;運命(うんめい)=fate;運ぶ(はこぶ)=to carry
+206	動	16	どう	うご	to move	運動(うんどう)=exercise;動く(うごく)=to move;自動車(じどうしゃ)=automobile;動物(どうぶつ)=animal;動詞(どうし)=verb
+207	教	16	きょう	おし	to teach	教える(おしえる)=to teach;教室(きょうしつ)=classroom;教会(きょうかい)=church;キリスト教(キリストきょう)=Christianity;教科書(きょうかしょ)=textbook
+208	室	16	しつ		room	教室(きょうしつ)=classroom;研究室(けんきゅうしつ)=professor's office;地下室(ちかしつ)=basement;待合室(まちあいしつ)=waiting room
+209	以	16	い		by means of; compared with	〜以外(〜いがい)=other than ...;〜以上(〜いじょう)=... or more;〜以下(〜いか)=... or less;〜以内(〜いない)=within ...;以前(いぜん)=before, formerly
+210	野	17	や	の	field	分野(ぶんや)=realm, field;小野さん(おのさん)=Mr./Ms. Ono;長野(ながの)=Nagano;野球(やきゅう)=baseball;野菜(やさい)=vegetable
+211	習	17	しゅう	なら	to learn	習う(ならう)=to learn;習字(しゅうじ)=calligraphy;練習(れんしゅう)=practice;習慣(しゅうかん)=habit, custom
+212	主	17	しゅ	おも/ぬし	main; lord	主に(おもに)=mainly;ご主人(ごしゅじん)=husband;主婦(しゅふ)=housewife;主語(しゅご)=subject of a sentence;持ち主(もちぬし)=owner
+213	歳	17	さい/せい		year; age	二十五歳(にじゅうごさい)=twenty-five years old;お歳暮(おせいぼ)=year-end gift;二十歳(はたち)=twenty years old
+214	集	17	しゅう	あつ	to gather	集める(あつめる)=to collect;特集(とくしゅう)=(magazine) feature;集中する(しゅうちゅうする)=to concentrate
+215	発	17	はっ/はつ/ぱつ		to start; to reveal	発表する(はっぴょうする)=to make public, to give a presentation;発音(はつおん)=pronunciation;出発(しゅっぱつ)=departure;発明(はつめい)=invention
+216	表	17	ぴょう/ひょう	あらわ/おもて	to express; surface	発表する(はっぴょうする)=to give a presentation;表紙(ひょうし)=cover page;表現(ひょうげん)=expression;表す(あらわす)=to express;表(おもて)=the front
+217	品	17	ひん	じな/しな	goods; refinement	作品(さくひん)=work (of art, etc.);上品な(じょうひんな)=elegant;手品(てじな)=magic;品物(しなもの)=article of merchandise
+218	写	17	しゃ	うつ	to copy	写真(しゃしん)=photograph;写す(うつす)=to copy;写生(しゃせい)=sketch;描写する(びょうしゃする)=to describe
+219	真	17	しん	ま	true; reality	写真(しゃしん)=photograph;真ん中(まんなか)=center;〜の真上(〜のまうえ)=right above ...;真夜中(まよなか)=midnight
+220	字	17	じ		letter; character	文字(もじ)=letter, character;赤字(あかじ)=deficit;名字(みょうじ)=family name;大文字(おおもじ)=uppercase letters;漢字(かんじ)=Chinese character
+221	活	17	かつ/かっ		lively	活動(かつどう)=activity;生活(せいかつ)=life, living;活発な(かっぱつな)=active;活用(かつよう)=conjugation;活気(かっき)=liveliness
+222	結	17	けっ/けつ	むす	to tie; to join	結婚する(けっこんする)=to get married;結果(けっか)=result;結論(けつろん)=conclusion;結ぶ(むすぶ)=to tie a knot
+223	婚	17	こん		marriage	結婚する(けっこんする)=to get married;離婚(りこん)=divorce;婚約者(こんやくしゃ)=fiancé(e);新婚(しんこん)=newlywed;未婚(みこん)=unmarried
+224	歩	17	ほ/ぽ	ある	to walk	歩く(あるく)=to walk;歩道(ほどう)=sidewalk;散歩する(さんぽする)=to stroll;一歩(いっぽ)=one step;進歩(しんぽ)=progress
+225	目	18	もく	め	eye	目的(もくてき)=purpose;目(め)=eyes;目薬(めぐすり)=eye drops;二番目(にばんめ)=the second;目上の人(めうえのひと)=one's superiors
+226	的	18	てき	まと	target; -ish	目的(もくてき)=purpose;現代的(げんだいてき)=modern;社会的(しゃかいてき)=social;的(まと)=target
+227	洋	18	よう		ocean; overseas	洋服(ようふく)=(Western) clothes;東洋(とうよう)=the East;洋食(ようしょく)=Western food;大西洋(たいせいよう)=the Atlantic
+228	服	18	ふく		clothes	服(ふく)=clothes;洋服(ようふく)=(Western) clothes;制服(せいふく)=uniform;和服(わふく)=Japanese clothes
+229	堂	18	どう		hall	食堂(しょくどう)=cafeteria;公会堂(こうかいどう)=public hall;堂々とした(どうどうとした)=dignified, imposing
+230	力	18	りょく/りき	ちから	power	力仕事(ちからしごと)=physical labor;協力(きょうりょく)=cooperation;努力(どりょく)=endeavor;力士(りきし)=sumo wrestler
+231	授	18	じゅ	さず	to instruct	授業(じゅぎょう)=class;教授(きょうじゅ)=professor;授かる(さずかる)=to be given
+232	業	18	ぎょう		business; vocation	授業(じゅぎょう)=class;職業(しょくぎょう)=occupation;産業(さんぎょう)=industry;サービス業(サービスぎょう)=service industry
+233	試	18	し	こころ	test; to try	試験(しけん)=exam;試合(しあい)=game, match;入試(にゅうし)=entrance exam;試みる(こころみる)=to try
+234	験	18	けん		to examine	試験(しけん)=exam;実験(じっけん)=experiment;経験(けいけん)=experience;受験(じゅけん)=taking an examination
+235	貸	18	たい	か	to lend; loan	貸す(かす)=to lend;貸し出し(かしだし)=lending;賃貸マンション(ちんたいマンション)=rental condo
+236	図	18	と/ず	はか	drawing; to devise	図書館(としょかん)=library;地図(ちず)=map;図(ず)=figure;合図(あいず)=signal;図る(はかる)=to attempt
+237	館	18	かん		building; hall	図書館(としょかん)=library;旅館(りょかん)=Japanese inn;映画館(えいがかん)=movie theater;大使館(たいしかん)=embassy
+238	終	18	しゅう	お	end	終わる(おわる)=to come to an end;終わり(おわり)=end;終点(しゅうてん)=last stop;最終〜(さいしゅう〜)=the last ...
+239	宿	18	しゅく	やど	inn; to lodge in	宿題(しゅくだい)=homework;下宿(げしゅく)=boardinghouse;宿泊(しゅくはく)=lodging;宿(やど)=inn
+240	題	18	だい		title; topic	宿題(しゅくだい)=homework;問題(もんだい)=problem, question;話題(わだい)=topic of conversation;題(だい)=title
+241	春	19	しゅん	はる	spring	春(はる)=spring;春巻(はるまき)=spring roll;春分(しゅんぶん)=vernal equinox;青春(せいしゅん)=youth
+242	秋	19	しゅう	あき	autumn	秋(あき)=autumn;秋学期(あきがっき)=fall semester;秋分(しゅうぶん)=autumnal equinox
+243	冬	19	とう	ふゆ	winter	冬(ふゆ)=winter;冬休み(ふゆやすみ)=winter vacation;暖冬(だんとう)=warm winter;春夏秋冬(しゅんかしゅうとう)=four seasons
+244	花	19	か	はな/ばな	flower	花(はな)=flower;花見(はなみ)=flower viewing;花火(はなび)=fireworks;花粉症(かふんしょう)=hay fever;生け花(いけばな)=flower arrangement
+245	様	19	よう	さま	Mr.; Ms.; condition	〜様(〜さま)=Mr./Ms. ...;お客様(おきゃくさま)=customer (respectful);皆様(みなさま)=everyone;様子(ようす)=manner
+246	不	19	ふ/ぶ		negative; non-	不安な(ふあんな)=anxious, worried;不景気(ふけいき)=recession;不便(ふべん)=inconvenience;水不足(みずぶそく)=lack of water
+247	姉	19	し	あね/ねえ	older sister	姉(あね)=older sister;お姉さん(おねえさん)=older sister;姉妹(しまい)=sisters;姉妹都市(しまいとし)=sister city
+248	兄	19	きょう	あに/にい	older brother	兄(あに)=older brother;お兄さん(おにいさん)=older brother;兄弟(きょうだい)=brothers
+249	漢	19	かん		China	漢字(かんじ)=Chinese character;漢方薬(かんぽうやく)=Chinese herbal medicine;漢和辞典(かんわじてん)=kanji dictionary
+250	卒	19	そつ		to graduate	卒業する(そつぎょうする)=to graduate;卒業式(そつぎょうしき)=graduation ceremony;大卒(だいそつ)=university graduate
+251	工	19	こう/く		craft; construction	工学(こうがく)=engineering;工事(こうじ)=construction;工場(こうじょう)=factory;大工(だいく)=carpenter
+252	研	19	けん	と	to polish; study	研究(けんきゅう)=research;研究者(けんきゅうしゃ)=researcher;研修(けんしゅう)=training;研ぐ(とぐ)=to sharpen
+253	究	19	きゅう	きわ	research	研究(けんきゅう)=research;探究(たんきゅう)=inquiry;究める(きわめる)=to investigate thoroughly
+254	質	19	しつ/しち		quality; matter	質問(しつもん)=question;質がいい(しつがいい)=good quality;素質(そしつ)=aptitude;質屋(しちや)=pawn shop
+255	問	19	もん	と	question	質問(しつもん)=question;問題(もんだい)=problem, question;訪問(ほうもん)=visit;問う(とう)=to question
+256	多	19	た	おお	many; much	多い(おおい)=many;多分(たぶん)=probably;多くの〜(おおくの〜)=many;多数決(たすうけつ)=decision by majority
+257	皿	20		さら/ざら	plate	皿(さら)=plate, dish;紙皿(かみざら)=paper plate;灰皿(はいざら)=ashtray
+258	声	20	せい	こえ	voice	声(こえ)=voice;音声学(おんせいがく)=phonetics;擬声語(ぎせいご)=onomatopoeia;声優(せいゆう)=voice actor
+259	茶	20	ちゃ/さ		tea	お茶(おちゃ)=Japanese tea;茶店(ちゃみせ)=teahouse;紅茶(こうちゃ)=black tea;茶色(ちゃいろ)=brown;喫茶店(きっさてん)=cafe
+260	止	20	し	と	to stop	止まる(とまる)=(something) stops;中止する(ちゅうしする)=to cancel;禁止する(きんしする)=to prohibit
+261	枚	20	まい		sheet of ...	一枚(いちまい)=one sheet;枚数(まいすう)=number of flat things
+262	両	20	りょう		both	三両(さんりょう)=three ryoo;両親(りょうしん)=parents;両手(りょうて)=both hands;両替(りょうがえ)=exchange;両方(りょうほう)=both
+263	無	20	む/ぶ	な	none	無理な(むりな)=impossible;無駄な(むだな)=wasteful;無料(むりょう)=free of charge;無礼な(ぶれいな)=rude;無い(ない)=there is no ...
+264	払	20		はら/ばら	to pay	払う(はらう)=to pay;支払い(しはらい)=payment;払い戻し(はらいもどし)=refund;分割払い(ぶんかつばらい)=payment in installments
+265	心	20	しん	こころ	heart; mind	心(こころ)=heart, mind;心配する(しんぱいする)=to worry;熱心な(ねっしんな)=enthusiastic;安心な(あんしんな)=safe;好奇心(こうきしん)=curiosity
+266	笑	20	しょう	わら/え	to laugh	笑う(わらう)=to laugh;笑顔(えがお)=smiling face;微笑む(ほほえむ)=to smile;爆笑する(ばくしょうする)=to burst into laughter
+267	絶	20	ぜっ/ぜつ	た	to discontinue	絶対に(ぜったいに)=definitely;絶える(たえる)=to die out;絶滅(ぜつめつ)=extinction;気絶する(きぜつする)=to faint;絶望(ぜつぼう)=despair
+268	対	20	たい/つい		opposite	絶対に(ぜったいに)=definitely;反対する(はんたいする)=to oppose;日本対中国(にほんたいちゅうごく)=Japan versus China;一対(いっつい)=a pair
+269	痛	20	つう	いた	pain	痛い(いたい)=painful;痛み止め(いたみどめ)=painkiller;頭痛(ずつう)=headache;腹痛(ふくつう)=stomachache;腰痛(ようつう)=lower back pain
+270	最	20	さい	もっと	utmost	最悪(さいあく)=the worst;最近(さいきん)=recently;最高(さいこう)=the best;最新(さいしん)=the latest;最後に(さいごに)=lastly;最も(もっとも)=most
+271	続	20	ぞく	つづ	to continue	続ける(つづける)=to continue;手続き(てつづき)=procedure;相続する(そうぞくする)=to inherit;連続ドラマ(れんぞくドラマ)=serial TV drama
+272	信	21	しん		to trust; to believe	信じる(しんじる)=to believe;自信(じしん)=confidence;信号(しんごう)=traffic signal;迷信(めいしん)=superstition
+273	経	21	けい		to pass through	経験(けいけん)=experience;経済(けいざい)=economy;神経質(しんけいしつ)=oversensitive;経営学(けいえいがく)=management studies;パリ経由(パリけいゆ)=via Paris
+274	台	21	たい/だい		stand	台風(たいふう)=typhoon;二台(にだい)=two vehicles/machines;舞台(ぶたい)=stage;台所(だいどころ)=kitchen
+275	風	21	ふう/ふ	かぜ	wind	台風(たいふう)=typhoon;お風呂(おふろ)=bath;和風(わふう)=Japanese style;風(かぜ)=wind;風邪をひく(かぜをひく)=to catch a cold
+276	犬	21	けん	いぬ	dog	犬(いぬ)=dog;子犬(こいぬ)=puppy;番犬(ばんけん)=watchdog;盲導犬(もうどうけん)=seeing-eye dog
+277	重	21	じゅう/ちょう	おも/かさ	heavy; to pile up	重い(おもい)=heavy, serious (illness);重ねる(かさねる)=to pile up;体重(たいじゅう)=body weight;貴重品(きちょうひん)=valuables
+278	初	21	しょ	はじ/はつ	first	初めは(はじめは)=at first;初めて(はじめて)=first time;最初(さいしょ)=first;初雪(はつゆき)=first snow;初恋(はつこい)=first love
+279	若	21		わか	young	若い(わかい)=young;若者(わかもの)=young people;若々しい(わかわかしい)=youthful
+280	送	21	そう	おく	to send	送る(おくる)=to send;送金(そうきん)=sending money;送料(そうりょう)=postage;放送(ほうそう)=broadcast;回送電車(かいそうでんしゃ)=out-of-service train
+281	幸	21	こう	しあわ/さいわ	happiness	幸せな(しあわせな)=happy;幸福な(こうふくな)=happy;幸運(こううん)=good fortune;不幸(ふこう)=misfortune;幸い(さいわい)=fortunately
+282	計	21	けい	はか	to measure	時計(とけい)=watch, clock;計画(けいかく)=plan;合計(ごうけい)=sum;計る(はかる)=to measure
+283	遅	21	ち	おく/おそ	late	遅れる(おくれる)=to be late;乗り遅れる(のりおくれる)=to miss (transportation);遅い(おそい)=late;遅刻する(ちこくする)=to be late
+284	配	21	ぱい/はい	くば	to deliver	心配な(しんぱいな)=worried about;配る(くばる)=to distribute;配達(はいたつ)=delivery;宅配便(たくはいびん)=home delivery service
+285	弟	21	だい/で	おとうと	younger brother	弟(おとうと)=younger brother;兄弟(きょうだい)=brothers;弟子(でし)=apprentice
+286	妹	21	まい	いもうと	younger sister	妹(いもうと)=younger sister;姉妹(しまい)=sisters;姉妹校(しまいこう)=sister school
+287	記	22	き		to write down	日記(にっき)=diary;記入する(きにゅうする)=to fill in;記事(きじ)=(news) article;暗記する(あんきする)=to memorize
+288	銀	22	ぎん		silver	銀行(ぎんこう)=bank;銀メダル(ぎんメダル)=silver medal;銀世界(ぎんせかい)=land covered with snow
+289	回	22	かい	まわ	... times; to turn	一回(いっかい)=one time;回送バス(かいそうバス)=out-of-service bus;最終回(さいしゅうかい)=last inning, last episode;回す(まわす)=to turn
+290	夕	22		ゆう	evening	夕方(ゆうがた)=evening;夕食(ゆうしょく)=dinner;七夕(たなばた)=Tanabata;夕日(ゆうひ)=setting sun;夕刊(ゆうかん)=evening newspaper
+291	黒	22	こく	くろ	black	黒木さん(くろきさん)=Mr./Ms. Kuroki;黒い(くろい)=black;白黒写真(しろくろしゃしん)=black and white photograph;黒板(こくばん)=blackboard
+292	用	22	よう		task; to use	用事(ようじ)=a thing to take care of;用意する(よういする)=to prepare;子供用(こどもよう)=for children;費用(ひよう)=cost
+293	末	22	まつ	すえ	the end of	週末(しゅうまつ)=weekend;月末(げつまつ)=end of the month;年末(ねんまつ)=year-end;期末試験(きまつしけん)=final examination;末(すえ)=the end
+294	待	22	たい	ま/まち	to wait	待つ(まつ)=to wait;待合室(まちあいしつ)=waiting room;期待する(きたいする)=to expect;招待(しょうたい)=invitation
+295	残	22	ざん	のこ	to remain	残業(ざんぎょう)=overtime work;残す(のこす)=to leave;残念(ざんねん)=regrettable;心残り(こころのこり)=regret;残高(ざんだか)=account balance
+296	駅	22	えき		station	駅(えき)=station;東京駅(とうきょうえき)=Tokyo Station;駅員(えきいん)=station attendant;駅前(えきまえ)=near/in front of the station
+297	番	22	ばん		order; number	一番(いちばん)=the first;番号(ばんごう)=number;番組(ばんぐみ)=TV program;交番(こうばん)=police box;順番(じゅんばん)=turn, order
+298	説	22	せつ/せっ		theory; to explain	説明する(せつめいする)=to explain;小説(しょうせつ)=novel;小説家(しょうせつか)=novelist;説教する(せっきょうする)=to preach
+299	案	22	あん		idea; proposal	案内する(あんないする)=to guide;案内所(あんないじょ)=information desk;案(あん)=idea, proposal;提案(ていあん)=proposal
+300	内	22	ない	うち	inside; inner	案内する(あんないする)=to guide;家内(かない)=my wife;国内(こくない)=domestic;内科(ないか)=internal medicine;内側(うちがわ)=inside
+301	忘	22	ぼう	わす	to forget	忘れる(わすれる)=to forget;忘れ物(わすれもの)=lost article;忘年会(ぼうねんかい)=year-end party
+302	守	22	す/しゅ	まも	to keep; to protect	守る(まもる)=to keep (a promise);留守(るす)=absence, not at home;お守り(おまもり)=charm;守衛(しゅえい)=security guard
+303	顔	23	がん	かお/がお	face	顔(かお)=face;顔文字(かおもじ)=emoticon;顔色(かおいろ)=complexion;笑顔(えがお)=smiling face;洗顔(せんがん)=washing one's face
+304	悲	23	ひ	かな	sad	悲しい(かなしい)=sad;悲劇(ひげき)=tragedy;悲惨な(ひさんな)=miserable;悲しむ(かなしむ)=to grieve
+305	怒	23	ど	おこ/いか	to get angry	怒る(おこる)=to get angry;怒り(いかり)=anger, rage;喜怒哀楽(きどあいらく)=human emotions
+306	違	23	い	ちが	to differ	違う(ちがう)=different;違い(ちがい)=difference;間違える(まちがえる)=to make a mistake;違法(いほう)=illegal;違反(いはん)=violation
+307	変	23	へん	か	change; abnormal	変な(へんな)=strange;大変な(たいへんな)=tough;変化(へんか)=change;変人(へんじん)=eccentric person;変える(かえる)=to change (something)
+308	比	23	ひ	くら	to compare	比べる(くらべる)=to compare;比較(ひかく)=comparison;比例(ひれい)=proportion;対比(たいひ)=contrast;比喩(ひゆ)=figure of speech
+309	情	23	じょう	なさ	emotion; condition	表情(ひょうじょう)=expression;同情する(どうじょうする)=to sympathize;友情(ゆうじょう)=friendship;情報(じょうほう)=information;情け(なさけ)=mercy
+310	感	23	かん		to sense; to feel	感情(かんじょう)=emotion;感動する(かんどうする)=to be moved;感じる(かんじる)=to feel;感謝(かんしゃ)=gratitude;感想(かんそう)=impression
+311	調	23	ちょう	しら	to investigate	調査(ちょうさ)=survey, research;調べる(しらべる)=to look into;調子(ちょうし)=condition;強調する(きょうちょうする)=to emphasize
+312	査	23	さ		to inspect	調査(ちょうさ)=survey, research;検査(けんさ)=inspection;審査(しんさ)=screening;捜査(そうさ)=criminal investigation
+313	果	23	か	は	fruit; result	結果(けっか)=result;果物(くだもの)=fruit;果汁(かじゅう)=fruit juice;効果(こうか)=effect;使い果たす(つかいはたす)=to use up
+314	化	23	か/け	ば	to change into	文化(ぶんか)=culture;化学(かがく)=chemistry;同化(どうか)=assimilation;お化け(おばけ)=goblin, ghost;化粧(けしょう)=makeup
+315	横	23	おう	よこ	sideways	横(よこ)=side;横書き(よこがき)=horizontal writing;横綱(よこづな)=grand champion of sumo;横断する(おうだんする)=to traverse
+316	相	23	しょう/そう	あい	mutual	相手(あいて)=partner;首相(しゅしょう)=prime minister;相談(そうだん)=consultation;相互の(そうごの)=mutual
+317	答	23	とう	こた/こたえ	answer	答える(こたえる)=to answer;答え/答(こたえ)=answer;回答(かいとう)=reply, answer;正答(せいとう)=correct answer

@@ -1,1 +1,23 @@
 node_modules/
+
+# Claude Code's personal settings (the rest of .claude/ is shared)
+.claude/settings.local.json
+
+# Secrets: the text-to-speech API key (see README)
+.env
+
+# The owner's scratch folder (voice samples and the like): never committed
+temp/
+
+# The scanned course books and other source material: big files, and not ours
+# to publish. They stay on this computer only; copy them by hand to a new one.
+books/
+
+# Screenshots written by the browser tests
+tests/browser/shots/
+
+# The app's own daily copies and half-written saves. Git already keeps the
+# history of progress/, results/ and reports/.
+progress/backups/
+progress/*.tmp
+data/*.tmp

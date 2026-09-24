@@ -1,22 +1,29 @@
 {
-  "name": "japanese-n4-prep",
+  "name": "japanese-academy",
   "version": "1.0.0",
   "private": true,
-  "description": "Personal JLPT N4 study app: flashcards, spaced repetition, and adaptive pacing based on your own performance stats.",
-  "type": "module",
-  "engines": {
-    "node": "22.15.0"
-  },
+  "description": "Japanese Academy — WaniKani-style kanji SRS and a full course exam, with spoken vocabulary in two voices",
+  "type": "commonjs",
+  "main": "server.js",
   "config": {
     "host": "127.0.0.1",
-    "port": 3001
+    "port": 3000
   },
   "scripts": {
-    "start": "node server/index.js",
-    "dev": "node --watch server/index.js",
-    "check": "node scripts/check-path.js"
+    "start": "node server.js",
+    "test": "node --test --test-reporter=spec \"tests/unit/*.test.js\" \"tests/api/*.test.js\"",
+    "test:browser": "node tests/browser/run.js",
+    "screens": "node tests/browser/screens.js",
+    "build": "node src/build-data.js",
+    "build:audio": "node src/build-audio.js",
+    "pdf:pages": "node tools/pdf/pages.js"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "wanakana": "^5.3.1"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.63.0",
+    "sharp": "^0.35.4"
   }
 }

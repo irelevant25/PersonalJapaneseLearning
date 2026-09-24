@@ -1,235 +1,210 @@
-# N4 Coach
+# Japanese Academy
 
-A personal study app for passing the JLPT N4, built because flashcard apps
-and generic courses hadn't been sticking. It's a flashcard/spaced-repetition
-system that watches your actual accuracy and pace, and adjusts itself —
-slowing down when you're struggling, speeding up when you're not, and
-forcing repetition of things you've already "learned" so they don't quietly
-fall out of memory.
+Study companion for a two-part beginner Japanese course (Greetings and
+Lessons 1–23). Two parts, one site:
 
-Everything runs locally: a small Node.js server, a plain HTML/CSS/JS
-frontend, and a JSON file as the only "database." No accounts, no cloud, no
-internet connection required once installed.
+- **Kanji** — a WaniKani-style spaced-repetition trainer for the course's kanji
+  and the vocabulary written with them: lessons, reviews, and unlimited practice.
+- **Exam** — an 11,523-question multiple-choice test of the whole course, with
+  listening, scoring and a report.
 
-## Quick start
+Every word is spoken in two voices, female and male.
 
-1. Download or clone this project.
-2. **Windows**: double-click `start.ps1`. **Mac/Linux**: run `./start.sh` in a terminal.
-3. The app opens in your browser automatically.
+It replaced the earlier N4 Coach app on 2026-09-23. N4 Coach is still in the
+git history.
 
-The server only listens on `127.0.0.1` (localhost) — it isn't reachable from
-other devices on your network. Your study data never leaves your machine.
+## Run it
 
-## How it works
+1. **Windows**: double-click `start.ps1`. **Mac/Linux**: run `./start.sh` in a
+   terminal. It checks Node (installs it through NVM if needed), installs the
+   dependencies, starts the app and opens http://127.0.0.1:3000.
+2. Or by hand:
 
-### The learning path (Learn tab)
+   ```bash
+   npm install
+   npm start           # → http://localhost:3000
+   ```
 
-This is where you study. Like Duolingo, it is one flow instead of separate
-practice modes: learn a few new things, use them in sentences, then read a
-short story. The path has 4 sections and 59 units:
+The app only listens on this computer (127.0.0.1): other devices on your
+network can't reach it. Host and port are in `package.json` under `config`.
 
-1. **Hiragana + first words**: a few hiragana rows at a time, plus real words
-   you can already read with them.
-2. **Katakana + everyday words**: katakana rows, mixed with units of words.
-3. **Kanji + grammar in sentences**: words with their kanji, one grammar
-   point per unit, and sentences that use them.
-4. **More kanji + N4 grammar**: the rest of the N4 kanji and grammar.
+Node 22 (tested on 22.15). The app itself runs on Node 18+, but the dev tools
+need more: the tests 21+, and the PDF page tool and the browser tests 20.9+.
+Dependencies: Express, and wanakana for typing readings in romaji.
 
-Every unit has the same steps:
+### Not in git
 
-- **Learn**: see each new card, with reading, meaning and a listen button.
-- **Drill**: multiple-choice questions on the new cards, plus some older ones.
-- **Sentences**: what do sentences with these words mean?
-- **Story**: read a short story, then answer questions about it.
+These stay on this computer only. On a new computer, copy them in by hand:
 
-**Pass rules:** you pass a step with **80% or more**. Steps open one after
-another, so you can't skip ahead, but you can retry as often as you like, and
-a step you passed stays passed. A wrong answer comes back once at the end of
-the round for practice, but only your first try counts.
+- `books/` — the scanned course books (`textbook-1.pdf`, `workbook-1.pdf`,
+  `textbook-2.pdf`, `workbook-2.pdf`, `answer-key.pdf`), and your notes. Only
+  the PDF page tool needs them.
+- `.env` — your Google Cloud key, only needed to make new audio (below).
 
-- **Already know a unit?** Press **Test out**. With 80% you skip ahead to
-  that unit, and its cards go into your reviews (spread over a week).
-- **Stories are still being written.** Units without one show "Story · soon"
-  and don't block you. If a story is added to a unit you already finished, it
-  shows as an optional ↺ step.
-- **When cards go into your reviews:** when you pass a unit's drill, its new
-  cards are added to your reviews, starting tomorrow.
-- **Pace:** the Learn tab tells you if reviews are due, how many new cards
-  you added today, and whether you're on track to finish the path before
-  Exam Prep. These are hints, not locks.
+---
 
-### Cards
+## Audio
 
-Six kinds of flashcards, all reviewed with the same spaced-repetition engine:
+The audio is made with **Google Cloud Text-to-Speech**, in two voices
+(`ja-JP-Neural2-B`, female, and `ja-JP-Neural2-C`, male). The clips are in git
+(`data/audio/`), so the app plays them on any computer, without a key. In
+lessons and reviews the two voices take turns; each exam listening question
+uses one of them.
 
-- **Hiragana** and **Katakana** — the complete syllabaries (base, dakuten/
-  handakuten, digraphs, plus a set of extended katakana combinations used in
-  loanwords like ファ/ウィ/ティ).
-- **Kanji** — character, on'yomi/kun'yomi readings, meaning, and 1-2 example
-  words.
-- **Vocabulary** — word, reading, meaning, part of speech, topic tags.
-- **Grammar** — a pattern (e.g. 〜たことがあります), its meaning, a plain-
-  language explanation, and an example sentence.
-- **Sentences** — full example sentences. The path only shows a sentence
-  after it has taught every word in it, so you'll never see a sentence full
-  of unfamiliar words. N3-level vocabulary is avoided as much as possible.
+You need a key only to make clips for new words (after adding vocabulary):
 
-While a word or sentence still has kanji you haven't learned, its reading is
-shown under it.
+1. In the Google Cloud console, create a project, turn on billing, and enable
+   the **Cloud Text-to-Speech API**. This amount of text stays inside the free
+   tier.
+2. Under **APIs & Services → Credentials**, create an **API key**, and restrict
+   it to the Cloud Text-to-Speech API.
+3. Put it in a file named `.env` in this folder (git ignores it):
+   `GOOGLE_TTS_API_KEY=your-key`
+4. Run `npm run build:audio`. It only sends the words that have no clip yet.
+   `npm run build:audio -- --dry-run` shows what it would send, without a key.
 
-### Spaced repetition (Reviews tab)
+---
 
-New cards only come from the learning path. The **Reviews** tab shows the
-cards that are due today. Every card has its own schedule (a modified SM-2 algorithm): grade a card
-**Again / Hard / Good / Easy** and its next-due date adjusts accordingly.
-Two deliberate choices, given that memory retention was the whole reason for
-building this:
+## Kanji
 
-- A card only counts as "known" after surviving **two** successful reviews,
-  not one.
-- Even a card you find very easy repeatedly is never pushed out further than
-  **45 days** — nothing is allowed to drift out of rotation for months.
+**1,373 study items**: the 316 kanji of the course's kanji lists (々 aside —
+it has no reading of its own to ask for) and the 1,057 words, from the
+vocabulary lists and the example compounds of the kanji lists, that are written
+only with those kanji. Every word has audio.
 
-Cards you fail repeatedly (4+ times, adjustable in Settings) are flagged as
-**leeches** and surfaced separately on the Stats page so you can attach a
-personal mnemonic note to them from the Browse tab.
+### How it works
 
-### The adaptive engine
+It follows WaniKani's loop:
 
-Once a day, the app looks at your recent stats and adjusts your daily
-new-card pace (the pace the learning path suggests):
+1. **Lessons** — new items in batches (5 by default; 3 or 10 if you prefer).
+   Each is shown with its meaning, readings and example words, then a short quiz
+   fixes it into the schedule.
+2. **Reviews** — when an item is due, you type its meaning in English and its
+   reading in kana. Romaji turns into kana as you type (`taberu` → たべる).
+3. **The SRS schedule** — WaniKani's, exactly: Apprentice I–IV, Guru I–II,
+   Master, Enlightened, Burned, with reviews after 4 h, 8 h, 1 day, 2 days,
+   1 week, 2 weeks, 1 month and 4 months. A clean review moves the item up one
+   stage; a review with mistakes drops it `ceil(mistakes / 2)` stages — doubled
+   from Guru upwards — never below Apprentice I.
 
-- **Slow down** if your 3-day accuracy drops below 70%, or if your review
-  backlog gets more than 2.5x your daily new-card rate.
-- **Speed up** (+3 cards/day, up to a ceiling of 30) if your 7-day accuracy
-  is above 90% and you have no backlog.
-- Accuracy only counts once you did at least 20 reviews in that period, so
-  a few lucky answers don't change your pace.
-- **Kana first** — if recent hiragana/katakana accuracy drops below 80%, the
-  Learn tab asks you to review kana before starting a new unit, since
-  everything else depends on it.
+Vocabulary becomes available once its kanji have been learned — 大学 after 大 and
+学 — and is filed under the lesson of its latest kanji.
 
-Every adjustment is logged in plain language (Dashboard shows the last few,
-Stats shows the full history) — it's meant to be a study plan you can see
-and trust, not a black box. You can always override the new-cards-per-day
-number yourself in Settings.
+### What is different from WaniKani — on purpose
 
-### Curriculum
+- **No time locks.** Take as many lesson batches as you want, whenever you want.
+  There is no daily limit and no level gating.
+- **Practice, as often as you like.** Drill any item you've learned, at any time
+  — all of them, the weakest, recent mistakes, recent lessons, one SRS stage, some
+  lessons, kanji or vocabulary, meaning or reading only. Practice keeps its own
+  statistics (which power "weakest" and "recent mistakes") but **never changes
+  your SRS stages or review times**, so drilling can't knock the schedule out of
+  shape.
+- **Course order.** Items are grouped by course lesson (3–23) instead of
+  WaniKani levels, and you can take lessons from any lesson you choose.
+- **No radicals, no ready-made mnemonics.** The course doesn't provide either.
+  Every item has two note fields (meaning and reading) for your own mnemonics,
+  shown in lessons and on the item page.
 
-A simple time plan (`server/data/content/curriculum.json`) splits the time
-between when you started and your exam date:
+### Answers
 
-1. **Learning path** (first ~85%): work through the path and do your reviews.
-2. **Exam Prep** (final ~15%): the path should be done — daily reviews,
-   leeches, stories and mock exams until test day.
+- Meanings forgive case, punctuation, "to"/"be"/"the"/"a", parenthesised parts
+  ("older brother" for "(my) older brother") and small typos, scaled to the
+  word's length. A typo that happens to spell another item's meaning is *not*
+  forgiven — "night" is wrong for 右, even though it's one letter from "right".
+- Number words and digits are interchangeable: "300" = "three hundred".
+- Readings accept hiragana or katakana, and katakana long vowels typed out
+  (サービス = さあびす). A kanji accepts any of its on'yomi or kun'yomi.
+- If you know your answer is right but it isn't accepted, **My answer was right**
+  saves it as your own synonym (or extra reading) and counts it. You can review
+  and remove these on the item page.
 
-These are **proportions of your timeline**, not fixed weeks, so if you move
-your exam date in Settings, the plan stretches or shrinks to match. The
-Learn tab and Dashboard show whether you're on track.
+Keys: **Enter** submits, and Enter again moves on. **F** opens the item info
+once you've answered. Lessons move with **←/→** or Enter.
 
-### Listening
+### Your progress
 
-Every card has a 🔊 button that uses your browser/OS's built-in
-text-to-speech (the Web Speech API) to read the Japanese aloud. Quality and
-availability depend entirely on what Japanese voice(s) are installed on your
-system — there's no bundled or downloaded audio.
+Saved in `progress/kanji.json`. Every save is written to a temp file and renamed
+into place. There's a daily copy in `progress/backups/` (the last 14 are kept),
+and every answer is also appended to `progress/kanji-log.jsonl`. The dashboard
+has a link to download a copy. `progress/`, `results/` and `reports/` are kept
+in git too, so your history is saved with every commit (`progress/backups/` is
+not).
 
-### Your own words
+---
 
-The Browse tab has a "+ Add card" form for vocabulary/kanji/grammar you run
-into outside the seeded content. A card you add goes straight into your
-reviews (first review tomorrow) and then works like every other card.
+## Exam
 
-### Settings
+**11,523 questions** in 15 sections — listening, vocabulary both ways, kanji
+readings, meanings and writing, verb conjugation (every form on both
+conjugation charts), adjectives, kana, grammar, particles, counters and
+translation. Pick Part 1, Part 2 or both, 40 to 500 questions, and narrow by
+lesson or section. Each attempt is saved to `results/`, with a standalone HTML
+report in `reports/` broken down by part, skill and lesson. Pass mark 70%.
 
-- **Exam date** — the whole plan stretches or shrinks to match it.
-- **New cards per day** — the soft daily pace for the learning path.
-- **Max reviews per day** — the Reviews tab stops after this many reviews in
-  one day; the rest waits for tomorrow.
-- **Leech threshold** — how many times you can fail a card before it is
-  flagged as a leech.
-- **Listening** — turn the 🔊 buttons on or off.
+---
 
-### Stories
-
-Short reading passages. In the learning path, each unit's story comes with
-comprehension questions. The Stories tab lets you read any story freely,
-with no questions and nothing locked. Each one is annotated with how much of
-its vocabulary you already know. Reading/translation are independent show/hide toggles, and every
-line (plus the whole story at once) has a listen button.
-
-### Mock exam
-
-Multiple-choice quizzes built entirely from cards you've **already
-studied** — never new material — which is a closer match to the real JLPT
-format (it's 100% multiple choice) than a flip card is. Answering an exam
-question never changes any card's schedule; it's purely a self-check, with
-just the aggregate score kept for your own record on the Stats page. Pick
-how many questions you want, answer, and see a breakdown by category plus
-exactly what you missed at the end.
-
-## Current state
-
-Seed content is curated (JLPT publishes no official kanji/vocab/grammar
-list, so these are high-confidence starter sets, not exhaustive) and meant
-to keep growing over the 4 months, via the `japanese-content-writer` agent:
-
-| Type | Count | Notes |
-|---|---|---|
-| Hiragana | 104 | complete (base + dakuten/handakuten + digraphs) |
-| Katakana | 116 | complete, incl. 12 extended loanword sounds (ファ/ウィ/…) |
-| Kanji | 287 | 115 N5 + 172 N4, each with readings/meaning/example words |
-| Vocabulary | 319 | 282 N5 + 37 N4, across greetings/verbs/adjectives/numbers/etc. |
-| Grammar | 48 | full N4 grammar sequence, all N5 prerequisites included |
-| Sentences | 259 | built entirely from the seeded vocabulary; 21 simple kana-only sentences for the first units |
-| Stories | 28 | 19 longer N5→N4 stories + 9 short kana stories for units 2–10 |
-| Learning path | 59 units | stories with questions in units 2–10 so far; the rest are written in batches |
-
-Check the in-app **Stats** tab at any time for live counts and your actual
-progress against them — that's the source of truth, this table is just a
-snapshot (last updated 2026-09-15).
-
-## Project structure
+## Data
 
 ```
-server/            Node/Express backend — see .claude/skills/japanese-n4/SKILL.md for the full map
-public/            vanilla JS/CSS frontend, no build step
-start.ps1/.sh       one-click launcher for non-technical users (see Quick start above) —
-                    installs NVM/Node/dependencies as needed, starts the server, opens the browser
-.claude/skills/     the "japanese-n4" skill: full architecture, schemas, SRS/adaptive
-                    engine details, and conventions for this project
-.claude/agents/     "japanese-content-writer" subagent for adding new content in bulk
+data/source/
+  vocab-part1.tsv  vocab-part2.tsv     vocabulary index (J–E), transcribed
+  kanji-part1.tsv  kanji-part2.tsv     the per-lesson kanji lists
+  grammar-index-part1/2.tsv            grammar points by lesson
+data/vocab.json kanji.json grammar-index.json   (npm run build)
+data/audio.json audio/                          (npm run build:audio)
+data/authored-items-part1.js  -part2.js         hand-written exam items
 ```
 
-If you're using Claude Code on this repo, the `japanese-n4` skill has
-everything needed to work on it consistently — content schemas, id
-conventions, how the scheduler and adaptive engine work, and how to
-run/verify changes.
+The books are page scans with no text layer, so the vocabulary, kanji and
+grammar data was transcribed from the page images. The counts check out
+against the books, but any typo will be in `data/source/*.tsv` — fix it there
+and run `npm run build` (and `npm run build:audio` if a word's spelling or
+reading changed).
 
-## Your data
+## Layout
 
-Everything lives in `server/data/user/progress.json` — per-card scheduling
-state, daily session history, settings, the adaptive engine's decision log,
-and any personal notes/mnemonics you've added. It's created automatically on
-first run. By choice, it's tracked in git (not gitignored) so your progress
-is versioned/backed up alongside the code — expect it to show up as a diff
-in `git status` after every study session.
+```
+start.ps1 start.sh .nvmrc  one-click start (checks Node, installs, opens the browser)
+server.js                  HTTP server: pages, exam API, kanji API, audio
+src/srs/                   kanji SRS: catalog, schedule, storage, API routes
+src/generate.js score.js report.js conjugate.js    the exam
+src/speech.js              what each word is spoken as, and its clips
+src/build-data.js build-audio.js                   data and audio builders
+public/index.html          home page
+public/kanji.html kanji/   the kanji trainer (plain JS, no framework)
+public/exam.html exam.js   the exam
+public/css/                shared, kanji and exam styles (light and dark)
+tests/                     unit, API and browser tests
+tools/pdf/pages.js         page images from the scanned books
+docs/kb/                   knowledge base: architecture, data sources, SRS, exam, testing
+progress/                  your kanji progress
+results/ reports/          your exam attempts
+books/                     the scanned books (not in git)
+.claude/                   Claude Code: skills, review agents, rules
+```
 
-- **Backup**: Settings tab → "Download backup (JSON)".
-- **Full reset**: stop the server and delete `server/data/user/progress.json`.
-  It regenerates fresh (with a new exam date of today + 4 months) next time
-  you start the app. Since it's tracked in git, that deletion will show up in
-  `git status` until you commit it. There's no in-app reset button on
-  purpose.
+## Development
 
-## Known limitations
+```bash
+npm test               # unit + API tests (~5 s)
+npm run test:browser   # the whole study loop and an exam, in Edge
+npm run screens        # screenshots of every screen, light/dark/phone → tests/browser/shots/
+node tools/pdf/pages.js textbook-1 366 --book-page   # a book page as an image
+```
 
-- Content is a curated starting set, not the full N4 syllabus — expect to
-  keep extending `kanji.json`/`vocab.json`/`grammar.json`/`sentences.json`/
-  `stories.json` over time (see the `japanese-content-writer` agent).
-- No handwriting/stroke-order practice — the JLPT N4 test is entirely
-  multiple-choice, so these cards focus on recognition (reading/listening),
-  not production.
-- Text-to-speech quality depends on voices installed on your OS/browser.
-- Single-user, localhost-only — there's no login system because there's
-  only ever one user.
+The tests never touch `progress/`, `results/` or `reports/`, and never call
+Google. They run against temporary folders set through `ACADEMY_PROGRESS_DIR`,
+`ACADEMY_RESULTS_DIR` and `ACADEMY_REPORTS_DIR`, and you can set the same
+variables to run a scratch copy of the app. The browser tests use the installed
+Edge through `playwright-core`; set `BROWSER_PATH` to use another Chromium
+browser.
+
+The books have no text layer, so `tools/pdf/pages.js` pulls out each page's
+image to read. `docs/kb/` is the reference for changing anything: where the
+data came from (with page maps of every book), how the SRS, the audio and the
+exam work, what to test, and why things are the way they are.
+
+For Claude Code, `CLAUDE.md` holds the project rules, and `.claude/` holds the
+rest: path-scoped rules, the `academy-*` skills (run, test, ui-check, data,
+pdf, exam-items), and four review agents (code, UI, Japanese, data).

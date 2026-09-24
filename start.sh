@@ -186,6 +186,11 @@ try {
 }
 ' 2>/dev/null)"
 
+# Node may not be installed yet (step 7 installs it), so node -e printed
+# nothing: show the defaults for now. Step 9 reads package.json again.
+HOST="${HOST:-127.0.0.1}"
+PORT="${PORT:-3000}"
+
 if [ -z "$HOST" ]; then
     die "The host in package.json is empty."
 fi

@@ -1,0 +1,74 @@
+---
+name: academy-data
+description: Change Japanese Academy's study data safely. Fix a typo, or add or correct a word, kanji, reading or meaning in data/source/*.tsv, rebuild data/*.json, check the invariants, and keep the owner's SRS progress when an item id changes. Use for any edit under data/ or to src/build-data.js / src/build-audio.js.
+---
+
+# Changing the study data
+
+Sources, page maps, formats and known quirks:
+`docs/kb/data-provenance.md`. Read it before your first edit.
+
+## Where things live
+
+| Want to change | Edit | Then |
+|---|---|---|
+| a word's kana, kanji, English, verb class or lesson | `data/source/vocab-part1.tsv` (Greetings–L12) or `vocab-part2.tsv` (L13–23) | `npm run build` |
+| a kanji's readings, meaning or example compounds | `data/source/kanji-part1.tsv` / `kanji-part2.tsv` | `npm run build` |
+| grammar index | `data/source/grammar-index-part1.tsv` / `-part2.tsv` | `npm run build` |
+| audio | nothing by hand: the clips come from Google Cloud Text-to-Speech | `npm run build:audio` (key in `.env`) after words change; `-- --dry-run` first to see what it would send |
+| hand-written exam questions | `data/authored-items*.js` | see the `academy-exam-items` skill |
+| how items become SRS items (merging, glosses) | `src/srs/catalog.js` | code change: `academy-code-reviewer` |
+
+Never edit `data/vocab.json`, `kanji.json`, `grammar-index.json` or
+`audio.json` by hand. The build overwrites them.
+
+## Steps
+
+1. **Find the page and read it** (`academy-pdf` skill). The book is the authority,
+   not memory. Many "typos" are the book's own wording.
+2. **Edit the row** with the Edit tool. The file is tab-separated with no
+   header, and the fields per row are:
+   - vocab (4): `kana ⇥ kanji ⇥ english ⇥ tag`
+   - kanji (7): `no ⇥ kanji ⇥ lesson ⇥ on ⇥ kun ⇥ meaning ⇥ compounds`
+   - grammar (3): `lesson ⇥ point ⇥ ref`
+
+   Check the structure:
+   ```bash
+   # from the repository root
+   for f in data/source/*.tsv; do echo "$f: $(awk -F'\t' '{print NF}' "$f" | sort | uniq -c | tr '\n' ' ')"; done
+   ```
+   Each file must show a single field count (vocab 4, kanji 7, grammar 3).
+3. **Keep the conventions:**
+   - Readings in hiragana; katakana words stay katakana.
+   - `/` between alternatives; `(な)` marks a な-adjective.
+   - Verb classes are `[u]`, `[ru]`, `[irr.]` inside the English field.
+   - Lesson tags look like `会L7` or `読L9-II`.
+   - Compounds are `word(reading)=english`, separated by `;`.
+4. **Rebuild and test:** `npm run build`, then `npm test`. The catalog tests
+   check kanji numbering 1–317, per-lesson totals, unique ids, and that every
+   item is answerable with its own answers.
+5. **Restart the real server** (`academy-run`). Data is read at start-up.
+6. **Run the `academy-data-auditor` agent** on the rows you changed. Give it the
+   file, the rows and the page you used.
+
+## When a change renames an SRS id
+
+SRS items are keyed `k:<kanji>` and `v:<word>`, the word as written. Changing
+the kanji spelling of a word, or merging or splitting items, changes the key.
+The owner's progress then stays under the old key and disappears from the app.
+
+1. Before the change, check whether the old id has progress. There is no
+   `progress/kanji.json` until the owner's first lesson.
+   ```bash
+   node -e "const f='./progress/kanji.json', fs=require('fs'); const p=fs.existsSync(f)?JSON.parse(fs.readFileSync(f,'utf8')):{items:{}}; console.log(JSON.stringify(p.items['v:OLD'] || null))"
+   ```
+2. If it has none, you're done.
+3. If it has progress:
+   - Tell the owner.
+   - Stop the server (`academy-run`).
+   - Copy `progress/kanji.json` to `progress/backups/kanji-before-rename-<date>.json`.
+   - Move the entry to the new key with a small Node script.
+   - Start the server and confirm the item shows its stage.
+
+Adding brand-new rows needs no migration. The new items simply appear as
+lessons.

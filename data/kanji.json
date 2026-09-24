@@ -1,0 +1,11019 @@
+[
+ {
+  "no": 1,
+  "kanji": "一",
+  "lesson": 3,
+  "on": [
+   "いち",
+   "いっ"
+  ],
+  "kun": [
+   "ひと"
+  ],
+  "meaning": "one",
+  "compounds": [
+   {
+    "word": "一",
+    "reading": "いち",
+    "english": "one"
+   },
+   {
+    "word": "一時",
+    "reading": "いちじ",
+    "english": "one o'clock"
+   },
+   {
+    "word": "一年生",
+    "reading": "いちねんせい",
+    "english": "first-year student"
+   },
+   {
+    "word": "一分",
+    "reading": "いっぷん",
+    "english": "one minute"
+   },
+   {
+    "word": "一つ",
+    "reading": "ひとつ",
+    "english": "one"
+   }
+  ]
+ },
+ {
+  "no": 2,
+  "kanji": "二",
+  "lesson": 3,
+  "on": [
+   "に"
+  ],
+  "kun": [
+   "ふた"
+  ],
+  "meaning": "two",
+  "compounds": [
+   {
+    "word": "二",
+    "reading": "に",
+    "english": "two"
+   },
+   {
+    "word": "二時",
+    "reading": "にじ",
+    "english": "two o'clock"
+   },
+   {
+    "word": "二年生",
+    "reading": "にねんせい",
+    "english": "second-year student"
+   },
+   {
+    "word": "二つ",
+    "reading": "ふたつ",
+    "english": "two"
+   },
+   {
+    "word": "二日間",
+    "reading": "ふつかかん",
+    "english": "two days"
+   }
+  ]
+ },
+ {
+  "no": 3,
+  "kanji": "三",
+  "lesson": 3,
+  "on": [
+   "さん"
+  ],
+  "kun": [
+   "みっ"
+  ],
+  "meaning": "three",
+  "compounds": [
+   {
+    "word": "三",
+    "reading": "さん",
+    "english": "three"
+   },
+   {
+    "word": "三時",
+    "reading": "さんじ",
+    "english": "three o'clock"
+   },
+   {
+    "word": "三年生",
+    "reading": "さんねんせい",
+    "english": "third-year student"
+   },
+   {
+    "word": "三月",
+    "reading": "さんがつ",
+    "english": "March"
+   },
+   {
+    "word": "三つ",
+    "reading": "みっつ",
+    "english": "three"
+   }
+  ]
+ },
+ {
+  "no": 4,
+  "kanji": "四",
+  "lesson": 3,
+  "on": [
+   "し"
+  ],
+  "kun": [
+   "よん",
+   "よ",
+   "よっ"
+  ],
+  "meaning": "four",
+  "compounds": [
+   {
+    "word": "四",
+    "reading": "よん",
+    "english": "four"
+   },
+   {
+    "word": "四時",
+    "reading": "よじ",
+    "english": "four o'clock"
+   },
+   {
+    "word": "四年生",
+    "reading": "よねんせい",
+    "english": "fourth-year student"
+   },
+   {
+    "word": "四月",
+    "reading": "しがつ",
+    "english": "April"
+   },
+   {
+    "word": "四つ",
+    "reading": "よっつ",
+    "english": "four"
+   }
+  ]
+ },
+ {
+  "no": 5,
+  "kanji": "五",
+  "lesson": 3,
+  "on": [
+   "ご"
+  ],
+  "kun": [
+   "いつ"
+  ],
+  "meaning": "five",
+  "compounds": [
+   {
+    "word": "五",
+    "reading": "ご",
+    "english": "five"
+   },
+   {
+    "word": "五時",
+    "reading": "ごじ",
+    "english": "five o'clock"
+   },
+   {
+    "word": "五月",
+    "reading": "ごがつ",
+    "english": "May"
+   },
+   {
+    "word": "五歳",
+    "reading": "ごさい",
+    "english": "five years old"
+   },
+   {
+    "word": "五つ",
+    "reading": "いつつ",
+    "english": "five"
+   }
+  ]
+ },
+ {
+  "no": 6,
+  "kanji": "六",
+  "lesson": 3,
+  "on": [
+   "ろく",
+   "ろっ"
+  ],
+  "kun": [
+   "むっ"
+  ],
+  "meaning": "six",
+  "compounds": [
+   {
+    "word": "六",
+    "reading": "ろく",
+    "english": "six"
+   },
+   {
+    "word": "六時",
+    "reading": "ろくじ",
+    "english": "six o'clock"
+   },
+   {
+    "word": "六百",
+    "reading": "ろっぴゃく",
+    "english": "six hundred"
+   },
+   {
+    "word": "六分",
+    "reading": "ろっぷん",
+    "english": "six minutes"
+   },
+   {
+    "word": "六つ",
+    "reading": "むっつ",
+    "english": "six"
+   }
+  ]
+ },
+ {
+  "no": 7,
+  "kanji": "七",
+  "lesson": 3,
+  "on": [
+   "しち"
+  ],
+  "kun": [
+   "なな"
+  ],
+  "meaning": "seven",
+  "compounds": [
+   {
+    "word": "七",
+    "reading": "しち/なな",
+    "english": "seven"
+   },
+   {
+    "word": "七時",
+    "reading": "しちじ",
+    "english": "seven o'clock"
+   },
+   {
+    "word": "七月",
+    "reading": "しちがつ",
+    "english": "July"
+   },
+   {
+    "word": "七つ",
+    "reading": "ななつ",
+    "english": "seven"
+   },
+   {
+    "word": "七人",
+    "reading": "ななにん/しちにん",
+    "english": "seven people"
+   }
+  ]
+ },
+ {
+  "no": 8,
+  "kanji": "八",
+  "lesson": 3,
+  "on": [
+   "はち",
+   "はっ"
+  ],
+  "kun": [
+   "やっ"
+  ],
+  "meaning": "eight",
+  "compounds": [
+   {
+    "word": "八",
+    "reading": "はち",
+    "english": "eight"
+   },
+   {
+    "word": "八時",
+    "reading": "はちじ",
+    "english": "eight o'clock"
+   },
+   {
+    "word": "八百",
+    "reading": "はっぴゃく",
+    "english": "eight hundred"
+   },
+   {
+    "word": "八歳",
+    "reading": "はっさい",
+    "english": "eight years old"
+   },
+   {
+    "word": "八つ",
+    "reading": "やっつ",
+    "english": "eight"
+   }
+  ]
+ },
+ {
+  "no": 9,
+  "kanji": "九",
+  "lesson": 3,
+  "on": [
+   "きゅう",
+   "く"
+  ],
+  "kun": [
+   "ここの"
+  ],
+  "meaning": "nine",
+  "compounds": [
+   {
+    "word": "九",
+    "reading": "きゅう",
+    "english": "nine"
+   },
+   {
+    "word": "九時",
+    "reading": "くじ",
+    "english": "nine o'clock"
+   },
+   {
+    "word": "九月",
+    "reading": "くがつ",
+    "english": "September"
+   },
+   {
+    "word": "九歳",
+    "reading": "きゅうさい",
+    "english": "nine years old"
+   },
+   {
+    "word": "九つ",
+    "reading": "ここのつ",
+    "english": "nine"
+   }
+  ]
+ },
+ {
+  "no": 10,
+  "kanji": "十",
+  "lesson": 3,
+  "on": [
+   "じゅう",
+   "じゅっ",
+   "じっ"
+  ],
+  "kun": [
+   "とお"
+  ],
+  "meaning": "ten",
+  "compounds": [
+   {
+    "word": "十",
+    "reading": "じゅう",
+    "english": "ten"
+   },
+   {
+    "word": "十時",
+    "reading": "じゅうじ",
+    "english": "ten o'clock"
+   },
+   {
+    "word": "十月",
+    "reading": "じゅうがつ",
+    "english": "October"
+   },
+   {
+    "word": "十歳",
+    "reading": "じゅっさい/じっさい",
+    "english": "ten years old"
+   },
+   {
+    "word": "十",
+    "reading": "とお",
+    "english": "ten"
+   }
+  ]
+ },
+ {
+  "no": 11,
+  "kanji": "百",
+  "lesson": 3,
+  "on": [
+   "ひゃく",
+   "びゃく",
+   "ぴゃく"
+  ],
+  "kun": [],
+  "meaning": "hundred",
+  "compounds": [
+   {
+    "word": "百",
+    "reading": "ひゃく",
+    "english": "hundred"
+   },
+   {
+    "word": "三百",
+    "reading": "さんびゃく",
+    "english": "three hundred"
+   },
+   {
+    "word": "六百",
+    "reading": "ろっぴゃく",
+    "english": "six hundred"
+   },
+   {
+    "word": "八百",
+    "reading": "はっぴゃく",
+    "english": "eight hundred"
+   }
+  ]
+ },
+ {
+  "no": 12,
+  "kanji": "千",
+  "lesson": 3,
+  "on": [
+   "せん",
+   "ぜん"
+  ],
+  "kun": [],
+  "meaning": "thousand",
+  "compounds": [
+   {
+    "word": "千",
+    "reading": "せん",
+    "english": "thousand"
+   },
+   {
+    "word": "三千",
+    "reading": "さんぜん",
+    "english": "three thousand"
+   },
+   {
+    "word": "八千",
+    "reading": "はっせん",
+    "english": "eight thousand"
+   },
+   {
+    "word": "千円",
+    "reading": "せんえん",
+    "english": "one thousand yen"
+   }
+  ]
+ },
+ {
+  "no": 13,
+  "kanji": "万",
+  "lesson": 3,
+  "on": [
+   "まん"
+  ],
+  "kun": [],
+  "meaning": "ten thousand",
+  "compounds": [
+   {
+    "word": "一万",
+    "reading": "いちまん",
+    "english": "ten thousand"
+   },
+   {
+    "word": "十万",
+    "reading": "じゅうまん",
+    "english": "one hundred thousand"
+   },
+   {
+    "word": "百万",
+    "reading": "ひゃくまん",
+    "english": "one million"
+   }
+  ]
+ },
+ {
+  "no": 14,
+  "kanji": "円",
+  "lesson": 3,
+  "on": [
+   "えん"
+  ],
+  "kun": [
+   "まる"
+  ],
+  "meaning": "yen; circle",
+  "compounds": [
+   {
+    "word": "百円",
+    "reading": "ひゃくえん",
+    "english": "one hundred yen"
+   },
+   {
+    "word": "円",
+    "reading": "えん",
+    "english": "circle"
+   },
+   {
+    "word": "円高",
+    "reading": "えんだか",
+    "english": "strong yen"
+   },
+   {
+    "word": "円い",
+    "reading": "まるい",
+    "english": "round"
+   }
+  ]
+ },
+ {
+  "no": 15,
+  "kanji": "時",
+  "lesson": 3,
+  "on": [
+   "じ"
+  ],
+  "kun": [
+   "とき"
+  ],
+  "meaning": "time",
+  "compounds": [
+   {
+    "word": "一時",
+    "reading": "いちじ",
+    "english": "one o'clock"
+   },
+   {
+    "word": "時間",
+    "reading": "じかん",
+    "english": "time, ... hours"
+   },
+   {
+    "word": "子どもの時",
+    "reading": "こどものとき",
+    "english": "in one's childhood"
+   },
+   {
+    "word": "時々",
+    "reading": "ときどき",
+    "english": "sometimes"
+   },
+   {
+    "word": "時計",
+    "reading": "とけい",
+    "english": "watch, clock"
+   }
+  ]
+ },
+ {
+  "no": 16,
+  "kanji": "日",
+  "lesson": 4,
+  "on": [
+   "に",
+   "にち",
+   "にっ"
+  ],
+  "kun": [
+   "び",
+   "ひ",
+   "か"
+  ],
+  "meaning": "day; sun",
+  "compounds": [
+   {
+    "word": "日本",
+    "reading": "にほん",
+    "english": "Japan"
+   },
+   {
+    "word": "日曜日",
+    "reading": "にちようび",
+    "english": "Sunday"
+   },
+   {
+    "word": "毎日",
+    "reading": "まいにち",
+    "english": "every day"
+   },
+   {
+    "word": "母の日",
+    "reading": "ははのひ",
+    "english": "Mother's Day"
+   },
+   {
+    "word": "日記",
+    "reading": "にっき",
+    "english": "diary"
+   },
+   {
+    "word": "三日",
+    "reading": "みっか",
+    "english": "three days"
+   }
+  ]
+ },
+ {
+  "no": 17,
+  "kanji": "本",
+  "lesson": 4,
+  "on": [
+   "ほん"
+  ],
+  "kun": [
+   "もと"
+  ],
+  "meaning": "book; basis",
+  "compounds": [
+   {
+    "word": "本",
+    "reading": "ほん",
+    "english": "book"
+   },
+   {
+    "word": "日本",
+    "reading": "にほん",
+    "english": "Japan"
+   },
+   {
+    "word": "日本語",
+    "reading": "にほんご",
+    "english": "Japanese language"
+   },
+   {
+    "word": "山本さん",
+    "reading": "やまもとさん",
+    "english": "Mr./Ms. Yamamoto"
+   }
+  ]
+ },
+ {
+  "no": 18,
+  "kanji": "人",
+  "lesson": 4,
+  "on": [
+   "じん",
+   "にん"
+  ],
+  "kun": [
+   "ひと"
+  ],
+  "meaning": "person",
+  "compounds": [
+   {
+    "word": "日本人",
+    "reading": "にほんじん",
+    "english": "Japanese people"
+   },
+   {
+    "word": "一人で",
+    "reading": "ひとりで",
+    "english": "alone"
+   },
+   {
+    "word": "この人",
+    "reading": "このひと",
+    "english": "this person"
+   },
+   {
+    "word": "三人",
+    "reading": "さんにん",
+    "english": "three people"
+   }
+  ]
+ },
+ {
+  "no": 19,
+  "kanji": "月",
+  "lesson": 4,
+  "on": [
+   "げつ",
+   "がつ"
+  ],
+  "kun": [
+   "つき"
+  ],
+  "meaning": "moon; month",
+  "compounds": [
+   {
+    "word": "月曜日",
+    "reading": "げつようび",
+    "english": "Monday"
+   },
+   {
+    "word": "一月",
+    "reading": "いちがつ",
+    "english": "January"
+   },
+   {
+    "word": "月",
+    "reading": "つき",
+    "english": "moon"
+   },
+   {
+    "word": "今月",
+    "reading": "こんげつ",
+    "english": "this month"
+   },
+   {
+    "word": "一か月",
+    "reading": "いっかげつ",
+    "english": "one month"
+   }
+  ]
+ },
+ {
+  "no": 20,
+  "kanji": "火",
+  "lesson": 4,
+  "on": [
+   "か"
+  ],
+  "kun": [
+   "ひ",
+   "び"
+  ],
+  "meaning": "fire",
+  "compounds": [
+   {
+    "word": "火曜日",
+    "reading": "かようび",
+    "english": "Tuesday"
+   },
+   {
+    "word": "火",
+    "reading": "ひ",
+    "english": "fire"
+   },
+   {
+    "word": "火山",
+    "reading": "かざん",
+    "english": "volcano"
+   },
+   {
+    "word": "花火",
+    "reading": "はなび",
+    "english": "fireworks"
+   },
+   {
+    "word": "火星",
+    "reading": "かせい",
+    "english": "Mars"
+   }
+  ]
+ },
+ {
+  "no": 21,
+  "kanji": "水",
+  "lesson": 4,
+  "on": [
+   "すい"
+  ],
+  "kun": [
+   "みず"
+  ],
+  "meaning": "water",
+  "compounds": [
+   {
+    "word": "水曜日",
+    "reading": "すいようび",
+    "english": "Wednesday"
+   },
+   {
+    "word": "水",
+    "reading": "みず",
+    "english": "water"
+   },
+   {
+    "word": "水泳",
+    "reading": "すいえい",
+    "english": "swimming"
+   },
+   {
+    "word": "水道",
+    "reading": "すいどう",
+    "english": "water supply"
+   },
+   {
+    "word": "水着",
+    "reading": "みずぎ",
+    "english": "bathing suit"
+   }
+  ]
+ },
+ {
+  "no": 22,
+  "kanji": "木",
+  "lesson": 4,
+  "on": [
+   "もく"
+  ],
+  "kun": [
+   "き"
+  ],
+  "meaning": "tree",
+  "compounds": [
+   {
+    "word": "木曜日",
+    "reading": "もくようび",
+    "english": "Thursday"
+   },
+   {
+    "word": "木",
+    "reading": "き",
+    "english": "tree"
+   },
+   {
+    "word": "木村さん",
+    "reading": "きむらさん",
+    "english": "Mr./Ms. Kimura"
+   }
+  ]
+ },
+ {
+  "no": 23,
+  "kanji": "金",
+  "lesson": 4,
+  "on": [
+   "きん"
+  ],
+  "kun": [
+   "かね"
+  ],
+  "meaning": "gold; money",
+  "compounds": [
+   {
+    "word": "金曜日",
+    "reading": "きんようび",
+    "english": "Friday"
+   },
+   {
+    "word": "お金",
+    "reading": "おかね",
+    "english": "money"
+   },
+   {
+    "word": "料金",
+    "reading": "りょうきん",
+    "english": "charge"
+   },
+   {
+    "word": "お金持ち",
+    "reading": "おかねもち",
+    "english": "rich person"
+   }
+  ]
+ },
+ {
+  "no": 24,
+  "kanji": "土",
+  "lesson": 4,
+  "on": [
+   "ど",
+   "と"
+  ],
+  "kun": [
+   "つち"
+  ],
+  "meaning": "soil",
+  "compounds": [
+   {
+    "word": "土曜日",
+    "reading": "どようび",
+    "english": "Saturday"
+   },
+   {
+    "word": "土",
+    "reading": "つち",
+    "english": "soil"
+   },
+   {
+    "word": "土地",
+    "reading": "とち",
+    "english": "land"
+   },
+   {
+    "word": "粘土",
+    "reading": "ねんど",
+    "english": "clay"
+   }
+  ]
+ },
+ {
+  "no": 25,
+  "kanji": "曜",
+  "lesson": 4,
+  "on": [
+   "よう"
+  ],
+  "kun": [],
+  "meaning": "weekday",
+  "compounds": [
+   {
+    "word": "日曜日",
+    "reading": "にちようび",
+    "english": "Sunday"
+   },
+   {
+    "word": "曜日",
+    "reading": "ようび",
+    "english": "day of the week"
+   }
+  ]
+ },
+ {
+  "no": 26,
+  "kanji": "上",
+  "lesson": 4,
+  "on": [
+   "じょう"
+  ],
+  "kun": [
+   "うえ",
+   "のぼ"
+  ],
+  "meaning": "up",
+  "compounds": [
+   {
+    "word": "上",
+    "reading": "うえ",
+    "english": "top, above"
+   },
+   {
+    "word": "上手な",
+    "reading": "じょうずな",
+    "english": "good at"
+   },
+   {
+    "word": "屋上",
+    "reading": "おくじょう",
+    "english": "rooftop"
+   },
+   {
+    "word": "上る",
+    "reading": "のぼる",
+    "english": "to go up"
+   }
+  ]
+ },
+ {
+  "no": 27,
+  "kanji": "下",
+  "lesson": 4,
+  "on": [
+   "か"
+  ],
+  "kun": [
+   "した",
+   "くだ"
+  ],
+  "meaning": "down",
+  "compounds": [
+   {
+    "word": "下",
+    "reading": "した",
+    "english": "under"
+   },
+   {
+    "word": "地下鉄",
+    "reading": "ちかてつ",
+    "english": "subway"
+   },
+   {
+    "word": "下手な",
+    "reading": "へたな",
+    "english": "poor at"
+   },
+   {
+    "word": "下さい",
+    "reading": "ください",
+    "english": "Please give/do ..."
+   }
+  ]
+ },
+ {
+  "no": 28,
+  "kanji": "中",
+  "lesson": 4,
+  "on": [
+   "ちゅう",
+   "じゅう"
+  ],
+  "kun": [
+   "なか"
+  ],
+  "meaning": "middle",
+  "compounds": [
+   {
+    "word": "中",
+    "reading": "なか",
+    "english": "inside"
+   },
+   {
+    "word": "中国",
+    "reading": "ちゅうごく",
+    "english": "China"
+   },
+   {
+    "word": "中学",
+    "reading": "ちゅうがく",
+    "english": "junior high school"
+   },
+   {
+    "word": "一年中",
+    "reading": "いちねんじゅう",
+    "english": "all year around"
+   }
+  ]
+ },
+ {
+  "no": 29,
+  "kanji": "半",
+  "lesson": 4,
+  "on": [
+   "はん"
+  ],
+  "kun": [],
+  "meaning": "half",
+  "compounds": [
+   {
+    "word": "三時半",
+    "reading": "さんじはん",
+    "english": "half past three"
+   },
+   {
+    "word": "半分",
+    "reading": "はんぶん",
+    "english": "half"
+   },
+   {
+    "word": "半年",
+    "reading": "はんとし",
+    "english": "half a year"
+   },
+   {
+    "word": "半額",
+    "reading": "はんがく",
+    "english": "half price"
+   }
+  ]
+ },
+ {
+  "no": 30,
+  "kanji": "山",
+  "lesson": 5,
+  "on": [
+   "さん"
+  ],
+  "kun": [
+   "やま"
+  ],
+  "meaning": "mountain",
+  "compounds": [
+   {
+    "word": "山",
+    "reading": "やま",
+    "english": "mountain"
+   },
+   {
+    "word": "山川さん",
+    "reading": "やまかわさん",
+    "english": "Mr./Ms. Yamakawa"
+   },
+   {
+    "word": "富士山",
+    "reading": "ふじさん",
+    "english": "Mt. Fuji"
+   }
+  ]
+ },
+ {
+  "no": 31,
+  "kanji": "川",
+  "lesson": 5,
+  "on": [],
+  "kun": [
+   "かわ",
+   "がわ"
+  ],
+  "meaning": "river",
+  "compounds": [
+   {
+    "word": "川",
+    "reading": "かわ",
+    "english": "river"
+   },
+   {
+    "word": "山川さん",
+    "reading": "やまかわさん",
+    "english": "Mr./Ms. Yamakawa"
+   },
+   {
+    "word": "小川さん",
+    "reading": "おがわさん",
+    "english": "Mr./Ms. Ogawa"
+   }
+  ]
+ },
+ {
+  "no": 32,
+  "kanji": "元",
+  "lesson": 5,
+  "on": [
+   "げん",
+   "がん"
+  ],
+  "kun": [
+   "もと"
+  ],
+  "meaning": "origin",
+  "compounds": [
+   {
+    "word": "元気な",
+    "reading": "げんきな",
+    "english": "fine"
+   },
+   {
+    "word": "元日",
+    "reading": "がんじつ",
+    "english": "the first day of the year"
+   },
+   {
+    "word": "地元",
+    "reading": "じもと",
+    "english": "local"
+   }
+  ]
+ },
+ {
+  "no": 33,
+  "kanji": "気",
+  "lesson": 5,
+  "on": [
+   "き"
+  ],
+  "kun": [],
+  "meaning": "spirit",
+  "compounds": [
+   {
+    "word": "元気な",
+    "reading": "げんきな",
+    "english": "fine"
+   },
+   {
+    "word": "天気",
+    "reading": "てんき",
+    "english": "weather"
+   },
+   {
+    "word": "電気",
+    "reading": "でんき",
+    "english": "electricity"
+   },
+   {
+    "word": "気持ち",
+    "reading": "きもち",
+    "english": "feeling"
+   },
+   {
+    "word": "人気",
+    "reading": "にんき",
+    "english": "popularity"
+   }
+  ]
+ },
+ {
+  "no": 34,
+  "kanji": "天",
+  "lesson": 5,
+  "on": [
+   "てん"
+  ],
+  "kun": [],
+  "meaning": "heaven",
+  "compounds": [
+   {
+    "word": "天気",
+    "reading": "てんき",
+    "english": "weather"
+   },
+   {
+    "word": "天国",
+    "reading": "てんごく",
+    "english": "heaven"
+   },
+   {
+    "word": "天皇",
+    "reading": "てんのう",
+    "english": "Japanese emperor"
+   },
+   {
+    "word": "天才",
+    "reading": "てんさい",
+    "english": "genius"
+   }
+  ]
+ },
+ {
+  "no": 35,
+  "kanji": "私",
+  "lesson": 5,
+  "on": [
+   "し"
+  ],
+  "kun": [
+   "わたし"
+  ],
+  "meaning": "I; private",
+  "compounds": [
+   {
+    "word": "私",
+    "reading": "わたし",
+    "english": "I"
+   },
+   {
+    "word": "私立大学",
+    "reading": "しりつだいがく",
+    "english": "private university"
+   }
+  ]
+ },
+ {
+  "no": 36,
+  "kanji": "今",
+  "lesson": 5,
+  "on": [
+   "こん"
+  ],
+  "kun": [
+   "いま"
+  ],
+  "meaning": "now",
+  "compounds": [
+   {
+    "word": "今",
+    "reading": "いま",
+    "english": "now"
+   },
+   {
+    "word": "今日",
+    "reading": "きょう",
+    "english": "today"
+   },
+   {
+    "word": "今晩",
+    "reading": "こんばん",
+    "english": "tonight"
+   },
+   {
+    "word": "今月",
+    "reading": "こんげつ",
+    "english": "this month"
+   },
+   {
+    "word": "今年",
+    "reading": "ことし",
+    "english": "this year"
+   }
+  ]
+ },
+ {
+  "no": 37,
+  "kanji": "田",
+  "lesson": 5,
+  "on": [],
+  "kun": [
+   "た",
+   "だ"
+  ],
+  "meaning": "rice field",
+  "compounds": [
+   {
+    "word": "田中さん",
+    "reading": "たなかさん",
+    "english": "Mr./Ms. Tanaka"
+   },
+   {
+    "word": "山田さん",
+    "reading": "やまださん",
+    "english": "Mr./Ms. Yamada"
+   },
+   {
+    "word": "田んぼ",
+    "reading": "たんぼ",
+    "english": "rice field"
+   }
+  ]
+ },
+ {
+  "no": 38,
+  "kanji": "女",
+  "lesson": 5,
+  "on": [
+   "じょ"
+  ],
+  "kun": [
+   "おんな"
+  ],
+  "meaning": "woman",
+  "compounds": [
+   {
+    "word": "女の人",
+    "reading": "おんなのひと",
+    "english": "woman"
+   },
+   {
+    "word": "女性",
+    "reading": "じょせい",
+    "english": "woman"
+   },
+   {
+    "word": "女の子",
+    "reading": "おんなのこ",
+    "english": "girl"
+   },
+   {
+    "word": "長女",
+    "reading": "ちょうじょ",
+    "english": "the eldest daughter"
+   }
+  ]
+ },
+ {
+  "no": 39,
+  "kanji": "男",
+  "lesson": 5,
+  "on": [
+   "だん"
+  ],
+  "kun": [
+   "おとこ"
+  ],
+  "meaning": "man",
+  "compounds": [
+   {
+    "word": "男の人",
+    "reading": "おとこのひと",
+    "english": "man"
+   },
+   {
+    "word": "男性",
+    "reading": "だんせい",
+    "english": "man"
+   },
+   {
+    "word": "男の子",
+    "reading": "おとこのこ",
+    "english": "boy"
+   },
+   {
+    "word": "男子学生",
+    "reading": "だんしがくせい",
+    "english": "male student"
+   }
+  ]
+ },
+ {
+  "no": 40,
+  "kanji": "見",
+  "lesson": 5,
+  "on": [
+   "けん"
+  ],
+  "kun": [
+   "み"
+  ],
+  "meaning": "to see",
+  "compounds": [
+   {
+    "word": "見る",
+    "reading": "みる",
+    "english": "to see"
+   },
+   {
+    "word": "見物",
+    "reading": "けんぶつ",
+    "english": "sightseeing"
+   },
+   {
+    "word": "花見",
+    "reading": "はなみ",
+    "english": "flower viewing"
+   },
+   {
+    "word": "意見",
+    "reading": "いけん",
+    "english": "opinion"
+   }
+  ]
+ },
+ {
+  "no": 41,
+  "kanji": "行",
+  "lesson": 5,
+  "on": [
+   "こう",
+   "ぎょう"
+  ],
+  "kun": [
+   "い"
+  ],
+  "meaning": "to go",
+  "compounds": [
+   {
+    "word": "行く",
+    "reading": "いく",
+    "english": "to go"
+   },
+   {
+    "word": "銀行",
+    "reading": "ぎんこう",
+    "english": "bank"
+   },
+   {
+    "word": "一行目",
+    "reading": "いちぎょうめ",
+    "english": "first line"
+   },
+   {
+    "word": "旅行",
+    "reading": "りょこう",
+    "english": "travel"
+   }
+  ]
+ },
+ {
+  "no": 42,
+  "kanji": "食",
+  "lesson": 5,
+  "on": [
+   "しょく"
+  ],
+  "kun": [
+   "た"
+  ],
+  "meaning": "to eat",
+  "compounds": [
+   {
+    "word": "食べる",
+    "reading": "たべる",
+    "english": "to eat"
+   },
+   {
+    "word": "食べ物",
+    "reading": "たべもの",
+    "english": "food"
+   },
+   {
+    "word": "食堂",
+    "reading": "しょくどう",
+    "english": "cafeteria"
+   },
+   {
+    "word": "食事",
+    "reading": "しょくじ",
+    "english": "meal"
+   },
+   {
+    "word": "朝食",
+    "reading": "ちょうしょく",
+    "english": "breakfast"
+   }
+  ]
+ },
+ {
+  "no": 43,
+  "kanji": "飲",
+  "lesson": 5,
+  "on": [
+   "いん"
+  ],
+  "kun": [
+   "の"
+  ],
+  "meaning": "to drink",
+  "compounds": [
+   {
+    "word": "飲む",
+    "reading": "のむ",
+    "english": "to drink"
+   },
+   {
+    "word": "飲み物",
+    "reading": "のみもの",
+    "english": "drink"
+   },
+   {
+    "word": "飲酒運転",
+    "reading": "いんしゅうんてん",
+    "english": "drunken driving"
+   }
+  ]
+ },
+ {
+  "no": 44,
+  "kanji": "東",
+  "lesson": 6,
+  "on": [
+   "とう"
+  ],
+  "kun": [
+   "ひがし"
+  ],
+  "meaning": "east",
+  "compounds": [
+   {
+    "word": "東",
+    "reading": "ひがし",
+    "english": "east"
+   },
+   {
+    "word": "東口",
+    "reading": "ひがしぐち",
+    "english": "east exit"
+   },
+   {
+    "word": "東京",
+    "reading": "とうきょう",
+    "english": "Tokyo"
+   },
+   {
+    "word": "関東",
+    "reading": "かんとう",
+    "english": "Kanto area"
+   },
+   {
+    "word": "東洋",
+    "reading": "とうよう",
+    "english": "the East"
+   }
+  ]
+ },
+ {
+  "no": 45,
+  "kanji": "西",
+  "lesson": 6,
+  "on": [
+   "せい",
+   "さい"
+  ],
+  "kun": [
+   "にし"
+  ],
+  "meaning": "west",
+  "compounds": [
+   {
+    "word": "西",
+    "reading": "にし",
+    "english": "west"
+   },
+   {
+    "word": "西口",
+    "reading": "にしぐち",
+    "english": "west exit"
+   },
+   {
+    "word": "北西",
+    "reading": "ほくせい",
+    "english": "northwest"
+   },
+   {
+    "word": "関西",
+    "reading": "かんさい",
+    "english": "Kansai area"
+   },
+   {
+    "word": "西洋",
+    "reading": "せいよう",
+    "english": "the West"
+   }
+  ]
+ },
+ {
+  "no": 46,
+  "kanji": "南",
+  "lesson": 6,
+  "on": [
+   "なん"
+  ],
+  "kun": [
+   "みなみ"
+  ],
+  "meaning": "south",
+  "compounds": [
+   {
+    "word": "南",
+    "reading": "みなみ",
+    "english": "south"
+   },
+   {
+    "word": "南口",
+    "reading": "みなみぐち",
+    "english": "south exit"
+   },
+   {
+    "word": "南東",
+    "reading": "なんとう",
+    "english": "southeast"
+   },
+   {
+    "word": "南極",
+    "reading": "なんきょく",
+    "english": "Antarctica"
+   },
+   {
+    "word": "東南アジア",
+    "reading": "とうなんアジア",
+    "english": "Southeast Asia"
+   }
+  ]
+ },
+ {
+  "no": 47,
+  "kanji": "北",
+  "lesson": 6,
+  "on": [
+   "ほく",
+   "ほっ"
+  ],
+  "kun": [
+   "きた"
+  ],
+  "meaning": "north",
+  "compounds": [
+   {
+    "word": "北",
+    "reading": "きた",
+    "english": "north"
+   },
+   {
+    "word": "北口",
+    "reading": "きたぐち",
+    "english": "north exit"
+   },
+   {
+    "word": "東北",
+    "reading": "とうほく",
+    "english": "Tohoku area"
+   },
+   {
+    "word": "北極",
+    "reading": "ほっきょく",
+    "english": "North Pole"
+   },
+   {
+    "word": "北海道",
+    "reading": "ほっかいどう",
+    "english": "Hokkaido"
+   }
+  ]
+ },
+ {
+  "no": 48,
+  "kanji": "口",
+  "lesson": 6,
+  "on": [
+   "こう"
+  ],
+  "kun": [
+   "ぐち",
+   "くち"
+  ],
+  "meaning": "mouth",
+  "compounds": [
+   {
+    "word": "北口",
+    "reading": "きたぐち",
+    "english": "north exit"
+   },
+   {
+    "word": "口",
+    "reading": "くち",
+    "english": "mouth"
+   },
+   {
+    "word": "人口",
+    "reading": "じんこう",
+    "english": "population"
+   },
+   {
+    "word": "入り口/入口",
+    "reading": "いりぐち",
+    "english": "entrance"
+   }
+  ]
+ },
+ {
+  "no": 49,
+  "kanji": "出",
+  "lesson": 6,
+  "on": [
+   "しゅっ",
+   "しゅつ"
+  ],
+  "kun": [
+   "で",
+   "だ"
+  ],
+  "meaning": "to exit",
+  "compounds": [
+   {
+    "word": "出る",
+    "reading": "でる",
+    "english": "to exit"
+   },
+   {
+    "word": "出口",
+    "reading": "でぐち",
+    "english": "exit"
+   },
+   {
+    "word": "出かける",
+    "reading": "でかける",
+    "english": "to go out"
+   },
+   {
+    "word": "出す",
+    "reading": "だす",
+    "english": "to take something out"
+   },
+   {
+    "word": "出席",
+    "reading": "しゅっせき",
+    "english": "attendance"
+   },
+   {
+    "word": "輸出",
+    "reading": "ゆしゅつ",
+    "english": "export"
+   }
+  ]
+ },
+ {
+  "no": 50,
+  "kanji": "右",
+  "lesson": 6,
+  "on": [
+   "う",
+   "ゆう"
+  ],
+  "kun": [
+   "みぎ"
+  ],
+  "meaning": "right",
+  "compounds": [
+   {
+    "word": "右",
+    "reading": "みぎ",
+    "english": "right"
+   },
+   {
+    "word": "右折",
+    "reading": "うせつ",
+    "english": "right turn"
+   },
+   {
+    "word": "左右",
+    "reading": "さゆう",
+    "english": "right and left"
+   },
+   {
+    "word": "右手",
+    "reading": "みぎて",
+    "english": "right hand"
+   },
+   {
+    "word": "右側",
+    "reading": "みぎがわ",
+    "english": "right side"
+   }
+  ]
+ },
+ {
+  "no": 51,
+  "kanji": "左",
+  "lesson": 6,
+  "on": [
+   "さ"
+  ],
+  "kun": [
+   "ひだり"
+  ],
+  "meaning": "left",
+  "compounds": [
+   {
+    "word": "左",
+    "reading": "ひだり",
+    "english": "left"
+   },
+   {
+    "word": "左折",
+    "reading": "させつ",
+    "english": "left turn"
+   },
+   {
+    "word": "左手",
+    "reading": "ひだりて",
+    "english": "left hand"
+   },
+   {
+    "word": "左利き",
+    "reading": "ひだりきき",
+    "english": "left-handed"
+   }
+  ]
+ },
+ {
+  "no": 52,
+  "kanji": "分",
+  "lesson": 6,
+  "on": [
+   "ふん",
+   "ぷん",
+   "ぶん"
+  ],
+  "kun": [
+   "わ"
+  ],
+  "meaning": "minute; to divide",
+  "compounds": [
+   {
+    "word": "五分",
+    "reading": "ごふん",
+    "english": "five minutes"
+   },
+   {
+    "word": "十分",
+    "reading": "じゅっぷん/じっぷん",
+    "english": "ten minutes"
+   },
+   {
+    "word": "自分",
+    "reading": "じぶん",
+    "english": "oneself"
+   },
+   {
+    "word": "分ける",
+    "reading": "わける",
+    "english": "to divide"
+   }
+  ]
+ },
+ {
+  "no": 53,
+  "kanji": "先",
+  "lesson": 6,
+  "on": [
+   "せん"
+  ],
+  "kun": [
+   "さき"
+  ],
+  "meaning": "ahead",
+  "compounds": [
+   {
+    "word": "先生",
+    "reading": "せんせい",
+    "english": "teacher"
+   },
+   {
+    "word": "先週",
+    "reading": "せんしゅう",
+    "english": "last week"
+   },
+   {
+    "word": "先に",
+    "reading": "さきに",
+    "english": "ahead"
+   },
+   {
+    "word": "先月",
+    "reading": "せんげつ",
+    "english": "last month"
+   },
+   {
+    "word": "先輩",
+    "reading": "せんぱい",
+    "english": "senior member"
+   }
+  ]
+ },
+ {
+  "no": 54,
+  "kanji": "生",
+  "lesson": 6,
+  "on": [
+   "せい",
+   "しょう"
+  ],
+  "kun": [
+   "う"
+  ],
+  "meaning": "birth",
+  "compounds": [
+   {
+    "word": "学生",
+    "reading": "がくせい",
+    "english": "student"
+   },
+   {
+    "word": "先生",
+    "reading": "せんせい",
+    "english": "teacher"
+   },
+   {
+    "word": "生まれる",
+    "reading": "うまれる",
+    "english": "to be born"
+   },
+   {
+    "word": "一生に一度",
+    "reading": "いっしょうにいちど",
+    "english": "once in a life time"
+   }
+  ]
+ },
+ {
+  "no": 55,
+  "kanji": "大",
+  "lesson": 6,
+  "on": [
+   "だい",
+   "たい"
+  ],
+  "kun": [
+   "おお"
+  ],
+  "meaning": "big",
+  "compounds": [
+   {
+    "word": "大学生",
+    "reading": "だいがくせい",
+    "english": "college student"
+   },
+   {
+    "word": "大きい",
+    "reading": "おおきい",
+    "english": "big"
+   },
+   {
+    "word": "大変な",
+    "reading": "たいへんな",
+    "english": "tough"
+   },
+   {
+    "word": "大人",
+    "reading": "おとな",
+    "english": "adult"
+   },
+   {
+    "word": "大使館",
+    "reading": "たいしかん",
+    "english": "embassy"
+   }
+  ]
+ },
+ {
+  "no": 56,
+  "kanji": "学",
+  "lesson": 6,
+  "on": [
+   "がく",
+   "がっ"
+  ],
+  "kun": [
+   "まな"
+  ],
+  "meaning": "learning",
+  "compounds": [
+   {
+    "word": "大学",
+    "reading": "だいがく",
+    "english": "university"
+   },
+   {
+    "word": "学生",
+    "reading": "がくせい",
+    "english": "student"
+   },
+   {
+    "word": "学校",
+    "reading": "がっこう",
+    "english": "school"
+   },
+   {
+    "word": "学ぶ",
+    "reading": "まなぶ",
+    "english": "to study"
+   },
+   {
+    "word": "学部",
+    "reading": "がくぶ",
+    "english": "department, faculty"
+   }
+  ]
+ },
+ {
+  "no": 57,
+  "kanji": "外",
+  "lesson": 6,
+  "on": [
+   "がい"
+  ],
+  "kun": [
+   "そと"
+  ],
+  "meaning": "outside",
+  "compounds": [
+   {
+    "word": "外国",
+    "reading": "がいこく",
+    "english": "foreign country"
+   },
+   {
+    "word": "外国人",
+    "reading": "がいこくじん",
+    "english": "foreigner"
+   },
+   {
+    "word": "外",
+    "reading": "そと",
+    "english": "outside"
+   },
+   {
+    "word": "海外",
+    "reading": "かいがい",
+    "english": "overseas"
+   }
+  ]
+ },
+ {
+  "no": 58,
+  "kanji": "国",
+  "lesson": 6,
+  "on": [
+   "こく",
+   "ごく",
+   "こっ"
+  ],
+  "kun": [
+   "くに"
+  ],
+  "meaning": "country",
+  "compounds": [
+   {
+    "word": "外国",
+    "reading": "がいこく",
+    "english": "foreign country"
+   },
+   {
+    "word": "中国",
+    "reading": "ちゅうごく",
+    "english": "China"
+   },
+   {
+    "word": "国",
+    "reading": "くに",
+    "english": "country"
+   },
+   {
+    "word": "韓国",
+    "reading": "かんこく",
+    "english": "South Korea"
+   },
+   {
+    "word": "国会",
+    "reading": "こっかい",
+    "english": "the Diet"
+   }
+  ]
+ },
+ {
+  "no": 59,
+  "kanji": "京",
+  "lesson": 7,
+  "on": [
+   "きょう"
+  ],
+  "kun": [],
+  "meaning": "capital",
+  "compounds": [
+   {
+    "word": "東京",
+    "reading": "とうきょう",
+    "english": "Tokyo"
+   },
+   {
+    "word": "京子",
+    "reading": "きょうこ",
+    "english": "Kyoko"
+   },
+   {
+    "word": "京都",
+    "reading": "きょうと",
+    "english": "Kyoto"
+   },
+   {
+    "word": "上京する",
+    "reading": "じょうきょうする",
+    "english": "to go to the capital"
+   }
+  ]
+ },
+ {
+  "no": 60,
+  "kanji": "子",
+  "lesson": 7,
+  "on": [
+   "し"
+  ],
+  "kun": [
+   "こ"
+  ],
+  "meaning": "child",
+  "compounds": [
+   {
+    "word": "子ども",
+    "reading": "こども",
+    "english": "child"
+   },
+   {
+    "word": "京子",
+    "reading": "きょうこ",
+    "english": "Kyoko"
+   },
+   {
+    "word": "女の子",
+    "reading": "おんなのこ",
+    "english": "girl"
+   },
+   {
+    "word": "男の子",
+    "reading": "おとこのこ",
+    "english": "boy"
+   },
+   {
+    "word": "女子学生",
+    "reading": "じょしがくせい",
+    "english": "female student"
+   }
+  ]
+ },
+ {
+  "no": 61,
+  "kanji": "小",
+  "lesson": 7,
+  "on": [
+   "しょう"
+  ],
+  "kun": [
+   "ちい"
+  ],
+  "meaning": "small",
+  "compounds": [
+   {
+    "word": "小さい",
+    "reading": "ちいさい",
+    "english": "small"
+   },
+   {
+    "word": "小学校",
+    "reading": "しょうがっこう",
+    "english": "elementary school"
+   },
+   {
+    "word": "小学生",
+    "reading": "しょうがくせい",
+    "english": "elementary school student"
+   }
+  ]
+ },
+ {
+  "no": 62,
+  "kanji": "会",
+  "lesson": 7,
+  "on": [
+   "かい"
+  ],
+  "kun": [
+   "あ"
+  ],
+  "meaning": "to meet",
+  "compounds": [
+   {
+    "word": "会う",
+    "reading": "あう",
+    "english": "to meet"
+   },
+   {
+    "word": "会社",
+    "reading": "かいしゃ",
+    "english": "company"
+   },
+   {
+    "word": "会社員",
+    "reading": "かいしゃいん",
+    "english": "office worker"
+   },
+   {
+    "word": "会議",
+    "reading": "かいぎ",
+    "english": "meeting"
+   },
+   {
+    "word": "教会",
+    "reading": "きょうかい",
+    "english": "church"
+   }
+  ]
+ },
+ {
+  "no": 63,
+  "kanji": "社",
+  "lesson": 7,
+  "on": [
+   "しゃ",
+   "じゃ"
+  ],
+  "kun": [],
+  "meaning": "company",
+  "compounds": [
+   {
+    "word": "会社",
+    "reading": "かいしゃ",
+    "english": "company"
+   },
+   {
+    "word": "神社",
+    "reading": "じんじゃ",
+    "english": "shrine"
+   },
+   {
+    "word": "社会",
+    "reading": "しゃかい",
+    "english": "society"
+   },
+   {
+    "word": "入社",
+    "reading": "にゅうしゃ",
+    "english": "entry to a company"
+   }
+  ]
+ },
+ {
+  "no": 64,
+  "kanji": "父",
+  "lesson": 7,
+  "on": [
+   "ふ"
+  ],
+  "kun": [
+   "ちち",
+   "とう"
+  ],
+  "meaning": "father",
+  "compounds": [
+   {
+    "word": "父",
+    "reading": "ちち",
+    "english": "father"
+   },
+   {
+    "word": "お父さん",
+    "reading": "おとうさん",
+    "english": "father"
+   },
+   {
+    "word": "父母",
+    "reading": "ふぼ",
+    "english": "father and mother"
+   },
+   {
+    "word": "祖父",
+    "reading": "そふ",
+    "english": "grandfather"
+   }
+  ]
+ },
+ {
+  "no": 65,
+  "kanji": "母",
+  "lesson": 7,
+  "on": [
+   "ぼ"
+  ],
+  "kun": [
+   "はは",
+   "かあ"
+  ],
+  "meaning": "mother",
+  "compounds": [
+   {
+    "word": "母",
+    "reading": "はは",
+    "english": "mother"
+   },
+   {
+    "word": "お母さん",
+    "reading": "おかあさん",
+    "english": "mother"
+   },
+   {
+    "word": "母語",
+    "reading": "ぼご",
+    "english": "mother tongue"
+   },
+   {
+    "word": "祖母",
+    "reading": "そぼ",
+    "english": "grandmother"
+   }
+  ]
+ },
+ {
+  "no": 66,
+  "kanji": "高",
+  "lesson": 7,
+  "on": [
+   "こう"
+  ],
+  "kun": [
+   "たか"
+  ],
+  "meaning": "high",
+  "compounds": [
+   {
+    "word": "高い",
+    "reading": "たかい",
+    "english": "expensive, high"
+   },
+   {
+    "word": "高校",
+    "reading": "こうこう",
+    "english": "high school"
+   },
+   {
+    "word": "高校生",
+    "reading": "こうこうせい",
+    "english": "high school student"
+   },
+   {
+    "word": "最高",
+    "reading": "さいこう",
+    "english": "the best"
+   }
+  ]
+ },
+ {
+  "no": 67,
+  "kanji": "校",
+  "lesson": 7,
+  "on": [
+   "こう"
+  ],
+  "kun": [],
+  "meaning": "school",
+  "compounds": [
+   {
+    "word": "学校",
+    "reading": "がっこう",
+    "english": "school"
+   },
+   {
+    "word": "高校",
+    "reading": "こうこう",
+    "english": "high school"
+   },
+   {
+    "word": "高校生",
+    "reading": "こうこうせい",
+    "english": "high school student"
+   },
+   {
+    "word": "中学校",
+    "reading": "ちゅうがっこう",
+    "english": "junior high school"
+   }
+  ]
+ },
+ {
+  "no": 68,
+  "kanji": "毎",
+  "lesson": 7,
+  "on": [
+   "まい"
+  ],
+  "kun": [],
+  "meaning": "every",
+  "compounds": [
+   {
+    "word": "毎日",
+    "reading": "まいにち",
+    "english": "every day"
+   },
+   {
+    "word": "毎週",
+    "reading": "まいしゅう",
+    "english": "every week"
+   },
+   {
+    "word": "毎晩",
+    "reading": "まいばん",
+    "english": "every night"
+   },
+   {
+    "word": "毎年",
+    "reading": "まいねん/まいとし",
+    "english": "every year"
+   }
+  ]
+ },
+ {
+  "no": 69,
+  "kanji": "語",
+  "lesson": 7,
+  "on": [
+   "ご"
+  ],
+  "kun": [],
+  "meaning": "word",
+  "compounds": [
+   {
+    "word": "日本語",
+    "reading": "にほんご",
+    "english": "Japanese language"
+   },
+   {
+    "word": "英語",
+    "reading": "えいご",
+    "english": "English language"
+   },
+   {
+    "word": "敬語",
+    "reading": "けいご",
+    "english": "honorific expressions"
+   }
+  ]
+ },
+ {
+  "no": 70,
+  "kanji": "文",
+  "lesson": 7,
+  "on": [
+   "ぶん"
+  ],
+  "kun": [],
+  "meaning": "sentence",
+  "compounds": [
+   {
+    "word": "文学",
+    "reading": "ぶんがく",
+    "english": "literature"
+   },
+   {
+    "word": "作文",
+    "reading": "さくぶん",
+    "english": "composition"
+   },
+   {
+    "word": "文字",
+    "reading": "もじ",
+    "english": "letter, character"
+   },
+   {
+    "word": "文化",
+    "reading": "ぶんか",
+    "english": "culture"
+   },
+   {
+    "word": "文法",
+    "reading": "ぶんぽう",
+    "english": "grammar"
+   }
+  ]
+ },
+ {
+  "no": 71,
+  "kanji": "帰",
+  "lesson": 7,
+  "on": [
+   "き"
+  ],
+  "kun": [
+   "かえ"
+  ],
+  "meaning": "to return",
+  "compounds": [
+   {
+    "word": "帰る",
+    "reading": "かえる",
+    "english": "to return"
+   },
+   {
+    "word": "帰国",
+    "reading": "きこく",
+    "english": "going home"
+   },
+   {
+    "word": "帰宅",
+    "reading": "きたく",
+    "english": "returning home"
+   },
+   {
+    "word": "帰り",
+    "reading": "かえり",
+    "english": "return"
+   }
+  ]
+ },
+ {
+  "no": 72,
+  "kanji": "入",
+  "lesson": 7,
+  "on": [
+   "にゅう"
+  ],
+  "kun": [
+   "はい",
+   "い",
+   "いり"
+  ],
+  "meaning": "to enter",
+  "compounds": [
+   {
+    "word": "入る",
+    "reading": "はいる",
+    "english": "to enter"
+   },
+   {
+    "word": "入り口/入口",
+    "reading": "いりぐち",
+    "english": "entrance"
+   },
+   {
+    "word": "入れる",
+    "reading": "いれる",
+    "english": "to put something in"
+   },
+   {
+    "word": "輸入",
+    "reading": "ゆにゅう",
+    "english": "import"
+   }
+  ]
+ },
+ {
+  "no": 73,
+  "kanji": "員",
+  "lesson": 8,
+  "on": [
+   "いん"
+  ],
+  "kun": [],
+  "meaning": "member",
+  "compounds": [
+   {
+    "word": "会社員",
+    "reading": "かいしゃいん",
+    "english": "office worker"
+   },
+   {
+    "word": "店員",
+    "reading": "てんいん",
+    "english": "store clerk"
+   },
+   {
+    "word": "会員",
+    "reading": "かいいん",
+    "english": "member"
+   },
+   {
+    "word": "駅員",
+    "reading": "えきいん",
+    "english": "station attendant"
+   }
+  ]
+ },
+ {
+  "no": 74,
+  "kanji": "新",
+  "lesson": 8,
+  "on": [
+   "しん"
+  ],
+  "kun": [
+   "あたら"
+  ],
+  "meaning": "new",
+  "compounds": [
+   {
+    "word": "新しい",
+    "reading": "あたらしい",
+    "english": "new"
+   },
+   {
+    "word": "新聞",
+    "reading": "しんぶん",
+    "english": "newspaper"
+   },
+   {
+    "word": "新幹線",
+    "reading": "しんかんせん",
+    "english": "Bullet Train"
+   },
+   {
+    "word": "新鮮な",
+    "reading": "しんせんな",
+    "english": "fresh"
+   }
+  ]
+ },
+ {
+  "no": 75,
+  "kanji": "聞",
+  "lesson": 8,
+  "on": [
+   "ぶん"
+  ],
+  "kun": [
+   "き"
+  ],
+  "meaning": "to listen",
+  "compounds": [
+   {
+    "word": "聞く",
+    "reading": "きく",
+    "english": "to listen"
+   },
+   {
+    "word": "新聞",
+    "reading": "しんぶん",
+    "english": "newspaper"
+   },
+   {
+    "word": "聞こえる",
+    "reading": "きこえる",
+    "english": "can be heard"
+   }
+  ]
+ },
+ {
+  "no": 76,
+  "kanji": "作",
+  "lesson": 8,
+  "on": [
+   "さく"
+  ],
+  "kun": [
+   "つく"
+  ],
+  "meaning": "to make",
+  "compounds": [
+   {
+    "word": "作る",
+    "reading": "つくる",
+    "english": "to make"
+   },
+   {
+    "word": "作文",
+    "reading": "さくぶん",
+    "english": "composition"
+   },
+   {
+    "word": "作品",
+    "reading": "さくひん",
+    "english": "artistic piece"
+   },
+   {
+    "word": "作者",
+    "reading": "さくしゃ",
+    "english": "author"
+   }
+  ]
+ },
+ {
+  "no": 77,
+  "kanji": "仕",
+  "lesson": 8,
+  "on": [
+   "し"
+  ],
+  "kun": [
+   "つか"
+  ],
+  "meaning": "to serve",
+  "compounds": [
+   {
+    "word": "仕事",
+    "reading": "しごと",
+    "english": "job"
+   },
+   {
+    "word": "仕返し",
+    "reading": "しかえし",
+    "english": "revenge"
+   },
+   {
+    "word": "仕える",
+    "reading": "つかえる",
+    "english": "to serve, to work under"
+   }
+  ]
+ },
+ {
+  "no": 78,
+  "kanji": "事",
+  "lesson": 8,
+  "on": [
+   "じ"
+  ],
+  "kun": [
+   "ごと",
+   "こと"
+  ],
+  "meaning": "thing",
+  "compounds": [
+   {
+    "word": "仕事",
+    "reading": "しごと",
+    "english": "job"
+   },
+   {
+    "word": "事",
+    "reading": "こと",
+    "english": "thing"
+   },
+   {
+    "word": "火事",
+    "reading": "かじ",
+    "english": "fire"
+   },
+   {
+    "word": "食事",
+    "reading": "しょくじ",
+    "english": "meal"
+   },
+   {
+    "word": "返事",
+    "reading": "へんじ",
+    "english": "reply"
+   }
+  ]
+ },
+ {
+  "no": 79,
+  "kanji": "電",
+  "lesson": 8,
+  "on": [
+   "でん"
+  ],
+  "kun": [],
+  "meaning": "electricity",
+  "compounds": [
+   {
+    "word": "電車",
+    "reading": "でんしゃ",
+    "english": "train"
+   },
+   {
+    "word": "電気",
+    "reading": "でんき",
+    "english": "electricity, light"
+   },
+   {
+    "word": "電話",
+    "reading": "でんわ",
+    "english": "telephone"
+   },
+   {
+    "word": "電池",
+    "reading": "でんち",
+    "english": "battery"
+   },
+   {
+    "word": "電子レンジ",
+    "reading": "でんしレンジ",
+    "english": "microwave oven"
+   }
+  ]
+ },
+ {
+  "no": 80,
+  "kanji": "車",
+  "lesson": 8,
+  "on": [
+   "しゃ"
+  ],
+  "kun": [
+   "くるま"
+  ],
+  "meaning": "car",
+  "compounds": [
+   {
+    "word": "車",
+    "reading": "くるま",
+    "english": "car"
+   },
+   {
+    "word": "電車",
+    "reading": "でんしゃ",
+    "english": "train"
+   },
+   {
+    "word": "自転車",
+    "reading": "じてんしゃ",
+    "english": "bicycle"
+   },
+   {
+    "word": "車いす",
+    "reading": "くるまいす",
+    "english": "wheelchair"
+   },
+   {
+    "word": "駐車場",
+    "reading": "ちゅうしゃじょう",
+    "english": "parking lot"
+   }
+  ]
+ },
+ {
+  "no": 81,
+  "kanji": "休",
+  "lesson": 8,
+  "on": [
+   "きゅう"
+  ],
+  "kun": [
+   "やす"
+  ],
+  "meaning": "to rest",
+  "compounds": [
+   {
+    "word": "休む",
+    "reading": "やすむ",
+    "english": "to be absent, to rest"
+   },
+   {
+    "word": "休み",
+    "reading": "やすみ",
+    "english": "holiday, absence"
+   },
+   {
+    "word": "休日",
+    "reading": "きゅうじつ",
+    "english": "holiday"
+   }
+  ]
+ },
+ {
+  "no": 82,
+  "kanji": "言",
+  "lesson": 8,
+  "on": [
+   "げん"
+  ],
+  "kun": [
+   "い",
+   "こと"
+  ],
+  "meaning": "to say",
+  "compounds": [
+   {
+    "word": "言う",
+    "reading": "いう",
+    "english": "to say"
+   },
+   {
+    "word": "言語学",
+    "reading": "げんごがく",
+    "english": "linguistics"
+   },
+   {
+    "word": "方言",
+    "reading": "ほうげん",
+    "english": "dialect"
+   },
+   {
+    "word": "言葉",
+    "reading": "ことば",
+    "english": "word, language"
+   }
+  ]
+ },
+ {
+  "no": 83,
+  "kanji": "読",
+  "lesson": 8,
+  "on": [
+   "どく"
+  ],
+  "kun": [
+   "よ"
+  ],
+  "meaning": "to read",
+  "compounds": [
+   {
+    "word": "読む",
+    "reading": "よむ",
+    "english": "to read"
+   },
+   {
+    "word": "読書",
+    "reading": "どくしょ",
+    "english": "reading books"
+   },
+   {
+    "word": "読み物",
+    "reading": "よみもの",
+    "english": "reading matter"
+   }
+  ]
+ },
+ {
+  "no": 84,
+  "kanji": "思",
+  "lesson": 8,
+  "on": [
+   "し"
+  ],
+  "kun": [
+   "おも"
+  ],
+  "meaning": "to think",
+  "compounds": [
+   {
+    "word": "思う",
+    "reading": "おもう",
+    "english": "to think"
+   },
+   {
+    "word": "不思議な",
+    "reading": "ふしぎな",
+    "english": "mysterious"
+   },
+   {
+    "word": "思い出す",
+    "reading": "おもいだす",
+    "english": "to recall, to remember"
+   }
+  ]
+ },
+ {
+  "no": 85,
+  "kanji": "次",
+  "lesson": 8,
+  "on": [
+   "じ"
+  ],
+  "kun": [
+   "つぎ"
+  ],
+  "meaning": "next",
+  "compounds": [
+   {
+    "word": "次",
+    "reading": "つぎ",
+    "english": "next"
+   },
+   {
+    "word": "次女",
+    "reading": "じじょ",
+    "english": "second daughter"
+   },
+   {
+    "word": "目次",
+    "reading": "もくじ",
+    "english": "table of contents"
+   },
+   {
+    "word": "次回",
+    "reading": "じかい",
+    "english": "next time"
+   }
+  ]
+ },
+ {
+  "no": 86,
+  "kanji": "何",
+  "lesson": 8,
+  "on": [],
+  "kun": [
+   "なに",
+   "なん"
+  ],
+  "meaning": "what",
+  "compounds": [
+   {
+    "word": "何",
+    "reading": "なに",
+    "english": "what"
+   },
+   {
+    "word": "何時",
+    "reading": "なんじ",
+    "english": "what time"
+   },
+   {
+    "word": "何人",
+    "reading": "なんにん",
+    "english": "how many people"
+   },
+   {
+    "word": "何か",
+    "reading": "なにか",
+    "english": "something"
+   }
+  ]
+ },
+ {
+  "no": 87,
+  "kanji": "午",
+  "lesson": 9,
+  "on": [
+   "ご"
+  ],
+  "kun": [],
+  "meaning": "noon",
+  "compounds": [
+   {
+    "word": "午前",
+    "reading": "ごぜん",
+    "english": "A.M."
+   },
+   {
+    "word": "午後",
+    "reading": "ごご",
+    "english": "P.M., in the afternoon"
+   },
+   {
+    "word": "午前中",
+    "reading": "ごぜんちゅう",
+    "english": "in the morning"
+   },
+   {
+    "word": "正午",
+    "reading": "しょうご",
+    "english": "noon"
+   }
+  ]
+ },
+ {
+  "no": 88,
+  "kanji": "後",
+  "lesson": 9,
+  "on": [
+   "ご"
+  ],
+  "kun": [
+   "あと",
+   "うし"
+  ],
+  "meaning": "after",
+  "compounds": [
+   {
+    "word": "午後",
+    "reading": "ごご",
+    "english": "P.M."
+   },
+   {
+    "word": "〜の後",
+    "reading": "のあと",
+    "english": "after ..."
+   },
+   {
+    "word": "後で",
+    "reading": "あとで",
+    "english": "later"
+   },
+   {
+    "word": "後ろ",
+    "reading": "うしろ",
+    "english": "back, behind"
+   },
+   {
+    "word": "最後に",
+    "reading": "さいごに",
+    "english": "lastly"
+   }
+  ]
+ },
+ {
+  "no": 89,
+  "kanji": "前",
+  "lesson": 9,
+  "on": [
+   "ぜん"
+  ],
+  "kun": [
+   "まえ"
+  ],
+  "meaning": "before",
+  "compounds": [
+   {
+    "word": "前",
+    "reading": "まえ",
+    "english": "before, front"
+   },
+   {
+    "word": "午前",
+    "reading": "ごぜん",
+    "english": "A.M."
+   },
+   {
+    "word": "名前",
+    "reading": "なまえ",
+    "english": "name"
+   },
+   {
+    "word": "前売り",
+    "reading": "まえうり",
+    "english": "advance sale"
+   }
+  ]
+ },
+ {
+  "no": 90,
+  "kanji": "名",
+  "lesson": 9,
+  "on": [
+   "めい",
+   "みょう"
+  ],
+  "kun": [
+   "な"
+  ],
+  "meaning": "name",
+  "compounds": [
+   {
+    "word": "名前",
+    "reading": "なまえ",
+    "english": "name"
+   },
+   {
+    "word": "有名な",
+    "reading": "ゆうめいな",
+    "english": "famous"
+   },
+   {
+    "word": "名刺",
+    "reading": "めいし",
+    "english": "name card"
+   },
+   {
+    "word": "氏名",
+    "reading": "しめい",
+    "english": "full name"
+   },
+   {
+    "word": "名字",
+    "reading": "みょうじ",
+    "english": "family name"
+   }
+  ]
+ },
+ {
+  "no": 91,
+  "kanji": "白",
+  "lesson": 9,
+  "on": [
+   "はく"
+  ],
+  "kun": [
+   "しろ"
+  ],
+  "meaning": "white",
+  "compounds": [
+   {
+    "word": "白い",
+    "reading": "しろい",
+    "english": "white"
+   },
+   {
+    "word": "白紙",
+    "reading": "はくし",
+    "english": "blank sheet"
+   },
+   {
+    "word": "白",
+    "reading": "しろ",
+    "english": "white color"
+   },
+   {
+    "word": "白鳥",
+    "reading": "はくちょう",
+    "english": "swan"
+   }
+  ]
+ },
+ {
+  "no": 92,
+  "kanji": "雨",
+  "lesson": 9,
+  "on": [
+   "う"
+  ],
+  "kun": [
+   "あめ"
+  ],
+  "meaning": "rain",
+  "compounds": [
+   {
+    "word": "雨",
+    "reading": "あめ",
+    "english": "rain"
+   },
+   {
+    "word": "雨期",
+    "reading": "うき",
+    "english": "rainy season"
+   },
+   {
+    "word": "梅雨",
+    "reading": "つゆ",
+    "english": "rainy season"
+   },
+   {
+    "word": "大雨",
+    "reading": "おおあめ",
+    "english": "heavy rain"
+   }
+  ]
+ },
+ {
+  "no": 93,
+  "kanji": "書",
+  "lesson": 9,
+  "on": [
+   "しょ"
+  ],
+  "kun": [
+   "か"
+  ],
+  "meaning": "to write",
+  "compounds": [
+   {
+    "word": "書く",
+    "reading": "かく",
+    "english": "to write"
+   },
+   {
+    "word": "辞書",
+    "reading": "じしょ",
+    "english": "dictionary"
+   },
+   {
+    "word": "教科書",
+    "reading": "きょうかしょ",
+    "english": "textbook"
+   },
+   {
+    "word": "図書館",
+    "reading": "としょかん",
+    "english": "library"
+   }
+  ]
+ },
+ {
+  "no": 94,
+  "kanji": "友",
+  "lesson": 9,
+  "on": [
+   "ゆう"
+  ],
+  "kun": [
+   "とも"
+  ],
+  "meaning": "friend",
+  "compounds": [
+   {
+    "word": "友だち",
+    "reading": "ともだち",
+    "english": "friend"
+   },
+   {
+    "word": "親友",
+    "reading": "しんゆう",
+    "english": "best friend"
+   },
+   {
+    "word": "友人",
+    "reading": "ゆうじん",
+    "english": "friend"
+   },
+   {
+    "word": "友情",
+    "reading": "ゆうじょう",
+    "english": "friendship"
+   }
+  ]
+ },
+ {
+  "no": 95,
+  "kanji": "間",
+  "lesson": 9,
+  "on": [
+   "かん",
+   "げん"
+  ],
+  "kun": [
+   "あいだ"
+  ],
+  "meaning": "between",
+  "compounds": [
+   {
+    "word": "時間",
+    "reading": "じかん",
+    "english": "time"
+   },
+   {
+    "word": "二時間",
+    "reading": "にじかん",
+    "english": "two hours"
+   },
+   {
+    "word": "間",
+    "reading": "あいだ",
+    "english": "between"
+   },
+   {
+    "word": "人間",
+    "reading": "にんげん",
+    "english": "human being"
+   },
+   {
+    "word": "一週間",
+    "reading": "いっしゅうかん",
+    "english": "one week"
+   }
+  ]
+ },
+ {
+  "no": 96,
+  "kanji": "家",
+  "lesson": 9,
+  "on": [
+   "か"
+  ],
+  "kun": [
+   "いえ"
+  ],
+  "meaning": "house",
+  "compounds": [
+   {
+    "word": "家",
+    "reading": "いえ",
+    "english": "house"
+   },
+   {
+    "word": "家族",
+    "reading": "かぞく",
+    "english": "family"
+   },
+   {
+    "word": "家",
+    "reading": "うち",
+    "english": "house, home"
+   },
+   {
+    "word": "家内",
+    "reading": "かない",
+    "english": "my wife"
+   },
+   {
+    "word": "作家",
+    "reading": "さっか",
+    "english": "author"
+   }
+  ]
+ },
+ {
+  "no": 97,
+  "kanji": "話",
+  "lesson": 9,
+  "on": [
+   "わ"
+  ],
+  "kun": [
+   "はな",
+   "はなし"
+  ],
+  "meaning": "to speak",
+  "compounds": [
+   {
+    "word": "話す",
+    "reading": "はなす",
+    "english": "to speak"
+   },
+   {
+    "word": "話",
+    "reading": "はなし",
+    "english": "talk, story"
+   },
+   {
+    "word": "電話",
+    "reading": "でんわ",
+    "english": "telephone"
+   },
+   {
+    "word": "会話",
+    "reading": "かいわ",
+    "english": "conversation"
+   }
+  ]
+ },
+ {
+  "no": 98,
+  "kanji": "少",
+  "lesson": 9,
+  "on": [
+   "しょう"
+  ],
+  "kun": [
+   "すこ",
+   "すく"
+  ],
+  "meaning": "little",
+  "compounds": [
+   {
+    "word": "少し",
+    "reading": "すこし",
+    "english": "little"
+   },
+   {
+    "word": "少ない",
+    "reading": "すくない",
+    "english": "few"
+   },
+   {
+    "word": "少々",
+    "reading": "しょうしょう",
+    "english": "a little"
+   },
+   {
+    "word": "少女",
+    "reading": "しょうじょ",
+    "english": "girl"
+   },
+   {
+    "word": "少年",
+    "reading": "しょうねん",
+    "english": "boy"
+   }
+  ]
+ },
+ {
+  "no": 99,
+  "kanji": "古",
+  "lesson": 9,
+  "on": [
+   "こ"
+  ],
+  "kun": [
+   "ふる"
+  ],
+  "meaning": "old",
+  "compounds": [
+   {
+    "word": "古い",
+    "reading": "ふるい",
+    "english": "old (for things)"
+   },
+   {
+    "word": "中古",
+    "reading": "ちゅうこ",
+    "english": "secondhand"
+   },
+   {
+    "word": "古代",
+    "reading": "こだい",
+    "english": "ancient times"
+   }
+  ]
+ },
+ {
+  "no": 100,
+  "kanji": "知",
+  "lesson": 9,
+  "on": [
+   "ち"
+  ],
+  "kun": [
+   "し"
+  ],
+  "meaning": "to know",
+  "compounds": [
+   {
+    "word": "知る",
+    "reading": "しる",
+    "english": "to know"
+   },
+   {
+    "word": "知人",
+    "reading": "ちじん",
+    "english": "acquaintance"
+   },
+   {
+    "word": "知り合い",
+    "reading": "しりあい",
+    "english": "acquaintance"
+   }
+  ]
+ },
+ {
+  "no": 101,
+  "kanji": "来",
+  "lesson": 9,
+  "on": [
+   "らい"
+  ],
+  "kun": [
+   "く",
+   "き",
+   "こ"
+  ],
+  "meaning": "to come",
+  "compounds": [
+   {
+    "word": "来る",
+    "reading": "くる",
+    "english": "to come"
+   },
+   {
+    "word": "来ます",
+    "reading": "きます",
+    "english": "to come"
+   },
+   {
+    "word": "来ない",
+    "reading": "こない",
+    "english": "not to come"
+   },
+   {
+    "word": "来週",
+    "reading": "らいしゅう",
+    "english": "next week"
+   },
+   {
+    "word": "来日",
+    "reading": "らいにち",
+    "english": "visit to Japan"
+   }
+  ]
+ },
+ {
+  "no": 102,
+  "kanji": "住",
+  "lesson": 10,
+  "on": [
+   "じゅう"
+  ],
+  "kun": [
+   "す"
+  ],
+  "meaning": "to live",
+  "compounds": [
+   {
+    "word": "住む",
+    "reading": "すむ",
+    "english": "to live"
+   },
+   {
+    "word": "住所",
+    "reading": "じゅうしょ",
+    "english": "address"
+   },
+   {
+    "word": "移住する",
+    "reading": "いじゅうする",
+    "english": "to immigrate"
+   }
+  ]
+ },
+ {
+  "no": 103,
+  "kanji": "正",
+  "lesson": 10,
+  "on": [
+   "しょう",
+   "せい"
+  ],
+  "kun": [
+   "ただ"
+  ],
+  "meaning": "right",
+  "compounds": [
+   {
+    "word": "お正月",
+    "reading": "おしょうがつ",
+    "english": "New Year"
+   },
+   {
+    "word": "正しい",
+    "reading": "ただしい",
+    "english": "right"
+   },
+   {
+    "word": "正午",
+    "reading": "しょうご",
+    "english": "noon"
+   },
+   {
+    "word": "正解",
+    "reading": "せいかい",
+    "english": "correct answer"
+   }
+  ]
+ },
+ {
+  "no": 104,
+  "kanji": "年",
+  "lesson": 10,
+  "on": [
+   "ねん"
+  ],
+  "kun": [
+   "とし"
+  ],
+  "meaning": "year",
+  "compounds": [
+   {
+    "word": "三年生",
+    "reading": "さんねんせい",
+    "english": "third-year student"
+   },
+   {
+    "word": "来年",
+    "reading": "らいねん",
+    "english": "next year"
+   },
+   {
+    "word": "今年",
+    "reading": "ことし",
+    "english": "this year"
+   },
+   {
+    "word": "年",
+    "reading": "とし",
+    "english": "year"
+   }
+  ]
+ },
+ {
+  "no": 105,
+  "kanji": "売",
+  "lesson": 10,
+  "on": [
+   "ばい"
+  ],
+  "kun": [
+   "う"
+  ],
+  "meaning": "to sell",
+  "compounds": [
+   {
+    "word": "売る",
+    "reading": "うる",
+    "english": "to sell"
+   },
+   {
+    "word": "売店",
+    "reading": "ばいてん",
+    "english": "stand, stall"
+   },
+   {
+    "word": "自動販売機",
+    "reading": "じどうはんばいき",
+    "english": "vending machine"
+   }
+  ]
+ },
+ {
+  "no": 106,
+  "kanji": "買",
+  "lesson": 10,
+  "on": [
+   "ばい"
+  ],
+  "kun": [
+   "か"
+  ],
+  "meaning": "to buy",
+  "compounds": [
+   {
+    "word": "買う",
+    "reading": "かう",
+    "english": "to buy"
+   },
+   {
+    "word": "買い物",
+    "reading": "かいもの",
+    "english": "shopping"
+   },
+   {
+    "word": "売買",
+    "reading": "ばいばい",
+    "english": "selling and buying"
+   }
+  ]
+ },
+ {
+  "no": 107,
+  "kanji": "町",
+  "lesson": 10,
+  "on": [
+   "ちょう"
+  ],
+  "kun": [
+   "まち"
+  ],
+  "meaning": "town",
+  "compounds": [
+   {
+    "word": "町",
+    "reading": "まち",
+    "english": "town"
+   },
+   {
+    "word": "北山町",
+    "reading": "きたやまちょう",
+    "english": "Kitayama Town"
+   },
+   {
+    "word": "町長",
+    "reading": "ちょうちょう",
+    "english": "mayor of a town"
+   }
+  ]
+ },
+ {
+  "no": 108,
+  "kanji": "長",
+  "lesson": 10,
+  "on": [
+   "ちょう"
+  ],
+  "kun": [
+   "なが"
+  ],
+  "meaning": "long",
+  "compounds": [
+   {
+    "word": "長い",
+    "reading": "ながい",
+    "english": "long"
+   },
+   {
+    "word": "長男",
+    "reading": "ちょうなん",
+    "english": "the eldest son"
+   },
+   {
+    "word": "社長",
+    "reading": "しゃちょう",
+    "english": "company president"
+   }
+  ]
+ },
+ {
+  "no": 109,
+  "kanji": "道",
+  "lesson": 10,
+  "on": [
+   "どう"
+  ],
+  "kun": [
+   "みち"
+  ],
+  "meaning": "way",
+  "compounds": [
+   {
+    "word": "道",
+    "reading": "みち",
+    "english": "way, road"
+   },
+   {
+    "word": "書道",
+    "reading": "しょどう",
+    "english": "calligraphy"
+   },
+   {
+    "word": "柔道",
+    "reading": "じゅうどう",
+    "english": "judo"
+   },
+   {
+    "word": "北海道",
+    "reading": "ほっかいどう",
+    "english": "Hokkaido"
+   }
+  ]
+ },
+ {
+  "no": 110,
+  "kanji": "雪",
+  "lesson": 10,
+  "on": [
+   "せつ"
+  ],
+  "kun": [
+   "ゆき"
+  ],
+  "meaning": "snow",
+  "compounds": [
+   {
+    "word": "雪",
+    "reading": "ゆき",
+    "english": "snow"
+   },
+   {
+    "word": "新雪",
+    "reading": "しんせつ",
+    "english": "new snow"
+   },
+   {
+    "word": "雪だるま",
+    "reading": "ゆきだるま",
+    "english": "snowman"
+   }
+  ]
+ },
+ {
+  "no": 111,
+  "kanji": "立",
+  "lesson": 10,
+  "on": [
+   "りつ"
+  ],
+  "kun": [
+   "た"
+  ],
+  "meaning": "to stand",
+  "compounds": [
+   {
+    "word": "立つ",
+    "reading": "たつ",
+    "english": "to stand"
+   },
+   {
+    "word": "国立大学",
+    "reading": "こくりつだいがく",
+    "english": "national university"
+   },
+   {
+    "word": "私立高校",
+    "reading": "しりつこうこう",
+    "english": "private high school"
+   }
+  ]
+ },
+ {
+  "no": 112,
+  "kanji": "自",
+  "lesson": 10,
+  "on": [
+   "じ"
+  ],
+  "kun": [],
+  "meaning": "self",
+  "compounds": [
+   {
+    "word": "自分",
+    "reading": "じぶん",
+    "english": "oneself"
+   },
+   {
+    "word": "自動車",
+    "reading": "じどうしゃ",
+    "english": "automobile"
+   },
+   {
+    "word": "自転車",
+    "reading": "じてんしゃ",
+    "english": "bicycle"
+   },
+   {
+    "word": "自由",
+    "reading": "じゆう",
+    "english": "freedom"
+   }
+  ]
+ },
+ {
+  "no": 113,
+  "kanji": "夜",
+  "lesson": 10,
+  "on": [
+   "や"
+  ],
+  "kun": [
+   "よる",
+   "よ"
+  ],
+  "meaning": "night",
+  "compounds": [
+   {
+    "word": "夜",
+    "reading": "よる",
+    "english": "night"
+   },
+   {
+    "word": "夜中",
+    "reading": "よなか",
+    "english": "middle of night"
+   },
+   {
+    "word": "今夜",
+    "reading": "こんや",
+    "english": "tonight"
+   },
+   {
+    "word": "夜明け",
+    "reading": "よあけ",
+    "english": "dawn"
+   }
+  ]
+ },
+ {
+  "no": 114,
+  "kanji": "朝",
+  "lesson": 10,
+  "on": [
+   "ちょう"
+  ],
+  "kun": [
+   "あさ"
+  ],
+  "meaning": "morning",
+  "compounds": [
+   {
+    "word": "朝",
+    "reading": "あさ",
+    "english": "morning"
+   },
+   {
+    "word": "今朝",
+    "reading": "けさ",
+    "english": "this morning"
+   },
+   {
+    "word": "朝食",
+    "reading": "ちょうしょく",
+    "english": "breakfast"
+   },
+   {
+    "word": "毎朝",
+    "reading": "まいあさ",
+    "english": "every morning"
+   }
+  ]
+ },
+ {
+  "no": 115,
+  "kanji": "持",
+  "lesson": 10,
+  "on": [
+   "じ"
+  ],
+  "kun": [
+   "も"
+  ],
+  "meaning": "to hold",
+  "compounds": [
+   {
+    "word": "持つ",
+    "reading": "もつ",
+    "english": "to carry, to hold"
+   },
+   {
+    "word": "持ってくる",
+    "reading": "もってくる",
+    "english": "to bring"
+   },
+   {
+    "word": "所持品",
+    "reading": "しょじひん",
+    "english": "belongings"
+   },
+   {
+    "word": "気持ち",
+    "reading": "きもち",
+    "english": "feeling"
+   }
+  ]
+ },
+ {
+  "no": 116,
+  "kanji": "手",
+  "lesson": 11,
+  "on": [
+   "しゅ"
+  ],
+  "kun": [
+   "て"
+  ],
+  "meaning": "hand",
+  "compounds": [
+   {
+    "word": "手紙",
+    "reading": "てがみ",
+    "english": "letter"
+   },
+   {
+    "word": "歌手",
+    "reading": "かしゅ",
+    "english": "singer"
+   },
+   {
+    "word": "手",
+    "reading": "て",
+    "english": "hand"
+   },
+   {
+    "word": "手話",
+    "reading": "しゅわ",
+    "english": "sign language"
+   },
+   {
+    "word": "上手な",
+    "reading": "じょうずな",
+    "english": "good at"
+   }
+  ]
+ },
+ {
+  "no": 117,
+  "kanji": "紙",
+  "lesson": 11,
+  "on": [
+   "し"
+  ],
+  "kun": [
+   "がみ",
+   "かみ"
+  ],
+  "meaning": "paper",
+  "compounds": [
+   {
+    "word": "手紙",
+    "reading": "てがみ",
+    "english": "letter"
+   },
+   {
+    "word": "紙",
+    "reading": "かみ",
+    "english": "paper"
+   },
+   {
+    "word": "和紙",
+    "reading": "わし",
+    "english": "Japanese paper"
+   },
+   {
+    "word": "表紙",
+    "reading": "ひょうし",
+    "english": "cover page"
+   },
+   {
+    "word": "折り紙",
+    "reading": "おりがみ",
+    "english": "origami"
+   }
+  ]
+ },
+ {
+  "no": 118,
+  "kanji": "好",
+  "lesson": 11,
+  "on": [
+   "こう"
+  ],
+  "kun": [
+   "す",
+   "この"
+  ],
+  "meaning": "favorite; to like",
+  "compounds": [
+   {
+    "word": "好きな",
+    "reading": "すきな",
+    "english": "to like"
+   },
+   {
+    "word": "大好きな",
+    "reading": "だいすきな",
+    "english": "to love"
+   },
+   {
+    "word": "好意",
+    "reading": "こうい",
+    "english": "goodwill"
+   },
+   {
+    "word": "好み",
+    "reading": "このみ",
+    "english": "liking, taste"
+   },
+   {
+    "word": "好物",
+    "reading": "こうぶつ",
+    "english": "favorite food"
+   }
+  ]
+ },
+ {
+  "no": 119,
+  "kanji": "近",
+  "lesson": 11,
+  "on": [
+   "きん"
+  ],
+  "kun": [
+   "ちか"
+  ],
+  "meaning": "near",
+  "compounds": [
+   {
+    "word": "近く",
+    "reading": "ちかく",
+    "english": "near, nearby"
+   },
+   {
+    "word": "近所",
+    "reading": "きんじょ",
+    "english": "neighborhood"
+   },
+   {
+    "word": "最近",
+    "reading": "さいきん",
+    "english": "recently"
+   },
+   {
+    "word": "中近東",
+    "reading": "ちゅうきんとう",
+    "english": "the Middle and Near East"
+   }
+  ]
+ },
+ {
+  "no": 120,
+  "kanji": "明",
+  "lesson": 11,
+  "on": [
+   "めい"
+  ],
+  "kun": [
+   "あか"
+  ],
+  "meaning": "bright",
+  "compounds": [
+   {
+    "word": "明るい",
+    "reading": "あかるい",
+    "english": "cheerful, bright"
+   },
+   {
+    "word": "明日",
+    "reading": "あした",
+    "english": "tomorrow"
+   },
+   {
+    "word": "説明",
+    "reading": "せつめい",
+    "english": "explanation"
+   },
+   {
+    "word": "発明",
+    "reading": "はつめい",
+    "english": "invention"
+   },
+   {
+    "word": "文明",
+    "reading": "ぶんめい",
+    "english": "civilization"
+   }
+  ]
+ },
+ {
+  "no": 121,
+  "kanji": "病",
+  "lesson": 11,
+  "on": [
+   "びょう"
+  ],
+  "kun": [],
+  "meaning": "ill; sick",
+  "compounds": [
+   {
+    "word": "病院",
+    "reading": "びょういん",
+    "english": "hospital"
+   },
+   {
+    "word": "病気",
+    "reading": "びょうき",
+    "english": "illness"
+   },
+   {
+    "word": "重病",
+    "reading": "じゅうびょう",
+    "english": "serious illness"
+   },
+   {
+    "word": "急病",
+    "reading": "きゅうびょう",
+    "english": "sudden illness"
+   }
+  ]
+ },
+ {
+  "no": 122,
+  "kanji": "院",
+  "lesson": 11,
+  "on": [
+   "いん"
+  ],
+  "kun": [],
+  "meaning": "institution",
+  "compounds": [
+   {
+    "word": "病院",
+    "reading": "びょういん",
+    "english": "hospital"
+   },
+   {
+    "word": "大学院",
+    "reading": "だいがくいん",
+    "english": "graduate school"
+   },
+   {
+    "word": "美容院",
+    "reading": "びよういん",
+    "english": "beauty parlor"
+   }
+  ]
+ },
+ {
+  "no": 123,
+  "kanji": "映",
+  "lesson": 11,
+  "on": [
+   "えい"
+  ],
+  "kun": [
+   "うつ"
+  ],
+  "meaning": "to reflect",
+  "compounds": [
+   {
+    "word": "映画",
+    "reading": "えいが",
+    "english": "movie"
+   },
+   {
+    "word": "映画館",
+    "reading": "えいがかん",
+    "english": "movie theater"
+   },
+   {
+    "word": "映る",
+    "reading": "うつる",
+    "english": "to be reflected"
+   }
+  ]
+ },
+ {
+  "no": 124,
+  "kanji": "画",
+  "lesson": 11,
+  "on": [
+   "が",
+   "かく"
+  ],
+  "kun": [],
+  "meaning": "picture",
+  "compounds": [
+   {
+    "word": "映画",
+    "reading": "えいが",
+    "english": "movie"
+   },
+   {
+    "word": "画家",
+    "reading": "がか",
+    "english": "painter"
+   },
+   {
+    "word": "計画",
+    "reading": "けいかく",
+    "english": "plan"
+   },
+   {
+    "word": "漫画",
+    "reading": "まんが",
+    "english": "comic"
+   }
+  ]
+ },
+ {
+  "no": 125,
+  "kanji": "歌",
+  "lesson": 11,
+  "on": [
+   "か"
+  ],
+  "kun": [
+   "うた"
+  ],
+  "meaning": "to sing",
+  "compounds": [
+   {
+    "word": "歌う",
+    "reading": "うたう",
+    "english": "to sing"
+   },
+   {
+    "word": "歌",
+    "reading": "うた",
+    "english": "song"
+   },
+   {
+    "word": "歌手",
+    "reading": "かしゅ",
+    "english": "singer"
+   },
+   {
+    "word": "国歌",
+    "reading": "こっか",
+    "english": "national anthem"
+   },
+   {
+    "word": "歌舞伎",
+    "reading": "かぶき",
+    "english": "Kabuki"
+   },
+   {
+    "word": "歌詞",
+    "reading": "かし",
+    "english": "lyrics"
+   }
+  ]
+ },
+ {
+  "no": 126,
+  "kanji": "市",
+  "lesson": 11,
+  "on": [
+   "し"
+  ],
+  "kun": [
+   "いち"
+  ],
+  "meaning": "city",
+  "compounds": [
+   {
+    "word": "川口市",
+    "reading": "かわぐちし",
+    "english": "Kawaguchi City"
+   },
+   {
+    "word": "市役所",
+    "reading": "しやくしょ",
+    "english": "city hall"
+   },
+   {
+    "word": "市長",
+    "reading": "しちょう",
+    "english": "mayor"
+   },
+   {
+    "word": "市場",
+    "reading": "いちば",
+    "english": "market"
+   }
+  ]
+ },
+ {
+  "no": 127,
+  "kanji": "所",
+  "lesson": 11,
+  "on": [
+   "じょ",
+   "しょ"
+  ],
+  "kun": [
+   "ところ",
+   "どころ"
+  ],
+  "meaning": "place",
+  "compounds": [
+   {
+    "word": "いろいろな所",
+    "reading": "ところ",
+    "english": "various places"
+   },
+   {
+    "word": "近所",
+    "reading": "きんじょ",
+    "english": "neighborhood"
+   },
+   {
+    "word": "台所",
+    "reading": "だいどころ",
+    "english": "kitchen"
+   },
+   {
+    "word": "住所",
+    "reading": "じゅうしょ",
+    "english": "address"
+   }
+  ]
+ },
+ {
+  "no": 128,
+  "kanji": "勉",
+  "lesson": 11,
+  "on": [
+   "べん"
+  ],
+  "kun": [
+   "つと"
+  ],
+  "meaning": "to make efforts",
+  "compounds": [
+   {
+    "word": "勉強する",
+    "reading": "べんきょうする",
+    "english": "to study"
+   },
+   {
+    "word": "勉める",
+    "reading": "つとめる",
+    "english": "to try hard"
+   },
+   {
+    "word": "勤勉な",
+    "reading": "きんべんな",
+    "english": "diligent"
+   }
+  ]
+ },
+ {
+  "no": 129,
+  "kanji": "強",
+  "lesson": 11,
+  "on": [
+   "きょう",
+   "ごう"
+  ],
+  "kun": [
+   "つよ"
+  ],
+  "meaning": "strong",
+  "compounds": [
+   {
+    "word": "勉強する",
+    "reading": "べんきょうする",
+    "english": "to study"
+   },
+   {
+    "word": "強い",
+    "reading": "つよい",
+    "english": "strong"
+   },
+   {
+    "word": "強情な",
+    "reading": "ごうじょうな",
+    "english": "obstinate"
+   },
+   {
+    "word": "強盗",
+    "reading": "ごうとう",
+    "english": "robbery"
+   },
+   {
+    "word": "強力な",
+    "reading": "きょうりょくな",
+    "english": "powerful"
+   }
+  ]
+ },
+ {
+  "no": 130,
+  "kanji": "有",
+  "lesson": 11,
+  "on": [
+   "ゆう"
+  ],
+  "kun": [
+   "あ"
+  ],
+  "meaning": "to exist",
+  "compounds": [
+   {
+    "word": "有名な",
+    "reading": "ゆうめいな",
+    "english": "famous"
+   },
+   {
+    "word": "有料",
+    "reading": "ゆうりょう",
+    "english": "toll, fee"
+   },
+   {
+    "word": "有る",
+    "reading": "ある",
+    "english": "to exist"
+   },
+   {
+    "word": "有能な",
+    "reading": "ゆうのうな",
+    "english": "talented"
+   }
+  ]
+ },
+ {
+  "no": 131,
+  "kanji": "旅",
+  "lesson": 11,
+  "on": [
+   "りょ"
+  ],
+  "kun": [
+   "たび"
+  ],
+  "meaning": "travel",
+  "compounds": [
+   {
+    "word": "旅行",
+    "reading": "りょこう",
+    "english": "travel"
+   },
+   {
+    "word": "旅館",
+    "reading": "りょかん",
+    "english": "Japanese inn"
+   },
+   {
+    "word": "一人旅",
+    "reading": "ひとりたび",
+    "english": "traveling alone"
+   },
+   {
+    "word": "旅券",
+    "reading": "りょけん",
+    "english": "passport"
+   }
+  ]
+ },
+ {
+  "no": 132,
+  "kanji": "昔",
+  "lesson": 12,
+  "on": [],
+  "kun": [
+   "むかし"
+  ],
+  "meaning": "ancient times",
+  "compounds": [
+   {
+    "word": "昔",
+    "reading": "むかし",
+    "english": "old times"
+   },
+   {
+    "word": "昔話",
+    "reading": "むかしばなし",
+    "english": "old tale"
+   },
+   {
+    "word": "大昔",
+    "reading": "おおむかし",
+    "english": "ancient times"
+   }
+  ]
+ },
+ {
+  "no": 133,
+  "kanji": "々",
+  "lesson": 12,
+  "on": [],
+  "kun": [],
+  "meaning": "symbol of repetition of a kanji",
+  "compounds": [
+   {
+    "word": "昔々",
+    "reading": "むかしむかし",
+    "english": "once upon a time"
+   },
+   {
+    "word": "人々",
+    "reading": "ひとびと",
+    "english": "people"
+   },
+   {
+    "word": "時々",
+    "reading": "ときどき",
+    "english": "sometimes"
+   },
+   {
+    "word": "色々な",
+    "reading": "いろいろな",
+    "english": "various"
+   }
+  ]
+ },
+ {
+  "no": 134,
+  "kanji": "神",
+  "lesson": 12,
+  "on": [
+   "じん",
+   "しん",
+   "こう"
+  ],
+  "kun": [
+   "かみ"
+  ],
+  "meaning": "God",
+  "compounds": [
+   {
+    "word": "神さま",
+    "reading": "かみさま",
+    "english": "God"
+   },
+   {
+    "word": "神社",
+    "reading": "じんじゃ",
+    "english": "shrine"
+   },
+   {
+    "word": "神道",
+    "reading": "しんとう",
+    "english": "Shinto"
+   },
+   {
+    "word": "神戸市",
+    "reading": "こうべし",
+    "english": "Kobe City"
+   }
+  ]
+ },
+ {
+  "no": 135,
+  "kanji": "早",
+  "lesson": 12,
+  "on": [
+   "そう"
+  ],
+  "kun": [
+   "はや"
+  ],
+  "meaning": "early",
+  "compounds": [
+   {
+    "word": "早い",
+    "reading": "はやい",
+    "english": "early"
+   },
+   {
+    "word": "早起きする",
+    "reading": "はやおきする",
+    "english": "to get up early"
+   },
+   {
+    "word": "早朝",
+    "reading": "そうちょう",
+    "english": "early morning"
+   }
+  ]
+ },
+ {
+  "no": 136,
+  "kanji": "起",
+  "lesson": 12,
+  "on": [
+   "き"
+  ],
+  "kun": [
+   "お"
+  ],
+  "meaning": "to get up",
+  "compounds": [
+   {
+    "word": "起きる",
+    "reading": "おきる",
+    "english": "to get up"
+   },
+   {
+    "word": "起こす",
+    "reading": "おこす",
+    "english": "to wake someone up"
+   },
+   {
+    "word": "再起動",
+    "reading": "さいきどう",
+    "english": "reboot"
+   }
+  ]
+ },
+ {
+  "no": 137,
+  "kanji": "牛",
+  "lesson": 12,
+  "on": [
+   "ぎゅう"
+  ],
+  "kun": [
+   "うし"
+  ],
+  "meaning": "cow",
+  "compounds": [
+   {
+    "word": "牛",
+    "reading": "うし",
+    "english": "cow"
+   },
+   {
+    "word": "牛乳",
+    "reading": "ぎゅうにゅう",
+    "english": "milk"
+   },
+   {
+    "word": "牛肉",
+    "reading": "ぎゅうにく",
+    "english": "beef"
+   },
+   {
+    "word": "子牛",
+    "reading": "こうし",
+    "english": "calf, veal"
+   }
+  ]
+ },
+ {
+  "no": 138,
+  "kanji": "使",
+  "lesson": 12,
+  "on": [
+   "し"
+  ],
+  "kun": [
+   "つか"
+  ],
+  "meaning": "to use",
+  "compounds": [
+   {
+    "word": "使う",
+    "reading": "つかう",
+    "english": "to use"
+   },
+   {
+    "word": "大使",
+    "reading": "たいし",
+    "english": "ambassador"
+   },
+   {
+    "word": "使用中",
+    "reading": "しようちゅう",
+    "english": "Occupied"
+   },
+   {
+    "word": "お使い",
+    "reading": "おつかい",
+    "english": "errand"
+   }
+  ]
+ },
+ {
+  "no": 139,
+  "kanji": "働",
+  "lesson": 12,
+  "on": [
+   "どう"
+  ],
+  "kun": [
+   "はたら",
+   "ばたら"
+  ],
+  "meaning": "to work",
+  "compounds": [
+   {
+    "word": "働く",
+    "reading": "はたらく",
+    "english": "to work"
+   },
+   {
+    "word": "共働き",
+    "reading": "ともばたらき",
+    "english": "both husband and wife working"
+   },
+   {
+    "word": "労働",
+    "reading": "ろうどう",
+    "english": "labor"
+   }
+  ]
+ },
+ {
+  "no": 140,
+  "kanji": "連",
+  "lesson": 12,
+  "on": [
+   "れん"
+  ],
+  "kun": [
+   "つ"
+  ],
+  "meaning": "to link",
+  "compounds": [
+   {
+    "word": "連れて帰る",
+    "reading": "つれてかえる",
+    "english": "to bring (a person) back"
+   },
+   {
+    "word": "国連",
+    "reading": "こくれん",
+    "english": "United Nations"
+   },
+   {
+    "word": "連休",
+    "reading": "れんきゅう",
+    "english": "consecutive holidays"
+   }
+  ]
+ },
+ {
+  "no": 141,
+  "kanji": "別",
+  "lesson": 12,
+  "on": [
+   "べつ"
+  ],
+  "kun": [
+   "わか"
+  ],
+  "meaning": "to separate",
+  "compounds": [
+   {
+    "word": "別れる",
+    "reading": "わかれる",
+    "english": "to separate"
+   },
+   {
+    "word": "別に",
+    "reading": "べつに",
+    "english": "not in particular"
+   },
+   {
+    "word": "特別な",
+    "reading": "とくべつな",
+    "english": "special"
+   },
+   {
+    "word": "差別",
+    "reading": "さべつ",
+    "english": "discrimination"
+   },
+   {
+    "word": "別々に",
+    "reading": "べつべつに",
+    "english": "separately"
+   }
+  ]
+ },
+ {
+  "no": 142,
+  "kanji": "度",
+  "lesson": 12,
+  "on": [
+   "ど"
+  ],
+  "kun": [],
+  "meaning": "time; degrees",
+  "compounds": [
+   {
+    "word": "一度",
+    "reading": "いちど",
+    "english": "once"
+   },
+   {
+    "word": "今度",
+    "reading": "こんど",
+    "english": "near future"
+   },
+   {
+    "word": "温度",
+    "reading": "おんど",
+    "english": "temperature"
+   },
+   {
+    "word": "三十度",
+    "reading": "さんじゅうど",
+    "english": "30 degrees"
+   },
+   {
+    "word": "態度",
+    "reading": "たいど",
+    "english": "attitude"
+   }
+  ]
+ },
+ {
+  "no": 143,
+  "kanji": "赤",
+  "lesson": 12,
+  "on": [
+   "せき"
+  ],
+  "kun": [
+   "あか"
+  ],
+  "meaning": "red",
+  "compounds": [
+   {
+    "word": "赤",
+    "reading": "あか",
+    "english": "red color"
+   },
+   {
+    "word": "赤い",
+    "reading": "あかい",
+    "english": "red"
+   },
+   {
+    "word": "赤ちゃん",
+    "reading": "あかちゃん",
+    "english": "baby"
+   },
+   {
+    "word": "赤道",
+    "reading": "せきどう",
+    "english": "the equator"
+   },
+   {
+    "word": "赤十字",
+    "reading": "せきじゅうじ",
+    "english": "the Red Cross"
+   }
+  ]
+ },
+ {
+  "no": 144,
+  "kanji": "青",
+  "lesson": 12,
+  "on": [
+   "せい"
+  ],
+  "kun": [
+   "あお"
+  ],
+  "meaning": "blue",
+  "compounds": [
+   {
+    "word": "青",
+    "reading": "あお",
+    "english": "blue color"
+   },
+   {
+    "word": "青い",
+    "reading": "あおい",
+    "english": "blue"
+   },
+   {
+    "word": "青年",
+    "reading": "せいねん",
+    "english": "youth"
+   },
+   {
+    "word": "青空",
+    "reading": "あおぞら",
+    "english": "blue sky"
+   },
+   {
+    "word": "青信号",
+    "reading": "あおしんごう",
+    "english": "green light"
+   }
+  ]
+ },
+ {
+  "no": 145,
+  "kanji": "色",
+  "lesson": 12,
+  "on": [
+   "しき",
+   "しょく"
+  ],
+  "kun": [
+   "いろ"
+  ],
+  "meaning": "color",
+  "compounds": [
+   {
+    "word": "色",
+    "reading": "いろ",
+    "english": "color"
+   },
+   {
+    "word": "色々な",
+    "reading": "いろいろな",
+    "english": "various"
+   },
+   {
+    "word": "景色",
+    "reading": "けしき",
+    "english": "scenery"
+   },
+   {
+    "word": "特色",
+    "reading": "とくしょく",
+    "english": "characteristic"
+   }
+  ]
+ },
+ {
+  "no": 146,
+  "kanji": "物",
+  "lesson": 13,
+  "on": [
+   "ぶつ",
+   "ぶっ"
+  ],
+  "kun": [
+   "もの"
+  ],
+  "meaning": "thing",
+  "compounds": [
+   {
+    "word": "食べ物",
+    "reading": "たべもの",
+    "english": "food"
+   },
+   {
+    "word": "飲み物",
+    "reading": "のみもの",
+    "english": "drink"
+   },
+   {
+    "word": "物",
+    "reading": "もの",
+    "english": "things"
+   },
+   {
+    "word": "買い物",
+    "reading": "かいもの",
+    "english": "shopping"
+   },
+   {
+    "word": "動物",
+    "reading": "どうぶつ",
+    "english": "animal"
+   },
+   {
+    "word": "物価",
+    "reading": "ぶっか",
+    "english": "commodity prices"
+   }
+  ]
+ },
+ {
+  "no": 147,
+  "kanji": "鳥",
+  "lesson": 13,
+  "on": [
+   "ちょう"
+  ],
+  "kun": [
+   "とり"
+  ],
+  "meaning": "bird",
+  "compounds": [
+   {
+    "word": "鳥",
+    "reading": "とり",
+    "english": "bird, poultry"
+   },
+   {
+    "word": "焼き鳥",
+    "reading": "やきとり",
+    "english": "grilled chicken"
+   },
+   {
+    "word": "白鳥",
+    "reading": "はくちょう",
+    "english": "swan"
+   }
+  ]
+ },
+ {
+  "no": 148,
+  "kanji": "料",
+  "lesson": 13,
+  "on": [
+   "りょう"
+  ],
+  "kun": [],
+  "meaning": "ingredients; fare",
+  "compounds": [
+   {
+    "word": "料理",
+    "reading": "りょうり",
+    "english": "cooking"
+   },
+   {
+    "word": "料金",
+    "reading": "りょうきん",
+    "english": "charge"
+   },
+   {
+    "word": "授業料",
+    "reading": "じゅぎょうりょう",
+    "english": "tuition"
+   },
+   {
+    "word": "給料",
+    "reading": "きゅうりょう",
+    "english": "salary"
+   }
+  ]
+ },
+ {
+  "no": 149,
+  "kanji": "理",
+  "lesson": 13,
+  "on": [
+   "り"
+  ],
+  "kun": [],
+  "meaning": "reason",
+  "compounds": [
+   {
+    "word": "料理",
+    "reading": "りょうり",
+    "english": "cooking"
+   },
+   {
+    "word": "理由",
+    "reading": "りゆう",
+    "english": "reason"
+   },
+   {
+    "word": "地理",
+    "reading": "ちり",
+    "english": "geography"
+   },
+   {
+    "word": "無理な",
+    "reading": "むりな",
+    "english": "impossible"
+   }
+  ]
+ },
+ {
+  "no": 150,
+  "kanji": "特",
+  "lesson": 13,
+  "on": [
+   "とく",
+   "とっ"
+  ],
+  "kun": [],
+  "meaning": "special",
+  "compounds": [
+   {
+    "word": "特に",
+    "reading": "とくに",
+    "english": "especially"
+   },
+   {
+    "word": "特別な",
+    "reading": "とくべつな",
+    "english": "special"
+   },
+   {
+    "word": "特徴",
+    "reading": "とくちょう",
+    "english": "characteristic"
+   },
+   {
+    "word": "特急",
+    "reading": "とっきゅう",
+    "english": "super express"
+   }
+  ]
+ },
+ {
+  "no": 151,
+  "kanji": "安",
+  "lesson": 13,
+  "on": [
+   "あん"
+  ],
+  "kun": [
+   "やす"
+  ],
+  "meaning": "cheap; ease",
+  "compounds": [
+   {
+    "word": "安い",
+    "reading": "やすい",
+    "english": "cheap"
+   },
+   {
+    "word": "安全な",
+    "reading": "あんぜんな",
+    "english": "safe"
+   },
+   {
+    "word": "安心",
+    "reading": "あんしん",
+    "english": "relief"
+   },
+   {
+    "word": "不安な",
+    "reading": "ふあんな",
+    "english": "anxious, worried"
+   }
+  ]
+ },
+ {
+  "no": 152,
+  "kanji": "飯",
+  "lesson": 13,
+  "on": [
+   "はん"
+  ],
+  "kun": [],
+  "meaning": "food; cooked rice",
+  "compounds": [
+   {
+    "word": "ご飯",
+    "reading": "ごはん",
+    "english": "rice, meal"
+   },
+   {
+    "word": "朝ご飯",
+    "reading": "あさごはん",
+    "english": "breakfast"
+   },
+   {
+    "word": "昼ご飯",
+    "reading": "ひるごはん",
+    "english": "lunch"
+   },
+   {
+    "word": "晩ご飯",
+    "reading": "ばんごはん",
+    "english": "dinner"
+   }
+  ]
+ },
+ {
+  "no": 153,
+  "kanji": "肉",
+  "lesson": 13,
+  "on": [
+   "にく"
+  ],
+  "kun": [],
+  "meaning": "meat",
+  "compounds": [
+   {
+    "word": "肉",
+    "reading": "にく",
+    "english": "meat"
+   },
+   {
+    "word": "牛肉",
+    "reading": "ぎゅうにく",
+    "english": "beef"
+   },
+   {
+    "word": "豚肉",
+    "reading": "ぶたにく",
+    "english": "pork"
+   },
+   {
+    "word": "肉屋",
+    "reading": "にくや",
+    "english": "meat shop"
+   },
+   {
+    "word": "筋肉",
+    "reading": "きんにく",
+    "english": "muscle"
+   }
+  ]
+ },
+ {
+  "no": 154,
+  "kanji": "悪",
+  "lesson": 13,
+  "on": [
+   "あく"
+  ],
+  "kun": [
+   "わる"
+  ],
+  "meaning": "bad; wrong",
+  "compounds": [
+   {
+    "word": "悪い",
+    "reading": "わるい",
+    "english": "bad"
+   },
+   {
+    "word": "気分が悪い",
+    "reading": "きぶんがわるい",
+    "english": "to feel sick"
+   },
+   {
+    "word": "最悪",
+    "reading": "さいあく",
+    "english": "the worst"
+   },
+   {
+    "word": "悪魔",
+    "reading": "あくま",
+    "english": "devil"
+   }
+  ]
+ },
+ {
+  "no": 155,
+  "kanji": "体",
+  "lesson": 13,
+  "on": [
+   "たい"
+  ],
+  "kun": [
+   "からだ"
+  ],
+  "meaning": "body",
+  "compounds": [
+   {
+    "word": "体",
+    "reading": "からだ",
+    "english": "body"
+   },
+   {
+    "word": "体重",
+    "reading": "たいじゅう",
+    "english": "body weight"
+   },
+   {
+    "word": "体操",
+    "reading": "たいそう",
+    "english": "gymnastics, physical exercises"
+   }
+  ]
+ },
+ {
+  "no": 156,
+  "kanji": "同",
+  "lesson": 13,
+  "on": [
+   "どう"
+  ],
+  "kun": [
+   "おな"
+  ],
+  "meaning": "same",
+  "compounds": [
+   {
+    "word": "同じ",
+    "reading": "おなじ",
+    "english": "same"
+   },
+   {
+    "word": "同僚",
+    "reading": "どうりょう",
+    "english": "coworker"
+   },
+   {
+    "word": "同級生",
+    "reading": "どうきゅうせい",
+    "english": "classmate"
+   },
+   {
+    "word": "同時",
+    "reading": "どうじ",
+    "english": "same time"
+   }
+  ]
+ },
+ {
+  "no": 157,
+  "kanji": "着",
+  "lesson": 13,
+  "on": [
+   "ちゃく"
+  ],
+  "kun": [
+   "つ",
+   "き",
+   "ぎ"
+  ],
+  "meaning": "to reach; to wear",
+  "compounds": [
+   {
+    "word": "着く",
+    "reading": "つく",
+    "english": "to arrive"
+   },
+   {
+    "word": "着る",
+    "reading": "きる",
+    "english": "to wear"
+   },
+   {
+    "word": "着物",
+    "reading": "きもの",
+    "english": "kimono"
+   },
+   {
+    "word": "水着",
+    "reading": "みずぎ",
+    "english": "swimwear"
+   },
+   {
+    "word": "大阪着",
+    "reading": "おおさかちゃく",
+    "english": "arriving at Osaka"
+   }
+  ]
+ },
+ {
+  "no": 158,
+  "kanji": "空",
+  "lesson": 13,
+  "on": [
+   "くう"
+  ],
+  "kun": [
+   "そら",
+   "あ",
+   "から"
+  ],
+  "meaning": "sky; empty",
+  "compounds": [
+   {
+    "word": "空港",
+    "reading": "くうこう",
+    "english": "airport"
+   },
+   {
+    "word": "空気",
+    "reading": "くうき",
+    "english": "air"
+   },
+   {
+    "word": "空",
+    "reading": "そら",
+    "english": "sky"
+   },
+   {
+    "word": "空く",
+    "reading": "あく",
+    "english": "to be vacant"
+   },
+   {
+    "word": "空手",
+    "reading": "からて",
+    "english": "karate"
+   }
+  ]
+ },
+ {
+  "no": 159,
+  "kanji": "港",
+  "lesson": 13,
+  "on": [
+   "こう"
+  ],
+  "kun": [
+   "みなと"
+  ],
+  "meaning": "port; harbor",
+  "compounds": [
+   {
+    "word": "空港",
+    "reading": "くうこう",
+    "english": "airport"
+   },
+   {
+    "word": "神戸港",
+    "reading": "こうべこう",
+    "english": "Kobe Port"
+   },
+   {
+    "word": "港",
+    "reading": "みなと",
+    "english": "port"
+   },
+   {
+    "word": "香港",
+    "reading": "ホンコン",
+    "english": "Hong Kong"
+   }
+  ]
+ },
+ {
+  "no": 160,
+  "kanji": "昼",
+  "lesson": 13,
+  "on": [
+   "ちゅう"
+  ],
+  "kun": [
+   "ひる"
+  ],
+  "meaning": "noon; daytime",
+  "compounds": [
+   {
+    "word": "昼",
+    "reading": "ひる",
+    "english": "noon, daytime"
+   },
+   {
+    "word": "昼ご飯",
+    "reading": "ひるごはん",
+    "english": "lunch"
+   },
+   {
+    "word": "昼寝",
+    "reading": "ひるね",
+    "english": "nap"
+   },
+   {
+    "word": "昼休み",
+    "reading": "ひるやすみ",
+    "english": "lunch break"
+   },
+   {
+    "word": "昼食",
+    "reading": "ちゅうしょく",
+    "english": "lunch"
+   }
+  ]
+ },
+ {
+  "no": 161,
+  "kanji": "海",
+  "lesson": 13,
+  "on": [
+   "かい"
+  ],
+  "kun": [
+   "うみ"
+  ],
+  "meaning": "sea",
+  "compounds": [
+   {
+    "word": "海",
+    "reading": "うみ",
+    "english": "sea"
+   },
+   {
+    "word": "日本海",
+    "reading": "にほんかい",
+    "english": "the Japan Sea"
+   },
+   {
+    "word": "海外",
+    "reading": "かいがい",
+    "english": "overseas"
+   },
+   {
+    "word": "海岸",
+    "reading": "かいがん",
+    "english": "coast"
+   },
+   {
+    "word": "北海道",
+    "reading": "ほっかいどう",
+    "english": "Hokkaido"
+   }
+  ]
+ },
+ {
+  "no": 162,
+  "kanji": "彼",
+  "lesson": 14,
+  "on": [],
+  "kun": [
+   "かれ",
+   "かの"
+  ],
+  "meaning": "he",
+  "compounds": [
+   {
+    "word": "彼",
+    "reading": "かれ",
+    "english": "he, boyfriend"
+   },
+   {
+    "word": "彼女",
+    "reading": "かのじょ",
+    "english": "she, girlfriend"
+   },
+   {
+    "word": "彼ら",
+    "reading": "かれら",
+    "english": "they"
+   },
+   {
+    "word": "彼氏",
+    "reading": "かれし",
+    "english": "boyfriend"
+   }
+  ]
+ },
+ {
+  "no": 163,
+  "kanji": "代",
+  "lesson": 14,
+  "on": [
+   "だい"
+  ],
+  "kun": [
+   "か"
+  ],
+  "meaning": "age; replace",
+  "compounds": [
+   {
+    "word": "時代",
+    "reading": "じだい",
+    "english": "age, era"
+   },
+   {
+    "word": "電気代",
+    "reading": "でんきだい",
+    "english": "electricity fee"
+   },
+   {
+    "word": "九十年代",
+    "reading": "きゅうじゅうねんだい",
+    "english": "90's"
+   },
+   {
+    "word": "十代",
+    "reading": "じゅうだい",
+    "english": "in one's teens"
+   },
+   {
+    "word": "代わりに",
+    "reading": "かわりに",
+    "english": "instead"
+   }
+  ]
+ },
+ {
+  "no": 164,
+  "kanji": "留",
+  "lesson": 14,
+  "on": [
+   "りゅう",
+   "る"
+  ],
+  "kun": [],
+  "meaning": "to stay; to keep",
+  "compounds": [
+   {
+    "word": "留学生",
+    "reading": "りゅうがくせい",
+    "english": "international students"
+   },
+   {
+    "word": "留学する",
+    "reading": "りゅうがくする",
+    "english": "to study abroad"
+   },
+   {
+    "word": "留守",
+    "reading": "るす",
+    "english": "absence, not at home"
+   }
+  ]
+ },
+ {
+  "no": 165,
+  "kanji": "族",
+  "lesson": 14,
+  "on": [
+   "ぞく"
+  ],
+  "kun": [],
+  "meaning": "family; tribe",
+  "compounds": [
+   {
+    "word": "家族",
+    "reading": "かぞく",
+    "english": "family"
+   },
+   {
+    "word": "民族",
+    "reading": "みんぞく",
+    "english": "ethnic group"
+   },
+   {
+    "word": "水族館",
+    "reading": "すいぞくかん",
+    "english": "aquarium"
+   },
+   {
+    "word": "王族",
+    "reading": "おうぞく",
+    "english": "member of royalty"
+   }
+  ]
+ },
+ {
+  "no": 166,
+  "kanji": "親",
+  "lesson": 14,
+  "on": [
+   "しん"
+  ],
+  "kun": [
+   "おや",
+   "した"
+  ],
+  "meaning": "parent; intimacy",
+  "compounds": [
+   {
+    "word": "父親",
+    "reading": "ちちおや",
+    "english": "father"
+   },
+   {
+    "word": "親切な",
+    "reading": "しんせつな",
+    "english": "kind"
+   },
+   {
+    "word": "親友",
+    "reading": "しんゆう",
+    "english": "best friend"
+   },
+   {
+    "word": "両親",
+    "reading": "りょうしん",
+    "english": "parents"
+   },
+   {
+    "word": "親しい",
+    "reading": "したしい",
+    "english": "intimate"
+   },
+   {
+    "word": "母親",
+    "reading": "ははおや",
+    "english": "mother"
+   }
+  ]
+ },
+ {
+  "no": 167,
+  "kanji": "切",
+  "lesson": 14,
+  "on": [
+   "せつ"
+  ],
+  "kun": [
+   "き",
+   "きっ"
+  ],
+  "meaning": "to cut",
+  "compounds": [
+   {
+    "word": "親切な",
+    "reading": "しんせつな",
+    "english": "kind"
+   },
+   {
+    "word": "切る",
+    "reading": "きる",
+    "english": "to cut"
+   },
+   {
+    "word": "切符",
+    "reading": "きっぷ",
+    "english": "ticket"
+   },
+   {
+    "word": "切手",
+    "reading": "きって",
+    "english": "postage stamp"
+   },
+   {
+    "word": "大切な",
+    "reading": "たいせつな",
+    "english": "precious"
+   }
+  ]
+ },
+ {
+  "no": 168,
+  "kanji": "英",
+  "lesson": 14,
+  "on": [
+   "えい"
+  ],
+  "kun": [],
+  "meaning": "English; excellent",
+  "compounds": [
+   {
+    "word": "英語",
+    "reading": "えいご",
+    "english": "English language"
+   },
+   {
+    "word": "英国",
+    "reading": "えいこく",
+    "english": "United Kingdom"
+   },
+   {
+    "word": "英会話",
+    "reading": "えいかいわ",
+    "english": "English conversation"
+   },
+   {
+    "word": "英雄",
+    "reading": "えいゆう",
+    "english": "hero"
+   }
+  ]
+ },
+ {
+  "no": 169,
+  "kanji": "店",
+  "lesson": 14,
+  "on": [
+   "てん"
+  ],
+  "kun": [
+   "みせ"
+  ],
+  "meaning": "shop",
+  "compounds": [
+   {
+    "word": "店",
+    "reading": "みせ",
+    "english": "shop"
+   },
+   {
+    "word": "店員",
+    "reading": "てんいん",
+    "english": "store clerk"
+   },
+   {
+    "word": "売店",
+    "reading": "ばいてん",
+    "english": "stall, kiosk"
+   },
+   {
+    "word": "書店",
+    "reading": "しょてん",
+    "english": "bookstore"
+   },
+   {
+    "word": "店長",
+    "reading": "てんちょう",
+    "english": "store manager"
+   }
+  ]
+ },
+ {
+  "no": 170,
+  "kanji": "去",
+  "lesson": 14,
+  "on": [
+   "きょ",
+   "こ"
+  ],
+  "kun": [
+   "さ"
+  ],
+  "meaning": "past; to leave",
+  "compounds": [
+   {
+    "word": "去年",
+    "reading": "きょねん",
+    "english": "last year"
+   },
+   {
+    "word": "過去",
+    "reading": "かこ",
+    "english": "the past"
+   },
+   {
+    "word": "去る",
+    "reading": "さる",
+    "english": "to leave"
+   },
+   {
+    "word": "消去する",
+    "reading": "しょうきょする",
+    "english": "to erase"
+   }
+  ]
+ },
+ {
+  "no": 171,
+  "kanji": "急",
+  "lesson": 14,
+  "on": [
+   "きゅう"
+  ],
+  "kun": [
+   "いそ"
+  ],
+  "meaning": "to hurry; emergency",
+  "compounds": [
+   {
+    "word": "急に",
+    "reading": "きゅうに",
+    "english": "suddenly"
+   },
+   {
+    "word": "急ぐ",
+    "reading": "いそぐ",
+    "english": "to hurry"
+   },
+   {
+    "word": "急行",
+    "reading": "きゅうこう",
+    "english": "express train"
+   },
+   {
+    "word": "特急",
+    "reading": "とっきゅう",
+    "english": "super express"
+   }
+  ]
+ },
+ {
+  "no": 172,
+  "kanji": "乗",
+  "lesson": 14,
+  "on": [
+   "じょう"
+  ],
+  "kun": [
+   "の"
+  ],
+  "meaning": "to ride",
+  "compounds": [
+   {
+    "word": "乗る",
+    "reading": "のる",
+    "english": "to ride"
+   },
+   {
+    "word": "乗り物",
+    "reading": "のりもの",
+    "english": "vehicle"
+   },
+   {
+    "word": "乗車",
+    "reading": "じょうしゃ",
+    "english": "riding a car"
+   },
+   {
+    "word": "乗馬",
+    "reading": "じょうば",
+    "english": "horseback riding"
+   }
+  ]
+ },
+ {
+  "no": 173,
+  "kanji": "当",
+  "lesson": 14,
+  "on": [
+   "とう"
+  ],
+  "kun": [
+   "あ"
+  ],
+  "meaning": "to hit",
+  "compounds": [
+   {
+    "word": "本当に",
+    "reading": "ほんとうに",
+    "english": "really"
+   },
+   {
+    "word": "お弁当",
+    "reading": "おべんとう",
+    "english": "boxed lunch"
+   },
+   {
+    "word": "当時",
+    "reading": "とうじ",
+    "english": "at that time"
+   },
+   {
+    "word": "当たる",
+    "reading": "あたる",
+    "english": "to hit"
+   }
+  ]
+ },
+ {
+  "no": 174,
+  "kanji": "音",
+  "lesson": 14,
+  "on": [
+   "おん"
+  ],
+  "kun": [
+   "おと",
+   "ね"
+  ],
+  "meaning": "sound",
+  "compounds": [
+   {
+    "word": "音楽",
+    "reading": "おんがく",
+    "english": "music"
+   },
+   {
+    "word": "発音",
+    "reading": "はつおん",
+    "english": "pronunciation"
+   },
+   {
+    "word": "音",
+    "reading": "おと",
+    "english": "sound"
+   },
+   {
+    "word": "本音",
+    "reading": "ほんね",
+    "english": "real intention"
+   }
+  ]
+ },
+ {
+  "no": 175,
+  "kanji": "楽",
+  "lesson": 14,
+  "on": [
+   "がく",
+   "がっ",
+   "らく"
+  ],
+  "kun": [
+   "たの"
+  ],
+  "meaning": "pleasure",
+  "compounds": [
+   {
+    "word": "音楽",
+    "reading": "おんがく",
+    "english": "music"
+   },
+   {
+    "word": "楽しい",
+    "reading": "たのしい",
+    "english": "fun"
+   },
+   {
+    "word": "楽器",
+    "reading": "がっき",
+    "english": "musical instrument"
+   },
+   {
+    "word": "楽な",
+    "reading": "らくな",
+    "english": "easy, comfortable"
+   }
+  ]
+ },
+ {
+  "no": 176,
+  "kanji": "医",
+  "lesson": 14,
+  "on": [
+   "い"
+  ],
+  "kun": [],
+  "meaning": "doctor; medicine",
+  "compounds": [
+   {
+    "word": "医者",
+    "reading": "いしゃ",
+    "english": "doctor"
+   },
+   {
+    "word": "歯医者",
+    "reading": "はいしゃ",
+    "english": "dentist"
+   },
+   {
+    "word": "医学",
+    "reading": "いがく",
+    "english": "medical science"
+   },
+   {
+    "word": "医院",
+    "reading": "いいん",
+    "english": "clinic"
+   }
+  ]
+ },
+ {
+  "no": 177,
+  "kanji": "者",
+  "lesson": 14,
+  "on": [
+   "しゃ",
+   "じゃ"
+  ],
+  "kun": [
+   "もの"
+  ],
+  "meaning": "person",
+  "compounds": [
+   {
+    "word": "医者",
+    "reading": "いしゃ",
+    "english": "doctor"
+   },
+   {
+    "word": "学者",
+    "reading": "がくしゃ",
+    "english": "scholar"
+   },
+   {
+    "word": "読者",
+    "reading": "どくしゃ",
+    "english": "reader"
+   },
+   {
+    "word": "若者",
+    "reading": "わかもの",
+    "english": "young people"
+   },
+   {
+    "word": "忍者",
+    "reading": "にんじゃ",
+    "english": "ninja"
+   }
+  ]
+ },
+ {
+  "no": 178,
+  "kanji": "死",
+  "lesson": 15,
+  "on": [
+   "し"
+  ],
+  "kun": [
+   "し"
+  ],
+  "meaning": "death; to die",
+  "compounds": [
+   {
+    "word": "死ぬ",
+    "reading": "しぬ",
+    "english": "to die"
+   },
+   {
+    "word": "死",
+    "reading": "し",
+    "english": "death"
+   },
+   {
+    "word": "必死",
+    "reading": "ひっし",
+    "english": "desperate"
+   },
+   {
+    "word": "死者",
+    "reading": "ししゃ",
+    "english": "the dead"
+   }
+  ]
+ },
+ {
+  "no": 179,
+  "kanji": "意",
+  "lesson": 15,
+  "on": [
+   "い"
+  ],
+  "kun": [],
+  "meaning": "mind; meaning",
+  "compounds": [
+   {
+    "word": "意味",
+    "reading": "いみ",
+    "english": "meaning"
+   },
+   {
+    "word": "注意する",
+    "reading": "ちゅういする",
+    "english": "to watch out"
+   },
+   {
+    "word": "意見",
+    "reading": "いけん",
+    "english": "opinion"
+   },
+   {
+    "word": "用意する",
+    "reading": "よういする",
+    "english": "to prepare"
+   }
+  ]
+ },
+ {
+  "no": 180,
+  "kanji": "味",
+  "lesson": 15,
+  "on": [
+   "み"
+  ],
+  "kun": [
+   "あじ"
+  ],
+  "meaning": "flavor; taste",
+  "compounds": [
+   {
+    "word": "意味",
+    "reading": "いみ",
+    "english": "meaning"
+   },
+   {
+    "word": "趣味",
+    "reading": "しゅみ",
+    "english": "hobby"
+   },
+   {
+    "word": "興味",
+    "reading": "きょうみ",
+    "english": "interest"
+   },
+   {
+    "word": "味噌",
+    "reading": "みそ",
+    "english": "soybean paste"
+   },
+   {
+    "word": "味",
+    "reading": "あじ",
+    "english": "taste"
+   }
+  ]
+ },
+ {
+  "no": 181,
+  "kanji": "注",
+  "lesson": 15,
+  "on": [
+   "ちゅう"
+  ],
+  "kun": [
+   "そそ"
+  ],
+  "meaning": "to pour; to shed",
+  "compounds": [
+   {
+    "word": "注意する",
+    "reading": "ちゅういする",
+    "english": "to watch out"
+   },
+   {
+    "word": "注文する",
+    "reading": "ちゅうもんする",
+    "english": "to order"
+   },
+   {
+    "word": "注ぐ",
+    "reading": "そそぐ",
+    "english": "to pour"
+   }
+  ]
+ },
+ {
+  "no": 182,
+  "kanji": "夏",
+  "lesson": 15,
+  "on": [
+   "か"
+  ],
+  "kun": [
+   "なつ"
+  ],
+  "meaning": "summer",
+  "compounds": [
+   {
+    "word": "夏",
+    "reading": "なつ",
+    "english": "summer"
+   },
+   {
+    "word": "夏休み",
+    "reading": "なつやすみ",
+    "english": "summer vacation"
+   },
+   {
+    "word": "初夏",
+    "reading": "しょか",
+    "english": "early summer"
+   }
+  ]
+ },
+ {
+  "no": 183,
+  "kanji": "魚",
+  "lesson": 15,
+  "on": [
+   "ぎょ"
+  ],
+  "kun": [
+   "さかな",
+   "うお"
+  ],
+  "meaning": "fish",
+  "compounds": [
+   {
+    "word": "魚",
+    "reading": "さかな",
+    "english": "fish"
+   },
+   {
+    "word": "魚屋",
+    "reading": "さかなや",
+    "english": "fish shop"
+   },
+   {
+    "word": "金魚",
+    "reading": "きんぎょ",
+    "english": "goldfish"
+   },
+   {
+    "word": "人魚",
+    "reading": "にんぎょ",
+    "english": "mermaid"
+   },
+   {
+    "word": "魚市場",
+    "reading": "うおいちば",
+    "english": "fish market"
+   }
+  ]
+ },
+ {
+  "no": 184,
+  "kanji": "寺",
+  "lesson": 15,
+  "on": [
+   "じ"
+  ],
+  "kun": [
+   "てら",
+   "でら"
+  ],
+  "meaning": "temple",
+  "compounds": [
+   {
+    "word": "お寺",
+    "reading": "おてら",
+    "english": "temple"
+   },
+   {
+    "word": "東寺",
+    "reading": "とうじ",
+    "english": "Toji (the name of a temple)"
+   },
+   {
+    "word": "寺院",
+    "reading": "じいん",
+    "english": "sacred building"
+   },
+   {
+    "word": "禅寺",
+    "reading": "ぜんでら",
+    "english": "Zen temple"
+   }
+  ]
+ },
+ {
+  "no": 185,
+  "kanji": "広",
+  "lesson": 15,
+  "on": [
+   "こう"
+  ],
+  "kun": [
+   "ひろ"
+  ],
+  "meaning": "spacious; wide",
+  "compounds": [
+   {
+    "word": "広い",
+    "reading": "ひろい",
+    "english": "wide, spacious"
+   },
+   {
+    "word": "広場",
+    "reading": "ひろば",
+    "english": "square, open space"
+   },
+   {
+    "word": "広島",
+    "reading": "ひろしま",
+    "english": "Hiroshima"
+   },
+   {
+    "word": "広告",
+    "reading": "こうこく",
+    "english": "advertisement"
+   }
+  ]
+ },
+ {
+  "no": 186,
+  "kanji": "足",
+  "lesson": 15,
+  "on": [
+   "そく"
+  ],
+  "kun": [
+   "あし",
+   "た"
+  ],
+  "meaning": "foot; leg",
+  "compounds": [
+   {
+    "word": "足",
+    "reading": "あし",
+    "english": "foot, leg"
+   },
+   {
+    "word": "足りる",
+    "reading": "たりる",
+    "english": "to be sufficient"
+   },
+   {
+    "word": "一足",
+    "reading": "いっそく",
+    "english": "one pair of shoes"
+   },
+   {
+    "word": "水不足",
+    "reading": "みずぶそく",
+    "english": "lack of water"
+   }
+  ]
+ },
+ {
+  "no": 187,
+  "kanji": "転",
+  "lesson": 15,
+  "on": [
+   "てん"
+  ],
+  "kun": [
+   "ころ"
+  ],
+  "meaning": "to roll over",
+  "compounds": [
+   {
+    "word": "自転車",
+    "reading": "じてんしゃ",
+    "english": "bicycle"
+   },
+   {
+    "word": "運転する",
+    "reading": "うんてんする",
+    "english": "to drive"
+   },
+   {
+    "word": "回転ずし",
+    "reading": "かいてんずし",
+    "english": "conveyor belt sushi"
+   },
+   {
+    "word": "転ぶ",
+    "reading": "ころぶ",
+    "english": "to tumble, to fall down"
+   }
+  ]
+ },
+ {
+  "no": 188,
+  "kanji": "借",
+  "lesson": 15,
+  "on": [
+   "しゃく",
+   "しゃっ"
+  ],
+  "kun": [
+   "か"
+  ],
+  "meaning": "to borrow",
+  "compounds": [
+   {
+    "word": "借りる",
+    "reading": "かりる",
+    "english": "to borrow"
+   },
+   {
+    "word": "借地",
+    "reading": "しゃくち",
+    "english": "rented land"
+   },
+   {
+    "word": "借金",
+    "reading": "しゃっきん",
+    "english": "debt"
+   },
+   {
+    "word": "借家",
+    "reading": "しゃくや",
+    "english": "rented house"
+   }
+  ]
+ },
+ {
+  "no": 189,
+  "kanji": "走",
+  "lesson": 15,
+  "on": [
+   "そう"
+  ],
+  "kun": [
+   "はし"
+  ],
+  "meaning": "to run",
+  "compounds": [
+   {
+    "word": "走る",
+    "reading": "はしる",
+    "english": "to run"
+   },
+   {
+    "word": "走り書き",
+    "reading": "はしりがき",
+    "english": "hasty writing"
+   },
+   {
+    "word": "脱走",
+    "reading": "だっそう",
+    "english": "escape from a prison"
+   }
+  ]
+ },
+ {
+  "no": 190,
+  "kanji": "場",
+  "lesson": 15,
+  "on": [
+   "じょう"
+  ],
+  "kun": [
+   "ば"
+  ],
+  "meaning": "place",
+  "compounds": [
+   {
+    "word": "場所",
+    "reading": "ばしょ",
+    "english": "place"
+   },
+   {
+    "word": "工場",
+    "reading": "こうじょう",
+    "english": "factory"
+   },
+   {
+    "word": "市場",
+    "reading": "いちば",
+    "english": "market"
+   },
+   {
+    "word": "場合",
+    "reading": "ばあい",
+    "english": "case"
+   },
+   {
+    "word": "駐車場",
+    "reading": "ちゅうしゃじょう",
+    "english": "parking lot"
+   }
+  ]
+ },
+ {
+  "no": 191,
+  "kanji": "建",
+  "lesson": 15,
+  "on": [
+   "けん"
+  ],
+  "kun": [
+   "たて",
+   "た"
+  ],
+  "meaning": "to build",
+  "compounds": [
+   {
+    "word": "建物",
+    "reading": "たてもの",
+    "english": "building"
+   },
+   {
+    "word": "建てる",
+    "reading": "たてる",
+    "english": "to build"
+   },
+   {
+    "word": "建つ",
+    "reading": "たつ",
+    "english": "to be built"
+   },
+   {
+    "word": "建国",
+    "reading": "けんこく",
+    "english": "founding a nation"
+   }
+  ]
+ },
+ {
+  "no": 192,
+  "kanji": "地",
+  "lesson": 15,
+  "on": [
+   "ち",
+   "じ"
+  ],
+  "kun": [],
+  "meaning": "ground",
+  "compounds": [
+   {
+    "word": "地下",
+    "reading": "ちか",
+    "english": "underground"
+   },
+   {
+    "word": "地下鉄",
+    "reading": "ちかてつ",
+    "english": "subway"
+   },
+   {
+    "word": "地図",
+    "reading": "ちず",
+    "english": "map"
+   },
+   {
+    "word": "地球",
+    "reading": "ちきゅう",
+    "english": "the earth"
+   },
+   {
+    "word": "地震",
+    "reading": "じしん",
+    "english": "earthquake"
+   }
+  ]
+ },
+ {
+  "no": 193,
+  "kanji": "通",
+  "lesson": 15,
+  "on": [
+   "つう"
+  ],
+  "kun": [
+   "とお",
+   "かよ"
+  ],
+  "meaning": "to pass; to commute",
+  "compounds": [
+   {
+    "word": "通る",
+    "reading": "とおる",
+    "english": "to go through, to pass"
+   },
+   {
+    "word": "通う",
+    "reading": "かよう",
+    "english": "to commute"
+   },
+   {
+    "word": "通学",
+    "reading": "つうがく",
+    "english": "going to school"
+   },
+   {
+    "word": "通勤",
+    "reading": "つうきん",
+    "english": "going to work"
+   }
+  ]
+ },
+ {
+  "no": 194,
+  "kanji": "供",
+  "lesson": 16,
+  "on": [
+   "きょう"
+  ],
+  "kun": [
+   "ども",
+   "そな"
+  ],
+  "meaning": "companion; offer",
+  "compounds": [
+   {
+    "word": "子供",
+    "reading": "こども",
+    "english": "child"
+   },
+   {
+    "word": "供える",
+    "reading": "そなえる",
+    "english": "to offer something to a spirit"
+   },
+   {
+    "word": "提供",
+    "reading": "ていきょう",
+    "english": "offer"
+   }
+  ]
+ },
+ {
+  "no": 195,
+  "kanji": "世",
+  "lesson": 16,
+  "on": [
+   "せ",
+   "せい"
+  ],
+  "kun": [
+   "よ"
+  ],
+  "meaning": "world; generation",
+  "compounds": [
+   {
+    "word": "世界",
+    "reading": "せかい",
+    "english": "the world"
+   },
+   {
+    "word": "世話",
+    "reading": "せわ",
+    "english": "care"
+   },
+   {
+    "word": "世代",
+    "reading": "せだい",
+    "english": "generation"
+   },
+   {
+    "word": "三世",
+    "reading": "さんせい",
+    "english": "the third generation"
+   },
+   {
+    "word": "世の中",
+    "reading": "よのなか",
+    "english": "society"
+   }
+  ]
+ },
+ {
+  "no": 196,
+  "kanji": "界",
+  "lesson": 16,
+  "on": [
+   "かい"
+  ],
+  "kun": [],
+  "meaning": "world",
+  "compounds": [
+   {
+    "word": "世界",
+    "reading": "せかい",
+    "english": "the world"
+   },
+   {
+    "word": "視界",
+    "reading": "しかい",
+    "english": "visibility"
+   },
+   {
+    "word": "政界",
+    "reading": "せいかい",
+    "english": "political world"
+   },
+   {
+    "word": "限界",
+    "reading": "げんかい",
+    "english": "limit"
+   }
+  ]
+ },
+ {
+  "no": 197,
+  "kanji": "全",
+  "lesson": 16,
+  "on": [
+   "ぜん"
+  ],
+  "kun": [
+   "まった",
+   "すべ"
+  ],
+  "meaning": "all",
+  "compounds": [
+   {
+    "word": "全部",
+    "reading": "ぜんぶ",
+    "english": "all"
+   },
+   {
+    "word": "安全",
+    "reading": "あんぜん",
+    "english": "safety"
+   },
+   {
+    "word": "全国",
+    "reading": "ぜんこく",
+    "english": "whole country"
+   },
+   {
+    "word": "全く",
+    "reading": "まったく",
+    "english": "entirely"
+   },
+   {
+    "word": "全て",
+    "reading": "すべて",
+    "english": "all"
+   }
+  ]
+ },
+ {
+  "no": 198,
+  "kanji": "部",
+  "lesson": 16,
+  "on": [
+   "ぶ",
+   "へ"
+  ],
+  "kun": [],
+  "meaning": "part; section",
+  "compounds": [
+   {
+    "word": "全部",
+    "reading": "ぜんぶ",
+    "english": "all"
+   },
+   {
+    "word": "部屋",
+    "reading": "へや",
+    "english": "room"
+   },
+   {
+    "word": "テニス部",
+    "reading": "テニスぶ",
+    "english": "tennis club"
+   },
+   {
+    "word": "部長",
+    "reading": "ぶちょう",
+    "english": "department manager"
+   }
+  ]
+ },
+ {
+  "no": 199,
+  "kanji": "始",
+  "lesson": 16,
+  "on": [
+   "し"
+  ],
+  "kun": [
+   "はじ"
+  ],
+  "meaning": "to begin",
+  "compounds": [
+   {
+    "word": "始まる",
+    "reading": "はじまる",
+    "english": "(something) begins"
+   },
+   {
+    "word": "始める",
+    "reading": "はじめる",
+    "english": "to begin (something)"
+   },
+   {
+    "word": "始発",
+    "reading": "しはつ",
+    "english": "first train (of the day)"
+   },
+   {
+    "word": "開始",
+    "reading": "かいし",
+    "english": "start"
+   }
+  ]
+ },
+ {
+  "no": 200,
+  "kanji": "週",
+  "lesson": 16,
+  "on": [
+   "しゅう"
+  ],
+  "kun": [],
+  "meaning": "week",
+  "compounds": [
+   {
+    "word": "毎週",
+    "reading": "まいしゅう",
+    "english": "every week"
+   },
+   {
+    "word": "先週",
+    "reading": "せんしゅう",
+    "english": "last week"
+   },
+   {
+    "word": "一週間",
+    "reading": "いっしゅうかん",
+    "english": "one week"
+   },
+   {
+    "word": "二週目",
+    "reading": "にしゅうめ",
+    "english": "second week"
+   },
+   {
+    "word": "週末",
+    "reading": "しゅうまつ",
+    "english": "weekend"
+   }
+  ]
+ },
+ {
+  "no": 201,
+  "kanji": "考",
+  "lesson": 16,
+  "on": [
+   "こう"
+  ],
+  "kun": [
+   "かんが"
+  ],
+  "meaning": "to think; idea",
+  "compounds": [
+   {
+    "word": "考える",
+    "reading": "かんがえる",
+    "english": "to think"
+   },
+   {
+    "word": "考え",
+    "reading": "かんがえ",
+    "english": "idea"
+   },
+   {
+    "word": "考古学",
+    "reading": "こうこがく",
+    "english": "archaeology"
+   },
+   {
+    "word": "参考",
+    "reading": "さんこう",
+    "english": "reference"
+   }
+  ]
+ },
+ {
+  "no": 202,
+  "kanji": "開",
+  "lesson": 16,
+  "on": [
+   "かい"
+  ],
+  "kun": [
+   "あ",
+   "ひら"
+  ],
+  "meaning": "to open",
+  "compounds": [
+   {
+    "word": "開ける",
+    "reading": "あける",
+    "english": "to open (something)"
+   },
+   {
+    "word": "開く",
+    "reading": "あく",
+    "english": "(something) opens"
+   },
+   {
+    "word": "開く",
+    "reading": "ひらく",
+    "english": "to open"
+   },
+   {
+    "word": "開店",
+    "reading": "かいてん",
+    "english": "opening of a store"
+   }
+  ]
+ },
+ {
+  "no": 203,
+  "kanji": "屋",
+  "lesson": 16,
+  "on": [
+   "おく"
+  ],
+  "kun": [
+   "や"
+  ],
+  "meaning": "shop; house",
+  "compounds": [
+   {
+    "word": "部屋",
+    "reading": "へや",
+    "english": "room"
+   },
+   {
+    "word": "本屋",
+    "reading": "ほんや",
+    "english": "bookstore"
+   },
+   {
+    "word": "魚屋",
+    "reading": "さかなや",
+    "english": "fish shop"
+   },
+   {
+    "word": "屋上",
+    "reading": "おくじょう",
+    "english": "rooftop"
+   },
+   {
+    "word": "屋内",
+    "reading": "おくない",
+    "english": "indoor"
+   }
+  ]
+ },
+ {
+  "no": 204,
+  "kanji": "方",
+  "lesson": 16,
+  "on": [
+   "ほう"
+  ],
+  "kun": [
+   "かた",
+   "がた"
+  ],
+  "meaning": "direction; person",
+  "compounds": [
+   {
+    "word": "味方",
+    "reading": "みかた",
+    "english": "ally, person on one's side"
+   },
+   {
+    "word": "読み方",
+    "reading": "よみかた",
+    "english": "way of reading"
+   },
+   {
+    "word": "夕方",
+    "reading": "ゆうがた",
+    "english": "evening"
+   },
+   {
+    "word": "両方",
+    "reading": "りょうほう",
+    "english": "both"
+   },
+   {
+    "word": "方法",
+    "reading": "ほうほう",
+    "english": "method"
+   }
+  ]
+ },
+ {
+  "no": 205,
+  "kanji": "運",
+  "lesson": 16,
+  "on": [
+   "うん"
+  ],
+  "kun": [
+   "はこ"
+  ],
+  "meaning": "transport; luck",
+  "compounds": [
+   {
+    "word": "運動",
+    "reading": "うんどう",
+    "english": "exercise"
+   },
+   {
+    "word": "運転",
+    "reading": "うんてん",
+    "english": "driving"
+   },
+   {
+    "word": "運がいい",
+    "reading": "うんがいい",
+    "english": "lucky"
+   },
+   {
+    "word": "運命",
+    "reading": "うんめい",
+    "english": "fate"
+   },
+   {
+    "word": "運ぶ",
+    "reading": "はこぶ",
+    "english": "to carry"
+   }
+  ]
+ },
+ {
+  "no": 206,
+  "kanji": "動",
+  "lesson": 16,
+  "on": [
+   "どう"
+  ],
+  "kun": [
+   "うご"
+  ],
+  "meaning": "to move",
+  "compounds": [
+   {
+    "word": "運動",
+    "reading": "うんどう",
+    "english": "exercise"
+   },
+   {
+    "word": "動く",
+    "reading": "うごく",
+    "english": "to move"
+   },
+   {
+    "word": "自動車",
+    "reading": "じどうしゃ",
+    "english": "automobile"
+   },
+   {
+    "word": "動物",
+    "reading": "どうぶつ",
+    "english": "animal"
+   },
+   {
+    "word": "動詞",
+    "reading": "どうし",
+    "english": "verb"
+   }
+  ]
+ },
+ {
+  "no": 207,
+  "kanji": "教",
+  "lesson": 16,
+  "on": [
+   "きょう"
+  ],
+  "kun": [
+   "おし"
+  ],
+  "meaning": "to teach",
+  "compounds": [
+   {
+    "word": "教える",
+    "reading": "おしえる",
+    "english": "to teach"
+   },
+   {
+    "word": "教室",
+    "reading": "きょうしつ",
+    "english": "classroom"
+   },
+   {
+    "word": "教会",
+    "reading": "きょうかい",
+    "english": "church"
+   },
+   {
+    "word": "キリスト教",
+    "reading": "キリストきょう",
+    "english": "Christianity"
+   },
+   {
+    "word": "教科書",
+    "reading": "きょうかしょ",
+    "english": "textbook"
+   }
+  ]
+ },
+ {
+  "no": 208,
+  "kanji": "室",
+  "lesson": 16,
+  "on": [
+   "しつ"
+  ],
+  "kun": [],
+  "meaning": "room",
+  "compounds": [
+   {
+    "word": "教室",
+    "reading": "きょうしつ",
+    "english": "classroom"
+   },
+   {
+    "word": "研究室",
+    "reading": "けんきゅうしつ",
+    "english": "professor's office"
+   },
+   {
+    "word": "地下室",
+    "reading": "ちかしつ",
+    "english": "basement"
+   },
+   {
+    "word": "待合室",
+    "reading": "まちあいしつ",
+    "english": "waiting room"
+   }
+  ]
+ },
+ {
+  "no": 209,
+  "kanji": "以",
+  "lesson": 16,
+  "on": [
+   "い"
+  ],
+  "kun": [],
+  "meaning": "by means of; compared with",
+  "compounds": [
+   {
+    "word": "〜以外",
+    "reading": "〜いがい",
+    "english": "other than ..."
+   },
+   {
+    "word": "〜以上",
+    "reading": "〜いじょう",
+    "english": "... or more"
+   },
+   {
+    "word": "〜以下",
+    "reading": "〜いか",
+    "english": "... or less"
+   },
+   {
+    "word": "〜以内",
+    "reading": "〜いない",
+    "english": "within ..."
+   },
+   {
+    "word": "以前",
+    "reading": "いぜん",
+    "english": "before, formerly"
+   }
+  ]
+ },
+ {
+  "no": 210,
+  "kanji": "野",
+  "lesson": 17,
+  "on": [
+   "や"
+  ],
+  "kun": [
+   "の"
+  ],
+  "meaning": "field",
+  "compounds": [
+   {
+    "word": "分野",
+    "reading": "ぶんや",
+    "english": "realm, field"
+   },
+   {
+    "word": "小野さん",
+    "reading": "おのさん",
+    "english": "Mr./Ms. Ono"
+   },
+   {
+    "word": "長野",
+    "reading": "ながの",
+    "english": "Nagano"
+   },
+   {
+    "word": "野球",
+    "reading": "やきゅう",
+    "english": "baseball"
+   },
+   {
+    "word": "野菜",
+    "reading": "やさい",
+    "english": "vegetable"
+   }
+  ]
+ },
+ {
+  "no": 211,
+  "kanji": "習",
+  "lesson": 17,
+  "on": [
+   "しゅう"
+  ],
+  "kun": [
+   "なら"
+  ],
+  "meaning": "to learn",
+  "compounds": [
+   {
+    "word": "習う",
+    "reading": "ならう",
+    "english": "to learn"
+   },
+   {
+    "word": "習字",
+    "reading": "しゅうじ",
+    "english": "calligraphy"
+   },
+   {
+    "word": "練習",
+    "reading": "れんしゅう",
+    "english": "practice"
+   },
+   {
+    "word": "習慣",
+    "reading": "しゅうかん",
+    "english": "habit, custom"
+   }
+  ]
+ },
+ {
+  "no": 212,
+  "kanji": "主",
+  "lesson": 17,
+  "on": [
+   "しゅ"
+  ],
+  "kun": [
+   "おも",
+   "ぬし"
+  ],
+  "meaning": "main; lord",
+  "compounds": [
+   {
+    "word": "主に",
+    "reading": "おもに",
+    "english": "mainly"
+   },
+   {
+    "word": "ご主人",
+    "reading": "ごしゅじん",
+    "english": "husband"
+   },
+   {
+    "word": "主婦",
+    "reading": "しゅふ",
+    "english": "housewife"
+   },
+   {
+    "word": "主語",
+    "reading": "しゅご",
+    "english": "subject of a sentence"
+   },
+   {
+    "word": "持ち主",
+    "reading": "もちぬし",
+    "english": "owner"
+   }
+  ]
+ },
+ {
+  "no": 213,
+  "kanji": "歳",
+  "lesson": 17,
+  "on": [
+   "さい",
+   "せい"
+  ],
+  "kun": [],
+  "meaning": "year; age",
+  "compounds": [
+   {
+    "word": "二十五歳",
+    "reading": "にじゅうごさい",
+    "english": "twenty-five years old"
+   },
+   {
+    "word": "お歳暮",
+    "reading": "おせいぼ",
+    "english": "year-end gift"
+   },
+   {
+    "word": "二十歳",
+    "reading": "はたち",
+    "english": "twenty years old"
+   }
+  ]
+ },
+ {
+  "no": 214,
+  "kanji": "集",
+  "lesson": 17,
+  "on": [
+   "しゅう"
+  ],
+  "kun": [
+   "あつ"
+  ],
+  "meaning": "to gather",
+  "compounds": [
+   {
+    "word": "集める",
+    "reading": "あつめる",
+    "english": "to collect"
+   },
+   {
+    "word": "特集",
+    "reading": "とくしゅう",
+    "english": "(magazine) feature"
+   },
+   {
+    "word": "集中する",
+    "reading": "しゅうちゅうする",
+    "english": "to concentrate"
+   }
+  ]
+ },
+ {
+  "no": 215,
+  "kanji": "発",
+  "lesson": 17,
+  "on": [
+   "はっ",
+   "はつ",
+   "ぱつ"
+  ],
+  "kun": [],
+  "meaning": "to start; to reveal",
+  "compounds": [
+   {
+    "word": "発表する",
+    "reading": "はっぴょうする",
+    "english": "to make public, to give a presentation"
+   },
+   {
+    "word": "発音",
+    "reading": "はつおん",
+    "english": "pronunciation"
+   },
+   {
+    "word": "出発",
+    "reading": "しゅっぱつ",
+    "english": "departure"
+   },
+   {
+    "word": "発明",
+    "reading": "はつめい",
+    "english": "invention"
+   }
+  ]
+ },
+ {
+  "no": 216,
+  "kanji": "表",
+  "lesson": 17,
+  "on": [
+   "ぴょう",
+   "ひょう"
+  ],
+  "kun": [
+   "あらわ",
+   "おもて"
+  ],
+  "meaning": "to express; surface",
+  "compounds": [
+   {
+    "word": "発表する",
+    "reading": "はっぴょうする",
+    "english": "to give a presentation"
+   },
+   {
+    "word": "表紙",
+    "reading": "ひょうし",
+    "english": "cover page"
+   },
+   {
+    "word": "表現",
+    "reading": "ひょうげん",
+    "english": "expression"
+   },
+   {
+    "word": "表す",
+    "reading": "あらわす",
+    "english": "to express"
+   },
+   {
+    "word": "表",
+    "reading": "おもて",
+    "english": "the front"
+   }
+  ]
+ },
+ {
+  "no": 217,
+  "kanji": "品",
+  "lesson": 17,
+  "on": [
+   "ひん"
+  ],
+  "kun": [
+   "じな",
+   "しな"
+  ],
+  "meaning": "goods; refinement",
+  "compounds": [
+   {
+    "word": "作品",
+    "reading": "さくひん",
+    "english": "work (of art, etc.)"
+   },
+   {
+    "word": "上品な",
+    "reading": "じょうひんな",
+    "english": "elegant"
+   },
+   {
+    "word": "手品",
+    "reading": "てじな",
+    "english": "magic"
+   },
+   {
+    "word": "品物",
+    "reading": "しなもの",
+    "english": "article of merchandise"
+   }
+  ]
+ },
+ {
+  "no": 218,
+  "kanji": "写",
+  "lesson": 17,
+  "on": [
+   "しゃ"
+  ],
+  "kun": [
+   "うつ"
+  ],
+  "meaning": "to copy",
+  "compounds": [
+   {
+    "word": "写真",
+    "reading": "しゃしん",
+    "english": "photograph"
+   },
+   {
+    "word": "写す",
+    "reading": "うつす",
+    "english": "to copy"
+   },
+   {
+    "word": "写生",
+    "reading": "しゃせい",
+    "english": "sketch"
+   },
+   {
+    "word": "描写する",
+    "reading": "びょうしゃする",
+    "english": "to describe"
+   }
+  ]
+ },
+ {
+  "no": 219,
+  "kanji": "真",
+  "lesson": 17,
+  "on": [
+   "しん"
+  ],
+  "kun": [
+   "ま"
+  ],
+  "meaning": "true; reality",
+  "compounds": [
+   {
+    "word": "写真",
+    "reading": "しゃしん",
+    "english": "photograph"
+   },
+   {
+    "word": "真ん中",
+    "reading": "まんなか",
+    "english": "center"
+   },
+   {
+    "word": "〜の真上",
+    "reading": "〜のまうえ",
+    "english": "right above ..."
+   },
+   {
+    "word": "真夜中",
+    "reading": "まよなか",
+    "english": "midnight"
+   }
+  ]
+ },
+ {
+  "no": 220,
+  "kanji": "字",
+  "lesson": 17,
+  "on": [
+   "じ"
+  ],
+  "kun": [],
+  "meaning": "letter; character",
+  "compounds": [
+   {
+    "word": "文字",
+    "reading": "もじ",
+    "english": "letter, character"
+   },
+   {
+    "word": "赤字",
+    "reading": "あかじ",
+    "english": "deficit"
+   },
+   {
+    "word": "名字",
+    "reading": "みょうじ",
+    "english": "family name"
+   },
+   {
+    "word": "大文字",
+    "reading": "おおもじ",
+    "english": "uppercase letters"
+   },
+   {
+    "word": "漢字",
+    "reading": "かんじ",
+    "english": "Chinese character"
+   }
+  ]
+ },
+ {
+  "no": 221,
+  "kanji": "活",
+  "lesson": 17,
+  "on": [
+   "かつ",
+   "かっ"
+  ],
+  "kun": [],
+  "meaning": "lively",
+  "compounds": [
+   {
+    "word": "活動",
+    "reading": "かつどう",
+    "english": "activity"
+   },
+   {
+    "word": "生活",
+    "reading": "せいかつ",
+    "english": "life, living"
+   },
+   {
+    "word": "活発な",
+    "reading": "かっぱつな",
+    "english": "active"
+   },
+   {
+    "word": "活用",
+    "reading": "かつよう",
+    "english": "conjugation"
+   },
+   {
+    "word": "活気",
+    "reading": "かっき",
+    "english": "liveliness"
+   }
+  ]
+ },
+ {
+  "no": 222,
+  "kanji": "結",
+  "lesson": 17,
+  "on": [
+   "けっ",
+   "けつ"
+  ],
+  "kun": [
+   "むす"
+  ],
+  "meaning": "to tie; to join",
+  "compounds": [
+   {
+    "word": "結婚する",
+    "reading": "けっこんする",
+    "english": "to get married"
+   },
+   {
+    "word": "結果",
+    "reading": "けっか",
+    "english": "result"
+   },
+   {
+    "word": "結論",
+    "reading": "けつろん",
+    "english": "conclusion"
+   },
+   {
+    "word": "結ぶ",
+    "reading": "むすぶ",
+    "english": "to tie a knot"
+   }
+  ]
+ },
+ {
+  "no": 223,
+  "kanji": "婚",
+  "lesson": 17,
+  "on": [
+   "こん"
+  ],
+  "kun": [],
+  "meaning": "marriage",
+  "compounds": [
+   {
+    "word": "結婚する",
+    "reading": "けっこんする",
+    "english": "to get married"
+   },
+   {
+    "word": "離婚",
+    "reading": "りこん",
+    "english": "divorce"
+   },
+   {
+    "word": "婚約者",
+    "reading": "こんやくしゃ",
+    "english": "fiancé(e)"
+   },
+   {
+    "word": "新婚",
+    "reading": "しんこん",
+    "english": "newlywed"
+   },
+   {
+    "word": "未婚",
+    "reading": "みこん",
+    "english": "unmarried"
+   }
+  ]
+ },
+ {
+  "no": 224,
+  "kanji": "歩",
+  "lesson": 17,
+  "on": [
+   "ほ",
+   "ぽ"
+  ],
+  "kun": [
+   "ある"
+  ],
+  "meaning": "to walk",
+  "compounds": [
+   {
+    "word": "歩く",
+    "reading": "あるく",
+    "english": "to walk"
+   },
+   {
+    "word": "歩道",
+    "reading": "ほどう",
+    "english": "sidewalk"
+   },
+   {
+    "word": "散歩する",
+    "reading": "さんぽする",
+    "english": "to stroll"
+   },
+   {
+    "word": "一歩",
+    "reading": "いっぽ",
+    "english": "one step"
+   },
+   {
+    "word": "進歩",
+    "reading": "しんぽ",
+    "english": "progress"
+   }
+  ]
+ },
+ {
+  "no": 225,
+  "kanji": "目",
+  "lesson": 18,
+  "on": [
+   "もく"
+  ],
+  "kun": [
+   "め"
+  ],
+  "meaning": "eye",
+  "compounds": [
+   {
+    "word": "目的",
+    "reading": "もくてき",
+    "english": "purpose"
+   },
+   {
+    "word": "目",
+    "reading": "め",
+    "english": "eyes"
+   },
+   {
+    "word": "目薬",
+    "reading": "めぐすり",
+    "english": "eye drops"
+   },
+   {
+    "word": "二番目",
+    "reading": "にばんめ",
+    "english": "the second"
+   },
+   {
+    "word": "目上の人",
+    "reading": "めうえのひと",
+    "english": "one's superiors"
+   }
+  ]
+ },
+ {
+  "no": 226,
+  "kanji": "的",
+  "lesson": 18,
+  "on": [
+   "てき"
+  ],
+  "kun": [
+   "まと"
+  ],
+  "meaning": "target; -ish",
+  "compounds": [
+   {
+    "word": "目的",
+    "reading": "もくてき",
+    "english": "purpose"
+   },
+   {
+    "word": "現代的",
+    "reading": "げんだいてき",
+    "english": "modern"
+   },
+   {
+    "word": "社会的",
+    "reading": "しゃかいてき",
+    "english": "social"
+   },
+   {
+    "word": "的",
+    "reading": "まと",
+    "english": "target"
+   }
+  ]
+ },
+ {
+  "no": 227,
+  "kanji": "洋",
+  "lesson": 18,
+  "on": [
+   "よう"
+  ],
+  "kun": [],
+  "meaning": "ocean; overseas",
+  "compounds": [
+   {
+    "word": "洋服",
+    "reading": "ようふく",
+    "english": "(Western) clothes"
+   },
+   {
+    "word": "東洋",
+    "reading": "とうよう",
+    "english": "the East"
+   },
+   {
+    "word": "洋食",
+    "reading": "ようしょく",
+    "english": "Western food"
+   },
+   {
+    "word": "大西洋",
+    "reading": "たいせいよう",
+    "english": "the Atlantic"
+   }
+  ]
+ },
+ {
+  "no": 228,
+  "kanji": "服",
+  "lesson": 18,
+  "on": [
+   "ふく"
+  ],
+  "kun": [],
+  "meaning": "clothes",
+  "compounds": [
+   {
+    "word": "服",
+    "reading": "ふく",
+    "english": "clothes"
+   },
+   {
+    "word": "洋服",
+    "reading": "ようふく",
+    "english": "(Western) clothes"
+   },
+   {
+    "word": "制服",
+    "reading": "せいふく",
+    "english": "uniform"
+   },
+   {
+    "word": "和服",
+    "reading": "わふく",
+    "english": "Japanese clothes"
+   }
+  ]
+ },
+ {
+  "no": 229,
+  "kanji": "堂",
+  "lesson": 18,
+  "on": [
+   "どう"
+  ],
+  "kun": [],
+  "meaning": "hall",
+  "compounds": [
+   {
+    "word": "食堂",
+    "reading": "しょくどう",
+    "english": "cafeteria"
+   },
+   {
+    "word": "公会堂",
+    "reading": "こうかいどう",
+    "english": "public hall"
+   },
+   {
+    "word": "堂々とした",
+    "reading": "どうどうとした",
+    "english": "dignified, imposing"
+   }
+  ]
+ },
+ {
+  "no": 230,
+  "kanji": "力",
+  "lesson": 18,
+  "on": [
+   "りょく",
+   "りき"
+  ],
+  "kun": [
+   "ちから"
+  ],
+  "meaning": "power",
+  "compounds": [
+   {
+    "word": "力仕事",
+    "reading": "ちからしごと",
+    "english": "physical labor"
+   },
+   {
+    "word": "協力",
+    "reading": "きょうりょく",
+    "english": "cooperation"
+   },
+   {
+    "word": "努力",
+    "reading": "どりょく",
+    "english": "endeavor"
+   },
+   {
+    "word": "力士",
+    "reading": "りきし",
+    "english": "sumo wrestler"
+   }
+  ]
+ },
+ {
+  "no": 231,
+  "kanji": "授",
+  "lesson": 18,
+  "on": [
+   "じゅ"
+  ],
+  "kun": [
+   "さず"
+  ],
+  "meaning": "to instruct",
+  "compounds": [
+   {
+    "word": "授業",
+    "reading": "じゅぎょう",
+    "english": "class"
+   },
+   {
+    "word": "教授",
+    "reading": "きょうじゅ",
+    "english": "professor"
+   },
+   {
+    "word": "授かる",
+    "reading": "さずかる",
+    "english": "to be given"
+   }
+  ]
+ },
+ {
+  "no": 232,
+  "kanji": "業",
+  "lesson": 18,
+  "on": [
+   "ぎょう"
+  ],
+  "kun": [],
+  "meaning": "business; vocation",
+  "compounds": [
+   {
+    "word": "授業",
+    "reading": "じゅぎょう",
+    "english": "class"
+   },
+   {
+    "word": "職業",
+    "reading": "しょくぎょう",
+    "english": "occupation"
+   },
+   {
+    "word": "産業",
+    "reading": "さんぎょう",
+    "english": "industry"
+   },
+   {
+    "word": "サービス業",
+    "reading": "サービスぎょう",
+    "english": "service industry"
+   }
+  ]
+ },
+ {
+  "no": 233,
+  "kanji": "試",
+  "lesson": 18,
+  "on": [
+   "し"
+  ],
+  "kun": [
+   "こころ"
+  ],
+  "meaning": "test; to try",
+  "compounds": [
+   {
+    "word": "試験",
+    "reading": "しけん",
+    "english": "exam"
+   },
+   {
+    "word": "試合",
+    "reading": "しあい",
+    "english": "game, match"
+   },
+   {
+    "word": "入試",
+    "reading": "にゅうし",
+    "english": "entrance exam"
+   },
+   {
+    "word": "試みる",
+    "reading": "こころみる",
+    "english": "to try"
+   }
+  ]
+ },
+ {
+  "no": 234,
+  "kanji": "験",
+  "lesson": 18,
+  "on": [
+   "けん"
+  ],
+  "kun": [],
+  "meaning": "to examine",
+  "compounds": [
+   {
+    "word": "試験",
+    "reading": "しけん",
+    "english": "exam"
+   },
+   {
+    "word": "実験",
+    "reading": "じっけん",
+    "english": "experiment"
+   },
+   {
+    "word": "経験",
+    "reading": "けいけん",
+    "english": "experience"
+   },
+   {
+    "word": "受験",
+    "reading": "じゅけん",
+    "english": "taking an examination"
+   }
+  ]
+ },
+ {
+  "no": 235,
+  "kanji": "貸",
+  "lesson": 18,
+  "on": [
+   "たい"
+  ],
+  "kun": [
+   "か"
+  ],
+  "meaning": "to lend; loan",
+  "compounds": [
+   {
+    "word": "貸す",
+    "reading": "かす",
+    "english": "to lend"
+   },
+   {
+    "word": "貸し出し",
+    "reading": "かしだし",
+    "english": "lending"
+   },
+   {
+    "word": "賃貸マンション",
+    "reading": "ちんたいマンション",
+    "english": "rental condo"
+   }
+  ]
+ },
+ {
+  "no": 236,
+  "kanji": "図",
+  "lesson": 18,
+  "on": [
+   "と",
+   "ず"
+  ],
+  "kun": [
+   "はか"
+  ],
+  "meaning": "drawing; to devise",
+  "compounds": [
+   {
+    "word": "図書館",
+    "reading": "としょかん",
+    "english": "library"
+   },
+   {
+    "word": "地図",
+    "reading": "ちず",
+    "english": "map"
+   },
+   {
+    "word": "図",
+    "reading": "ず",
+    "english": "figure"
+   },
+   {
+    "word": "合図",
+    "reading": "あいず",
+    "english": "signal"
+   },
+   {
+    "word": "図る",
+    "reading": "はかる",
+    "english": "to attempt"
+   }
+  ]
+ },
+ {
+  "no": 237,
+  "kanji": "館",
+  "lesson": 18,
+  "on": [
+   "かん"
+  ],
+  "kun": [],
+  "meaning": "building; hall",
+  "compounds": [
+   {
+    "word": "図書館",
+    "reading": "としょかん",
+    "english": "library"
+   },
+   {
+    "word": "旅館",
+    "reading": "りょかん",
+    "english": "Japanese inn"
+   },
+   {
+    "word": "映画館",
+    "reading": "えいがかん",
+    "english": "movie theater"
+   },
+   {
+    "word": "大使館",
+    "reading": "たいしかん",
+    "english": "embassy"
+   }
+  ]
+ },
+ {
+  "no": 238,
+  "kanji": "終",
+  "lesson": 18,
+  "on": [
+   "しゅう"
+  ],
+  "kun": [
+   "お"
+  ],
+  "meaning": "end",
+  "compounds": [
+   {
+    "word": "終わる",
+    "reading": "おわる",
+    "english": "to come to an end"
+   },
+   {
+    "word": "終わり",
+    "reading": "おわり",
+    "english": "end"
+   },
+   {
+    "word": "終点",
+    "reading": "しゅうてん",
+    "english": "last stop"
+   },
+   {
+    "word": "最終〜",
+    "reading": "さいしゅう〜",
+    "english": "the last ..."
+   }
+  ]
+ },
+ {
+  "no": 239,
+  "kanji": "宿",
+  "lesson": 18,
+  "on": [
+   "しゅく"
+  ],
+  "kun": [
+   "やど"
+  ],
+  "meaning": "inn; to lodge in",
+  "compounds": [
+   {
+    "word": "宿題",
+    "reading": "しゅくだい",
+    "english": "homework"
+   },
+   {
+    "word": "下宿",
+    "reading": "げしゅく",
+    "english": "boardinghouse"
+   },
+   {
+    "word": "宿泊",
+    "reading": "しゅくはく",
+    "english": "lodging"
+   },
+   {
+    "word": "宿",
+    "reading": "やど",
+    "english": "inn"
+   }
+  ]
+ },
+ {
+  "no": 240,
+  "kanji": "題",
+  "lesson": 18,
+  "on": [
+   "だい"
+  ],
+  "kun": [],
+  "meaning": "title; topic",
+  "compounds": [
+   {
+    "word": "宿題",
+    "reading": "しゅくだい",
+    "english": "homework"
+   },
+   {
+    "word": "問題",
+    "reading": "もんだい",
+    "english": "problem, question"
+   },
+   {
+    "word": "話題",
+    "reading": "わだい",
+    "english": "topic of conversation"
+   },
+   {
+    "word": "題",
+    "reading": "だい",
+    "english": "title"
+   }
+  ]
+ },
+ {
+  "no": 241,
+  "kanji": "春",
+  "lesson": 19,
+  "on": [
+   "しゅん"
+  ],
+  "kun": [
+   "はる"
+  ],
+  "meaning": "spring",
+  "compounds": [
+   {
+    "word": "春",
+    "reading": "はる",
+    "english": "spring"
+   },
+   {
+    "word": "春巻",
+    "reading": "はるまき",
+    "english": "spring roll"
+   },
+   {
+    "word": "春分",
+    "reading": "しゅんぶん",
+    "english": "vernal equinox"
+   },
+   {
+    "word": "青春",
+    "reading": "せいしゅん",
+    "english": "youth"
+   }
+  ]
+ },
+ {
+  "no": 242,
+  "kanji": "秋",
+  "lesson": 19,
+  "on": [
+   "しゅう"
+  ],
+  "kun": [
+   "あき"
+  ],
+  "meaning": "autumn",
+  "compounds": [
+   {
+    "word": "秋",
+    "reading": "あき",
+    "english": "autumn"
+   },
+   {
+    "word": "秋学期",
+    "reading": "あきがっき",
+    "english": "fall semester"
+   },
+   {
+    "word": "秋分",
+    "reading": "しゅうぶん",
+    "english": "autumnal equinox"
+   }
+  ]
+ },
+ {
+  "no": 243,
+  "kanji": "冬",
+  "lesson": 19,
+  "on": [
+   "とう"
+  ],
+  "kun": [
+   "ふゆ"
+  ],
+  "meaning": "winter",
+  "compounds": [
+   {
+    "word": "冬",
+    "reading": "ふゆ",
+    "english": "winter"
+   },
+   {
+    "word": "冬休み",
+    "reading": "ふゆやすみ",
+    "english": "winter vacation"
+   },
+   {
+    "word": "暖冬",
+    "reading": "だんとう",
+    "english": "warm winter"
+   },
+   {
+    "word": "春夏秋冬",
+    "reading": "しゅんかしゅうとう",
+    "english": "four seasons"
+   }
+  ]
+ },
+ {
+  "no": 244,
+  "kanji": "花",
+  "lesson": 19,
+  "on": [
+   "か"
+  ],
+  "kun": [
+   "はな",
+   "ばな"
+  ],
+  "meaning": "flower",
+  "compounds": [
+   {
+    "word": "花",
+    "reading": "はな",
+    "english": "flower"
+   },
+   {
+    "word": "花見",
+    "reading": "はなみ",
+    "english": "flower viewing"
+   },
+   {
+    "word": "花火",
+    "reading": "はなび",
+    "english": "fireworks"
+   },
+   {
+    "word": "花粉症",
+    "reading": "かふんしょう",
+    "english": "hay fever"
+   },
+   {
+    "word": "生け花",
+    "reading": "いけばな",
+    "english": "flower arrangement"
+   }
+  ]
+ },
+ {
+  "no": 245,
+  "kanji": "様",
+  "lesson": 19,
+  "on": [
+   "よう"
+  ],
+  "kun": [
+   "さま"
+  ],
+  "meaning": "Mr.; Ms.; condition",
+  "compounds": [
+   {
+    "word": "〜様",
+    "reading": "〜さま",
+    "english": "Mr./Ms. ..."
+   },
+   {
+    "word": "お客様",
+    "reading": "おきゃくさま",
+    "english": "customer (respectful)"
+   },
+   {
+    "word": "皆様",
+    "reading": "みなさま",
+    "english": "everyone"
+   },
+   {
+    "word": "様子",
+    "reading": "ようす",
+    "english": "manner"
+   }
+  ]
+ },
+ {
+  "no": 246,
+  "kanji": "不",
+  "lesson": 19,
+  "on": [
+   "ふ",
+   "ぶ"
+  ],
+  "kun": [],
+  "meaning": "negative; non-",
+  "compounds": [
+   {
+    "word": "不安な",
+    "reading": "ふあんな",
+    "english": "anxious, worried"
+   },
+   {
+    "word": "不景気",
+    "reading": "ふけいき",
+    "english": "recession"
+   },
+   {
+    "word": "不便",
+    "reading": "ふべん",
+    "english": "inconvenience"
+   },
+   {
+    "word": "水不足",
+    "reading": "みずぶそく",
+    "english": "lack of water"
+   }
+  ]
+ },
+ {
+  "no": 247,
+  "kanji": "姉",
+  "lesson": 19,
+  "on": [
+   "し"
+  ],
+  "kun": [
+   "あね",
+   "ねえ"
+  ],
+  "meaning": "older sister",
+  "compounds": [
+   {
+    "word": "姉",
+    "reading": "あね",
+    "english": "older sister"
+   },
+   {
+    "word": "お姉さん",
+    "reading": "おねえさん",
+    "english": "older sister"
+   },
+   {
+    "word": "姉妹",
+    "reading": "しまい",
+    "english": "sisters"
+   },
+   {
+    "word": "姉妹都市",
+    "reading": "しまいとし",
+    "english": "sister city"
+   }
+  ]
+ },
+ {
+  "no": 248,
+  "kanji": "兄",
+  "lesson": 19,
+  "on": [
+   "きょう"
+  ],
+  "kun": [
+   "あに",
+   "にい"
+  ],
+  "meaning": "older brother",
+  "compounds": [
+   {
+    "word": "兄",
+    "reading": "あに",
+    "english": "older brother"
+   },
+   {
+    "word": "お兄さん",
+    "reading": "おにいさん",
+    "english": "older brother"
+   },
+   {
+    "word": "兄弟",
+    "reading": "きょうだい",
+    "english": "brothers"
+   }
+  ]
+ },
+ {
+  "no": 249,
+  "kanji": "漢",
+  "lesson": 19,
+  "on": [
+   "かん"
+  ],
+  "kun": [],
+  "meaning": "China",
+  "compounds": [
+   {
+    "word": "漢字",
+    "reading": "かんじ",
+    "english": "Chinese character"
+   },
+   {
+    "word": "漢方薬",
+    "reading": "かんぽうやく",
+    "english": "Chinese herbal medicine"
+   },
+   {
+    "word": "漢和辞典",
+    "reading": "かんわじてん",
+    "english": "kanji dictionary"
+   }
+  ]
+ },
+ {
+  "no": 250,
+  "kanji": "卒",
+  "lesson": 19,
+  "on": [
+   "そつ"
+  ],
+  "kun": [],
+  "meaning": "to graduate",
+  "compounds": [
+   {
+    "word": "卒業する",
+    "reading": "そつぎょうする",
+    "english": "to graduate"
+   },
+   {
+    "word": "卒業式",
+    "reading": "そつぎょうしき",
+    "english": "graduation ceremony"
+   },
+   {
+    "word": "大卒",
+    "reading": "だいそつ",
+    "english": "university graduate"
+   }
+  ]
+ },
+ {
+  "no": 251,
+  "kanji": "工",
+  "lesson": 19,
+  "on": [
+   "こう",
+   "く"
+  ],
+  "kun": [],
+  "meaning": "craft; construction",
+  "compounds": [
+   {
+    "word": "工学",
+    "reading": "こうがく",
+    "english": "engineering"
+   },
+   {
+    "word": "工事",
+    "reading": "こうじ",
+    "english": "construction"
+   },
+   {
+    "word": "工場",
+    "reading": "こうじょう",
+    "english": "factory"
+   },
+   {
+    "word": "大工",
+    "reading": "だいく",
+    "english": "carpenter"
+   }
+  ]
+ },
+ {
+  "no": 252,
+  "kanji": "研",
+  "lesson": 19,
+  "on": [
+   "けん"
+  ],
+  "kun": [
+   "と"
+  ],
+  "meaning": "to polish; study",
+  "compounds": [
+   {
+    "word": "研究",
+    "reading": "けんきゅう",
+    "english": "research"
+   },
+   {
+    "word": "研究者",
+    "reading": "けんきゅうしゃ",
+    "english": "researcher"
+   },
+   {
+    "word": "研修",
+    "reading": "けんしゅう",
+    "english": "training"
+   },
+   {
+    "word": "研ぐ",
+    "reading": "とぐ",
+    "english": "to sharpen"
+   }
+  ]
+ },
+ {
+  "no": 253,
+  "kanji": "究",
+  "lesson": 19,
+  "on": [
+   "きゅう"
+  ],
+  "kun": [
+   "きわ"
+  ],
+  "meaning": "research",
+  "compounds": [
+   {
+    "word": "研究",
+    "reading": "けんきゅう",
+    "english": "research"
+   },
+   {
+    "word": "探究",
+    "reading": "たんきゅう",
+    "english": "inquiry"
+   },
+   {
+    "word": "究める",
+    "reading": "きわめる",
+    "english": "to investigate thoroughly"
+   }
+  ]
+ },
+ {
+  "no": 254,
+  "kanji": "質",
+  "lesson": 19,
+  "on": [
+   "しつ",
+   "しち"
+  ],
+  "kun": [],
+  "meaning": "quality; matter",
+  "compounds": [
+   {
+    "word": "質問",
+    "reading": "しつもん",
+    "english": "question"
+   },
+   {
+    "word": "質がいい",
+    "reading": "しつがいい",
+    "english": "good quality"
+   },
+   {
+    "word": "素質",
+    "reading": "そしつ",
+    "english": "aptitude"
+   },
+   {
+    "word": "質屋",
+    "reading": "しちや",
+    "english": "pawn shop"
+   }
+  ]
+ },
+ {
+  "no": 255,
+  "kanji": "問",
+  "lesson": 19,
+  "on": [
+   "もん"
+  ],
+  "kun": [
+   "と"
+  ],
+  "meaning": "question",
+  "compounds": [
+   {
+    "word": "質問",
+    "reading": "しつもん",
+    "english": "question"
+   },
+   {
+    "word": "問題",
+    "reading": "もんだい",
+    "english": "problem, question"
+   },
+   {
+    "word": "訪問",
+    "reading": "ほうもん",
+    "english": "visit"
+   },
+   {
+    "word": "問う",
+    "reading": "とう",
+    "english": "to question"
+   }
+  ]
+ },
+ {
+  "no": 256,
+  "kanji": "多",
+  "lesson": 19,
+  "on": [
+   "た"
+  ],
+  "kun": [
+   "おお"
+  ],
+  "meaning": "many; much",
+  "compounds": [
+   {
+    "word": "多い",
+    "reading": "おおい",
+    "english": "many"
+   },
+   {
+    "word": "多分",
+    "reading": "たぶん",
+    "english": "probably"
+   },
+   {
+    "word": "多くの〜",
+    "reading": "おおくの〜",
+    "english": "many"
+   },
+   {
+    "word": "多数決",
+    "reading": "たすうけつ",
+    "english": "decision by majority"
+   }
+  ]
+ },
+ {
+  "no": 257,
+  "kanji": "皿",
+  "lesson": 20,
+  "on": [],
+  "kun": [
+   "さら",
+   "ざら"
+  ],
+  "meaning": "plate",
+  "compounds": [
+   {
+    "word": "皿",
+    "reading": "さら",
+    "english": "plate, dish"
+   },
+   {
+    "word": "紙皿",
+    "reading": "かみざら",
+    "english": "paper plate"
+   },
+   {
+    "word": "灰皿",
+    "reading": "はいざら",
+    "english": "ashtray"
+   }
+  ]
+ },
+ {
+  "no": 258,
+  "kanji": "声",
+  "lesson": 20,
+  "on": [
+   "せい"
+  ],
+  "kun": [
+   "こえ"
+  ],
+  "meaning": "voice",
+  "compounds": [
+   {
+    "word": "声",
+    "reading": "こえ",
+    "english": "voice"
+   },
+   {
+    "word": "音声学",
+    "reading": "おんせいがく",
+    "english": "phonetics"
+   },
+   {
+    "word": "擬声語",
+    "reading": "ぎせいご",
+    "english": "onomatopoeia"
+   },
+   {
+    "word": "声優",
+    "reading": "せいゆう",
+    "english": "voice actor"
+   }
+  ]
+ },
+ {
+  "no": 259,
+  "kanji": "茶",
+  "lesson": 20,
+  "on": [
+   "ちゃ",
+   "さ"
+  ],
+  "kun": [],
+  "meaning": "tea",
+  "compounds": [
+   {
+    "word": "お茶",
+    "reading": "おちゃ",
+    "english": "Japanese tea"
+   },
+   {
+    "word": "茶店",
+    "reading": "ちゃみせ",
+    "english": "teahouse"
+   },
+   {
+    "word": "紅茶",
+    "reading": "こうちゃ",
+    "english": "black tea"
+   },
+   {
+    "word": "茶色",
+    "reading": "ちゃいろ",
+    "english": "brown"
+   },
+   {
+    "word": "喫茶店",
+    "reading": "きっさてん",
+    "english": "cafe"
+   }
+  ]
+ },
+ {
+  "no": 260,
+  "kanji": "止",
+  "lesson": 20,
+  "on": [
+   "し"
+  ],
+  "kun": [
+   "と"
+  ],
+  "meaning": "to stop",
+  "compounds": [
+   {
+    "word": "止まる",
+    "reading": "とまる",
+    "english": "(something) stops"
+   },
+   {
+    "word": "中止する",
+    "reading": "ちゅうしする",
+    "english": "to cancel"
+   },
+   {
+    "word": "禁止する",
+    "reading": "きんしする",
+    "english": "to prohibit"
+   }
+  ]
+ },
+ {
+  "no": 261,
+  "kanji": "枚",
+  "lesson": 20,
+  "on": [
+   "まい"
+  ],
+  "kun": [],
+  "meaning": "sheet of ...",
+  "compounds": [
+   {
+    "word": "一枚",
+    "reading": "いちまい",
+    "english": "one sheet"
+   },
+   {
+    "word": "枚数",
+    "reading": "まいすう",
+    "english": "number of flat things"
+   }
+  ]
+ },
+ {
+  "no": 262,
+  "kanji": "両",
+  "lesson": 20,
+  "on": [
+   "りょう"
+  ],
+  "kun": [],
+  "meaning": "both",
+  "compounds": [
+   {
+    "word": "三両",
+    "reading": "さんりょう",
+    "english": "three ryoo"
+   },
+   {
+    "word": "両親",
+    "reading": "りょうしん",
+    "english": "parents"
+   },
+   {
+    "word": "両手",
+    "reading": "りょうて",
+    "english": "both hands"
+   },
+   {
+    "word": "両替",
+    "reading": "りょうがえ",
+    "english": "exchange"
+   },
+   {
+    "word": "両方",
+    "reading": "りょうほう",
+    "english": "both"
+   }
+  ]
+ },
+ {
+  "no": 263,
+  "kanji": "無",
+  "lesson": 20,
+  "on": [
+   "む",
+   "ぶ"
+  ],
+  "kun": [
+   "な"
+  ],
+  "meaning": "none",
+  "compounds": [
+   {
+    "word": "無理な",
+    "reading": "むりな",
+    "english": "impossible"
+   },
+   {
+    "word": "無駄な",
+    "reading": "むだな",
+    "english": "wasteful"
+   },
+   {
+    "word": "無料",
+    "reading": "むりょう",
+    "english": "free of charge"
+   },
+   {
+    "word": "無礼な",
+    "reading": "ぶれいな",
+    "english": "rude"
+   },
+   {
+    "word": "無い",
+    "reading": "ない",
+    "english": "there is no ..."
+   }
+  ]
+ },
+ {
+  "no": 264,
+  "kanji": "払",
+  "lesson": 20,
+  "on": [],
+  "kun": [
+   "はら",
+   "ばら"
+  ],
+  "meaning": "to pay",
+  "compounds": [
+   {
+    "word": "払う",
+    "reading": "はらう",
+    "english": "to pay"
+   },
+   {
+    "word": "支払い",
+    "reading": "しはらい",
+    "english": "payment"
+   },
+   {
+    "word": "払い戻し",
+    "reading": "はらいもどし",
+    "english": "refund"
+   },
+   {
+    "word": "分割払い",
+    "reading": "ぶんかつばらい",
+    "english": "payment in installments"
+   }
+  ]
+ },
+ {
+  "no": 265,
+  "kanji": "心",
+  "lesson": 20,
+  "on": [
+   "しん"
+  ],
+  "kun": [
+   "こころ"
+  ],
+  "meaning": "heart; mind",
+  "compounds": [
+   {
+    "word": "心",
+    "reading": "こころ",
+    "english": "heart, mind"
+   },
+   {
+    "word": "心配する",
+    "reading": "しんぱいする",
+    "english": "to worry"
+   },
+   {
+    "word": "熱心な",
+    "reading": "ねっしんな",
+    "english": "enthusiastic"
+   },
+   {
+    "word": "安心な",
+    "reading": "あんしんな",
+    "english": "safe"
+   },
+   {
+    "word": "好奇心",
+    "reading": "こうきしん",
+    "english": "curiosity"
+   }
+  ]
+ },
+ {
+  "no": 266,
+  "kanji": "笑",
+  "lesson": 20,
+  "on": [
+   "しょう"
+  ],
+  "kun": [
+   "わら",
+   "え"
+  ],
+  "meaning": "to laugh",
+  "compounds": [
+   {
+    "word": "笑う",
+    "reading": "わらう",
+    "english": "to laugh"
+   },
+   {
+    "word": "笑顔",
+    "reading": "えがお",
+    "english": "smiling face"
+   },
+   {
+    "word": "微笑む",
+    "reading": "ほほえむ",
+    "english": "to smile"
+   },
+   {
+    "word": "爆笑する",
+    "reading": "ばくしょうする",
+    "english": "to burst into laughter"
+   }
+  ]
+ },
+ {
+  "no": 267,
+  "kanji": "絶",
+  "lesson": 20,
+  "on": [
+   "ぜっ",
+   "ぜつ"
+  ],
+  "kun": [
+   "た"
+  ],
+  "meaning": "to discontinue",
+  "compounds": [
+   {
+    "word": "絶対に",
+    "reading": "ぜったいに",
+    "english": "definitely"
+   },
+   {
+    "word": "絶える",
+    "reading": "たえる",
+    "english": "to die out"
+   },
+   {
+    "word": "絶滅",
+    "reading": "ぜつめつ",
+    "english": "extinction"
+   },
+   {
+    "word": "気絶する",
+    "reading": "きぜつする",
+    "english": "to faint"
+   },
+   {
+    "word": "絶望",
+    "reading": "ぜつぼう",
+    "english": "despair"
+   }
+  ]
+ },
+ {
+  "no": 268,
+  "kanji": "対",
+  "lesson": 20,
+  "on": [
+   "たい",
+   "つい"
+  ],
+  "kun": [],
+  "meaning": "opposite",
+  "compounds": [
+   {
+    "word": "絶対に",
+    "reading": "ぜったいに",
+    "english": "definitely"
+   },
+   {
+    "word": "反対する",
+    "reading": "はんたいする",
+    "english": "to oppose"
+   },
+   {
+    "word": "日本対中国",
+    "reading": "にほんたいちゅうごく",
+    "english": "Japan versus China"
+   },
+   {
+    "word": "一対",
+    "reading": "いっつい",
+    "english": "a pair"
+   }
+  ]
+ },
+ {
+  "no": 269,
+  "kanji": "痛",
+  "lesson": 20,
+  "on": [
+   "つう"
+  ],
+  "kun": [
+   "いた"
+  ],
+  "meaning": "pain",
+  "compounds": [
+   {
+    "word": "痛い",
+    "reading": "いたい",
+    "english": "painful"
+   },
+   {
+    "word": "痛み止め",
+    "reading": "いたみどめ",
+    "english": "painkiller"
+   },
+   {
+    "word": "頭痛",
+    "reading": "ずつう",
+    "english": "headache"
+   },
+   {
+    "word": "腹痛",
+    "reading": "ふくつう",
+    "english": "stomachache"
+   },
+   {
+    "word": "腰痛",
+    "reading": "ようつう",
+    "english": "lower back pain"
+   }
+  ]
+ },
+ {
+  "no": 270,
+  "kanji": "最",
+  "lesson": 20,
+  "on": [
+   "さい"
+  ],
+  "kun": [
+   "もっと"
+  ],
+  "meaning": "utmost",
+  "compounds": [
+   {
+    "word": "最悪",
+    "reading": "さいあく",
+    "english": "the worst"
+   },
+   {
+    "word": "最近",
+    "reading": "さいきん",
+    "english": "recently"
+   },
+   {
+    "word": "最高",
+    "reading": "さいこう",
+    "english": "the best"
+   },
+   {
+    "word": "最新",
+    "reading": "さいしん",
+    "english": "the latest"
+   },
+   {
+    "word": "最後に",
+    "reading": "さいごに",
+    "english": "lastly"
+   },
+   {
+    "word": "最も",
+    "reading": "もっとも",
+    "english": "most"
+   }
+  ]
+ },
+ {
+  "no": 271,
+  "kanji": "続",
+  "lesson": 20,
+  "on": [
+   "ぞく"
+  ],
+  "kun": [
+   "つづ"
+  ],
+  "meaning": "to continue",
+  "compounds": [
+   {
+    "word": "続ける",
+    "reading": "つづける",
+    "english": "to continue"
+   },
+   {
+    "word": "手続き",
+    "reading": "てつづき",
+    "english": "procedure"
+   },
+   {
+    "word": "相続する",
+    "reading": "そうぞくする",
+    "english": "to inherit"
+   },
+   {
+    "word": "連続ドラマ",
+    "reading": "れんぞくドラマ",
+    "english": "serial TV drama"
+   }
+  ]
+ },
+ {
+  "no": 272,
+  "kanji": "信",
+  "lesson": 21,
+  "on": [
+   "しん"
+  ],
+  "kun": [],
+  "meaning": "to trust; to believe",
+  "compounds": [
+   {
+    "word": "信じる",
+    "reading": "しんじる",
+    "english": "to believe"
+   },
+   {
+    "word": "自信",
+    "reading": "じしん",
+    "english": "confidence"
+   },
+   {
+    "word": "信号",
+    "reading": "しんごう",
+    "english": "traffic signal"
+   },
+   {
+    "word": "迷信",
+    "reading": "めいしん",
+    "english": "superstition"
+   }
+  ]
+ },
+ {
+  "no": 273,
+  "kanji": "経",
+  "lesson": 21,
+  "on": [
+   "けい"
+  ],
+  "kun": [],
+  "meaning": "to pass through",
+  "compounds": [
+   {
+    "word": "経験",
+    "reading": "けいけん",
+    "english": "experience"
+   },
+   {
+    "word": "経済",
+    "reading": "けいざい",
+    "english": "economy"
+   },
+   {
+    "word": "神経質",
+    "reading": "しんけいしつ",
+    "english": "oversensitive"
+   },
+   {
+    "word": "経営学",
+    "reading": "けいえいがく",
+    "english": "management studies"
+   },
+   {
+    "word": "パリ経由",
+    "reading": "パリけいゆ",
+    "english": "via Paris"
+   }
+  ]
+ },
+ {
+  "no": 274,
+  "kanji": "台",
+  "lesson": 21,
+  "on": [
+   "たい",
+   "だい"
+  ],
+  "kun": [],
+  "meaning": "stand",
+  "compounds": [
+   {
+    "word": "台風",
+    "reading": "たいふう",
+    "english": "typhoon"
+   },
+   {
+    "word": "二台",
+    "reading": "にだい",
+    "english": "two vehicles/machines"
+   },
+   {
+    "word": "舞台",
+    "reading": "ぶたい",
+    "english": "stage"
+   },
+   {
+    "word": "台所",
+    "reading": "だいどころ",
+    "english": "kitchen"
+   }
+  ]
+ },
+ {
+  "no": 275,
+  "kanji": "風",
+  "lesson": 21,
+  "on": [
+   "ふう",
+   "ふ"
+  ],
+  "kun": [
+   "かぜ"
+  ],
+  "meaning": "wind",
+  "compounds": [
+   {
+    "word": "台風",
+    "reading": "たいふう",
+    "english": "typhoon"
+   },
+   {
+    "word": "お風呂",
+    "reading": "おふろ",
+    "english": "bath"
+   },
+   {
+    "word": "和風",
+    "reading": "わふう",
+    "english": "Japanese style"
+   },
+   {
+    "word": "風",
+    "reading": "かぜ",
+    "english": "wind"
+   },
+   {
+    "word": "風邪をひく",
+    "reading": "かぜをひく",
+    "english": "to catch a cold"
+   }
+  ]
+ },
+ {
+  "no": 276,
+  "kanji": "犬",
+  "lesson": 21,
+  "on": [
+   "けん"
+  ],
+  "kun": [
+   "いぬ"
+  ],
+  "meaning": "dog",
+  "compounds": [
+   {
+    "word": "犬",
+    "reading": "いぬ",
+    "english": "dog"
+   },
+   {
+    "word": "子犬",
+    "reading": "こいぬ",
+    "english": "puppy"
+   },
+   {
+    "word": "番犬",
+    "reading": "ばんけん",
+    "english": "watchdog"
+   },
+   {
+    "word": "盲導犬",
+    "reading": "もうどうけん",
+    "english": "seeing-eye dog"
+   }
+  ]
+ },
+ {
+  "no": 277,
+  "kanji": "重",
+  "lesson": 21,
+  "on": [
+   "じゅう",
+   "ちょう"
+  ],
+  "kun": [
+   "おも",
+   "かさ"
+  ],
+  "meaning": "heavy; to pile up",
+  "compounds": [
+   {
+    "word": "重い",
+    "reading": "おもい",
+    "english": "heavy, serious (illness)"
+   },
+   {
+    "word": "重ねる",
+    "reading": "かさねる",
+    "english": "to pile up"
+   },
+   {
+    "word": "体重",
+    "reading": "たいじゅう",
+    "english": "body weight"
+   },
+   {
+    "word": "貴重品",
+    "reading": "きちょうひん",
+    "english": "valuables"
+   }
+  ]
+ },
+ {
+  "no": 278,
+  "kanji": "初",
+  "lesson": 21,
+  "on": [
+   "しょ"
+  ],
+  "kun": [
+   "はじ",
+   "はつ"
+  ],
+  "meaning": "first",
+  "compounds": [
+   {
+    "word": "初めは",
+    "reading": "はじめは",
+    "english": "at first"
+   },
+   {
+    "word": "初めて",
+    "reading": "はじめて",
+    "english": "first time"
+   },
+   {
+    "word": "最初",
+    "reading": "さいしょ",
+    "english": "first"
+   },
+   {
+    "word": "初雪",
+    "reading": "はつゆき",
+    "english": "first snow"
+   },
+   {
+    "word": "初恋",
+    "reading": "はつこい",
+    "english": "first love"
+   }
+  ]
+ },
+ {
+  "no": 279,
+  "kanji": "若",
+  "lesson": 21,
+  "on": [],
+  "kun": [
+   "わか"
+  ],
+  "meaning": "young",
+  "compounds": [
+   {
+    "word": "若い",
+    "reading": "わかい",
+    "english": "young"
+   },
+   {
+    "word": "若者",
+    "reading": "わかもの",
+    "english": "young people"
+   },
+   {
+    "word": "若々しい",
+    "reading": "わかわかしい",
+    "english": "youthful"
+   }
+  ]
+ },
+ {
+  "no": 280,
+  "kanji": "送",
+  "lesson": 21,
+  "on": [
+   "そう"
+  ],
+  "kun": [
+   "おく"
+  ],
+  "meaning": "to send",
+  "compounds": [
+   {
+    "word": "送る",
+    "reading": "おくる",
+    "english": "to send"
+   },
+   {
+    "word": "送金",
+    "reading": "そうきん",
+    "english": "sending money"
+   },
+   {
+    "word": "送料",
+    "reading": "そうりょう",
+    "english": "postage"
+   },
+   {
+    "word": "放送",
+    "reading": "ほうそう",
+    "english": "broadcast"
+   },
+   {
+    "word": "回送電車",
+    "reading": "かいそうでんしゃ",
+    "english": "out-of-service train"
+   }
+  ]
+ },
+ {
+  "no": 281,
+  "kanji": "幸",
+  "lesson": 21,
+  "on": [
+   "こう"
+  ],
+  "kun": [
+   "しあわ",
+   "さいわ"
+  ],
+  "meaning": "happiness",
+  "compounds": [
+   {
+    "word": "幸せな",
+    "reading": "しあわせな",
+    "english": "happy"
+   },
+   {
+    "word": "幸福な",
+    "reading": "こうふくな",
+    "english": "happy"
+   },
+   {
+    "word": "幸運",
+    "reading": "こううん",
+    "english": "good fortune"
+   },
+   {
+    "word": "不幸",
+    "reading": "ふこう",
+    "english": "misfortune"
+   },
+   {
+    "word": "幸い",
+    "reading": "さいわい",
+    "english": "fortunately"
+   }
+  ]
+ },
+ {
+  "no": 282,
+  "kanji": "計",
+  "lesson": 21,
+  "on": [
+   "けい"
+  ],
+  "kun": [
+   "はか"
+  ],
+  "meaning": "to measure",
+  "compounds": [
+   {
+    "word": "時計",
+    "reading": "とけい",
+    "english": "watch, clock"
+   },
+   {
+    "word": "計画",
+    "reading": "けいかく",
+    "english": "plan"
+   },
+   {
+    "word": "合計",
+    "reading": "ごうけい",
+    "english": "sum"
+   },
+   {
+    "word": "計る",
+    "reading": "はかる",
+    "english": "to measure"
+   }
+  ]
+ },
+ {
+  "no": 283,
+  "kanji": "遅",
+  "lesson": 21,
+  "on": [
+   "ち"
+  ],
+  "kun": [
+   "おく",
+   "おそ"
+  ],
+  "meaning": "late",
+  "compounds": [
+   {
+    "word": "遅れる",
+    "reading": "おくれる",
+    "english": "to be late"
+   },
+   {
+    "word": "乗り遅れる",
+    "reading": "のりおくれる",
+    "english": "to miss (transportation)"
+   },
+   {
+    "word": "遅い",
+    "reading": "おそい",
+    "english": "late"
+   },
+   {
+    "word": "遅刻する",
+    "reading": "ちこくする",
+    "english": "to be late"
+   }
+  ]
+ },
+ {
+  "no": 284,
+  "kanji": "配",
+  "lesson": 21,
+  "on": [
+   "ぱい",
+   "はい"
+  ],
+  "kun": [
+   "くば"
+  ],
+  "meaning": "to deliver",
+  "compounds": [
+   {
+    "word": "心配な",
+    "reading": "しんぱいな",
+    "english": "worried about"
+   },
+   {
+    "word": "配る",
+    "reading": "くばる",
+    "english": "to distribute"
+   },
+   {
+    "word": "配達",
+    "reading": "はいたつ",
+    "english": "delivery"
+   },
+   {
+    "word": "宅配便",
+    "reading": "たくはいびん",
+    "english": "home delivery service"
+   }
+  ]
+ },
+ {
+  "no": 285,
+  "kanji": "弟",
+  "lesson": 21,
+  "on": [
+   "だい",
+   "で"
+  ],
+  "kun": [
+   "おとうと"
+  ],
+  "meaning": "younger brother",
+  "compounds": [
+   {
+    "word": "弟",
+    "reading": "おとうと",
+    "english": "younger brother"
+   },
+   {
+    "word": "兄弟",
+    "reading": "きょうだい",
+    "english": "brothers"
+   },
+   {
+    "word": "弟子",
+    "reading": "でし",
+    "english": "apprentice"
+   }
+  ]
+ },
+ {
+  "no": 286,
+  "kanji": "妹",
+  "lesson": 21,
+  "on": [
+   "まい"
+  ],
+  "kun": [
+   "いもうと"
+  ],
+  "meaning": "younger sister",
+  "compounds": [
+   {
+    "word": "妹",
+    "reading": "いもうと",
+    "english": "younger sister"
+   },
+   {
+    "word": "姉妹",
+    "reading": "しまい",
+    "english": "sisters"
+   },
+   {
+    "word": "姉妹校",
+    "reading": "しまいこう",
+    "english": "sister school"
+   }
+  ]
+ },
+ {
+  "no": 287,
+  "kanji": "記",
+  "lesson": 22,
+  "on": [
+   "き"
+  ],
+  "kun": [],
+  "meaning": "to write down",
+  "compounds": [
+   {
+    "word": "日記",
+    "reading": "にっき",
+    "english": "diary"
+   },
+   {
+    "word": "記入する",
+    "reading": "きにゅうする",
+    "english": "to fill in"
+   },
+   {
+    "word": "記事",
+    "reading": "きじ",
+    "english": "(news) article"
+   },
+   {
+    "word": "暗記する",
+    "reading": "あんきする",
+    "english": "to memorize"
+   }
+  ]
+ },
+ {
+  "no": 288,
+  "kanji": "銀",
+  "lesson": 22,
+  "on": [
+   "ぎん"
+  ],
+  "kun": [],
+  "meaning": "silver",
+  "compounds": [
+   {
+    "word": "銀行",
+    "reading": "ぎんこう",
+    "english": "bank"
+   },
+   {
+    "word": "銀メダル",
+    "reading": "ぎんメダル",
+    "english": "silver medal"
+   },
+   {
+    "word": "銀世界",
+    "reading": "ぎんせかい",
+    "english": "land covered with snow"
+   }
+  ]
+ },
+ {
+  "no": 289,
+  "kanji": "回",
+  "lesson": 22,
+  "on": [
+   "かい"
+  ],
+  "kun": [
+   "まわ"
+  ],
+  "meaning": "... times; to turn",
+  "compounds": [
+   {
+    "word": "一回",
+    "reading": "いっかい",
+    "english": "one time"
+   },
+   {
+    "word": "回送バス",
+    "reading": "かいそうバス",
+    "english": "out-of-service bus"
+   },
+   {
+    "word": "最終回",
+    "reading": "さいしゅうかい",
+    "english": "last inning, last episode"
+   },
+   {
+    "word": "回す",
+    "reading": "まわす",
+    "english": "to turn"
+   }
+  ]
+ },
+ {
+  "no": 290,
+  "kanji": "夕",
+  "lesson": 22,
+  "on": [],
+  "kun": [
+   "ゆう"
+  ],
+  "meaning": "evening",
+  "compounds": [
+   {
+    "word": "夕方",
+    "reading": "ゆうがた",
+    "english": "evening"
+   },
+   {
+    "word": "夕食",
+    "reading": "ゆうしょく",
+    "english": "dinner"
+   },
+   {
+    "word": "七夕",
+    "reading": "たなばた",
+    "english": "Tanabata"
+   },
+   {
+    "word": "夕日",
+    "reading": "ゆうひ",
+    "english": "setting sun"
+   },
+   {
+    "word": "夕刊",
+    "reading": "ゆうかん",
+    "english": "evening newspaper"
+   }
+  ]
+ },
+ {
+  "no": 291,
+  "kanji": "黒",
+  "lesson": 22,
+  "on": [
+   "こく"
+  ],
+  "kun": [
+   "くろ"
+  ],
+  "meaning": "black",
+  "compounds": [
+   {
+    "word": "黒木さん",
+    "reading": "くろきさん",
+    "english": "Mr./Ms. Kuroki"
+   },
+   {
+    "word": "黒い",
+    "reading": "くろい",
+    "english": "black"
+   },
+   {
+    "word": "白黒写真",
+    "reading": "しろくろしゃしん",
+    "english": "black and white photograph"
+   },
+   {
+    "word": "黒板",
+    "reading": "こくばん",
+    "english": "blackboard"
+   }
+  ]
+ },
+ {
+  "no": 292,
+  "kanji": "用",
+  "lesson": 22,
+  "on": [
+   "よう"
+  ],
+  "kun": [],
+  "meaning": "task; to use",
+  "compounds": [
+   {
+    "word": "用事",
+    "reading": "ようじ",
+    "english": "a thing to take care of"
+   },
+   {
+    "word": "用意する",
+    "reading": "よういする",
+    "english": "to prepare"
+   },
+   {
+    "word": "子供用",
+    "reading": "こどもよう",
+    "english": "for children"
+   },
+   {
+    "word": "費用",
+    "reading": "ひよう",
+    "english": "cost"
+   }
+  ]
+ },
+ {
+  "no": 293,
+  "kanji": "末",
+  "lesson": 22,
+  "on": [
+   "まつ"
+  ],
+  "kun": [
+   "すえ"
+  ],
+  "meaning": "the end of",
+  "compounds": [
+   {
+    "word": "週末",
+    "reading": "しゅうまつ",
+    "english": "weekend"
+   },
+   {
+    "word": "月末",
+    "reading": "げつまつ",
+    "english": "end of the month"
+   },
+   {
+    "word": "年末",
+    "reading": "ねんまつ",
+    "english": "year-end"
+   },
+   {
+    "word": "期末試験",
+    "reading": "きまつしけん",
+    "english": "final examination"
+   },
+   {
+    "word": "末",
+    "reading": "すえ",
+    "english": "the end"
+   }
+  ]
+ },
+ {
+  "no": 294,
+  "kanji": "待",
+  "lesson": 22,
+  "on": [
+   "たい"
+  ],
+  "kun": [
+   "ま",
+   "まち"
+  ],
+  "meaning": "to wait",
+  "compounds": [
+   {
+    "word": "待つ",
+    "reading": "まつ",
+    "english": "to wait"
+   },
+   {
+    "word": "待合室",
+    "reading": "まちあいしつ",
+    "english": "waiting room"
+   },
+   {
+    "word": "期待する",
+    "reading": "きたいする",
+    "english": "to expect"
+   },
+   {
+    "word": "招待",
+    "reading": "しょうたい",
+    "english": "invitation"
+   }
+  ]
+ },
+ {
+  "no": 295,
+  "kanji": "残",
+  "lesson": 22,
+  "on": [
+   "ざん"
+  ],
+  "kun": [
+   "のこ"
+  ],
+  "meaning": "to remain",
+  "compounds": [
+   {
+    "word": "残業",
+    "reading": "ざんぎょう",
+    "english": "overtime work"
+   },
+   {
+    "word": "残す",
+    "reading": "のこす",
+    "english": "to leave"
+   },
+   {
+    "word": "残念",
+    "reading": "ざんねん",
+    "english": "regrettable"
+   },
+   {
+    "word": "心残り",
+    "reading": "こころのこり",
+    "english": "regret"
+   },
+   {
+    "word": "残高",
+    "reading": "ざんだか",
+    "english": "account balance"
+   }
+  ]
+ },
+ {
+  "no": 296,
+  "kanji": "駅",
+  "lesson": 22,
+  "on": [
+   "えき"
+  ],
+  "kun": [],
+  "meaning": "station",
+  "compounds": [
+   {
+    "word": "駅",
+    "reading": "えき",
+    "english": "station"
+   },
+   {
+    "word": "東京駅",
+    "reading": "とうきょうえき",
+    "english": "Tokyo Station"
+   },
+   {
+    "word": "駅員",
+    "reading": "えきいん",
+    "english": "station attendant"
+   },
+   {
+    "word": "駅前",
+    "reading": "えきまえ",
+    "english": "near/in front of the station"
+   }
+  ]
+ },
+ {
+  "no": 297,
+  "kanji": "番",
+  "lesson": 22,
+  "on": [
+   "ばん"
+  ],
+  "kun": [],
+  "meaning": "order; number",
+  "compounds": [
+   {
+    "word": "一番",
+    "reading": "いちばん",
+    "english": "the first"
+   },
+   {
+    "word": "番号",
+    "reading": "ばんごう",
+    "english": "number"
+   },
+   {
+    "word": "番組",
+    "reading": "ばんぐみ",
+    "english": "TV program"
+   },
+   {
+    "word": "交番",
+    "reading": "こうばん",
+    "english": "police box"
+   },
+   {
+    "word": "順番",
+    "reading": "じゅんばん",
+    "english": "turn, order"
+   }
+  ]
+ },
+ {
+  "no": 298,
+  "kanji": "説",
+  "lesson": 22,
+  "on": [
+   "せつ",
+   "せっ"
+  ],
+  "kun": [],
+  "meaning": "theory; to explain",
+  "compounds": [
+   {
+    "word": "説明する",
+    "reading": "せつめいする",
+    "english": "to explain"
+   },
+   {
+    "word": "小説",
+    "reading": "しょうせつ",
+    "english": "novel"
+   },
+   {
+    "word": "小説家",
+    "reading": "しょうせつか",
+    "english": "novelist"
+   },
+   {
+    "word": "説教する",
+    "reading": "せっきょうする",
+    "english": "to preach"
+   }
+  ]
+ },
+ {
+  "no": 299,
+  "kanji": "案",
+  "lesson": 22,
+  "on": [
+   "あん"
+  ],
+  "kun": [],
+  "meaning": "idea; proposal",
+  "compounds": [
+   {
+    "word": "案内する",
+    "reading": "あんないする",
+    "english": "to guide"
+   },
+   {
+    "word": "案内所",
+    "reading": "あんないじょ",
+    "english": "information desk"
+   },
+   {
+    "word": "案",
+    "reading": "あん",
+    "english": "idea, proposal"
+   },
+   {
+    "word": "提案",
+    "reading": "ていあん",
+    "english": "proposal"
+   }
+  ]
+ },
+ {
+  "no": 300,
+  "kanji": "内",
+  "lesson": 22,
+  "on": [
+   "ない"
+  ],
+  "kun": [
+   "うち"
+  ],
+  "meaning": "inside; inner",
+  "compounds": [
+   {
+    "word": "案内する",
+    "reading": "あんないする",
+    "english": "to guide"
+   },
+   {
+    "word": "家内",
+    "reading": "かない",
+    "english": "my wife"
+   },
+   {
+    "word": "国内",
+    "reading": "こくない",
+    "english": "domestic"
+   },
+   {
+    "word": "内科",
+    "reading": "ないか",
+    "english": "internal medicine"
+   },
+   {
+    "word": "内側",
+    "reading": "うちがわ",
+    "english": "inside"
+   }
+  ]
+ },
+ {
+  "no": 301,
+  "kanji": "忘",
+  "lesson": 22,
+  "on": [
+   "ぼう"
+  ],
+  "kun": [
+   "わす"
+  ],
+  "meaning": "to forget",
+  "compounds": [
+   {
+    "word": "忘れる",
+    "reading": "わすれる",
+    "english": "to forget"
+   },
+   {
+    "word": "忘れ物",
+    "reading": "わすれもの",
+    "english": "lost article"
+   },
+   {
+    "word": "忘年会",
+    "reading": "ぼうねんかい",
+    "english": "year-end party"
+   }
+  ]
+ },
+ {
+  "no": 302,
+  "kanji": "守",
+  "lesson": 22,
+  "on": [
+   "す",
+   "しゅ"
+  ],
+  "kun": [
+   "まも"
+  ],
+  "meaning": "to keep; to protect",
+  "compounds": [
+   {
+    "word": "守る",
+    "reading": "まもる",
+    "english": "to keep (a promise)"
+   },
+   {
+    "word": "留守",
+    "reading": "るす",
+    "english": "absence, not at home"
+   },
+   {
+    "word": "お守り",
+    "reading": "おまもり",
+    "english": "charm"
+   },
+   {
+    "word": "守衛",
+    "reading": "しゅえい",
+    "english": "security guard"
+   }
+  ]
+ },
+ {
+  "no": 303,
+  "kanji": "顔",
+  "lesson": 23,
+  "on": [
+   "がん"
+  ],
+  "kun": [
+   "かお",
+   "がお"
+  ],
+  "meaning": "face",
+  "compounds": [
+   {
+    "word": "顔",
+    "reading": "かお",
+    "english": "face"
+   },
+   {
+    "word": "顔文字",
+    "reading": "かおもじ",
+    "english": "emoticon"
+   },
+   {
+    "word": "顔色",
+    "reading": "かおいろ",
+    "english": "complexion"
+   },
+   {
+    "word": "笑顔",
+    "reading": "えがお",
+    "english": "smiling face"
+   },
+   {
+    "word": "洗顔",
+    "reading": "せんがん",
+    "english": "washing one's face"
+   }
+  ]
+ },
+ {
+  "no": 304,
+  "kanji": "悲",
+  "lesson": 23,
+  "on": [
+   "ひ"
+  ],
+  "kun": [
+   "かな"
+  ],
+  "meaning": "sad",
+  "compounds": [
+   {
+    "word": "悲しい",
+    "reading": "かなしい",
+    "english": "sad"
+   },
+   {
+    "word": "悲劇",
+    "reading": "ひげき",
+    "english": "tragedy"
+   },
+   {
+    "word": "悲惨な",
+    "reading": "ひさんな",
+    "english": "miserable"
+   },
+   {
+    "word": "悲しむ",
+    "reading": "かなしむ",
+    "english": "to grieve"
+   }
+  ]
+ },
+ {
+  "no": 305,
+  "kanji": "怒",
+  "lesson": 23,
+  "on": [
+   "ど"
+  ],
+  "kun": [
+   "おこ",
+   "いか"
+  ],
+  "meaning": "to get angry",
+  "compounds": [
+   {
+    "word": "怒る",
+    "reading": "おこる",
+    "english": "to get angry"
+   },
+   {
+    "word": "怒り",
+    "reading": "いかり",
+    "english": "anger, rage"
+   },
+   {
+    "word": "喜怒哀楽",
+    "reading": "きどあいらく",
+    "english": "human emotions"
+   }
+  ]
+ },
+ {
+  "no": 306,
+  "kanji": "違",
+  "lesson": 23,
+  "on": [
+   "い"
+  ],
+  "kun": [
+   "ちが"
+  ],
+  "meaning": "to differ",
+  "compounds": [
+   {
+    "word": "違う",
+    "reading": "ちがう",
+    "english": "different"
+   },
+   {
+    "word": "違い",
+    "reading": "ちがい",
+    "english": "difference"
+   },
+   {
+    "word": "間違える",
+    "reading": "まちがえる",
+    "english": "to make a mistake"
+   },
+   {
+    "word": "違法",
+    "reading": "いほう",
+    "english": "illegal"
+   },
+   {
+    "word": "違反",
+    "reading": "いはん",
+    "english": "violation"
+   }
+  ]
+ },
+ {
+  "no": 307,
+  "kanji": "変",
+  "lesson": 23,
+  "on": [
+   "へん"
+  ],
+  "kun": [
+   "か"
+  ],
+  "meaning": "change; abnormal",
+  "compounds": [
+   {
+    "word": "変な",
+    "reading": "へんな",
+    "english": "strange"
+   },
+   {
+    "word": "大変な",
+    "reading": "たいへんな",
+    "english": "tough"
+   },
+   {
+    "word": "変化",
+    "reading": "へんか",
+    "english": "change"
+   },
+   {
+    "word": "変人",
+    "reading": "へんじん",
+    "english": "eccentric person"
+   },
+   {
+    "word": "変える",
+    "reading": "かえる",
+    "english": "to change (something)"
+   }
+  ]
+ },
+ {
+  "no": 308,
+  "kanji": "比",
+  "lesson": 23,
+  "on": [
+   "ひ"
+  ],
+  "kun": [
+   "くら"
+  ],
+  "meaning": "to compare",
+  "compounds": [
+   {
+    "word": "比べる",
+    "reading": "くらべる",
+    "english": "to compare"
+   },
+   {
+    "word": "比較",
+    "reading": "ひかく",
+    "english": "comparison"
+   },
+   {
+    "word": "比例",
+    "reading": "ひれい",
+    "english": "proportion"
+   },
+   {
+    "word": "対比",
+    "reading": "たいひ",
+    "english": "contrast"
+   },
+   {
+    "word": "比喩",
+    "reading": "ひゆ",
+    "english": "figure of speech"
+   }
+  ]
+ },
+ {
+  "no": 309,
+  "kanji": "情",
+  "lesson": 23,
+  "on": [
+   "じょう"
+  ],
+  "kun": [
+   "なさ"
+  ],
+  "meaning": "emotion; condition",
+  "compounds": [
+   {
+    "word": "表情",
+    "reading": "ひょうじょう",
+    "english": "expression"
+   },
+   {
+    "word": "同情する",
+    "reading": "どうじょうする",
+    "english": "to sympathize"
+   },
+   {
+    "word": "友情",
+    "reading": "ゆうじょう",
+    "english": "friendship"
+   },
+   {
+    "word": "情報",
+    "reading": "じょうほう",
+    "english": "information"
+   },
+   {
+    "word": "情け",
+    "reading": "なさけ",
+    "english": "mercy"
+   }
+  ]
+ },
+ {
+  "no": 310,
+  "kanji": "感",
+  "lesson": 23,
+  "on": [
+   "かん"
+  ],
+  "kun": [],
+  "meaning": "to sense; to feel",
+  "compounds": [
+   {
+    "word": "感情",
+    "reading": "かんじょう",
+    "english": "emotion"
+   },
+   {
+    "word": "感動する",
+    "reading": "かんどうする",
+    "english": "to be moved"
+   },
+   {
+    "word": "感じる",
+    "reading": "かんじる",
+    "english": "to feel"
+   },
+   {
+    "word": "感謝",
+    "reading": "かんしゃ",
+    "english": "gratitude"
+   },
+   {
+    "word": "感想",
+    "reading": "かんそう",
+    "english": "impression"
+   }
+  ]
+ },
+ {
+  "no": 311,
+  "kanji": "調",
+  "lesson": 23,
+  "on": [
+   "ちょう"
+  ],
+  "kun": [
+   "しら"
+  ],
+  "meaning": "to investigate",
+  "compounds": [
+   {
+    "word": "調査",
+    "reading": "ちょうさ",
+    "english": "survey, research"
+   },
+   {
+    "word": "調べる",
+    "reading": "しらべる",
+    "english": "to look into"
+   },
+   {
+    "word": "調子",
+    "reading": "ちょうし",
+    "english": "condition"
+   },
+   {
+    "word": "強調する",
+    "reading": "きょうちょうする",
+    "english": "to emphasize"
+   }
+  ]
+ },
+ {
+  "no": 312,
+  "kanji": "査",
+  "lesson": 23,
+  "on": [
+   "さ"
+  ],
+  "kun": [],
+  "meaning": "to inspect",
+  "compounds": [
+   {
+    "word": "調査",
+    "reading": "ちょうさ",
+    "english": "survey, research"
+   },
+   {
+    "word": "検査",
+    "reading": "けんさ",
+    "english": "inspection"
+   },
+   {
+    "word": "審査",
+    "reading": "しんさ",
+    "english": "screening"
+   },
+   {
+    "word": "捜査",
+    "reading": "そうさ",
+    "english": "criminal investigation"
+   }
+  ]
+ },
+ {
+  "no": 313,
+  "kanji": "果",
+  "lesson": 23,
+  "on": [
+   "か"
+  ],
+  "kun": [
+   "は"
+  ],
+  "meaning": "fruit; result",
+  "compounds": [
+   {
+    "word": "結果",
+    "reading": "けっか",
+    "english": "result"
+   },
+   {
+    "word": "果物",
+    "reading": "くだもの",
+    "english": "fruit"
+   },
+   {
+    "word": "果汁",
+    "reading": "かじゅう",
+    "english": "fruit juice"
+   },
+   {
+    "word": "効果",
+    "reading": "こうか",
+    "english": "effect"
+   },
+   {
+    "word": "使い果たす",
+    "reading": "つかいはたす",
+    "english": "to use up"
+   }
+  ]
+ },
+ {
+  "no": 314,
+  "kanji": "化",
+  "lesson": 23,
+  "on": [
+   "か",
+   "け"
+  ],
+  "kun": [
+   "ば"
+  ],
+  "meaning": "to change into",
+  "compounds": [
+   {
+    "word": "文化",
+    "reading": "ぶんか",
+    "english": "culture"
+   },
+   {
+    "word": "化学",
+    "reading": "かがく",
+    "english": "chemistry"
+   },
+   {
+    "word": "同化",
+    "reading": "どうか",
+    "english": "assimilation"
+   },
+   {
+    "word": "お化け",
+    "reading": "おばけ",
+    "english": "goblin, ghost"
+   },
+   {
+    "word": "化粧",
+    "reading": "けしょう",
+    "english": "makeup"
+   }
+  ]
+ },
+ {
+  "no": 315,
+  "kanji": "横",
+  "lesson": 23,
+  "on": [
+   "おう"
+  ],
+  "kun": [
+   "よこ"
+  ],
+  "meaning": "sideways",
+  "compounds": [
+   {
+    "word": "横",
+    "reading": "よこ",
+    "english": "side"
+   },
+   {
+    "word": "横書き",
+    "reading": "よこがき",
+    "english": "horizontal writing"
+   },
+   {
+    "word": "横綱",
+    "reading": "よこづな",
+    "english": "grand champion of sumo"
+   },
+   {
+    "word": "横断する",
+    "reading": "おうだんする",
+    "english": "to traverse"
+   }
+  ]
+ },
+ {
+  "no": 316,
+  "kanji": "相",
+  "lesson": 23,
+  "on": [
+   "しょう",
+   "そう"
+  ],
+  "kun": [
+   "あい"
+  ],
+  "meaning": "mutual",
+  "compounds": [
+   {
+    "word": "相手",
+    "reading": "あいて",
+    "english": "partner"
+   },
+   {
+    "word": "首相",
+    "reading": "しゅしょう",
+    "english": "prime minister"
+   },
+   {
+    "word": "相談",
+    "reading": "そうだん",
+    "english": "consultation"
+   },
+   {
+    "word": "相互の",
+    "reading": "そうごの",
+    "english": "mutual"
+   }
+  ]
+ },
+ {
+  "no": 317,
+  "kanji": "答",
+  "lesson": 23,
+  "on": [
+   "とう"
+  ],
+  "kun": [
+   "こた",
+   "こたえ"
+  ],
+  "meaning": "answer",
+  "compounds": [
+   {
+    "word": "答える",
+    "reading": "こたえる",
+    "english": "to answer"
+   },
+   {
+    "word": "答え/答",
+    "reading": "こたえ",
+    "english": "answer"
+   },
+   {
+    "word": "回答",
+    "reading": "かいとう",
+    "english": "reply, answer"
+   },
+   {
+    "word": "正答",
+    "reading": "せいとう",
+    "english": "correct answer"
+   }
+  ]
+ }
+]
