@@ -4,15 +4,15 @@
  *          moved) → practice (+ "My answer was right") → item page → browse
  *   exam   a 40-question listening paper, answered, scored, reported
  *
- * Runs the app in-process against temp folders — your progress/, results/ and
- * reports/ are never touched.   npm run test:browser
+ * Runs the real server against a throwaway database — your own database and
+ * backups are never touched.   npm run test:browser
  */
 const { isolate, startApp, ROOT } = require('../helpers');
-isolate('academy-browser'); // before any app module loads
+isolate('academy-browser'); // before the server starts: a throwaway database
 
 const path = require('path');
 const fs = require('fs');
-const wk = require(path.join(ROOT, 'node_modules', 'wanakana'));
+const wk = require(path.join(ROOT, 'public', 'vendor', 'wanakana.min.js'));
 const { launch, watch, reporter, SHOTS } = require('./browser');
 
 (async () => {
@@ -102,7 +102,7 @@ const { launch, watch, reporter, SHOTS } = require('./browser');
 
   /* ---------------------------------------------------------- reviews */
   console.log('kanji: reviews');
-  for (const id of learned) app.store.load().items[id].nextReview = Date.now() - 60000;
+  app.makeDue(learned);
   await open('/kanji.html#/');
   await page.waitForSelector('.cards3');
   ck('dashboard shows 5 due', (await page.textContent('.c-reviews .bc-num')).trim() === '5');

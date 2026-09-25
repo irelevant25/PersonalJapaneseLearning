@@ -1,26 +1,18 @@
 {
   "name": "japanese-academy",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "Japanese Academy — WaniKani-style kanji SRS and a full course exam, with spoken vocabulary in two voices",
+  "description": "Japanese Academy — WaniKani-style kanji SRS and a full course exam, with spoken vocabulary in two voices. PHP + PostgreSQL; Node runs only the browser tests and the PDF page tool.",
   "type": "commonjs",
-  "main": "server.js",
-  "config": {
-    "host": "127.0.0.1",
-    "port": 3000
-  },
   "scripts": {
-    "start": "node server.js",
-    "test": "node --test --test-reporter=spec \"tests/unit/*.test.js\" \"tests/api/*.test.js\"",
+    "start": "node tools/php.js server.php",
+    "setup": "node tools/php.js setup.php",
+    "test": "node tools/php.js tests/run.php && node --test --test-reporter=spec \"tests/unit/*.test.js\"",
     "test:browser": "node tests/browser/run.js",
     "screens": "node tests/browser/screens.js",
-    "build": "node src/build-data.js",
-    "build:audio": "node src/build-audio.js",
+    "build": "node tools/php.js src/build-data.php",
+    "build:audio": "node tools/php.js src/build-audio.php",
     "pdf:pages": "node tools/pdf/pages.js"
-  },
-  "dependencies": {
-    "express": "^4.19.2",
-    "wanakana": "^5.3.1"
   },
   "devDependencies": {
     "playwright-core": "^1.63.0",

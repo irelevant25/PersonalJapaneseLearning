@@ -1,8 +1,9 @@
 ---
 paths:
   - "data/**"
-  - "src/build-data.js"
-  - "src/build-audio.js"
+  - "src/build-data.php"
+  - "src/build-audio.php"
+  - "src/content.php"
   - "tools/**"
 ---
 
@@ -14,7 +15,8 @@ use the `academy-pdf` skill.
 
 - `data/*.json` is generated, so never edit it by hand. Edit
   `data/source/*.tsv`, then run `npm run build`. For audio, run
-  `npm run build:audio`.
+  `npm run build:audio`. A rebuild of unchanged sources must change nothing
+  (`tests/unit/build-data.test.php`).
 - The TSVs are UTF-8, tab-separated, with no header. Fields per row: vocab 4,
   kanji 7, grammar index 3. Check with
   `awk -F'\t' '{print NF}' <file> | sort | uniq -c`.
@@ -29,6 +31,10 @@ use the `academy-pdf` skill.
   (Google Cloud Text-to-Speech, needs `GOOGLE_TTS_API_KEY` in `.env`). After a
   word is added or its spelling or reading changes, run it: it voices only
   what is missing and drops unused clips.
+- The catalog and the question bank live in the database (`srs_items`,
+  `exam_questions`), rebuilt from `data/` when the server starts; never edit
+  those tables. `CONTENT_FILES` in `src/content.php` lists what triggers a
+  rebuild: add a file there if the builders start reading it.
 - Changing a spelling renames an SRS id, which orphans the owner's progress for
   that item. See the id-rename procedure in the `academy-data` skill.
 - After an edit: run `npm run build` and `npm test`, restart the server

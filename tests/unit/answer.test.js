@@ -2,9 +2,11 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const A = require('../../public/kanji/answer.js');
-const { getCatalog } = require('../../src/srs/catalog');
+const { catalog } = require('../helpers');
 
-const cat = getCatalog();
+// the catalog the server sends, built by the PHP code from data/
+const cat = catalog();
+cat.byId = new Map(cat.items.map((it) => [it.id, it]));
 const known = A.knownCoresOf(cat.items);
 const item = (id) => {
   const it = cat.byId.get(id);

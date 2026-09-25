@@ -18,7 +18,8 @@ You are read-only:
 
 - Never edit files.
 - Never run `npm run build`; the caller builds.
-- Never use port 3000 or the owner's `progress/`, `results/` and `reports/`.
+- Never use port 3000, the owner's database, `backups/`, `progress/`,
+  `results/` or `reports/`.
 
 ## Audit
 
@@ -45,7 +46,8 @@ Always run the quick structure and invariant checks:
 # from the repository root
 for f in data/source/*.tsv; do echo "$f: $(awk -F'\t' '{print NF}' "$f" | sort | uniq -c | tr '\n' ' ')"; done
 grep -nP ' \t|\t |\r' data/source/*.tsv | head     # spaces around tabs, CRLF: expect no output
-node --test tests/unit/catalog.test.js tests/unit/answer.test.js
+C:/Users/pastorekf/Documents/php-8.5.10/php.exe tests/run.php tests/unit/catalog.test.php tests/unit/build-data.test.php   # php on PATH is 7.4 here
+node --test tests/unit/answer.test.js
 ```
 
 Also:

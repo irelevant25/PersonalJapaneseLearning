@@ -1,71 +1,116 @@
 /**
- * Shared test setup.
+ * Shared setup of the Node tests: the browser code's unit test and the browser
+ * suites. (The PHP tests have their own, in tests/lib.php.)
  *
- * isolate() MUST run before any app module is required: it points every data
- * folder (kanji progress, exam results, exam reports) at a fresh temp directory,
- * so no test can ever read or write the real ones in progress/, results/ and
- * reports/. startApp() then checks the folders the app actually uses.
+ * isolate() MUST run before startApp(): it picks a throwaway database
+ * (academy_test_<…>) and a temp folder for backups. startApp() makes that
+ * database — a copy of academy_test_template, which it first brings up to date
+ * — starts the real server (PHP's built-in web server, as npm start does) on a
+ * free port with them, and checks that the server says it uses them. Nothing
+ * can reach your database or backups/, and no test reads progress/, results/
+ * or reports/.
  */
 const fs = require('fs');
 const os = require('os');
+const net = require('net');
 const path = require('path');
+const crypto = require('crypto');
+const { execFileSync, spawn } = require('child_process');
+const { findPhp } = require('../tools/php');
 
 const ROOT = path.join(__dirname, '..');
+const TESTDB = path.join(ROOT, 'tests', 'tools', 'testdb.php');
 
-// The modules that pick their data folders when they load.
-const DATA_MODULES = ['server.js', 'src/srs/store.js', 'src/srs/routes.js'].map((f) => path.join(ROOT, f));
-
-let BASE = null;
+let ENV = null;
 
 function isolate(name = 'academy-test') {
-  const loaded = DATA_MODULES.filter((f) => require.cache[f]);
-  if (loaded.length) {
-    throw new Error(`isolate() came too late: ${loaded.map((f) => path.relative(ROOT, f)).join(', ')} already loaded`);
-  }
-  BASE = fs.mkdtempSync(path.join(os.tmpdir(), `${name}-`));
-  for (const d of ['progress', 'results', 'reports']) fs.mkdirSync(path.join(BASE, d));
-  process.env.ACADEMY_PROGRESS_DIR = path.join(BASE, 'progress');
-  process.env.ACADEMY_RESULTS_DIR = path.join(BASE, 'results');
-  process.env.ACADEMY_REPORTS_DIR = path.join(BASE, 'reports');
-  // Remove the temp data when the run ends; ACADEMY_KEEP_TEMP=1 keeps it to look at.
-  const base = BASE;
-  process.on('exit', () => {
-    if (process.env.ACADEMY_KEEP_TEMP) return;
-    try {
-      fs.rmSync(base, { recursive: true, force: true });
-    } catch {
-      // a file still held open by Windows: harmless leftovers in %TEMP%
-    }
-  });
-  return BASE;
+  if (ENV) throw new Error('isolate() came twice');
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), `${name}-`));
+  ENV = {
+    ACADEMY_DB_NAME: `academy_test_${process.pid}_${crypto.randomBytes(3).toString('hex')}`,
+    ACADEMY_BACKUPS_DIR: dir.replace(/\\/g, '/'),
+  };
+  return dir;
 }
 
-/** Real, case-folded path: 8.3 short names, junctions and letter case can't fool the check. */
-const real = (p) => {
-  const r = fs.realpathSync.native(p);
-  return process.platform === 'win32' ? r.toLowerCase() : r;
-};
+const php = (args, opts = {}) =>
+  execFileSync(findPhp(), args, { cwd: ROOT, encoding: 'utf8', env: { ...process.env, ...ENV }, maxBuffer: 64e6, ...opts });
 
-/** The real app, in-process, on a free port. Call isolate() first. */
+/** SQL in the test's own database; returns the rows. */
+const sql = (query, ...params) => JSON.parse(php([TESTDB, 'sql', ENV.ACADEMY_DB_NAME, query, JSON.stringify(params)]));
+
+const freePort = () =>
+  new Promise((resolve) => {
+    const s = net.createServer().listen(0, '127.0.0.1', () => {
+      const { port } = s.address();
+      s.close(() => resolve(port));
+    });
+  });
+
+/** The real server, on a free port, against the test's database and backup folder. */
 async function startApp() {
-  if (!BASE) throw new Error('startApp() without isolate() would touch the real data folders');
-  const app = require(path.join(ROOT, 'server.js'));
-  const store = require(path.join(ROOT, 'src', 'srs', 'store.js'));
-  for (const [name, dir] of Object.entries(app.locals.dirs)) {
-    const rel = path.relative(real(BASE), real(dir));
-    if (!rel || rel.startsWith('..') || path.isAbsolute(rel)) {
-      throw new Error(`the app's ${name} folder (${dir}) is outside this test's temp folder ${BASE}`);
+  if (!ENV) throw new Error('startApp() without isolate() would use your real database');
+  php([TESTDB, 'template'], { stdio: ['ignore', 'ignore', 'inherit'] });
+  php([TESTDB, 'create', ENV.ACADEMY_DB_NAME]);
+
+  const port = await freePort();
+  const log = path.join(ENV.ACADEMY_BACKUPS_DIR, '..', `${path.basename(ENV.ACADEMY_BACKUPS_DIR)}-server.log`);
+  const out = fs.openSync(log, 'a');
+  // this computer only, like the real server (and no firewall prompt on a new PC)
+  const server = spawn(
+    findPhp(),
+    ['-d', 'display_errors=stderr', '-S', `127.0.0.1:${port}`, '-t', path.join(ROOT, 'public'), path.join(ROOT, 'server.php')],
+    { cwd: ROOT, env: { ...process.env, ...ENV }, stdio: ['ignore', out, out] }
+  );
+  const base = `http://127.0.0.1:${port}`;
+
+  let closed = false;
+  const close = async () => {
+    if (closed) return;
+    closed = true;
+    server.kill();
+    await new Promise((r) => (server.exitCode !== null ? r() : server.once('exit', r)));
+    fs.closeSync(out);
+    if (process.env.ACADEMY_KEEP_TEMP) return;
+    php([TESTDB, 'drop', ENV.ACADEMY_DB_NAME]);
+    for (const p of [ENV.ACADEMY_BACKUPS_DIR, log]) {
+      try {
+        fs.rmSync(p, { recursive: true, force: true });
+      } catch {
+        // a file still held open by Windows: harmless leftovers in %TEMP%
+      }
+    }
+  };
+  process.on('exit', () => {
+    if (!closed) server.kill();
+  });
+
+  for (let i = 0; ; i++) {
+    try {
+      const health = await (await fetch(`${base}/api/health`)).json();
+      if (health.database !== ENV.ACADEMY_DB_NAME || health.backups !== ENV.ACADEMY_BACKUPS_DIR) {
+        await close();
+        throw new Error(`the server uses ${health.database} / ${health.backups}, not this test's database and folder`);
+      }
+      break;
+    } catch (e) {
+      if (/not this test/.test(e.message)) throw e;
+      if (i > 100) throw new Error(`the server did not start: ${fs.readFileSync(log, 'utf8')}`);
+      await new Promise((r) => setTimeout(r, 50));
     }
   }
-  // this computer only, like the real server (and no firewall prompt on a new PC)
-  const server = await new Promise((resolve) => {
-    const s = app.listen(0, '127.0.0.1', () => resolve(s));
-  });
-  const base = `http://127.0.0.1:${server.address().port}`;
+
   return {
     base,
-    store,
-    close: () => new Promise((resolve) => server.close(resolve)),
+    sql,
+    /** Makes items due for review now (the old tests edited the in-memory store). */
+    makeDue: (ids, agoMs = 60000) =>
+      sql(
+        'UPDATE srs_progress SET next_review = academy_time(?) WHERE item_id IN (SELECT json_array_elements_text(?::json))',
+        Date.now() - agoMs,
+        JSON.stringify(ids)
+      ),
+    close,
   };
 }
 
@@ -86,4 +131,7 @@ async function call(base, method, url, body) {
   return { status: r.status, body: parsed, headers: r.headers };
 }
 
-module.exports = { ROOT, isolate, startApp, call };
+/** The catalog as the server builds it, straight from data/ (no server needed). */
+const catalog = () => JSON.parse(php([path.join(ROOT, 'tests', 'tools', 'catalog.php')]));
+
+module.exports = { ROOT, isolate, startApp, call, catalog };

@@ -15,9 +15,13 @@ The owner studies with it every day, so a bug costs them study time or real
 progress.
 
 You are read-only. Never edit files, and never stage, commit or discard
-anything in git. Never start or stop the server on port 3000. Never
-read-modify-write, or run anything against, `progress/`, `results/` or
-`reports/`.
+anything in git. Never start or stop the server on port 3000. Never change,
+or run anything against, the owner's database `japanese_academy`, `backups/`,
+`progress/`, `results/` or `reports/`: a PHP process without
+`ACADEMY_DB_NAME` set uses the real database, so run PHP only through the
+tests (`npm test`) or with a throwaway database (see the `academy-run`
+skill). On this PC `php` on PATH is 7.4; PHP 8 is
+`C:/Users/pastorekf/Documents/php-8.5.10/php.exe` (the npm scripts find it).
 
 The caller tells you which files changed and why. The owner commits only when
 they ask, so `git status` and `git diff` show the work in progress; use them
@@ -30,15 +34,24 @@ first (invariants and conventions), then the kb page for the area in
 ## Check, in this order
 
 0. **No source name, no secrets.** No file and no file name names the course
-   the data comes from (`tests/unit/source-names.test.js`). The Google key
-   (`GOOGLE_TTS_API_KEY`, in the gitignored `.env`) is never logged, never in a
-   URL, never in a tracked file.
-1. **The owner's data.** Can anything now delete, overwrite or corrupt
-   `progress/kanji.json`, the answer log, `results/` or `reports/`?
-   - Do tests and scripts go through `isolate()`?
-   - Are writes still tmp + rename?
-   - Has anything slow or synchronous been added to a request path?
-   - Do existing result files still load?
+   the data comes from (`tests/unit/source-names.test.php`). The Google key
+   (`GOOGLE_TTS_API_KEY`, in the gitignored `.env`) and the database password
+   (`src/config.local.php`, gitignored) are never logged, never in a URL,
+   never in a tracked file.
+1. **The owner's data.** Can anything now delete, overwrite or corrupt the
+   database `japanese_academy` (`srs_progress`, `srs_log`, `exam_attempts` …),
+   `backups/`, or the old files in `progress/`, `results/`, `reports/`?
+   - Do PHP tests load `tests/lib.php` first, and Node scripts call
+     `isolate()` before `startApp()`? Does anything else run PHP without
+     `ACADEMY_DB_NAME`?
+   - Is each answer still one transaction (item, day count, log line)? Is
+     `srs_log` only ever added to?
+   - Has anything slow been added to a request path (a backup, a content
+     rebuild)?
+   - Do the stored attempts — including those imported from `results/` —
+     still load in the history and the reports?
+   - A migration: new number, never an edit of a committed one; `setup.php`
+     backs up before applying it.
 2. **Exam honesty.** `/api/exam` responses contain no answer fields, and clip
    names stay random. Submit still rebuilds the paper from the echoed spec,
    and answers from another paper get 409.
@@ -49,12 +62,16 @@ first (invariants and conventions), then the kb page for the area in
    - `k:`/`v:` ids stay stable. A catalog change that renames ids orphans
      progress.
 4. **Correctness.**
-   - Edge cases: empty lists, first run with no progress file, burned items,
-     lesson 0, both parts selected, a word with no audio.
-   - Off-by-one errors, null/undefined.
-   - Errors in async Express handlers.
-   - Validation of POST bodies.
-   - Local time: review times floor to the local hour.
+   - Edge cases: empty lists, an empty database, burned items, lesson 0, both
+     parts selected, a word with no audio.
+   - Off-by-one errors, null, missing array keys (a PHP warning throws).
+   - PHP against JavaScript semantics: an empty array must reach the browser
+     as `{}` where it expects an object; `'0'` is falsy in PHP but not in JS
+     (`js_truthy()`); multibyte strings need `mb_*`; `src/util.php` has the
+     JS-compatible helpers.
+   - Errors in handlers: a route's exception becomes JSON 500 (503 for the
+     database); POST bodies are validated; SQL values are `?` parameters.
+   - Local time: review times floor to the local hour (`local_wall_ms()`).
 5. **Front end.**
    - Script order in `kanji.html` and use of `window.KA`.
    - Data goes through `KA.h()` or `escapeHtml()`.

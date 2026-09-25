@@ -7,7 +7,7 @@
  *   npm run screens -- kanji   → only screens whose name contains "kanji"
  */
 const { isolate, startApp } = require('../helpers');
-isolate('academy-screens'); // before any app module loads
+isolate('academy-screens'); // before the server starts: a throwaway database
 
 const path = require('path');
 const fs = require('fs');
@@ -41,8 +41,7 @@ const VARIANTS = [
   // some progress: 大 and 学 learned, one of them due, so every screen has content
   const post = (u, b) => fetch(app.base + u, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(b) });
   for (const id of ['k:一', 'k:二', 'k:大', 'k:学', 'v:大学']) await post('/api/kanji/learn', { id });
-  app.store.load().items['k:大'].nextReview = Date.now() - 60000;
-  app.store.load().items['k:学'].nextReview = Date.now() - 60000;
+  app.makeDue(['k:大', 'k:学']);
 
   fs.mkdirSync(SHOTS, { recursive: true });
   const browser = await launch();

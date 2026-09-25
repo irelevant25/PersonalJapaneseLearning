@@ -12,8 +12,9 @@ npm run screens              # from the repository root
 npm run screens -- kanji     # only screens whose name contains "kanji"
 ```
 
-The script runs an isolated app and seeds some progress, so every screen has
-content: 一, 二, 大, 学 and 大学 are learned, and 大 and 学 are due. It then
+The script runs the real server on a throwaway database and seeds some
+progress, so every screen has content: 一, 二, 大, 学 and 大学 are learned, and
+大 and 学 are due. It then
 drives Edge and writes
 `tests/browser/shots/screen-<name>-<light|dark|phone>.png`.
 

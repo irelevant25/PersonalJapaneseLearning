@@ -85,7 +85,7 @@
       V.forecast(s),
       V.lessonGrid(),
       h('p', { class: 'small muted foot' },
-        'Your progress is saved in progress/kanji.json, with a daily copy in progress/backups. ',
+        'Your progress is saved in the database, with a daily copy in backups/. ',
         h('a', { href: '/api/kanji/export' }, 'Download a copy'), '.')
     );
   };

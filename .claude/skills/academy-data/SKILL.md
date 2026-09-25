@@ -1,6 +1,6 @@
 ---
 name: academy-data
-description: Change Japanese Academy's study data safely. Fix a typo, or add or correct a word, kanji, reading or meaning in data/source/*.tsv, rebuild data/*.json, check the invariants, and keep the owner's SRS progress when an item id changes. Use for any edit under data/ or to src/build-data.js / src/build-audio.js.
+description: Change Japanese Academy's study data safely. Fix a typo, or add or correct a word, kanji, reading or meaning in data/source/*.tsv, rebuild data/*.json, check the invariants, and keep the owner's SRS progress when an item id changes. Use for any edit under data/ or to src/build-data.php / src/build-audio.php.
 ---
 
 # Changing the study data
@@ -16,11 +16,13 @@ Sources, page maps, formats and known quirks:
 | a kanji's readings, meaning or example compounds | `data/source/kanji-part1.tsv` / `kanji-part2.tsv` | `npm run build` |
 | grammar index | `data/source/grammar-index-part1.tsv` / `-part2.tsv` | `npm run build` |
 | audio | nothing by hand: the clips come from Google Cloud Text-to-Speech | `npm run build:audio` (key in `.env`) after words change; `-- --dry-run` first to see what it would send |
-| hand-written exam questions | `data/authored-items*.js` | see the `academy-exam-items` skill |
-| how items become SRS items (merging, glosses) | `src/srs/catalog.js` | code change: `academy-code-reviewer` |
+| hand-written exam questions | `data/authored-items*.php` | see the `academy-exam-items` skill |
+| how items become SRS items (merging, glosses) | `src/srs/catalog.php` | code change: `academy-code-reviewer` |
 
 Never edit `data/vocab.json`, `kanji.json`, `grammar-index.json` or
-`audio.json` by hand. The build overwrites them.
+`audio.json` by hand. The build overwrites them. The same goes for the
+`srs_items` and `exam_questions` tables: the server rebuilds them from `data/`
+when it starts.
 
 ## Steps
 
@@ -47,7 +49,9 @@ Never edit `data/vocab.json`, `kanji.json`, `grammar-index.json` or
 4. **Rebuild and test:** `npm run build`, then `npm test`. The catalog tests
    check kanji numbering 1–317, per-lesson totals, unique ids, and that every
    item is answerable with its own answers.
-5. **Restart the real server** (`academy-run`). Data is read at start-up.
+5. **Restart the real server** (`academy-run`). At its start it sees that
+   `data/` changed and rebuilds the catalog and the question bank in the
+   database (a few seconds).
 6. **Run the `academy-data-auditor` agent** on the rows you changed. Give it the
    file, the rows and the page you used.
 
@@ -57,18 +61,22 @@ SRS items are keyed `k:<kanji>` and `v:<word>`, the word as written. Changing
 the kanji spelling of a word, or merging or splitting items, changes the key.
 The owner's progress then stays under the old key and disappears from the app.
 
-1. Before the change, check whether the old id has progress. There is no
-   `progress/kanji.json` until the owner's first lesson.
+1. Before the change, check whether the old id has progress. This reads the
+   owner's database, and only reads it (`PHP` = PHP 8, see `academy-run`):
    ```bash
-   node -e "const f='./progress/kanji.json', fs=require('fs'); const p=fs.existsSync(f)?JSON.parse(fs.readFileSync(f,'utf8')):{items:{}}; console.log(JSON.stringify(p.items['v:OLD'] || null))"
+   "$PHP" -r 'require "src/bootstrap.php"; var_export(store_item($argv[1]));' 'v:OLD'
    ```
-2. If it has none, you're done.
+2. If it prints `NULL`, you're done.
 3. If it has progress:
-   - Tell the owner.
-   - Stop the server (`academy-run`).
-   - Copy `progress/kanji.json` to `progress/backups/kanji-before-rename-<date>.json`.
-   - Move the entry to the new key with a small Node script.
-   - Start the server and confirm the item shows its stage.
+   - Tell the owner, and do the rest only with their go-ahead.
+   - Take a backup: `npm run setup -- --backup`.
+   - Move the row and its log lines to the new key, in one transaction:
+     ```bash
+     "$PHP" -r 'require "src/bootstrap.php"; db_tx(function () use ($argv) { db_exec("UPDATE srs_progress SET item_id = ? WHERE item_id = ?", [$argv[2], $argv[1]]); db_exec("UPDATE srs_log SET item_id = ? WHERE item_id = ?", [$argv[2], $argv[1]]); }); var_export(store_item($argv[2]));' 'v:OLD' 'v:NEW'
+     ```
+     (It fails, and changes nothing, if `v:NEW` already has a row: then ask
+     the owner which record to keep.)
+   - Restart the server and confirm the item shows its stage.
 
 Adding brand-new rows needs no migration. The new items simply appear as
 lessons.

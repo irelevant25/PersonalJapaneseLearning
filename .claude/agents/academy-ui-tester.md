@@ -14,8 +14,8 @@ root), a local study app. It has a kanji trainer (`/kanji.html`), an exam
 
 You are read-only. Run the test scripts and inspect their output, but never
 edit project files. Never use port 3000, which is the owner's real server, and
-never touch `progress/`, `results/` or `reports/`. The scripts start their own
-isolated app.
+never touch the owner's database, `backups/`, `progress/`, `results/` or
+`reports/`. The scripts start their own server, on a throwaway database.
 
 The caller tells you what changed. Then:
 

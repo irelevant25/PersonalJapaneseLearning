@@ -3,9 +3,12 @@
 A WaniKani-style trainer with the time locks removed. Code: `src/srs/` (server)
 and `public/kanji/` (browser).
 
-## Items — `src/srs/catalog.js`
+## Items — `src/srs/catalog.php`
 
-Built at start-up from `data/kanji.json`, `data/vocab.json`, `data/audio.json`.
+Built from `data/kanji.json`, `data/vocab.json`, `data/audio.json` when the
+content is synced (the server's start, `setup.php`; only when `data/` or the
+builder changed) and stored in the `srs_items` table, which
+`GET /api/kanji/catalog` sends as it is.
 
 - **Kanji** (316): every kanji of the course except 々. Id `k:<kanji>`.
   Accepted readings = every on/kun reading **plus** the dictionary form of words
@@ -23,13 +26,13 @@ Built at start-up from `data/kanji.json`, `data/vocab.json`, `data/audio.json`.
 - **Availability**: kanji always; vocabulary once all its kanji are learned.
   Enforced by the server (`POST /learn` → 409) and mirrored in `KA.isAvailable`.
 - **Audio**: every vocabulary item has `audio: [female, male]`, the clip names
-  of `src/speech.js`'s `clipsFor()`, spoken with the item's first reading.
+  of `src/speech.php`'s `speech_clips_for()`, spoken with the item's first reading.
   Kanji items have none (a kanji has several readings).
 
 Changing catalog rules can rename or remove ids — see the warning in
 [data-provenance.md](data-provenance.md).
 
-## Schedule — `src/srs/srs.js` (WaniKani's, exactly)
+## Schedule — `src/srs/srs.php` (WaniKani's, exactly)
 
 | Stage | Name | Next review |
 |---|---|---|
@@ -39,7 +42,8 @@ Changing catalog rules can rename or remove ids — see the warning in
 | 8 | Enlightened | 2879 h |
 | 9 | Burned | never |
 
-Review times are rounded down to the local hour (hence 23 h, not 24).
+Review times are rounded down to the local hour (hence 23 h, not 24); in the
+autumn's repeated hour, to its first occurrence (as the browser's `Date` does).
 Clean review: +1 stage. With `w` wrong answers (meaning + reading):
 `stage − ceil(w/2) × (2 if stage ≥ 5 else 1)`, never below 1.
 
@@ -47,13 +51,13 @@ Clean review: +1 stage. With `w` wrong answers (meaning + reading):
 
 - **Unlimited lessons.** Batches of 5 by default (3/10/any 1–20 via settings),
   as many batches as wanted, no daily cap, no level gating.
-- **Unlimited practice** of anything learned. `srs.practice()` records its own
+- **Unlimited practice** of anything learned. `srs_practice()` records its own
   counters (`practice.correct/incorrect`, `lastWrongAt`) and **never changes
   `stage` or `nextReview`**. Tests assert this — keep it that way.
 - **Reviews** are the only thing that moves stages, and only for due items
   (`POST /review` on a non-due item → 409, which also blocks double submits).
 
-## API — `src/srs/routes.js` (mounted at `/api/kanji`)
+## API — `src/srs/routes.php` (routed by `server.php` under `/api/kanji`)
 
 | | |
 |---|---|
@@ -66,27 +70,40 @@ Clean review: +1 stage. With `w` wrong answers (meaning + reading):
 | `POST /item {id, notes?, addSynonym?, removeSynonym?, addReading?, removeReading?}` | the learner's notes and accepted answers |
 | `POST /settings {batchSize?, lessonTypes?, autoplay?}` | validated and clamped |
 | `POST /reset-item {id}` · `POST /reset {confirm:"RESET"}` | reset keeps notes; full reset is backed up first |
-| `GET /export` | download `progress/kanji.json` |
+| `GET /export` | download your progress, in the shape of the old `progress/kanji.json` (`{version, createdAt, updatedAt, settings, items, daily}`) |
 
-## Storage — `src/srs/store.js`
+Each handler returns `[status, body]`; the item records have the shape of
+`srs_blank()` in `src/srs/srs.php`, with times in milliseconds.
 
-`progress/kanji.json` (in memory while the server runs; loaded once).
+## Storage — `src/srs/store.php` (PostgreSQL)
 
-- **Saving.** Every save writes `kanji.json.tmp` and renames it over the file,
-  retrying for up to 0.9 s if Windows holds a file (virus scanner). If the
-  rename still fails, the save copies over the file instead; see
-  [decisions.md](decisions.md).
-- **Daily backup.** Taken at **start-up**, because `server.js` loads the store
-  before it listens. If the server is still running past midnight, the new
-  day's first save also writes one, in the background and from memory. No
-  backup ever runs inside a lesson, review or practice request. A folder
-  without progress yet has nothing to back up.
-- **Answer log.** Every answer is also appended to `kanji-log.jsonl`.
-- **Unreadable file.** An unreadable progress file is moved aside
-  (`.unreadable-<time>`), never overwritten.
+| Table | |
+|---|---|
+| `srs_progress` | one row per item touched (learned, reviewed, practised, or given a note); an id the catalog no longer has keeps its row |
+| `srs_settings` | the settings (one row), `created_at` (a full reset starts it again) and `updated_at` |
+| `srs_daily` | the dashboard's counts per local day |
+| `srs_log` | every lesson, review, practice answer and reset (`kind`, `item_id`, `details`) — only ever added to |
 
-Because the store is loaded once, **edit `progress/kanji.json` only while the
-server is stopped** — otherwise the next save overwrites your edit.
+- **Saving.** Each answer is one transaction: the item (its row locked while
+  it is read and written, which also stops a double submit), the day's count
+  and the log line are saved together or not at all.
+- **Daily backup.** Taken when the server starts (`php server.php`), before it
+  answers anything: all your study data in one file,
+  `backups/academy-<date>.json` (see `src/backup.php`); the last 14 are kept.
+  A server left running overnight takes the new day's copy at the first page
+  load (`GET /api/kanji/progress`, `/summary` or `/api/meta`). No backup ever
+  runs inside a lesson, review or practice request, and a failed one is only
+  reported. An empty database has nothing to back up.
+- **Full reset** (`POST /reset`): backed up first
+  (`academy-before-reset-<time>.json`, with the log); items and day counts go,
+  the settings and the log stay.
+- **Editing by hand** is SQL on `japanese_academy` — only when the owner asks,
+  after `php setup.php --backup`. The server reads the database on every
+  request, so it needn't be stopped.
+
+The old app's file, `progress/kanji.json`, and its log were imported once by
+`setup.php` (see [architecture.md](architecture.md)); nothing writes them any
+more.
 
 ## Answer checking — `public/kanji/answer.js`
 
@@ -123,13 +140,15 @@ saving, the saves still land, but the summary is not drawn over the new screen
 
 Keys: Enter submit / continue · F item info · lessons ←/→ or Enter.
 
-## Audio — `src/speech.js`, `src/build-audio.js`
+## Audio — `src/speech.php`, `src/build-audio.php`
 
-`npm run build:audio` voices every word of `data/vocab.json` and every SRS
-vocabulary item with Google Cloud Text-to-Speech, in two voices: female
-`ja-JP-Neural2-B` and male `ja-JP-Neural2-C`.
+`npm run build:audio` (`php src/build-audio.php`) voices every word of
+`data/vocab.json` and every SRS vocabulary item with Google Cloud
+Text-to-Speech, in two voices: female `ja-JP-Neural2-B` and male
+`ja-JP-Neural2-C`. After it, restart the server: the catalog and the bank pick
+up the new clips.
 
-- **What is spoken** (`spoken()` in `src/speech.js`, shared by the builder,
+- **What is spoken** (`speech_spoken()` in `src/speech.php`, shared by the builder,
   the catalog and the exam): the first spelling, without notes, punctuation and
   optional endings (いじわる(な) → いじわる, 妹(さん) → 妹); brackets inside a
   word stay part of it (ほ(う)っておく → ほうっておく), and a phrase is spoken whole
@@ -143,12 +162,12 @@ vocabulary item with Google Cloud Text-to-Speech, in two voices: female
   therefore gives nothing away. The clips are in git.
 - **Rebuilds** only send what is missing. Each clip is stamped with the recipe
   and voice that made it (`made` in `audio.json`), so a new word, a changed
-  spelling or reading, or a changed voice or `RECIPE` remakes exactly those
+  spelling or reading, or a changed voice or `AUDIO_RECIPE` remakes exactly those
   clips, even after a partial run. After a complete run, clips nothing uses any
   more are deleted. `--dry-run` counts the characters without a key; `--limit N`
   makes at most N.
-- **Failures**: requests are paced (10 a second) under Google's per-minute
-  quota, and a 429 waits for the minute to turn. The index is saved every 100
+- **Failures**: requests go one at a time, at most 10 a second, under Google's
+  per-minute quota, and a 429 waits for the minute to turn. The index is saved every 100
   clips and at the end, also after a failure or Ctrl+C, and nothing is deleted
   then. A word Google refuses (400) is skipped and listed; the rest go on. An
   unreadable `audio.json` stops the build instead of remaking and deleting

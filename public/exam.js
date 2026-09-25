@@ -458,7 +458,7 @@ function paintResult(res) {
   $('#bySection').innerHTML = res.bySection.map(barRow).join('');
   $('#byLesson').innerHTML = res.byLesson.map(barRow).join('');
   $('#reportLink').href = res.reportUrl;
-  $('#savedLine').textContent = `Attempt saved as ${res.id}.json — report written to reports/${res.id}.html`;
+  $('#savedLine').textContent = `Attempt and its report saved (${res.id}).`;
   paintReview();
 }
 

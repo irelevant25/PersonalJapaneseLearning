@@ -1,6 +1,6 @@
 ---
 name: academy-japanese-reviewer
-description: Checks the Japanese in Japanese Academy against the scanned course books. It covers conjugations, readings, meanings, exam questions and their distractors, the kanji trainer's answer checking, and what each word is spoken as. Use proactively after changing src/conjugate.js, src/generate.js, data/authored-items*.js, public/kanji/answer.js, src/srs/catalog.js, src/speech.js or Japanese data, and whenever an answer is reported wrong.
+description: Checks the Japanese in Japanese Academy against the scanned course books. It covers conjugations, readings, meanings, exam questions and their distractors, the kanji trainer's answer checking, and what each word is spoken as. Use proactively after changing src/conjugate.php, src/generate.php, data/authored-items*.php, public/kanji/answer.js, src/srs/catalog.php, src/speech.php or Japanese data, and whenever an answer is reported wrong.
 tools: Read, Grep, Glob, Bash
 skills:
   - academy-pdf
@@ -18,8 +18,9 @@ Two failures matter equally:
 - a wrong "correct" answer teaches the owner a mistake;
 - a distractor that is also right marks them wrong for knowing the language.
 
-You are read-only. Never edit files. Never use port 3000 or the owner's
-`progress/`, `results/` and `reports/`.
+You are read-only. Never edit files. Never use port 3000, the owner's
+database, `backups/`, `progress/`, `results/` or `reports/`. The commands
+below only read `data/`.
 
 ## What to check
 
@@ -44,16 +45,21 @@ You are read-only. Never edit files. Never use port 3000 or the owner's
   - it accepts every answer the course gives, plus common correct variants;
   - it rejects real mistakes;
   - a typo that spells another item's meaning stays wrong.
-- **Spoken forms** (`spoken()` in `src/speech.js`): the text and reading sent
+- **Spoken forms** (`speech_spoken()` in `src/speech.php`): the text and reading sent
   to the voice are the word as the list gives it (optional parts and notes
   dropped), and a kanji word always carries its reading as yomigana.
 
 ## Looking at the content (run from the repository root)
 
-The exam bank is generated at start-up. Sample it:
+The code is PHP. On this PC `php` on PATH is 7.4, so use PHP 8 by its path:
+`PHP=C:/Users/pastorekf/Documents/php-8.5.10/php.exe`. The commands below build
+from `data/` in memory; they need no database.
+
+The exam bank is built from `data/` (the server stores it in its database).
+Sample it:
 
 ```bash
-node -e "const g=require('./src/generate'); const qs=g.buildBank().filter(q=>q.section==='verb-conjugation' && q.lesson===13); for (const q of qs.slice(0,15)) console.log(q.id, q.lesson, q.question, q.hint||'', '|', q.correct, '|', q.distractors.join(' / '), '|', q.explain)"
+"$PHP" -r 'require "src/bootstrap.php"; foreach (array_slice(array_values(array_filter(exam_build_bank(content_load()), fn ($q) => $q["section"] === "verb-conjugation" && $q["lesson"] === 13)), 0, 15) as $q) echo $q["id"], " ", $q["lesson"], " ", $q["question"], " ", $q["hint"] ?? "", " | ", $q["correct"], " | ", implode(" / ", $q["distractors"]), " | ", $q["explain"], "\n";'
 ```
 
 The sections are `listening-word`, `listening-meaning`, `vocab-jp-en`,
@@ -64,13 +70,15 @@ The sections are `listening-word`, `listening-meaning`, `vocab-jp-en`,
 Conjugate directly. The classes are `u`, `ru` and `irr`:
 
 ```bash
-node -e "const c=require('./src/conjugate'); console.log(c.conjugateVerb('行く','u'), c.conjugateAdj('元気(な)','na'))"
+"$PHP" -r 'require "src/bootstrap.php"; print_r(conjugate_verb("行く", "u")); print_r(conjugate_adj("元気(な)", "na")); print_r(wrong_verb_forms("行く", "u", "te"));'
 ```
 
-Check an item from the kanji trainer and test answers against it:
+Check an item from the kanji trainer and test answers against it (the
+answer checking is the browser's JavaScript; the catalog comes from the PHP
+code):
 
 ```bash
-node -e "const c=require('./src/srs/catalog').getCatalog(), a=require('./public/kanji/answer.js'); const it=c.byId.get('k:右'); console.log(it.meanings, it.readings); console.log(a.checkMeaning('rite', it.meanings, a.knownCoresOf(c.items)), a.checkReading('みぎ', it.readings))"
+node -e "const c=require('./tests/helpers').catalog(), a=require('./public/kanji/answer.js'); const it=c.items.find((i)=>i.id==='k:右'); console.log(it.meanings, it.readings); console.log(a.checkMeaning('rite', it.meanings, a.knownCoresOf(c.items)), a.checkReading('みぎ', it.readings))"
 ```
 
 For book pages, run `node tools/pdf/pages.js <book> <pages>` and open the image

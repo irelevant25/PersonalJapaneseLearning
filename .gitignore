@@ -3,8 +3,13 @@ node_modules/
 # Claude Code's personal settings (the rest of .claude/ is shared)
 .claude/settings.local.json
 
-# Secrets: the text-to-speech API key (see README)
+# Secrets: the text-to-speech API key (see README), and this computer's
+# database settings with their password (written by setup.php)
 .env
+src/config.local.php
+
+# Copies of your study data from the database (see README)
+backups/
 
 # The owner's scratch folder (voice samples and the like): never committed
 temp/

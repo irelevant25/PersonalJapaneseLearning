@@ -1,35 +1,40 @@
 ---
 name: academy-exam-items
-description: Write, fix or review the hand-written Japanese Academy exam questions (particles, grammar, counters, translation) in data/authored-items-part1.js and data/authored-items-part2.js. Use when adding questions, fixing a question with a wrong or doubtful answer, or checking distractors.
+description: Write, fix or review the hand-written Japanese Academy exam questions (particles, grammar, counters, translation) in data/authored-items-part1.php and data/authored-items-part2.php. Use when adding questions, fixing a question with a wrong or doubtful answer, or checking distractors.
 ---
 
 # Hand-written exam questions
 
 Only four sections are hand-written: `particle`, `grammar`, `counter` and
 `translation`. The rest of the exam is generated from data, so fix that through
-`data/source` (`academy-data` skill) or the generators (`src/generate.js`,
-`src/conjugate.js`).
+`data/source` (`academy-data` skill) or the generators (`src/generate.php`,
+`src/conjugate.php`).
 
 | Lessons | File |
 |---|---|
-| 0–12 (Part 1) | `data/authored-items-part1.js` (~175 items) |
-| 13–23 (Part 2) | `data/authored-items-part2.js` (~165 items) |
+| 0–12 (Part 1) | `data/authored-items-part1.php` (~175 items) |
+| 13–23 (Part 2) | `data/authored-items-part2.php` (~165 items) |
 
 ## Format
 
-Each item is one helper call, placed in the matching array (`PARTICLES`,
-`GRAMMAR`, `COUNTERS`, `TRANSLATION`) and in lesson order:
+Each item is one helper call, placed in the matching array (`$PARTICLES`,
+`$GRAMMAR`, `$COUNTERS`, `$TRANSLATION`) and in lesson order. The helpers are
+defined at the top of each file; they check the types (the lesson a number,
+the distractors a list):
 
-```js
-P(lesson, question, correct, [d1, d2, d3], explain, ref)         // particle
-G(lesson, question, correct, [d1, d2, d3], explain, ref, hint?)  // grammar; hint shows under the question
-C(lesson, question, correct, [d1, d2, d3], explain, ref)         // counter
-T(lesson, question, correct, [d1, d2, d3], explain, ref)         // translation
+```php
+$P(lesson, question, correct, [d1, d2, d3], explain, ref)         // particle
+$G(lesson, question, correct, [d1, d2, d3], explain, ref, hint?)  // grammar; hint shows under the question
+$C(lesson, question, correct, [d1, d2, d3], explain, ref)         // counter
+$T(lesson, question, correct, [d1, d2, d3], explain, ref)         // translation
 
-P(4, 'つくえの上に本＿あります。', 'が', ['を', 'は', 'に'],
-  'あります/います take が for the thing that exists.', 'L4-1'),
+$P(4, 'つくえの上に本＿あります。', 'が', ['を', 'は', 'に'],
+    'あります/います take が for the thing that exists.', 'L4-1'),
 ```
 
+- Strings are PHP single-quoted: write a `'` inside one as `\'` (the items use
+  the typographic ’ instead), and never use `"…"` strings, which would read
+  `$` as a variable.
 - The blank is `＿` (full-width low line, U+FF3F).
 - `explain` is one short English sentence giving the rule, not just the answer.
   It appears in the report next to a missed question.
@@ -62,8 +67,9 @@ P(4, 'つくえの上に本＿あります。', 'が', ['を', 'は', 'に'],
    uniqueness and the answer index.
 2. Run the `academy-japanese-reviewer` agent on the new or changed items. Give it
    the file and the lessons.
-3. Restart the real server (`academy-run`), because the bank is built at
-   start-up. Question ids are sequential, so edits shift the ids of later
-   authored items. That only matters for a paper already in progress.
+3. Restart the real server (`academy-run`): at its start it rebuilds the
+   question bank in the database, because an item file changed. Question ids
+   are sequential, so edits shift the ids of later authored items. That only
+   matters for a paper already in progress.
 4. If the counts changed noticeably, update the bank figures in `README.md`
    and `docs/kb/exam.md`.

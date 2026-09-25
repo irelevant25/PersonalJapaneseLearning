@@ -15,30 +15,46 @@ git history.
 
 ## Run it
 
+You need **PHP 8.1 or newer** with the extensions `pdo_pgsql`, `mbstring` and
+`intl` (and `curl`, only to make audio), and **PostgreSQL 13 or newer**
+running on this computer. No web server, framework or Composer: PHP's own web server runs the
+app.
+
 1. **Windows**: double-click `start.ps1`. **Mac/Linux**: run `./start.sh` in a
-   terminal. It checks Node (installs it through NVM if needed), installs the
-   dependencies, starts the app and opens http://127.0.0.1:3000.
-2. Or by hand:
+   terminal. It finds a PHP that can run the app (even when an older PHP comes
+   first on PATH), gets the database ready, starts the app and opens
+   http://127.0.0.1:3000.
+2. Or by hand, with that PHP:
 
    ```bash
-   npm install
-   npm start           # → http://localhost:3000
+   php setup.php       # the first time it asks for the database settings
+   php server.php      # → http://127.0.0.1:3000
    ```
 
-The app only listens on this computer (127.0.0.1): other devices on your
-network can't reach it. Host and port are in `package.json` under `config`.
+**The first time**, `setup.php` asks for the PostgreSQL server, port, user and
+password, checks them and saves them in `src/config.local.php`. Then it creates
+the database `japanese_academy` and its tables, builds the study content into
+it, and imports your progress and exam history from the files the app used
+before (`progress/`, `results/`, `reports/` — it only reads them). After that it
+only does what is missing, so the launchers run it on every start. Run
+`php setup.php --check` to see whether anything is missing; the top of
+`setup.php` lists its other options.
 
-Node 22 (tested on 22.15). The app itself runs on Node 18+, but the dev tools
-need more: the tests 21+, and the PDF page tool and the browser tests 20.9+.
-Dependencies: Express, and wanakana for typing readings in romaji.
+The app only listens on this computer (127.0.0.1): other devices on your
+network can't reach it. Host, port and the database defaults are in
+`src/config.php`.
 
 ### Not in git
 
-These stay on this computer only. On a new computer, copy them in by hand:
+These stay on this computer only:
 
+- `src/config.local.php` — your database settings, with the password
+  (`setup.php` writes it).
+- `backups/` — copies of your study data (see *Your progress* below). Copy
+  the newest to a new computer to bring your progress along.
 - `books/` — the scanned course books (`textbook-1.pdf`, `workbook-1.pdf`,
   `textbook-2.pdf`, `workbook-2.pdf`, `answer-key.pdf`), and your notes. Only
-  the PDF page tool needs them.
+  the PDF page tool needs them. Copy them in by hand.
 - `.env` — your Google Cloud key, only needed to make new audio (below).
 
 ---
@@ -60,8 +76,9 @@ You need a key only to make clips for new words (after adding vocabulary):
    it to the Cloud Text-to-Speech API.
 3. Put it in a file named `.env` in this folder (git ignores it):
    `GOOGLE_TTS_API_KEY=your-key`
-4. Run `npm run build:audio`. It only sends the words that have no clip yet.
-   `npm run build:audio -- --dry-run` shows what it would send, without a key.
+4. Run `php src/build-audio.php` (or `npm run build:audio`). It only sends the
+   words that have no clip yet. `php src/build-audio.php --dry-run` shows what
+   it would send, without a key. Restart the app afterwards.
 
 ---
 
@@ -124,12 +141,26 @@ once you've answered. Lessons move with **←/→** or Enter.
 
 ### Your progress
 
-Saved in `progress/kanji.json`. Every save is written to a temp file and renamed
-into place. There's a daily copy in `progress/backups/` (the last 14 are kept),
-and every answer is also appended to `progress/kanji-log.jsonl`. The dashboard
-has a link to download a copy. `progress/`, `results/` and `reports/` are kept
-in git too, so your history is saved with every commit (`progress/backups/` is
-not).
+Saved in the PostgreSQL database `japanese_academy`. Each answer is saved
+whole or not at all, and every answer is also written to a log that is never
+changed. The dashboard has a link to download your kanji progress.
+
+Each day, when the app starts (or, if it runs overnight, at the first page you
+open the next day), it writes a copy of all your study data — kanji progress,
+the answer log and every exam attempt with its report — to
+`backups/academy-<date>.json` (the last 14 are kept), and it writes one before
+a full reset too. To go back to a copy:
+
+```bash
+php setup.php --restore=backups/academy-2026-09-24.json
+```
+
+It saves what is there now first. `php setup.php --backup` writes a copy any
+time.
+
+The files the app used before the database — `progress/`, `results/` and
+`reports/` — are kept in git as your history until 2026-09-24. `setup.php`
+imported them once; the app doesn't change them any more.
 
 ---
 
@@ -139,8 +170,9 @@ not).
 readings, meanings and writing, verb conjugation (every form on both
 conjugation charts), adjectives, kana, grammar, particles, counters and
 translation. Pick Part 1, Part 2 or both, 40 to 500 questions, and narrow by
-lesson or section. Each attempt is saved to `results/`, with a standalone HTML
-report in `reports/` broken down by part, skill and lesson. Pass mark 70%.
+lesson or section. Each attempt is saved in the database with a standalone
+HTML report (open it from the history), broken down by part, skill and lesson.
+Pass mark 70%.
 
 ---
 
@@ -151,54 +183,64 @@ data/source/
   vocab-part1.tsv  vocab-part2.tsv     vocabulary index (J–E), transcribed
   kanji-part1.tsv  kanji-part2.tsv     the per-lesson kanji lists
   grammar-index-part1/2.tsv            grammar points by lesson
-data/vocab.json kanji.json grammar-index.json   (npm run build)
-data/audio.json audio/                          (npm run build:audio)
-data/authored-items-part1.js  -part2.js         hand-written exam items
+data/vocab.json kanji.json grammar-index.json   (php src/build-data.php)
+data/audio.json audio/                          (php src/build-audio.php)
+data/authored-items-part1.php  -part2.php       hand-written exam items
 ```
 
 The books are page scans with no text layer, so the vocabulary, kanji and
 grammar data was transcribed from the page images. The counts check out
 against the books, but any typo will be in `data/source/*.tsv` — fix it there
-and run `npm run build` (and `npm run build:audio` if a word's spelling or
-reading changed).
+and run `php src/build-data.php` (and `php src/build-audio.php` if a word's
+spelling or reading changed). The next start of the app rebuilds the study
+content in the database.
 
 ## Layout
 
 ```
-start.ps1 start.sh .nvmrc  one-click start (checks Node, installs, opens the browser)
-server.js                  HTTP server: pages, exam API, kanji API, audio
+start.ps1 start.sh         one-click start (finds PHP, runs setup.php, opens the browser)
+setup.php                  database settings, the database and its tables, the first import
+server.php                 the server: pages, exam API, kanji API, audio (PHP's built-in web server)
+src/config.php             settings (src/config.local.php: this computer's, not in git)
+src/migrations/            the database tables
 src/srs/                   kanji SRS: catalog, schedule, storage, API routes
-src/generate.js score.js report.js conjugate.js    the exam
-src/speech.js              what each word is spoken as, and its clips
-src/build-data.js build-audio.js                   data and audio builders
+src/generate.php score.php report.php conjugate.php exam.php    the exam
+src/speech.php             what each word is spoken as, and its clips
+src/content.php backup.php the study content in the database; backups, restore, import
+src/build-data.php build-audio.php                  data and audio builders
 public/index.html          home page
 public/kanji.html kanji/   the kanji trainer (plain JS, no framework)
 public/exam.html exam.js   the exam
-public/css/                shared, kanji and exam styles (light and dark)
-tests/                     unit, API and browser tests
+public/css/ vendor/        shared, kanji and exam styles (light and dark); wanakana
+tests/                     PHP unit and API tests, Node browser tests
 tools/pdf/pages.js         page images from the scanned books
+tools/php.js               finds the PHP for the npm scripts
 docs/kb/                   knowledge base: architecture, data sources, SRS, exam, testing
-progress/                  your kanji progress
-results/ reports/          your exam attempts
+backups/                   copies of your study data (not in git)
+progress/ results/ reports/  your history from before the database
 books/                     the scanned books (not in git)
 .claude/                   Claude Code: skills, review agents, rules
 ```
 
 ## Development
 
+Node (22, see `.nvmrc`) is only for the developer tools: `npm install` once,
+then
+
 ```bash
-npm test               # unit + API tests (~5 s)
+npm test               # PHP unit + API tests, and the test of the browser's answer checking (~12 s)
 npm run test:browser   # the whole study loop and an exam, in Edge
 npm run screens        # screenshots of every screen, light/dark/phone → tests/browser/shots/
+npm run build          # php src/build-data.php
 node tools/pdf/pages.js textbook-1 366 --book-page   # a book page as an image
 ```
 
-The tests never touch `progress/`, `results/` or `reports/`, and never call
-Google. They run against temporary folders set through `ACADEMY_PROGRESS_DIR`,
-`ACADEMY_RESULTS_DIR` and `ACADEMY_REPORTS_DIR`, and you can set the same
-variables to run a scratch copy of the app. The browser tests use the installed
-Edge through `playwright-core`; set `BROWSER_PATH` to use another Chromium
-browser.
+The npm scripts find the right PHP themselves (`tools/php.js`; set
+`ACADEMY_PHP` to choose one). The tests never touch your database or
+`backups/`, never read `progress/`, `results/` or `reports/`, and never call
+Google: each run makes throwaway databases (`academy_test_…`) and drops them
+again. The browser tests use the installed Edge through `playwright-core`; set
+`BROWSER_PATH` to use another Chromium browser.
 
 The books have no text layer, so `tools/pdf/pages.js` pulls out each page's
 image to read. `docs/kb/` is the reference for changing anything: where the

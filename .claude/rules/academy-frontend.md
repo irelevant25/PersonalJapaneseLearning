@@ -6,7 +6,9 @@ paths:
 # Front end (Japanese Academy)
 
 - Plain HTML, CSS and JS: no framework, bundler or CDN. The only vendored
-  script is wanakana, served from `node_modules` at `/vendor/wanakana.min.js`.
+  script is wanakana: a copy of the npm package's `wanakana.min.js` in
+  `public/vendor/`, with its MIT line on top (to update it, copy the new file
+  there and keep that line; the browser suite also loads it for `toRomaji`).
 - The kanji trainer is classic scripts sharing `window.KA`, loaded by
   `kanji.html` in this order: wanakana → `kanji/answer.js` → `core.js` →
   `session.js` → `views.js` → `app.js`. A new file needs a `<script>` tag in the
